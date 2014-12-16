@@ -46,6 +46,7 @@ public class LuceneUtil {
 			for (int i = 0; i < reader.maxDoc(); i++) {
 				Document d = reader.document(i);
 				String splitMethodName = d.get(field).toLowerCase();
+				System.out.println(splitMethodName);
 				/*if (splitMethodName.contains("factorial")) {
 					System.out.println(splitMethodName);
 				}*/

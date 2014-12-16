@@ -338,4 +338,25 @@ public class FileUtil {
 		
 	}
 
+	public static Set<String> getAllFilePaths(String baseFolderPath, String type) {
+		Set<String> allPaths = new HashSet<String>();
+		File baseFolder = new File(baseFolderPath);
+		if (!baseFolder.isDirectory()) {
+			System.out.println("Warning: FileUtil: Folder expected. File Found.");
+			return null;
+		}
+		File[] subFiles = baseFolder.listFiles();
+		
+		if (subFiles.length > 0) {
+			for(File file: subFiles) {
+				
+				if (file.getName().toLowerCase().endsWith("." + type.toLowerCase())) {
+					allPaths.add(file.getPath());
+				}
+			
+			}
+		}
+		return allPaths;
+	}
+
 }
