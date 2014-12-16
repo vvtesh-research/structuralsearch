@@ -14,29 +14,33 @@ import java.util.Map;
 import java.util.Properties;
 
 public class Search {
-
 	static String operatorsFile = "";
-	static String projectData = "";
+	//static String projectData = "";
 	static String soIndexFilePath = "";
 	static String stopFilePath = "";
 	static String topic = "sort array";
-
-	public static void main(String[] args) {
+	
+	static {
 		Properties props = FileUtil.loadProps();
 		if (props == null)
-			return;
+			System.out.println("ERROR: Cannot search. Cannot read properties.");
 		operatorsFile = props.getProperty("OPERATORS_FILE");
-		projectData = props.getProperty("TESTDATA_INDEX_FILE_PATH");
+		//projectData = props.getProperty("TESTDATA_INDEX_FILE_PATH");
 		soIndexFilePath = props.getProperty("INDEX_FILE_PATH");
 		stopFilePath = props.getProperty("STOP_FILE_PATH");
 
-		LuceneUtil.checkIndex(projectData);
-		LuceneUtil.checkIndex(soIndexFilePath);
+	}
+	
+
+	public static void main(String[] args) {
+		
+		//LuceneUtil.checkIndex(projectData);
+		//LuceneUtil.checkIndex(soIndexFilePath);
 
 		searchTopic(topic, 500, true);
 	}
 
-	private static void searchTopic(String queryString, int maxResults,
+	public static List<String> searchTopic(String queryString, int maxResults,
 			boolean showCodeResults) {
 
 		int right = 0;
@@ -80,6 +84,7 @@ public class Search {
 		}
 		System.out.println();
 
+		List<String> filteredResultsFinal = new ArrayList<String>();
 		int limit = findLimit(complexities);
 		for (CodeSnippet result : filteredResults) {
 			if (showCodeResults && result.complexity >= limit) {
@@ -87,6 +92,7 @@ public class Search {
 				output = output + result.id + " " + result.title + "\n"
 						+ result.methodDef + "\n" + result.algoString + "\n"
 						+ result.complexity + "\n\n\n";
+				filteredResultsFinal.add(result.algoString);
 			}
 		}
 		output = output + Arrays.toString(complexities);
@@ -218,6 +224,7 @@ public class Search {
 		 * System.out.println("Precision =" + right*1.0f/total);
 		 * System.out.println("Recall = " + recall); System.out.println(""); } }
 		 */
+		return filteredResultsFinal;
 	}
 
 	private static int findLimit(int[] complexities) {
