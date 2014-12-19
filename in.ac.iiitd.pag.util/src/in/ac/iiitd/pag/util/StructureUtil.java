@@ -2,6 +2,7 @@ package in.ac.iiitd.pag.util;
 
 import in.ac.iiitd.pag.util.ASTUtil;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,9 @@ import org.eclipse.jdt.core.dom.IfStatement;
 import org.eclipse.jdt.core.dom.InfixExpression;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
+import org.eclipse.jdt.core.dom.SimpleType;
+import org.eclipse.jdt.core.dom.Type;
+import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.WhileStatement;
 
 public class StructureUtil {
@@ -26,6 +30,12 @@ public class StructureUtil {
 			boolean skip = false;
 			@Override
 			public void preVisit(ASTNode node) {
+				if (node instanceof SimpleType) {					
+					String typeName = ((SimpleType) node).getName().getFullyQualifiedName();
+					if (!typeName.contains("Exception"))
+						elements.add(typeName);
+				}
+				
 				if (node instanceof MethodInvocation) {
 					String methodName = ((MethodInvocation) node).getName().toString();
 					if (methodName.equalsIgnoreCase("println") || methodName.equalsIgnoreCase("log")) {

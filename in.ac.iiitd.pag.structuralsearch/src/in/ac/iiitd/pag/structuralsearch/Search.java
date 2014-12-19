@@ -18,7 +18,7 @@ public class Search {
 	//static String projectData = "";
 	static String soIndexFilePath = "";
 	static String stopFilePath = "";
-	static String topic = "sort array";
+	static String topic = "factorial";
 	
 	static {
 		Properties props = FileUtil.loadProps();

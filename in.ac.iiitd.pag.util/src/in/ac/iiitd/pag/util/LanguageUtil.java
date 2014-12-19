@@ -33,6 +33,10 @@ public class LanguageUtil {
 				   methodCount++;
 			   }
 		}
+		if (methodCount == 1) {
+			int astHint = ASTUtil.getMethods(codeSnippet).size();
+			if (astHint > 1) methodCount = astHint;
+		}
 		return methodCount;
 	}
 }
