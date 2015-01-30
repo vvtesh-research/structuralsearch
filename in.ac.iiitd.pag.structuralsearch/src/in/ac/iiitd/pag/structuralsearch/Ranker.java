@@ -16,13 +16,37 @@ public class Ranker {
 		Map<String, List<CodeSnippet>> map1 = new HashMap<String, List<CodeSnippet>>();
 		
 		Set<Integer> removals = new HashSet<Integer>();
+		Canonicalizer.init();
 		
-		for(int i=0; i<results.size(); i++) {
+		for(int i=1; i<results.size(); i++) {
+			String algo1 = results.get(i).algoString;			
+			results.get(i).algoString = Canonicalizer.canonicalize(algo1);
+			System.out.println(results.get(i).id + " " + results.get(i).algoString);
+		}
+		
+		//find duplicates
+		for(int i=1; i<results.size(); i++) {
 			String algo1 = results.get(i).algoString;
-			for (int j=i+1; j<results.size(); j++) {
+			String[] algo1arr = algo1.split(" ");
+			if (algo1arr.length <= 1) continue;
+			for (int j=0; j<i; j++) {				
 				String algo2 = results.get(j).algoString;
-				if (algo1.equalsIgnoreCase(algo2)) {
-					removals.add(j);
+				String[] algo2arr = algo2.split(" ");				
+				if (algo2arr.length <=1) continue;
+				
+				boolean isDuplicate = false;
+				float duplicacyScore = DuplicateRemoval.score(algo1arr, algo2arr);
+				if (duplicacyScore >= 0.6f) {
+					isDuplicate = true;
+					System.out.println("Duplicate Found.");
+				}
+								
+				if (isDuplicate) {
+					removals.add(i);
+					System.out.println(results.get(i).methodDef);
+					System.out.println("was similar to");
+					System.out.println(results.get(j).methodDef);
+					break;
 				}
 			}
 		}
@@ -37,7 +61,11 @@ public class Ranker {
 		results.clear();
 		results.addAll(resultsTemp);
 		
-		for(CodeSnippet result: results) {
+		System.out.println("Found " + results.size() + " after duplicate removal..");
+		
+		return results;
+		
+		/*for(CodeSnippet result: results) {
 			String algo = result.algoString;
 			String[] split = algo.split(" ");
 			Set<String> splitSet = new HashSet<String>();
@@ -50,7 +78,8 @@ public class Ranker {
 				codeSnippets = map1.get(hash);
 			}
 			codeSnippets.add(result);
-			map1.put(hash, codeSnippets);			
+			map1.put(hash, codeSnippets);	
+			
 		}
 		Map<Integer, List<CodeSnippet>> map2 = new HashMap<Integer, List<CodeSnippet>>();
 		for(String hash: map1.keySet()) {
@@ -70,7 +99,13 @@ public class Ranker {
 		for(int count: counts) {
 			codeSnippets.addAll(map2.get(count));
 		}
-		return codeSnippets;
+		
+		for(int i=1; i<codeSnippets.size(); i++) {
+			String algo1 = codeSnippets.get(i).algoString;						
+			System.out.println(results.get(i).id + " " + algo1);
+		}
+		
+		return codeSnippets;*/
 	}
 	
 }

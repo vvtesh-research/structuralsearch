@@ -13,12 +13,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+/**
+ * Structural Search takes a topic and gives out variant implementations.
+ * 
+ * @author Venkatesh
+ *
+ */
 public class Search {
-	static String operatorsFile = "";
-	//static String projectData = "";
-	static String soIndexFilePath = "";
-	static String stopFilePath = "";
-	static String topic = "factorial";
+	static String operatorsFile = "";  //List of operators that we recognize.
+	static String soIndexFilePath = ""; //Path where stackoverflow is indexed
+	static String stopFilePath = ""; //Path for file containing stop words.
+	static String topic = "factorial"; //Topic to search.
 	
 	static {
 		Properties props = FileUtil.loadProps();
@@ -71,6 +76,8 @@ public class Search {
 																			// structural
 																			// similarity
 
+		
+		
 		System.out.println("Found " + filteredResults.size()
 				+ " after duplicate removal.");
 
