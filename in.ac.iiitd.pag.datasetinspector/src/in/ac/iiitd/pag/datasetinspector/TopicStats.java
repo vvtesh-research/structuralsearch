@@ -29,26 +29,27 @@ public class TopicStats {
 		String TEMP1_OUTPUT = props.getProperty("TEMP1_OUTPUT");
 		String TEMP2_OUTPUT = props.getProperty("TEMP2_OUTPUT");
 		String topic = "factorial";
-		if (args.length > 0) {
+		String findIn = "title"; //use "title" or "fullpost"
+		if (args.length > 1) {
 			topic = args[0];
+			findIn = args[1];
 		}
 		Map<Integer, SONavigator> info = SOUtil.loadIdTitleMap(ID_TITLES_VOTES_JAVA_FILE_PATH);
-		processFile(SINGLE_METHOD_JAVA_POSTS_FILE_PATH, ID_TITLES_VOTES_JAVA_FILE_PATH, topic, TEMP1_OUTPUT, TEMP2_OUTPUT, info);		
+		processFile(SINGLE_METHOD_JAVA_POSTS_FILE_PATH, ID_TITLES_VOTES_JAVA_FILE_PATH, topic, TEMP1_OUTPUT, TEMP2_OUTPUT, info, findIn);
+		//System.out.println(isSequenceFound("convert int to string", "convert int to string"));
 	}
 
 	private static void processFile(String sINGLE_METHOD_JAVA_POSTS_FILE_PATH,
-			String ID_TITLES_VOTES_JAVA_FILE_PATH, String topic, String tEMP1_OUTPUT, String tEMP2_OUTPUT,Map<Integer, SONavigator> info) {
+			String ID_TITLES_VOTES_JAVA_FILE_PATH, String topic, String tEMP1_OUTPUT, String tEMP2_OUTPUT,Map<Integer, SONavigator> info, String findIn) {
 		try {
 			FileWriter fw1 = new FileWriter(tEMP1_OUTPUT);
    			BufferedWriter bw1 = new BufferedWriter(fw1, 2 * 1024 * 1024);	
    			FileWriter fw2 = new FileWriter(tEMP2_OUTPUT);
    			BufferedWriter bw2 = new BufferedWriter(fw2, 2 * 1024 * 1024);
    			
-   			bw2.write("Title contains topic.\n");
-   			bw1.write("Title does not. Only body contains topic.\n");
+   			   			
+   			String codeSnippets = "";
    			
-   			String codeSnips1 = "";
-   			String codeSnips2 = "";
    			
 			BufferedReader reader = new BufferedReader(new FileReader(sINGLE_METHOD_JAVA_POSTS_FILE_PATH), 2 * 1024 * 1024);
 			String line = null;			
@@ -79,17 +80,20 @@ public class TopicStats {
 		                	   if (infoItem != null) {
 		                		   String title = info.get(id).title.toLowerCase();
 		                		   String code = SOUtil.getCode(body);
-			                	   
-		                		   if (title.contains(topic)) {
-		                			   bw2.write(id + " " + title + "\n");
-		                			   codeSnips2 = codeSnips2 + "**********" + id + "**********\n" + title + "\n" + code;
-		                			
-		                		   }
-		                		   if (!title.contains(topic) && body.contains(topic)) {
-		                			   codeSnips1 = codeSnips1 + "**********" + id + "**********\n" + title + "\n" + code;
-		                			   bw1.write(id + " " + title + "\n");
-		                			   count++;
-		                		   }
+			                	   if (findIn.equalsIgnoreCase("title")) {
+			                		   if (isSequenceFound(topic, title)) {
+			                			   bw1.write(id + " " + title + "\n");
+			                			   codeSnippets = codeSnippets + "**********" + id + "**********\n" + title + "\n" + code;
+			                			
+			                		   }
+			                	   }
+			                	   if (findIn.equalsIgnoreCase("fullpost")) {
+			                		   if (isSequenceFound(topic, title) || isSequenceFound(topic, body)) {
+			                			   codeSnippets = codeSnippets + "**********" + id + "**********\n" + title + "\n" + code;
+			                			   bw1.write(id + " " + title + "\n");
+			                			   count++;
+			                		   }
+			                	   }
 		                	   } else {
 		                		   System.out.println("Warning: No info on entity found for " + id);
 		                	   }
@@ -101,8 +105,8 @@ public class TopicStats {
 			        xmlEventReader.close();			        
 				} catch (Exception e) {}
 			}
-			bw1.write(codeSnips1);
-			bw2.write(codeSnips2);
+			
+			bw2.write(codeSnippets);
 			bw1.close();
 			bw2.close();
 		} catch (Exception e) {}
@@ -110,5 +114,19 @@ public class TopicStats {
 		
 	}
 	
+	private static boolean isSequenceFound(String phrase1, String phrase2) {
+		boolean isFound = false;
+		String[] tokens = phrase1.split(" ");
+		int matchCount = 0;
+		int pointer = 0;
+		for(String token: tokens) {			
+			int i = phrase2.indexOf(token,pointer);
+			if (i < 0) break;
+			pointer = i;
+			matchCount++;
+		}
+		if (matchCount == tokens.length) isFound = true;
+		return isFound;
+	}
 	
 }

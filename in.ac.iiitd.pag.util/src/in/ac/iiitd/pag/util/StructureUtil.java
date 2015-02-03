@@ -9,20 +9,27 @@ import java.util.List;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.Assignment;
+import org.eclipse.jdt.core.dom.ExpressionStatement;
 import org.eclipse.jdt.core.dom.ForStatement;
 import org.eclipse.jdt.core.dom.IfStatement;
 import org.eclipse.jdt.core.dom.InfixExpression;
+import org.eclipse.jdt.core.dom.InfixExpression.Operator;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
 import org.eclipse.jdt.core.dom.SimpleType;
+import org.eclipse.jdt.core.dom.Statement;
 import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
+import org.eclipse.jdt.core.dom.VariableDeclarationExpression;
+import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
+import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 import org.eclipse.jdt.core.dom.WhileStatement;
+import org.eclipse.jdt.internal.compiler.ast.OperatorExpression;
 
 public class StructureUtil {
 	public static List<String> getAlgo(String codeFragment, final String operatorsFile) {
 		final ArrayList<String> elements = new ArrayList<String>();
-		
+		final ArrayList<Integer> positions = new ArrayList<Integer>();
 		elements.clear();
 		elements.add("<algo>");
 		ASTNode node = ASTUtil.getASTNode(codeFragment);
@@ -49,20 +56,44 @@ public class StructureUtil {
 				if ((node instanceof ForStatement)||(node instanceof WhileStatement)) {
 					if (!skip) elements.add("<loop>");
 				}
+				
 				if (node instanceof Assignment) {
-					List<String> operators = getOperator(node.toString(), operatorsFile);
+					//System.out.println(node.toString());
+					String op =((Assignment) node).getOperator().toString();
+					if (!op.equalsIgnoreCase("=")) {
+						elements.add(op);
+					}
+					/*List<String> operators = getOperator(node.toString(), operatorsFile);
 					for(String op: operators) {
-						if (!skip) elements.add(op); }
+						if (!skip) elements.add(op); }*/
 				}
 			}			
 			
-			
+			@Override
+			public boolean visit(Assignment node) {
+				//InfixExpression infixExpression=new InfixExpression(node.getAST().);
+				
+				return super.visit(node);
+			}
 			
 			@Override
-			public void endVisit(InfixExpression node) {
+			public boolean visit(InfixExpression node) {
+				/*System.out.println(node.getStartPosition() + node.toString());
+				if (positions.contains(node.getStartPosition())) {
+					
+					return true;
+				}
 				List<String> operators = getOperator(node.toString(), operatorsFile);
 				for(String op: operators)
 					if (!skip) elements.add(op);
+				positions.add(node.getStartPosition());*/
+				return true;
+			}
+			
+			@Override
+			public void endVisit(InfixExpression node) {
+				elements.add(node.getOperator().toString());
+				//System.out.println(node.toString());
 			}
 			
 			
@@ -86,7 +117,7 @@ public class StructureUtil {
 				if (methodName.equalsIgnoreCase("println") || methodName.equalsIgnoreCase("log")) {					
 					skip = false;
 				}
-				System.out.println(((MethodInvocation) node).getName() + " over.");
+				//System.out.println(((MethodInvocation) node).getName() + " over.");
 			};
 			
 		});	

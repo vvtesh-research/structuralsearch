@@ -1,6 +1,4 @@
-package in.ac.iiitd.pag.structuralsearch;
-
-import in.ac.iiitd.pag.util.FileUtil;
+package in.ac.iiitd.pag.util;
 
 import java.util.List;
 import java.util.Properties;
@@ -14,10 +12,8 @@ public class Canonicalizer {
 		System.out.println(canonicalize(element));
 	}
 	
-	public static void init() {
-		Properties props = FileUtil.loadProps();
-		if (props == null)
-			System.out.println("ERROR: Cannot search. Cannot read properties.");
+	public static void init(Properties props) {
+		
 		String operatorsFile = props.getProperty("CANONICALIZED_OPERATORS_FILE"); 
 		operators = FileUtil.readFromFileAsList(operatorsFile);
 	}
