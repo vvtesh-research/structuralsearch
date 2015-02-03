@@ -2,6 +2,11 @@ package in.ac.iiitd.pag.structureextractor;
 
 import in.ac.iiitd.pag.util.FileUtil;
 
+/**
+ * Extract structure from source code.
+ * @author Venkatesh
+ *
+ */
 public class AlgoGrepTester {
 		
 	public static void main(String[] args) {		
