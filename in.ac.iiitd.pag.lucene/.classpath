@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/data/lucene/lucene-3-tutorial-code/lib/lingpipe-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/data/lucene/lucene-3-tutorial-code/lib/lucene-analyzers-3.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/data/lucene/lucene-3-tutorial-code/lib/lucene-core-3.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/commons-jexl-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/jackson-all-1.9.11.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/jsoup-1.7.3.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.core.contenttype_3.4.1.R35x_v20090826-0451.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.core.jobs_3.4.100.v20090429-1800.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.core.resources_3.5.2.R35x_v20091203-1235.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.core.runtime_3.5.0.v20090525.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.equinox.common_3.5.1.R35x_v20090807-1100.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.equinox.preferences_3.2.301.R35x_v20091117.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/org.eclipse.osgi_3.5.2.R35x_v20100126.jar"/>
+	<classpathentry kind="lib" path="C:/tools/libs/swt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
