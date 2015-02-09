@@ -38,6 +38,7 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.store.LockObtainFailedException;
 import org.apache.lucene.util.Version;
+import org.jsoup.Jsoup;
 
 public class IndexBuilder {
 	
@@ -162,6 +163,7 @@ public class IndexBuilder {
 	    }
 	    //System.out.println(methodDef);
 	    String methodName = StructureUtil.getMethodName(methodDef);	
+	    body = Jsoup.parse(body).text();
 	    /*List<String> algoElements = StructureUtil.getAlgo(methodDef, operatorsFile);
 		List<String> flattenedAlgo = StructureUtil.flattenAlgo(algoElements);
 		String algo = StringUtil.getAsCSV(flattenedAlgo);
@@ -185,8 +187,9 @@ public class IndexBuilder {
 	                Store.YES));
 	        d.add(new StringField("code", methodDef,
                     Store.YES));
+	        d.add(new TextField("body", title + " " + body, Store.YES));
+	        indexWriter.addDocument(d);
 	        
-	        indexWriter.addDocument(d);	        
 	    }
 	}
 
