@@ -1,5 +1,7 @@
 package in.ac.iiitd.pag.matcher;
 
+import in.ac.iiitd.pag.entity.StructuralElement;
+import in.ac.iiitd.pag.structureextractor.StructureExtractor;
 import in.ac.iiitd.pag.util.FileUtil;
 import in.ac.iiitd.pag.util.LuceneUtil;
 import in.ac.iiitd.pag.util.StringUtil;
@@ -31,9 +33,10 @@ public class Matcher {
 		if (props == null) return;
 		operatorsFile = props.getProperty("OPERATORS_FILE");
 		String filePath = props.getProperty("MATCH_PARENT_FOLDER");
-			
+		StructureExtractor.init(props);
+		
 		luceneIndexFilePath = props.getProperty("ALGO_REPO_INDEX_FILE_PATH");
-		LuceneUtil.printAll(luceneIndexFilePath, "algo");
+		//LuceneUtil.printAll(luceneIndexFilePath, "algo");
 		try {
 			processFiles(filePath);
 		} catch (IOException e) {
@@ -65,11 +68,10 @@ public class Matcher {
 		//System.out.println( "File:" + f.getAbsoluteFile() );
 		for(String method: methods) {	
 			try {
-				List<String> algoElements = StructureUtil.getAlgo(method, operatorsFile);
-				List<String> flattenedAlgo = StructureUtil.flattenAlgo(algoElements);
+				
 				String methodName = StructureUtil.getMethodName(method);			
-				String algo = StringUtil.getAsCSV(flattenedAlgo);
-				algo = algo.replaceAll(",", " ");
+				String algo = StructureExtractor.extract(method);
+				
 				System.out.println("checking " + f.getName().replace(".java", "") + "." + methodName +  "[" + algo + "] ...");
 				SimpleLuceneSearch.search(algo, "algo", luceneIndexFilePath, 500);
 			}  catch (Exception e) {

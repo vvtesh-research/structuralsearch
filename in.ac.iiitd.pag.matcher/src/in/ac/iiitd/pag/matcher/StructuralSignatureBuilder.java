@@ -101,7 +101,7 @@ public class StructuralSignatureBuilder {
 		//System.out.println( "File:" + f.getAbsoluteFile() );
 		for(String method: methods) {	
 			try {
-				List<String> algoElements = StructureUtil.getAlgo(method, operatorsFile);
+				List<String> algoElements = StructureUtil.getAlgo(method);
 				List<String> flattenedAlgo = StructureUtil.flattenAlgo(algoElements);
 				String methodName = StructureUtil.getMethodName(method);			
 				String algo = StringUtil.getAsCSV(flattenedAlgo);

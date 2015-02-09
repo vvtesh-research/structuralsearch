@@ -6,5 +6,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/in.ac.iiitd.pag.structuralsearch"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/in.ac.iiitd.pag.util"/>
 	<classpathentry kind="lib" path="C:/temp/workdir/dependencies.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/in.ac.iiitd.pag.structureextractor"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
