@@ -1,5 +1,6 @@
 package in.ac.iiitd.pag.algorepobuilder;
 
+import in.ac.iiitd.pag.structuralsearch.CodeSnippet;
 import in.ac.iiitd.pag.structuralsearch.Search;
 import in.ac.iiitd.pag.util.FileUtil;
 
@@ -29,7 +30,7 @@ public class AlgoRepositoryBuilder {
 	public static void main(String[] args) {
 		Properties props = FileUtil.loadProps();
 		if (props == null) return;
-		String topic = "factorial";
+		String topic = "prime";
 		String luceneIndexFilePath = props.getProperty("ALGO_REPO_INDEX_FILE_PATH");
 					
 		try {
@@ -42,15 +43,15 @@ public class AlgoRepositoryBuilder {
 		    iwConf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
 		    IndexWriter indexWriter
 		        = new IndexWriter(fsDir,iwConf);	        
-		    List<String> algos = Search.searchTopic(topic, 500, true);
-			for(String algo: algos) {				
+		    List<CodeSnippet> algos = Search.searchTopic(topic, 500, true);
+			for(CodeSnippet algo: algos) {				
 			    Document d = new Document();
 				d.add(new StringField("topic", topic,
 						Store.YES));
-		        d.add(new TextField("algo",algo,
+		        d.add(new TextField("algo",algo.algoString,
 		                Store.YES));		       
 		        indexWriter.addDocument(d);	
-		        System.out.println("added " + algo + " for " + topic);
+		        System.out.println("added " + algo.algoString + " for " + topic);
 			}
 		    
 	        indexWriter.close();
