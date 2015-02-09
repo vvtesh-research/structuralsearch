@@ -27,25 +27,40 @@ import org.eclipse.jdt.core.dom.WhileStatement;
 import org.eclipse.jdt.internal.compiler.ast.OperatorExpression;
 
 public class StructureUtil {
-	public static List<String> getAlgo(String codeFragment, final String operatorsFile) {
+	
+	static String[] uniops = {"++","--"};
+	
+	public static List<String> getAlgo(String codeFragment) {
 		final ArrayList<String> elements = new ArrayList<String>();
 		final ArrayList<Integer> positions = new ArrayList<Integer>();
 		elements.clear();
 		elements.add("<algo>");
 		ASTNode node = ASTUtil.getASTNode(codeFragment);
+		final String methodName = getMethodName(codeFragment);
 		node.accept(new ASTVisitor() {
 			boolean skip = false;
 			@Override
 			public void preVisit(ASTNode node) {
-				if (node instanceof SimpleType) {					
+				//System.out.println(node.toString() + node.getNodeType());
+				if (node.getNodeType() == 37) {
+					//System.out.println(node.toString());
+					if (node.toString().contains(uniops[0])) {
+						elements.add("+");
+					}
+					if (node.toString().contains(uniops[1])) {
+						elements.add("-");
+					}
+				}
+				if (node instanceof SimpleType) {	
+					//System.out.println(node.toString());
 					String typeName = ((SimpleType) node).getName().getFullyQualifiedName();
-					if (!typeName.contains("Exception"))
+					if (!typeName.contains("Exception") && !typeName.contains("Scanner"))
 						elements.add(typeName);
 				}
 				
 				if (node instanceof MethodInvocation) {
-					String methodName = ((MethodInvocation) node).getName().toString();
-					if (methodName.equalsIgnoreCase("println") || methodName.equalsIgnoreCase("log")) {
+					String cmethodName = ((MethodInvocation) node).getName().toString();
+					if (cmethodName.equalsIgnoreCase("println") || cmethodName.equalsIgnoreCase("log")) {
 						skip = true;
 					}
 					//System.out.println("Inside " + ((MethodInvocation) node).getName() + " invoked.");
@@ -78,8 +93,8 @@ public class StructureUtil {
 			
 			@Override
 			public boolean visit(InfixExpression node) {
-				/*System.out.println(node.getStartPosition() + node.toString());
-				if (positions.contains(node.getStartPosition())) {
+				//System.out.println(node.getStartPosition() + node.toString());
+				/*if (positions.contains(node.getStartPosition())) {
 					
 					return true;
 				}
@@ -113,9 +128,16 @@ public class StructureUtil {
 			}
 			
 			public void endVisit(MethodInvocation node) {
-				String methodName = ((MethodInvocation) node).getName().toString();
-				if (methodName.equalsIgnoreCase("println") || methodName.equalsIgnoreCase("log")) {					
-					skip = false;
+				String calledMethodName = ((MethodInvocation) node).getName().toString();
+				if (calledMethodName.equalsIgnoreCase("Scanner") || calledMethodName.equalsIgnoreCase("print") || calledMethodName.equalsIgnoreCase("println") || calledMethodName.equalsIgnoreCase("log")) {					
+					skip = false;					
+				} else {
+					if (methodName == null) return;
+					if (calledMethodName.equalsIgnoreCase(methodName)) {
+						elements.add("recursion");
+					} else {
+						elements.add("method");
+					}
 				}
 				//System.out.println(((MethodInvocation) node).getName() + " over.");
 			};
