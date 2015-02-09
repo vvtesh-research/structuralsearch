@@ -23,7 +23,7 @@ public class Search {
 	static String operatorsFile = "";  //List of operators that we recognize.
 	static String soIndexFilePath = ""; //Path where stackoverflow is indexed
 	static String stopFilePath = ""; //Path for file containing stop words.
-	static String topic = "factorial"; //Topic to search.
+	static String topic = "binary search"; //Topic to search.
 	
 	static {
 		Properties props = FileUtil.loadProps();
@@ -44,79 +44,174 @@ public class Search {
 
 		searchTopic(topic, 500, true);
 	}
-
-	public static List<String> searchTopic(String queryString, int maxResults,
+	
+	public static List<CodeSnippet> searchTopic(String queryString, int maxResults,
 			boolean showCodeResults) {
 
-		int right = 0;
-		int total = 0;
-
+		
 		List<CodeSnippet> results = SearchUtil.searchIndex(queryString,
 				"title", 0, soIndexFilePath, maxResults, showCodeResults,
 				operatorsFile);
 
-		System.out.println("Found " + results.size() + " results.");
+		if (showCodeResults) System.out.println("Found " + results.size() + " results.");
 
+		List<CodeSnippet> filteredResults = dropZeroComplexityResults(results);
+
+		if (showCodeResults) System.out.println("Found " + filteredResults.size()
+				+ " results with more than 0 complexity.");
+		
+		filteredResults = dropResultswithBadTitles(filteredResults);
+		
+		if (showCodeResults) System.out.println("Found " + filteredResults.size()
+				+ " results without bad titles like c#.");
+
+		filteredResults = Ranker.applyStructureCountBoost(filteredResults); //dup removal. sort by complexity.
+		
+		if (showCodeResults) System.out.println("Found " + filteredResults.size()
+				+ " after duplicate removal.");
+
+		
+		filteredResults = dropResultsByComplexityCutoff(filteredResults, 10000);
+		
+		if (showCodeResults) System.out.println("Found " + filteredResults.size()
+				+ " after complexity filtering.");
+		
+		Map<String, Integer> trigramsMap = getLatentTopics(filteredResults);
+
+		if (showCodeResults) {
+			for (String key : trigramsMap.keySet()) {
+				System.out.println(key + " " +  trigramsMap.get(key));
+			}
+		}
+		
+		filteredResults = dropResultsOfLatentTopics(filteredResults, trigramsMap);
+				
+		if (showCodeResults) System.out.println("Found " + filteredResults.size() + " after latent topic drops.");
+
+		saveResults(filteredResults, "rankerResult.txt");
+				
+ 		return filteredResults;
+	}
+
+	public static String getAsString(List<CodeSnippet> filteredResults) {
+		String output = "";
+		for (CodeSnippet result : filteredResults) {				
+			output = output + result.id + " " + result.title + "\n"
+					+ result.methodDef + "\n" + result.algoString + "\n"
+					+ result.complexity + "\n\n\n";
+		}
+		return output;
+	}
+	
+	private static void saveResults(List<CodeSnippet> filteredResults, String fileName) {
+		try {
+			String output = "";
+			for (CodeSnippet result : filteredResults) {				
+				output = output + result.id + " " + result.title + "\n"
+						+ result.methodDef + "\n" + result.algoString + "\n"
+						+ result.complexity + "\n\n\n";
+			}
+			FileUtil.saveFile(new File("C:\\temp\\"), fileName,
+					output, "");			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+	}
+
+	private static List<CodeSnippet> dropResultsOfLatentTopics(
+			List<CodeSnippet> filteredResults, Map<String, Integer> trigramsMap) {
+		//List<String> results = new ArrayList<String>();
+		List<CodeSnippet> codeSnippets = new ArrayList<CodeSnippet>();
+		
+		
+		for (CodeSnippet result : filteredResults) {
+			String title = result.title.toLowerCase();
+			boolean drop = false;
+			for(String key: trigramsMap.keySet()) {
+				if (title.contains(key.toLowerCase())) {
+					drop = true;
+					break;
+				}
+			}
+			if (!drop) {				
+				/*outputNoLT = outputNoLT + result.id + " " + result.title + "\n"
+						+ result.methodDef + "\n" + result.algoString + "\n"
+						+ result.complexity + "\n\n\n";
+				results.add(result.algoString);*/
+				codeSnippets.add(result);
+				
+			}
+		}
+		return codeSnippets;
+	}
+
+	private static List<CodeSnippet> dropResultsByComplexityCutoff(
+			List<CodeSnippet> results, int limit) {
 		List<CodeSnippet> filteredResults = new ArrayList<CodeSnippet>();
+		for (CodeSnippet result : results) {
+			if (result.complexity < limit) {				
+				/* */
+				//filteredResults.add(result.algoString);
+				filteredResults.add(result);
+			}
+		}
+		return filteredResults;
+	}
 
+	public static int[] getComplexities(List<CodeSnippet> filteredResults
+			) {
+		int i = 0;
+		int[] complexities = new int[filteredResults.size()];
+		for (CodeSnippet result : filteredResults) {
+			complexities[i++] = result.complexity;			
+		}
+		return complexities;
+	}
+
+	private static List<CodeSnippet> dropZeroComplexityResults(
+			List<CodeSnippet> results) {
+		List<CodeSnippet> filteredResults = new ArrayList<CodeSnippet>();
 		for (CodeSnippet result : results) {
 			int complexity = ASTUtil.getStructuralComplexity(result.methodDef);
 			String title = result.title;
-			if ((complexity > 0) && (!title.contains("C#"))) {
+			if ((complexity > 0) && (!title.toLowerCase().contains("c#"))) {
 				result.complexity = complexity;
 				filteredResults.add(result);
 			}
 		}
-
-		System.out.println("Found " + filteredResults.size()
-				+ " results with more than 0 complexity.");
-
-		filteredResults = Ranker.applyStructureCountBoost(filteredResults); // sort
-																			// by
-																			// structural
-																			// similarity
-
-		
-		
-		System.out.println("Found " + filteredResults.size()
-				+ " after duplicate removal.");
-
-		String output = "";
-		int[] complexities = new int[filteredResults.size()];
-		int i = 0;
-		int resultCount = 0;
-		for (CodeSnippet result : filteredResults) {
-			complexities[i++] = result.complexity;
-			System.out.print(result.complexity + " ");
-		}
-		System.out.println();
-
-		List<String> filteredResultsFinal = new ArrayList<String>();
-		int limit = findLimit(complexities);
-		for (CodeSnippet result : filteredResults) {
-			if (showCodeResults && result.complexity >= limit) {
-				resultCount++;
-				output = output + result.id + " " + result.title + "\n"
-						+ result.methodDef + "\n" + result.algoString + "\n"
-						+ result.complexity + "\n\n\n";
-				filteredResultsFinal.add(result.algoString);
+		return filteredResults;
+	}
+	
+	private static List<CodeSnippet> dropResultswithBadTitles(
+			List<CodeSnippet> results) {
+		List<CodeSnippet> filteredResults = new ArrayList<CodeSnippet>();
+		for (CodeSnippet result : results) {			
+			String title = result.title;
+			if (!title.toLowerCase().contains("c#")) {				
+				filteredResults.add(result);
 			}
 		}
-		output = output + Arrays.toString(complexities);
-		System.out.println("Found " + resultCount
-				+ " after complexity filtering.");
+		return filteredResults;
+	}
 
-		List<String> stops = FileUtil.readFromFileAsList(stopFilePath);
-
+	private static Map<String, Integer> getLatentTopics(List<CodeSnippet> filteredResults) {
+		String output = "";
+		for (CodeSnippet result : filteredResults) {			
+				output = output + result.id + " " + result.title + "\n"
+						+ result.methodDef + "\n" + result.algoString + "\n"
+						+ result.complexity + "\n\n\n";			
+			
+		}
+		
 		String outputLowerCase = output.toLowerCase();
-
 		outputLowerCase = outputLowerCase.trim().replaceAll(" +", " ");
 		outputLowerCase = outputLowerCase.replaceAll("\n", " ");
+		List<String> stops = FileUtil.readFromFileAsList(stopFilePath);
 		for (String stop : stops) {
 			outputLowerCase = outputLowerCase.replaceAll("\\b" + stop + "\\b",
 					"");
 		}
-
 		List<String> trigrams = Ngram.ngrams(3, outputLowerCase);
 		List<String> bigrams = Ngram.ngrams(2, topic);
 		Map<String, Integer> trigramsMap = new HashMap<String, Integer>();
@@ -178,60 +273,7 @@ public class Search {
 				}
 			}
 		}
-
-		for (String key : trigramsMap.keySet()) {
-			System.out.println(key + trigramsMap.get(key));
-		}
-
-		/*
-		 * i=0; resultCount = 0; String trigram =
-		 * "binary search tree".toLowerCase(); output = ""; for(CodeSnippet
-		 * result: filteredResults) { String code =
-		 * result.methodDef.toLowerCase(); String title =
-		 * result.title.toLowerCase();
-		 * 
-		 * if (title.contains(trigram) || title.contains(trigram.replaceAll(" ",
-		 * ""))) { continue; }
-		 * 
-		 * if (code.contains(trigram) || code.contains(trigram.replaceAll(" ",
-		 * ""))) { continue; }
-		 * 
-		 * complexities[i++] = result.complexity; if (showCodeResults &&
-		 * result.complexity <= 150) { resultCount++; output = output +
-		 * result.id + " " + result.title + "\n" + result.methodDef + "\n" +
-		 * result.algoString + "\n" + result.complexity + "\n\n\n"; } } output =
-		 * output + Arrays.toString(complexities); System.out.println("Found " +
-		 * resultCount + " after ngram filtering.");
-		 */
-
-		try {
-			FileUtil.saveFile(new File("C:\\temp\\"), "rankerResult.txt",
-					output, "");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		/*
-		 * for(CodeSnippet result: results) { List<CodeSnippet> testDataResults
-		 * = SearchUtil.searchIndex(result.algoString, "algo", 1, projectData,
-		 * maxResults, showCodeResults,operatorsFile); for(CodeSnippet
-		 * testDataResult: testDataResults) { if (showCodeResults) {
-		 * System.out.println(result.id + " " + result.title + "\n" +
-		 * result.methodDef + "\n\n\n"); //System.out.println(result.id + " " +
-		 * result.title + testDataResult.methodName + "**" +
-		 * testDataResult.methodDef); } total++; if
-		 * (testDataResult.methodName.equalsIgnoreCase
-		 * (queryString.replaceAll(" ", ""))) {
-		 * 
-		 * right++; } } } if (total > 0) { int rightResultCount =
-		 * getRightResultCount(queryString, projectData, maxResults,
-		 * operatorsFile); if (rightResultCount > 0) { float recall = right *
-		 * 1.0f/rightResultCount; System.out.println(queryString);
-		 * System.out.println("Precision =" + right*1.0f/total);
-		 * System.out.println("Recall = " + recall); System.out.println(""); } }
-		 */
-		return filteredResultsFinal;
+		return trigramsMap;
 	}
 
 	private static int findLimit(int[] complexities) {

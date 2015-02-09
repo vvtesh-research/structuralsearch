@@ -1,5 +1,6 @@
 package in.ac.iiitd.pag.structuralsearch;
 
+import in.ac.iiitd.pag.util.Canonicalizer;
 import in.ac.iiitd.pag.util.StringUtil;
 
 import java.util.ArrayList;
@@ -16,12 +17,12 @@ public class Ranker {
 		Map<String, List<CodeSnippet>> map1 = new HashMap<String, List<CodeSnippet>>();
 		
 		Set<Integer> removals = new HashSet<Integer>();
-		Canonicalizer.init();
+		//Canonicalizer.init();
 		
 		for(int i=1; i<results.size(); i++) {
 			String algo1 = results.get(i).algoString;			
-			results.get(i).algoString = Canonicalizer.canonicalize(algo1);
-			System.out.println(results.get(i).id + " " + results.get(i).algoString);
+			//results.get(i).algoString = Canonicalizer.canonicalize(algo1);
+			//System.out.println(results.get(i).id + " " + results.get(i).algoString);
 		}
 		
 		//find duplicates
@@ -38,14 +39,14 @@ public class Ranker {
 				float duplicacyScore = DuplicateRemoval.score(algo1arr, algo2arr);
 				if (duplicacyScore >= 0.6f) {
 					isDuplicate = true;
-					System.out.println("Duplicate Found.");
+					//System.out.println("Duplicate Found.");
 				}
 								
 				if (isDuplicate) {
 					removals.add(i);
-					System.out.println(results.get(i).methodDef);
+					/*System.out.println(results.get(i).methodDef);
 					System.out.println("was similar to");
-					System.out.println(results.get(j).methodDef);
+					System.out.println(results.get(j).methodDef);*/
 					break;
 				}
 			}
@@ -61,7 +62,7 @@ public class Ranker {
 		results.clear();
 		results.addAll(resultsTemp);
 		
-		System.out.println("Found " + results.size() + " after duplicate removal..");
+		//System.out.println("Found " + results.size() + " after duplicate removal..");
 		
 		return results;
 		
