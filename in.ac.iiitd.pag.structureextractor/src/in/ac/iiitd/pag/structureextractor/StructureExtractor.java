@@ -10,23 +10,22 @@ import java.util.Properties;
 
 public class StructureExtractor {
 	
-	static String operatorsFile = "";
-	
+		
 	public static String extract(String method) {
 		String structure = "";
 		
-		Properties props = FileUtil.loadProps();
-		if (props == null)
-			System.out.println("ERROR: Cannot search. Cannot read properties.");
-		operatorsFile = props.getProperty("OPERATORS_FILE");
 		
-		Canonicalizer.init(props);
-		List<String> algoElements = StructureUtil.getAlgo(method, operatorsFile);
+		List<String> algoElements = StructureUtil.getAlgo(method);
 		List<String> flattenedAlgo = StructureUtil.flattenAlgo(algoElements);
 		structure = StringUtil.getAsCSV(flattenedAlgo);
 		structure = structure.replaceAll(",", " ");
 		structure = Canonicalizer.canonicalize(structure);
 		
 		return structure;
+	}
+
+	public static void init(Properties props) {
+		Canonicalizer.init(props);		
+		
 	}
 }
