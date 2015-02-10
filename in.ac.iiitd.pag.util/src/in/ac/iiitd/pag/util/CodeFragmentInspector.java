@@ -250,5 +250,59 @@ public class CodeFragmentInspector {
 		return tokensFound;
 	}
 	
+	public static List<String> tokenizeAsList(String code) throws IOException {
+		List<String> tokensFound = new ArrayList<String>();
+		
+		StreamTokenizer st = new StreamTokenizer(new StringReader(code));
+		
+		st.parseNumbers();
+		st.wordChars('_', '_');
+		st.eolIsSignificant(true);
+		st.ordinaryChars(0, ' ');
+		st.slashSlashComments(true);
+		st.slashStarComments(true);
+
+		int token = st.nextToken();
+		while (token != StreamTokenizer.TT_EOF) {
+			String tokenFound = "";			
+			switch (token) {
+			case StreamTokenizer.TT_NUMBER:
+				tokenFound = st.nval + "";
+				break;
+			case StreamTokenizer.TT_WORD:
+				tokenFound = st.sval;
+				break;
+			case '"':
+				//tokenFound = st.sval;
+				break;
+			case '\'':
+				//tokenFound = st.sval;
+				break;
+			case StreamTokenizer.TT_EOL:
+				break;
+			case StreamTokenizer.TT_EOF:
+				break;
+			default:
+				char character = (char) st.ttype;
+				tokenFound = character + "";
+				break;
+			}
+			if (tokenFound!= null)  {
+				tokenFound = tokenFound.replaceAll(",", " ");
+				tokenFound = tokenFound.replaceAll("\n", " ");		
+				tokenFound = tokenFound.replaceAll("\'", " ");
+				tokenFound = tokenFound.replaceAll("\"", " ");
+				tokenFound = tokenFound.trim();
+				if (tokenFound.trim().length() > 0) {
+					tokensFound.add(tokenFound);
+				}
+			}
+			token = st.nextToken();
+		}
+
+		
+		return tokensFound;
+	}
+	
 	
 }
