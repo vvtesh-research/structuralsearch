@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -25,6 +26,7 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field.Store;
@@ -48,11 +50,16 @@ public class IndexBuilder {
 	static String operatorsFile = "";
 	
 	public static void main(String[] args) {
-		
+		long startTime = (new Date()).getTime();
 		indexDoc();
+		long finishTime = (new Date()).getTime();
+		System.out.println("Took " + (finishTime - startTime)/60000 + " minutes.");
 	}
 
 	private static void indexDoc() {
+		
+		
+		
 		Properties props = FileUtil.loadProps();
 		if (props == null) return;
 		StructureExtractor.init(props);
@@ -60,15 +67,15 @@ public class IndexBuilder {
 		idTitle = SOUtil.loadIdTitleMapNoIsJava(idTitlePath);
 		
 		String filePath = props.getProperty("FILE_PATH");
-		luceneIndexFilePath = props.getProperty("INDEX_FILE_PATH");
+		luceneIndexFilePath = props.getProperty("INDEX_FILE_PATH156");
 		operatorsFile = props.getProperty("OPERATORS_FILE");
 		
 		try {
 			
-			Analyzer analyzer = new StandardAnalyzer(Version.LATEST);
+			Analyzer analyzer = new WhitespaceAnalyzer(Version.LUCENE_48);
 			Directory fsDir = FSDirectory.open(new File(luceneIndexFilePath));
 			IndexWriterConfig iwConf 
-		        = new IndexWriterConfig(Version.LATEST,analyzer);
+		        = new IndexWriterConfig(Version.LUCENE_48,analyzer);
 		    iwConf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
 		    indexWriter
 		        = new IndexWriter(fsDir,iwConf);	        
@@ -164,12 +171,13 @@ public class IndexBuilder {
 	    //System.out.println(methodDef);
 	    String methodName = StructureUtil.getMethodName(methodDef);	
 	    body = Jsoup.parse(body).text();
+	    body = body.toLowerCase();
 	    /*List<String> algoElements = StructureUtil.getAlgo(methodDef, operatorsFile);
 		List<String> flattenedAlgo = StructureUtil.flattenAlgo(algoElements);
 		String algo = StringUtil.getAsCSV(flattenedAlgo);
 		algo = algo.replaceAll(",", " ");*/
 	    
-	    String algo = StructureExtractor.extract(methodDef);
+	    String algo = StructureExtractor.extract(methodDef).toLowerCase();
 		if (methodName == null) {
 			return;
 			//methodName = "";
@@ -179,7 +187,7 @@ public class IndexBuilder {
 	    if (methodCount == 1) {		        
 			Document d = new Document();
 			d.add(new IntField("id", id, Store.YES));
-	        d.add(new TextField("title", title,
+	        d.add(new TextField("title", title.toLowerCase(),
 	                        Store.YES));
 	        d.add(new StringField("methodname", methodName,
 					Store.YES));
@@ -187,7 +195,7 @@ public class IndexBuilder {
 	                Store.YES));
 	        d.add(new StringField("code", methodDef,
                     Store.YES));
-	        d.add(new TextField("body", title + " " + body, Store.YES));
+	        d.add(new TextField("body", title.toLowerCase() + " " + body, Store.YES));
 	        indexWriter.addDocument(d);
 	        
 	    }

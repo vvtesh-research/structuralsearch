@@ -1,6 +1,7 @@
 package in.ac.iiitd.pag.structuralsearch;
 
 import in.ac.iiitd.pag.entity.SONavigator;
+import in.ac.iiitd.pag.oracle.Oracle;
 import in.ac.iiitd.pag.util.ASTUtil;
 import in.ac.iiitd.pag.util.CodeFragmentInspector;
 import in.ac.iiitd.pag.util.FileUtil;
@@ -16,6 +17,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.IndexReader;
@@ -88,8 +90,10 @@ public class SearchUtil {
 		
 		try {
 			
+		    Oracle.loadHeterogeneityBuckets();
+			
 			Version v = Version.LUCENE_48;
-			Analyzer analyzer = new StandardAnalyzer(v);
+			Analyzer analyzer = new WhitespaceAnalyzer(v);
 			Directory fsDir = FSDirectory.open(new File(luceneIndexFilePath));
 
 			IndexReader reader = IndexReader.open(fsDir);
@@ -107,13 +111,13 @@ public class SearchUtil {
 	        	finalQuery = getSpanNearQuery(queryString, searchIn);
 	        } 
 	        
-	        TopDocs hits = searcher.search(finalQuery,500);
+	        TopDocs hits = searcher.search(finalQuery,maxResults);
 	        //System.out.println(hits.totalHits + " documents found.");
 	        ScoreDoc[] scoreDocs = hits.scoreDocs;
 	        
 	        int minVal = maxResults;
 	        if (scoreDocs.length < maxResults) minVal = scoreDocs.length;
-	        
+	       
 	        for (int n = 0; n < minVal; ++n) {
 	            ScoreDoc sd = scoreDocs[n];
 	            float score = sd.score;
@@ -127,6 +131,11 @@ public class SearchUtil {
 	            cs.methodDef = code;
 	            cs.algoString = algo;
 	            cs.methodName = d.get("methodname");
+	            cs.topic = queryString;
+	            cs.body = d.get("body");
+	            String bucket = Oracle.getHeterogeneityBucket(cs.topic, cs.id);
+	            if (bucket == null) bucket = "";
+	            cs.heterogeneityBucket = bucket;
 	            results.add(cs);	            
 	        }
 	        
@@ -164,5 +173,68 @@ public class SearchUtil {
         }
         
         return q;
+	}
+
+	private static Query getBooleanANDQuery(int queryString, String searchIn) {
+		BooleanQuery q = new BooleanQuery();
+		q.add(new TermQuery(new Term(searchIn, queryString+"")), BooleanClause.Occur.MUST);
+        return q;
+	}
+	
+	public static List<CodeSnippet> searchIndex(int id, String searchIn,
+			int outputType, String indexFilePath, int maxResults,
+			boolean showCode, String operatorsFile) {
+		
+		List<CodeSnippet> results = new ArrayList<CodeSnippet>();
+		
+		luceneIndexFilePath = indexFilePath;
+		
+		
+		try {
+			
+			Version v = Version.LUCENE_48;
+			Analyzer analyzer = new StandardAnalyzer(v);
+			Directory fsDir = FSDirectory.open(new File(luceneIndexFilePath));
+
+			IndexReader reader = IndexReader.open(fsDir);
+			//System.out.println("The index " + luceneIndexFilePath + " has " + reader.maxDoc() + " documents.");
+	        IndexSearcher searcher = new IndexSearcher(reader);
+	        
+	        QueryParser parser 
+	            = new QueryParser(searchIn,analyzer);
+
+	        Query finalQuery = null;
+	        
+	        
+	        finalQuery = getBooleanANDQuery(id, searchIn);
+	        
+	        
+	        TopDocs hits = searcher.search(finalQuery,5);
+	        //System.out.println(hits.totalHits + " documents found.");
+	        ScoreDoc[] scoreDocs = hits.scoreDocs;
+	        
+	        int minVal = maxResults;
+	        if (scoreDocs.length < maxResults) minVal = scoreDocs.length;
+	        
+	        for (int n = 0; n < minVal; ++n) {
+	            ScoreDoc sd = scoreDocs[n];
+	            float score = sd.score;
+	            int docId = sd.doc;
+	            Document d = searcher.doc(docId);	            
+	            String code = d.get("code");
+	            String algo = d.get("algo");
+	            CodeSnippet cs = new CodeSnippet();	 
+	            cs.id = d.get("id");
+	            cs.title = d.get("title");
+	            cs.methodDef = code;
+	            cs.algoString = algo;
+	            cs.methodName = d.get("methodname");
+	            results.add(cs);	            
+	        }
+	        
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return results;
 	}
 }

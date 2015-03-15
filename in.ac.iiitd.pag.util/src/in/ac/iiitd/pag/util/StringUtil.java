@@ -24,6 +24,11 @@ public class StringUtil {
 		return output;
 	}
 	
+	public static int countLines(String str){
+		   String[] lines = str.split("\r\n|\r|\n");
+		   return  lines.length;
+	}
+	
 	public static String getAsCSV(Set<String> tokens) {
 		String result = "";
 		for(String token: tokens) {
@@ -44,6 +49,14 @@ public class StringUtil {
 		}
 		if (result.length()  > 0) result = result.substring(0, result.length() -1);
 		return result;
+	}
+	
+	public static String getAsString(String[] tokens) {
+		String output = "";
+		for (String token: tokens) {
+			output = output +  token + " "; 
+		}
+		return output;
 	}
 	
 	public static Set<String> getTokens(String data) {

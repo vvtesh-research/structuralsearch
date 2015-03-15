@@ -13,7 +13,7 @@ import java.util.Set;
 public class Oracle {
 	
 	static Map<String,Map<Integer,Integer>> judgments = new HashMap<String,Map<Integer,Integer>>();
-	
+	static Map<String, String> heterogeneityBuckets = new HashMap<String, String>();
 	
 	public static void main(String[] args) {
 		loadJudgments();
@@ -24,6 +24,37 @@ public class Oracle {
 		//System.out.println(getAllKnownPostIds().size());
 	}
 
+	public static String getHeterogeneityBucket(String topic, String id) {
+		return heterogeneityBuckets.get(topic + "-" + id);
+	}
+	
+	public static int getNoOfVariants(String topic) {
+		int count = 0;
+		HashSet<String> buckets = new HashSet<String>();
+		for(String key: heterogeneityBuckets.keySet()) {
+			if (key.startsWith(topic)) {
+				String variant = heterogeneityBuckets.get(key);
+				buckets.add(variant);
+			}
+		}
+		return buckets.size();
+	}
+	
+	public static void loadHeterogeneityBuckets() {
+		//already loaded.
+		if ((heterogeneityBuckets != null) && (heterogeneityBuckets.size() > 0)) return;
+		List<String> ids = FileUtil.readFromFileAsList("C:\\temp\\idslist.csv");
+		for(String row: ids) {
+			
+			String[] items = row.split(",");
+			String topic = items[0];
+			String id = items[1];			
+			String hetergeneityBucket = items[2];
+			
+			heterogeneityBuckets.put(topic + "-" + id, hetergeneityBucket);
+		}
+	}
+	
 	public static Set<Integer> getAllKnownPostIds() {
 		Set<Integer> knownIds = new HashSet<Integer>();
 		Properties props = FileUtil.loadProps();

@@ -107,6 +107,15 @@ public class FileUtil {
 		}		
 		bw.close();
 	}
+	
+	public static void writeListToFile(Set<String> terms, String filePath) throws IOException {
+		FileWriter fw = new FileWriter(filePath);
+		BufferedWriter bw = new BufferedWriter(fw);
+		for(String term: terms) {	
+			bw.write(term + "\n");
+		}		
+		bw.close();
+	}
 
 	public static void writeIntListToFile(List<Integer> terms, String filePath) throws IOException {
 		FileWriter fw = new FileWriter(filePath);

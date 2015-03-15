@@ -5,8 +5,11 @@ import java.util.ArrayList;
 public class DuplicateRemoval {
 
 	public static void main(String[] args) {
-		String a = "a b c d e";
-		String b = "g b d f";
+		/*String a = "a b c d e";
+		String b = "g b d f";*/
+		
+		String a = "branch<= branch- branchrecursion branch*";
+		String b = "branch== branch- branchrecursion branch*";
 		
 		System.out.println(score(a.split(" "), b.split(" ")));
 	}

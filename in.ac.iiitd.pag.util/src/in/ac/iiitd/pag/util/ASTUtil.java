@@ -5,10 +5,13 @@ import in.ac.iiitd.pag.entity.StructuralElement;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
+import org.eclipse.core.internal.localstore.Bucket.Visitor;
 import org.eclipse.jdt.core.ICompilationUnit;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTNode;
@@ -22,6 +25,7 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.core.dom.DoStatement;
 import org.eclipse.jdt.core.dom.Expression;
 import org.eclipse.jdt.core.dom.ExpressionStatement;
+import org.eclipse.jdt.core.dom.FieldDeclaration;
 import org.eclipse.jdt.core.dom.ForStatement;
 import org.eclipse.jdt.core.dom.IfStatement;
 import org.eclipse.jdt.core.dom.InfixExpression;
@@ -38,6 +42,7 @@ import org.eclipse.jdt.core.dom.ThisExpression;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.TypeDeclarationStatement;
 import org.eclipse.jdt.core.dom.VariableDeclarationExpression;
+import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 import org.eclipse.jdt.core.dom.WhileStatement;
 import org.eclipse.jdt.internal.compiler.ast.CaseStatement;
@@ -56,6 +61,17 @@ public class ASTUtil {
 	private static List<String> keyExpressions = new ArrayList<String>();
 	private static List<String> keyStructures = new ArrayList<String>();
 	private static List<String> variablesInExpression = new ArrayList<String>();
+	private static List<String> stops = null;
+	
+	static {
+		stops = FileUtil.readFromFileAsList("c:\\temp\\javastops.txt");
+	}
+	
+	public static void main(String[] args) {
+		String method = FileUtil.readFromFile("c:\\temp\\method3.txt");
+		String[] vocab = getVariableNames(method);
+		System.out.println(StringUtil.getAsString(vocab));
+	}
 	
 	public static List<String> getNames() {
 		return names;
@@ -81,6 +97,14 @@ public class ASTUtil {
 		ASTUtil.keyStructures = keyStructures;
 	}
 
+	public static Set<String> getDistinctVariableNames(String codeFragment) {
+		String[] variables = getVariableNames(codeFragment);
+		Set<String> distinctItems = new HashSet<String>();
+		for(String var: variables) {
+			distinctItems.add(var.toLowerCase());
+		}
+		return distinctItems;
+	}
 	/**
 	 * Collect variable names.
 	 * 
@@ -93,11 +117,15 @@ public class ASTUtil {
 
 		names.clear();
 		node.accept(new ASTVisitor() {
-
+			
+						
 			public boolean visit(SimpleName node) {
-				String name = node.getFullyQualifiedName();
+								
+				String name = node.getFullyQualifiedName().toLowerCase();
+				if (stops.contains(name.toLowerCase())) return true;
+				
 				if (!names.contains(name) && name.length() > 1)
-					names.add(node.getFullyQualifiedName());
+					names.add(node.getFullyQualifiedName().toLowerCase());
 				return true;
 			}
 
@@ -155,6 +183,7 @@ public class ASTUtil {
 
 	}
 	
+		
 	public static List<String> getVariables(String expression) {
 
 		ASTParser parser = ASTParser.newParser(AST.JLS3);
@@ -169,7 +198,7 @@ public class ASTUtil {
 		node.accept(new ASTVisitor() {
 			@Override
 			public boolean visit(SimpleName node) {
-				
+				System.out.println(node.getFullyQualifiedName() + " " +  node.getNodeType());
 				variablesInExpression.add(node.getFullyQualifiedName());
 				return super.visit(node);
 			}

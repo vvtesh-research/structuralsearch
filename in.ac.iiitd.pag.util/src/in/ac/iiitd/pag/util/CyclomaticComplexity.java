@@ -2,9 +2,6 @@ package in.ac.iiitd.pag.util;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Set;
-
-import org.gmetrics.metric.cyclomatic.CyclomaticComplexityMetric;
 
 public class CyclomaticComplexity {
 	public static void main(String[] args) {

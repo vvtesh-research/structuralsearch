@@ -7,4 +7,7 @@ public class CodeSnippet {
 	public String methodDef = "";
 	public String algoString = "";
 	public int complexity = 0;
+	public String topic = "";
+	public String heterogeneityBucket = "";
+	public String body = "";
 }
