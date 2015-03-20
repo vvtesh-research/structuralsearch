@@ -1,0 +1,7 @@
+is
+find
+calc
+has
+find
+get
+set

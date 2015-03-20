@@ -1,0 +1,156 @@
+3-sum problem
+draw albers squares
+generating combinations 
+generating permutations 
+find average
+smallest number 
+find the biggest value
+benford's law
+bernoulli trials
+binary search
+binomial coefficients
+birthday problem
+bisection search
+black-scholes option valuation
+cartesian to polar coordinates
+generating a random sequence
+check  whether the file exists 
+circular counter
+coin change
+compare objects 
+compare strings
+complex number data type
+compute day of week from date
+compute hadamard matrix
+compute inverse permutation
+compute wind chill factor
+compute powers of two
+compute the transition matrix
+string concatenation 
+concatenating files
+convergent sum
+convert decimal to binary
+convert integer to string 
+convert binary number to string 
+converting color to grayscale
+convert integer to binary
+convert  big int to  binary
+establish db connection
+dedup filter
+deep copy 
+dictionary lookup
+digital signal processing
+doubling test for insertion sort
+download csv
+drawing a line
+drawing  spirograph
+eigenfaces
+euclid's algorithm
+expression evaluation
+fade effect
+fahrenheit to celsius
+print  the fibonacci series 
+gaussian functions
+generating a random sequence
+harmonic numbers
+evaluate a polynomial
+image scaling
+insertion sort
+scan the keyboard input 
+knapsack
+find whether the given year is a leap year
+linear regression
+log out from the site
+longest common subsequence
+longest consecutive run
+longest increasing subsequence
+longest repeated substring
+mandelbrot set
+calculate stddev 
+merge sort 
+mixing a markov chain
+monte hall problem
+multiply matrices
+newton's method
+palindrome
+parse json
+pertersons locking
+primality test
+read csv
+read file
+recursively  search
+recursive squares partitioning
+reverse digits
+reverse  the string
+sending email to multiple recepients
+shortest-paths implementation
+shuffle an array 
+sieve of eratosthenes
+similarity detection
+sort integers
+sort numbers
+sorting array
+splitting a file
+square root 
+stack of string 
+substrings of a string
+sum of integers in a file
+towers of hanoi
+transpose of a given  matrix
+upload files
+read the url content
+print the word count
+long number of trailing zeros
+binary division
+z order curves
+caching algorithm
+counting inversions in an array
+hashing algorithm
+buffon's needle
+computation of the fermat-weber location problem
+greedy algorithm
+secret sharing algorithm
+strongly connected subgraph
+radix sort 
+depth first search algorithm
+bst delete node
+rsa
+check if sudoku solution is valid
+delete element in a linked list
+heapsort
+stack
+queue
+linked list
+doubly linked list
+integer multiplication and division
+length of the longest substring 
+max contiguous subarray
+using string templates
+convert inches to meters
+prime test
+bubble sort
+sort array
+minimum value in an array
+maximum value in an array
+reverse string
+sum of numbers
+average 
+factorial
+smallest positive factor
+find factor
+converts gallons to liters
+conversion table
+pythagorean theorem
+conversion from long to double
+read a character from the keyboard
+use xor to encode and decode a message
+binary representation of a value
+quicksort
+copy file
+solutions to a quadratic equation
+even number test
+convert array to list
+day of the week
+throw dice
+hypotenuse
+distance between two points
