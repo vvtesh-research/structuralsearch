@@ -14,7 +14,7 @@ public class TFNormalizer {
 	public static void main(String[] args) {
 		try {
 			Map<String, Float> collection = getMapFromFile("allCodeTF.csv");
-			Map<String, Float> removeWord = getMapFromFile("code-removeTF.csv");
+			Map<String, Float> removeWord = getMapFromFile("temp2.txt");
 			
 			Map<String, Float> weights = normalizeWeights(collection, removeWord);
 			writeMap(weights, "normalizedTF.csv");
@@ -34,7 +34,7 @@ public class TFNormalizer {
 		Map<String, Float> javaWords = new HashMap<String, Float>();
 		for(String word: removeWord.keySet()) {
 			if (collection.containsKey(word)) {				
-				if (collection.get(word) < 150) continue;
+				if (collection.get(word) < 250) continue;
 				float prob = removeWord.get(word) * (maxCTF / collection.get(word));
 				//System.out.println(word + "," + prob);
 				//javaWords.put(word + "(" + collection.get(word) + " : " + removeWord.get(word) + ")", prob);

@@ -47,6 +47,7 @@ public class CommonCodeExtractor {
 		String line = null;			
 		int lineCount = 0;
 		System.out.println("Reading file...");
+		Set<String> tempSet = new HashSet<String>();
 		while ((line = reader.readLine()) != null) {
 			lineCount++;
 			if (lineCount % 2000 == 0) System.out.print(".");
@@ -77,7 +78,7 @@ public class CommonCodeExtractor {
 		                	   Set<String> codeSet = SOUtil.getCodeSet(body);
 		                	   for(String codeFound: codeSet) {
 		                		   String[] lines = codeFound.split("\r\n|\r|\n");
-		                		   
+		                		   tempSet.clear();
 		                		   for(String lineItem: lines) {
 		                			   
 		                			   lineItem = lineItem.toLowerCase();
@@ -92,9 +93,19 @@ public class CommonCodeExtractor {
 		                			   if (lineItem.startsWith("protected")) continue;
 		                			   if (lineItem.startsWith("class")) continue;
 		                			   
-		                			   lineItem = StringUtil.getAsStringFromList(CodeFragmentInspector.tokenizeAsList(lineItem));
-		                			   code.add(lineItem);		                			   
+		                			   List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
+		                			   
+		                			   for(String token: tokens) {
+		                				   if (token.matches("[a-zA-Z0-9]")) continue;
+		                				   tempSet.add(token);		                				   
+		                			   }	                			   
 		                		   }
+		                		   String newLineItem = "";
+	                			   for(String token: tempSet) {
+	                				   newLineItem = newLineItem + token + " ";
+	                			   }
+	                			   
+	                			   code.add(newLineItem.trim());
 		                	   }
 		                	   
 		            	   }

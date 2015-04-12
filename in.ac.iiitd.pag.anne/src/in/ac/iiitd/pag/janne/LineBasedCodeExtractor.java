@@ -50,7 +50,7 @@ public class LineBasedCodeExtractor {
 		return code;
 	}
 
-	private static List<String> getAllCode(Set<Integer> ids, String filePath) throws IOException, FactoryConfigurationError {
+	public static List<String> getAllCode(Set<Integer> ids, String filePath) throws IOException, FactoryConfigurationError {
 		List<String> code = new ArrayList<String>();
 		BufferedReader reader = new BufferedReader(new FileReader(filePath), 4 * 1024 * 1024);
 		String line = null;			
@@ -126,7 +126,7 @@ public class LineBasedCodeExtractor {
 		return code;
 	}
 
-	private static Set<Integer> extract(String fileName, String word) throws IOException {
+	public static Set<Integer> extract(String fileName, String word) throws IOException {
 		Set<Integer> ids = new HashSet<Integer>();
 		BufferedReader reader = new BufferedReader(new FileReader(fileName), 4 * 1024 * 1024);
 		String line = null;			

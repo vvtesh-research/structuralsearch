@@ -12,5 +12,9 @@ public class TrySnowball {
 		{
 		        System.out.println(stemmer.getCurrent());
 		}
+		
+		if ("a".matches("[a-zA-Z0-9]")) {
+			System.out.println("yes");
+		}
 	}
 }

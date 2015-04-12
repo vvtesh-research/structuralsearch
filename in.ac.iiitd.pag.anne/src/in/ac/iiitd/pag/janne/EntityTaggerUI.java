@@ -1,22 +1,31 @@
 package in.ac.iiitd.pag.janne;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import in.ac.iiitd.pag.util.CodeFragmentInspector;
+import in.ac.iiitd.pag.util.ConfigUtil;
 import in.ac.iiitd.pag.util.FileUtil;
 import in.ac.iiitd.pag.util.StringUtil;
 
 public class EntityTaggerUI {
 	public static void main(String[] args) {
 		String code = FileUtil.readFromFile("snippet.java");
-		String entityName = "remove";
-		Map<String, Float> weights = FileUtil.getFloatMapFromFile("weights-" + entityName + ".csv");		
+		System.out.println(code);
+		Map<String, Map<String, Float>> allWeights = new HashMap<String, Map<String, Float>>();
+		List<String> entityNames = FileUtil.readFromFileAsList(ConfigUtil.getInputStream("knownEntities.txt"));
+		for(String entityName: entityNames) {
+			Map<String, Float> weights = FileUtil.getFloatMapFromFile("weights-" + entityName + ".csv");
+			allWeights.put(entityName, weights);
+		}		
+		
 		String taggedCode = "";
 		try {
-			taggedCode = tag(code, weights, entityName);
+			taggedCode = tag(code, allWeights);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -24,13 +33,23 @@ public class EntityTaggerUI {
 		System.out.println(taggedCode);
 	}
 
-	public static String tag(String code, Map<String, Float> weights, String entityName) throws IOException {
+	private static int getCutOff(Map<String, Float> weights) {
+		float maxWt = 0;
+		float minWt = 0;
+		for(String entity: weights.keySet()) {
+			if (weights.get(entity) > maxWt) maxWt = weights.get(entity);
+			if (weights.get(entity) < minWt) minWt = weights.get(entity);
+		}		
+		return (int) ((maxWt - minWt)/2 * 0.5);
+	}
+
+	public static String tag(String code,Map<String, Map<String, Float>>  allWeights) throws IOException {
 		String taggedCode = "";
 		String[] lines = code.split("\r\n|\r|\n");
-		Map<String,Integer> weightedCode = new HashMap<String, Integer>();
+		Map<String,List<String>> tagAssociations = new HashMap<String, List<String>>();
 		float maxLineWeight = 0;
 		for(String lineItem: lines) {
-			   
+			
 			   lineItem = lineItem.toLowerCase();
 			   lineItem = lineItem.trim();
 			   lineItem = StringUtil.cleanCode(lineItem);
@@ -40,42 +59,61 @@ public class EntityTaggerUI {
 				   continue;
 			   }
 			   
-			  			   
-			   List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
-			   
-			   String newLine = "";
-			   float lineWeight = 0;
-			   for(String token: tokens) {
-				   if (token.contains(".")) {
-					   String[] subTokens = token.split("\\.");
-					   for(String subToken: subTokens) {
-						   newLine = newLine + subToken + " ";
-						   if (weights.containsKey(subToken)) {
-							   newLine = newLine  + " "; //+ "(" + weights.get(subToken) + ")"
-							   lineWeight = lineWeight + weights.get(subToken);							   
+			   for(String entityName: allWeights.keySet()) {
+				   Map<String, Float> weights = allWeights.get(entityName);		
+				   int cutoffWeight = getCutOff(weights);
+				   List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
+				   
+				   String newLine = "";
+				   float lineWeight = 0;
+				   int docLen = 0;
+				   for(String token: tokens) {
+					   if (token.contains(".")) {
+						   String[] subTokens = token.split("\\.");
+						   for(String subToken: subTokens) {
+							   newLine = newLine + subToken + " ";
+							   if (weights.containsKey(subToken)) {
+								   docLen++;
+								   newLine = newLine   + " "; //+  +  "(" + weights.get(subToken) + ")"
+								   lineWeight = lineWeight + weights.get(subToken);							   
+							   }
+						   }
+					   } else {
+						   newLine = newLine + token + " ";
+						   if (weights.containsKey(token)) {
+							   newLine = newLine  + " "; //+ "(" + weights.get(token) + ")"
+							   lineWeight = lineWeight + weights.get(token);
+							   docLen++;
 						   }
 					   }
-				   } else {
-					   newLine = newLine + token + " ";
-					   if (weights.containsKey(token)) {
-						   newLine = newLine + " "; //"(" + weights.get(token) + ")"
-						   lineWeight = lineWeight + weights.get(token);
-						   
+				   }		       
+				   if (lineWeight/docLen > cutoffWeight) {					   
+					   List<String> entityNamesAssociated = null;
+					   if (tagAssociations.containsKey(newLine)) {
+						   entityNamesAssociated = tagAssociations.get(newLine);
+					   } else {
+						   entityNamesAssociated = new ArrayList<String>();						   
 					   }
+					   entityNamesAssociated.add(entityName);
+					   tagAssociations.put(newLine, entityNamesAssociated);
 				   }
-			   }		       
-			   if (maxLineWeight < lineWeight) maxLineWeight = lineWeight;
-			   weightedCode.put(newLine, (int) lineWeight );
+			   }
 		   }                	
 		
-		for (String codeLine: weightedCode.keySet()) {
-			int wt = weightedCode.get(codeLine);
-			if (wt == (int) maxLineWeight) {
-				taggedCode = codeLine +  " \t\\\\" + entityName + "\n"; //"(" + wt + ")" +	
-				break;
+		taggedCode = getCode(tagAssociations);
+		if (tagAssociations.keySet().size() == 0) taggedCode = "";
+		return taggedCode;
+	}
+
+	private static String getCode(Map<String, List<String>> tagAssociations) {
+		String taggedCode = "";
+		for (String codeLine: tagAssociations.keySet()) {			
+			String tags = "";
+			if (tagAssociations.get(codeLine) != null) {
+				tags = StringUtil.getAsCSV(tagAssociations.get(codeLine));
 			}
+			taggedCode = taggedCode + codeLine +  " \t\\\\" + tags + "\n"; //"(" + wt + ")" +	
 		}
-		
 		return taggedCode;
 	}
 

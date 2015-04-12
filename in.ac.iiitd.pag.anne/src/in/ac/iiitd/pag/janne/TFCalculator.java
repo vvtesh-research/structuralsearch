@@ -14,8 +14,8 @@ import java.util.Map;
 public class TFCalculator {
 	public static void main(String[] args) {
 		try {
-			Map<String, Integer> tf = construct("code-remove.txt");
-			FileUtil.writeMapToFile(tf, "code-removeTF.csv", 0);
+			Map<String, Integer> tf = construct("allcode.txt");
+			FileUtil.writeMapToFile(tf, "allcodeTF.csv", 150);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -35,12 +35,13 @@ public class TFCalculator {
 			String[] words = line.split(" ");
 			int docLen = words.length;
 			for(int i=0; i<docLen; i++) {
-				String word = words[i].replaceAll("\\r|\\n", "").toLowerCase();
+				String word = words[i].replaceAll("\\r|\\n", "").toLowerCase().trim();
 				word = word.replace(",", "");
 				//word = word.replaceAll("[^a-zA-Z0-9]", "");
-				if (word.trim().length() <= 1) {
+				if (word.length() == 0) {
 					continue;
 				}			
+				if (word.matches("[a-zA-Z0-9]")) continue;
 				int newCount = 0;
 				if (counts.containsKey(word)) {
 					newCount = counts.get(word);

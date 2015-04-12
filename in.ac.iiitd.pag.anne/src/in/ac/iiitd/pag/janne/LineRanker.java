@@ -32,7 +32,11 @@ public class LineRanker {
 			if (props == null) return;
 			
 			String filePath = props.getProperty("FILE_PATH");
-			/*Set<Integer> ids = extract(filePath, "remove");
+			/*
+			Set<String> skipEntities = new HashSet<String>();
+			skipEntities.add("arraylist");
+			skipEntities.add("list");
+			Set<Integer> ids = extract(filePath, "remove", skipEntities);
 			FileUtil.writeIntSetToFile(ids, "ids-remove.txt"); */		
 			Set<Integer> ids = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream("ids-remove.txt"));
 			Map<String,Float> weights = FileUtil.getFloatMapFromFile("normalizedTF.csv");
@@ -119,7 +123,7 @@ public class LineRanker {
 		return code;
 	}
 
-	public static Set<Integer> extract(String fileName, String word) throws IOException {
+	public static Set<Integer> extract(String fileName, String word, Set<String> skipEntities) throws IOException {
 		Set<Integer> ids = new HashSet<Integer>();
 		BufferedReader reader = new BufferedReader(new FileReader(fileName), 4 * 1024 * 1024);
 		String line = null;			
@@ -151,7 +155,17 @@ public class LineRanker {
 	                		   return null;
 	                	   } 
 	                	   if (!SOUtil.hasJavaTag(tags)) continue; 
-	                	   if (title.contains(word)) {
+	                	   boolean toAdd = false;
+	                	   if (title.contains(word)) {	
+	                		   toAdd = true;
+	                		   for(String stop: skipEntities) {
+	                			   if (title.contains(stop)) {
+	                				   toAdd = false;
+	                				   break;
+	                			   }
+	                		   }
+	                	   }
+	                	   if (toAdd) {
 	                		   ids.add(id);
 	                	   }
 		               }
