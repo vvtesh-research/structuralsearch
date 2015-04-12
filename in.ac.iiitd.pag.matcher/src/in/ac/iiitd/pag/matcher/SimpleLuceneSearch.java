@@ -37,8 +37,6 @@ import org.apache.lucene.util.Version;
  *
  */
 public class SimpleLuceneSearch {
-	static List<String> stops = null;
-	static List<String> prefixStops = null;
 	
 	public static void main(String[] args) {
 		Properties props = FileUtil.loadProps();
@@ -49,18 +47,24 @@ public class SimpleLuceneSearch {
 		
 		LuceneUtil.checkIndex(luceneIndexFilePath);
 		//LuceneUtil.printAll(luceneIndexFilePath, "algo");
+		List<String> stops = FileUtil.readFromFileAsList("c:\\temp\\javastops.txt");
 		
-		String field = "algo";
+		List<String> prefixStops = FileUtil.readFromFileAsList("c:\\temp\\prefixStops.txt");
+		
+		/*String field = "algo";
 		String queryString = "string trafficlightsimulator trafficlightsimulator loop< loop+ loopmethod loopmethod method";
+		*/
+		String field = "topic";
+		String queryString = "factorial";
 		int maxResults = 500;
 		System.out.println("Searching...");
 		String methodInput = FileUtil.readFromFile("c:\\temp\\method3.txt");
 		
 		System.out.println(methodInput);
-		search(queryString, field, luceneIndexFilePath, methodInput, maxResults);
+		search(queryString, field, luceneIndexFilePath, methodInput, maxResults, stops, prefixStops);
 	}
 
-	private static SearchResult processQueries(List<Query> finalQueries, IndexSearcher searcher, int maxResults, String methodInput, String queryString) {
+	private static SearchResult processQueries(List<Query> finalQueries, IndexSearcher searcher, int maxResults, String methodInput, String queryString, List<String> stops, List<String> prefixStops) {
 		
 					
 			List<Document> docs = new ArrayList<Document>();
@@ -101,7 +105,7 @@ public class SimpleLuceneSearch {
 			           }
 			           // System.out.println(title);
 			           // System.out.println(method); 
-			            VocabularyEntity scoreV = getVocabularyScore(methodInput, method);
+			            VocabularyEntity scoreV = getVocabularyScore(methodInput, method, stops, prefixStops);
 			            
 			            if (scoreV.score > 0) {
 			            	int complexity = ASTUtil.getStructuralComplexity(method);
@@ -125,7 +129,7 @@ public class SimpleLuceneSearch {
 	}
 	
 	public static SearchResult search(String queryString, String field,
-			String luceneIndexFilePath, String methodInput, int maxResults) {
+			String luceneIndexFilePath, String methodInput, int maxResults, List<String> stops, List<String> prefixStops) {
 		
 		//System.out.println("Searching in " + luceneIndexFilePath);
 		
@@ -141,8 +145,7 @@ public class SimpleLuceneSearch {
 		if (inputComplexity > 200) return searchResult;
 		try {
 			
-			stops = FileUtil.readFromFileAsList("c:\\temp\\javastops.txt");
-			prefixStops = FileUtil.readFromFileAsList("c:\\temp\\prefixStops.txt");
+			
 			Version v = Version.LUCENE_48;
 			Analyzer analyzer = new WhitespaceAnalyzer(v);
 			Directory fsDir = FSDirectory.open(new File(luceneIndexFilePath));
@@ -158,7 +161,7 @@ public class SimpleLuceneSearch {
 	        
 	        List<Query> finalQueries = LuceneUtil.getComplexQuery(queryString.toLowerCase(), field, true);
 	        
-	        SearchResult searchResult1 = processQueries(finalQueries, searcher, maxResults, methodInput, queryString); 
+	        SearchResult searchResult1 = processQueries(finalQueries, searcher, maxResults, methodInput, queryString, stops, prefixStops); 
 	        searchResult = searchResult1;
 	        
 	       /* if (searchResult.docs.size() == 0) {
@@ -185,7 +188,7 @@ public class SimpleLuceneSearch {
 		return searchResult;
 	}
 	
-	private static VocabularyEntity getVocabularyScore(String snippet1, String snippet2) {
+	private static VocabularyEntity getVocabularyScore(String snippet1, String snippet2, List<String> stops, List<String> prefixStops) {
 		VocabularyEntity vocab = new VocabularyEntity();
 		float score = 0;
 		int count = 0;
@@ -193,12 +196,12 @@ public class SimpleLuceneSearch {
 		String[] snippet1Variables = ASTUtil.getVariableNames(snippet1);
 		String[] snippet2Variables = ASTUtil.getVariableNames(snippet2);
 		for(String variable1: snippet1Variables) {			
-			String cleanedVar1 = cleanVariable(variable1);
+			String cleanedVar1 = cleanVariable(variable1, prefixStops);
 			if (stops.contains(cleanedVar1.toLowerCase())) continue;			
 			if (cleanedVar1.length() < 4) continue;	
 			for (String variable2: snippet2Variables) {				
 				
-				String cleanedVar2 = cleanVariable(variable2);
+				String cleanedVar2 = cleanVariable(variable2, prefixStops);
 				if (stops.contains(cleanedVar2.toLowerCase())) continue;			
 				if (cleanedVar2.length() < 4) continue;	
 				if (cleanedVar1.contains(cleanedVar2) || cleanedVar2.contains(cleanedVar1)) {
@@ -213,7 +216,7 @@ public class SimpleLuceneSearch {
 		return vocab;
 	}
 	
-	private static String cleanVariable(String variable1) {
+	private static String cleanVariable(String variable1, List<String> prefixStops) {
 		String result = variable1;
 		for(String prefix: prefixStops) {
 			if (variable1.startsWith(prefix)) {

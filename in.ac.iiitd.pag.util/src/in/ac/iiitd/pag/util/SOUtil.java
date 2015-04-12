@@ -54,6 +54,19 @@ public class SOUtil {
 		return idTitle;
 	}
 	
+	public static boolean hasJavaTag(String tags) {
+		 if (tags!=null) {                		   
+		   String[] tagArray = tags.toLowerCase().split(">");
+		   for(int i=0; i<tagArray.length; i++) {
+			   String temp = tagArray[i].replace("<", "");
+			   if (temp.trim().equalsIgnoreCase("java")) {
+				   return true;
+			   }
+		   }
+	     }
+		 return false;
+	}
+	
 	public static Map<Integer,SONavigator> loadIdTitleMapNoIsJava(String idTitleFilePath) {
 		System.out.println("Loading idTitles... ");
 		Map<Integer,SONavigator> idTitle = new HashMap<Integer,SONavigator>();
@@ -133,7 +146,7 @@ public class SOUtil {
 		   if ((start <=0)||(end <=0)) {
 			   break;
 		   }
-		   String snippet = body.substring(start,end);
+		   String snippet = body.substring(start+6,end);
 		   code = code + " \n" + snippet; 
 		   body = body.replace(snippet, "");
 		}

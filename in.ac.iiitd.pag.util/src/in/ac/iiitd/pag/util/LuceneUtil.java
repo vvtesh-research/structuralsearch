@@ -248,4 +248,37 @@ public class LuceneUtil {
 		
 		return query;
 	}
+	
+	public static List<MatchResult> getAllVariants(String indexPath, String topicInput) {
+		Map<String, Integer> methodNames = new HashMap<String, Integer>();
+		List<MatchResult> mrList = new ArrayList<MatchResult>();
+		try {
+			
+			Version v = Version.LUCENE_48;
+			Analyzer analyzer = new WhitespaceAnalyzer(v);
+			Directory fsDir = FSDirectory.open(new File(indexPath));
+
+			IndexReader reader = IndexReader.open(fsDir);
+			
+			for (int i = 0; i < reader.maxDoc(); i++) {
+				Document d = reader.document(i);
+				String topic = d.get("topic").toLowerCase();
+				if (!topic.equalsIgnoreCase(topicInput)) continue;
+				String code = d.get("code");
+				String postId = d.get("id");
+				String title = d.get("title");
+				
+				MatchResult mr = new MatchResult();
+				mr.snippet = code;
+				mr.postId = postId;
+				mr.title = title;
+				mrList.add(mr);
+			}
+
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return mrList;
+	}
 }

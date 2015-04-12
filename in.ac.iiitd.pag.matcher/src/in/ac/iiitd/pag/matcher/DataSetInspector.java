@@ -19,7 +19,6 @@ import java.util.Set;
 
 public class DataSetInspector {
 	
-	static String operatorsFile = "";
 	static String luceneIndexFilePath = "";
 	static int count = 0;
 	static HashMap<String, Integer> map = new HashMap<String, Integer>();
@@ -30,12 +29,12 @@ public class DataSetInspector {
 	public static void main(String[] args) {
 		Properties props = FileUtil.loadProps();
 		if (props == null) return;
-		operatorsFile = props.getProperty("OPERATORS_FILE");
-		String filePath = props.getProperty("MATCH_PARENT_FOLDER2");
-		StructureExtractor.init(props);
+		String operatorsFile = props.getProperty("OPERATORS_FILE");
+		String filePath = props.getProperty("MATCH_PARENT_FOLDER2");		 
+		List<String> operators = FileUtil.readFromFileAsList(operatorsFile);
 		
 		try {
-			processFiles(filePath);
+			processFiles(filePath, operators);
 			//printMethodSummary(map);
 			//printStructuralSummary(structuralElementCountMap);
 			FileUtil.writeListToFile(items, "c:\\temp\\output.txt");
@@ -60,7 +59,7 @@ public class DataSetInspector {
 		}		
 	}
 
-	public static void processFiles( String path ) throws IOException {
+	public static void processFiles( String path, List<String> operators ) throws IOException {
 
         File root = new File( path );
         File[] list = root.listFiles();
@@ -69,14 +68,14 @@ public class DataSetInspector {
 
         for ( File f : list ) {
             if ( f.isDirectory() ) {
-            	processFiles( f.getAbsolutePath() );                
+            	processFiles( f.getAbsolutePath(), operators);                
             }
             else {
-                processFile(f);                
+                processFile(f, operators);                
             }
         }
     }
-	public static void processFile(File f) throws IOException {
+	public static void processFile(File f,List<String> operators) throws IOException {
 		if (!f.getName().toLowerCase().endsWith(".java")) return;
 		
 		String code = FileUtil.readFromFile(f.getAbsolutePath());
@@ -85,7 +84,7 @@ public class DataSetInspector {
 		for(String method: methods) {	
 			try {
 				String methodName = StructureUtil.getMethodName(method);
-				String algo = StructureExtractor.extract(method);
+				String algo = StructureExtractor.extract(method, operators);
 				int structuralElementsCount = algo.split(" ").length;
 				int loc = StringUtil.countLines(method);
 				Set<String> snippet1Variables = ASTUtil.getDistinctVariableNames(method);

@@ -239,6 +239,7 @@ public class CodeFragmentInspector {
 				tokenFound = tokenFound.replaceAll("\'", " ");
 				tokenFound = tokenFound.replaceAll("\"", " ");
 				tokenFound = tokenFound.trim();
+				tokenFound = tokenFound.toLowerCase();
 				if (tokenFound.trim().length() > 0) {
 					tokensFound.add(tokenFound);
 				}

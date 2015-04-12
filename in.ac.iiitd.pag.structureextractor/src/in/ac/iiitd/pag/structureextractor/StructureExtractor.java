@@ -12,7 +12,7 @@ import java.util.Properties;
 public class StructureExtractor {
 	
 		
-	public static String extract(String method) {
+	public static String extract(String method, List<String> operators) {
 		String structure = "";
 		
 		
@@ -30,13 +30,10 @@ public class StructureExtractor {
 		
 		structure = StringUtil.getAsCSV(flattendedAlgoWithoutMethods);
 		structure = structure.replaceAll(",", " ");
-		structure = Canonicalizer.canonicalize(structure);
+		structure = Canonicalizer.canonicalize(structure, operators);
 				
 		return structure;
 	}
 
-	public static void init(Properties props) {
-		Canonicalizer.init(props);		
-		
-	}
+	
 }

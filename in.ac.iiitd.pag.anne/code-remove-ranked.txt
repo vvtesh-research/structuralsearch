@@ -1,0 +1,3817 @@
+categories.add(data.stats[i][0]);,0
+worddulicate.add("chennai");,0
+late_list.remove(i);,0
+_dataheap.remove(_datamap.get(element.getkey()));,0
+factor = min_zoom_value;,0
+_dataheap.trimtosize();,0
+this.setnext(anode.getnext());,0
+----+--------------+------------,0
+<!-- tiles -->,0
+"d:\\temp.txt"));,0
+calendar.set(calendar.hour 0);,0
+fd=file.getabsolutefile();,0
+model1 = table.getselectionmodel();,0
+v.removeelement(i);,0
+statusmsg = "client vacated case";,0
+2   |roy           |26,0
+lsststr.add("b");,0
+prevletter = currentletter;,0
+system.exit(0);,0
+</p:tab>,0
+.getpainter();,0
+rsmd = rs.getmetadata();,0
+graphicsterminalactivity.sendoverserial(bytes2);,0
+system.out.println ("enter a node to be removed:");,0
+"generated_name_4":{},0
+</p:tabview>,0
+</s:iterator>,0
+&& (str.charat(str.length() - 1) == s.charat(i))) {,0
+java.lang.unsupportedoperationexception,0
+daysmap.put("3" "tuesday");,0
+fos.close();,0
+map.put(key_desc "description: " + parser.getvalue(e key_desc));,0
+end--;,0
+cur.next = cur.next.next;,0
+queryvalue=tmsearch.gettext()+ke.getkeychar();,0
+data.remove(tag_for_deleting);,0
+customerinvoicesdto initialcoupledto = (customerinvoicesdto) itinit.next();,0
+graphicsterminalactivity.sendoverserial(str2.getbytes("ascii"));,0
+db.execsql("create table " + database_table + " (" + key_rowid,0
+" and stel = ? ");,0
+textgeneratenumber.settext(string.valueof(arry1));,0
+racerdelete.remove(j);,0
+}}});,0
+panel.add(refreshbutton);,0
+i++;,0
+sb.append(" ");,0
+system.err.println("error closing writer");,0
+dataset.addseries(seriesa);,0
+system.out.println("books size"+books.size());,0
+adapter.notifydatasetchanged(); //updates adapter to new changes,0
+itr1.remove();,0
+system.out.println("singlevalues: "+singlevalues);,0
+dos.writebytes("exit \n");,0
+iterator.remove();,0
+button.validate();,0
+@onetoone,0
+worddulicate.add("calcutta");,0
+swt.traverse 3005 swt.verify 3009 3010 };,0
+bmreset.doclick();,0
+popupimage.setfitheight(400);,0
+tabbedpane.addchangelistener(l);,0
+system.out.println(" " +  ints.get(randomindex));,0
+smallest.data=temp.next.data;,0
+c.repaint();,0
+count2++;,0
+clonehomenum[j]=homenum[j];,0
+newstring.append(normalized.charat(0));,0
+</scrollview>,0
+model.addelement(o);,0
+statusmsg = "client hearing missing";,0
+system.out.println("cannot rename file");,0
+cdpanel.validate();,0
+customerinvoicesdao.save(finalcoupleentity);,0
+rightnum = math.random() * 10;,0
++ "(?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?";,0
+.tolist,0
+indexpoint -= 1;///helps keep track of index///,0
+builder.append(s.charat(i));,0
+ps.setstring(2queryvalue.concat("%"));,0
+retlist = lista;,0
+**/,0
+times.remove(slowesttime);,0
+r.delete();,0
+lststr.add("r");,0
+tmpnewfile.delete();,0
+"application/json; charset=utf-8");,0
+catholicate,0
+framecrewselection.removeall();,0
+playerviewerexhibition.remove(newbiex.getselectedrow());,0
+newstring = oldstring;,0
+image.setfitwidth(400);,0
+transformer.setoutputproperty(outputkeys.indent "yes");,0
+newfilter(centertainment.gettext());,0
+maxsize = nitems;,0
+c=input.next();,0
+c.removeall();,0
+thelist.remove(whereweare);,0
+_size--;,0
+system.out.print("enter the size of the array (10): ");,0
+a1.remove(a1.get(i));,0
+terms.remove(current.getexpo());,0
+removelastelement(curr.next);,0
+</style>,0
+listnodes(list.item(i) indent + " ");,0
+system.out.print("enter text: ");,0
+dos.writebytes("@echo off \n");,0
+elemfield.setminoccurs(0);,0
+n *= -1;,0
+removesomepoints(mypoints)       //doesn't work effects below method call,0
+firetabledatachanged();,0
+j.addactionlistener(removeitem);,0
+localstmt = conn.createstatement();,0
+worddulicate.add("delhi");,0
+e2.printstacktrace();,0
+list.remove(i);,0
+system.out.println(m1.keyset()); // [2],0
+**//insertwarrantfee(caseprefix casenumber summseq warrantnumber);**,0
+scan.close();,0
+takeoff.remove(3);,0
+.strokecolor(color.red);,0
+system.out.println("too low! try again.");,0
+scalefactor = factor;,0
+manager.removeuser(james);,0
+list.add("test");,0
+finalvalue = finalvalue + char1;,0
+delcookie.setmaxage(0);,0
+htmlstring = htmlstring.replaceall("<[pp]>.*?</[pp]>" "");,0
+intdivision = integer.parseint(division);,0
+menutext.setid(20001);,0
+layout.setorientation(linearlayout.vertical);,0
+racerdelete.remove(mi);,0
+selectedip = sip;,0
+log.info("changed due to delete: " + tabbedpane.getselectedindex());,0
+rewritingnode y = iter_y.next();,0
+rootelement.removechild("1236");,0
+t+=a;,0
+"generated_name_5" : {,0
+board.newboard();,0
+display.sleep();,0
+arrays.sort(whitelist);,0
+studentstatement.executeupdate();,0
+listflag=1;,0
+log.d("mthread" "b4 thread group interrupted");,0
+list1.remove(sublist1);,0
+"-" + c.get(calendar.day_of_month) +,0
+system.out.print(" "+a[i]);,0
+button.invalidate();,0
+layeredpane.repaint();,0
+theoutput.settext("1234553242342342341243214");,0
+"element3" : {,0
+display.dispose();,0
+<c:choose>,0
+popupimage.setfitwidth(400);,0
+</c:choose>,0
+s1.addall(x.children);,0
+clonecellnum[k]=cellnum[j];,0
+system.out.println("way to high! try again.");,0
+system.out.println("error trying to close connections. exception: " +  sql2.getmessage());,0
+dos.writebytes("cd\\"+"\n");,0
+log.v("trimmed" trimmed);,0
+removeevenlength(stringlist);//recursive call,0
+sb.deletecharat(i);,0
+newbiex.revalidate();,0
+writepoints(mypoints "sorted.txt");  //works fine up until this point,0
+dataset.addseries(seriesb);,0
+under.remove(x);,0
+this.sessionfactory.getcurrentsession().saveorupdate(newuser);,0
+menutext.settext("who knew?");,0
+list.add("a");,0
+layout.setbackgroundcolor(backgroundcolor);,0
+newset.add("nonsense");,0
+isvacated = getvacatedstatus(caseprefix casenumber hearingtype);,0
+} // end try,0
+pwdetails.close();,0
+newstring += string.charat(i);,0
+keywordset.removeall( set1 );,0
+</dependency>,0
+response.append('\r');,0
+clip.open(ais);,0
+tbfile.addhierarchylistener(hierarchylistener);,0
+count--;,0
+currentend = i + 1;,0
+db_contacts.removeall(common_contacts);,0
+textgeneratenumber.settext(builder.tostring());,0
+iter2.remove();,0
+log.d("mthread" "surface destroyed called");,0
+mydict.add(head.data 1);,0
+rs.close();,0
+swt.dragdetect 3000 swt.focusin swt.focusout swt.gesture,0
+system.out.println("please enter a sentence");,0
+arry.add(myrandom.nextint(10));,0
+whereweare++;,0
+checkthis(myobj2);,0
+} // end while,0
+g.fillrect(e4.xe4.ye4.widthe4.height);,0
+console.writeline(inpstr);,0
+firstpass += c;,0
+n--;  // <-- add this line to not skip over the 'n + 1'th term,0
+mlistmodel.removeallelements();,0
+tempcookie.setmaxage(0);,0
+user.setavatarimage( thenewavatarimage );,0
+removestudent();,0
+system.out.println(fig);,0
+lm1.removeelement(listatitolari.getselectedvalue());,0
+system.out.println(m1.keyset()); // [] what?,0
+jlayeredpane1.repaint();,0
+system.out.print(x);,0
+calendar.set(calendar.second 0);,0
+daysmap.put("2" "monday");,0
+system.out.println(modelx.size());,0
+<tiles-definitions>,0
+tempheader = tempheader.next;,0
+system.out.println("printing list before removing duplicates");,0
+o = head.content;,0
+returninfo = "issuing warrants failed.";,0
+" (caspre casnum defseq chgseq sumseq stscod stsdat" +,0
+result.append("#");,0
+m1.remove(other_one); // does not remove,0
+visualizzasquadraselezionata();,0
+_thread.interrupt();,0
+theappttime.additem(rs.getstring(1));,0
+selectionmodel.setselectionmode(listselectionmodel.single_selection);,0
+/* something like this maybe */,0
+emails += m.group()+" ";,0
+modelx.removeelementat(newbiex.getselectedrow());,0
+counter2++;,0
+cal.set(calendar.millisecond 0);,0
+1234,0
+mainintent.addcategory(intent.category_launcher) ;,0
+linenum +=1;,0
+os.contains("10.04")        ? "ubuntu10.04" :,0
+snoq += o.tostring();,0
+@manytomany,0
+playerviewer.revalidate();,0
+stopwords.add("the");,0
+1 2 3 4,0
+queryvalue=tmsearch.gettext();,0
+s.setsongid(t.optint("songid"));,0
+artist[j] = artistjson.optstring(j);,0
+menutext.settextsize(36);,0
+filedata = filedata.tolowercase();,0
+layout.addview(menutext);,0
+system.out.println("after url filter" +commentstr1);,0
+arllist.addall(h);,0
+system.out.println(x);,0
+terms.remove(current.getcoeff());,0
+transformer.setoutputproperty(outputkeys.encoding "utf-8");,0
+tries = 0;,0
+</resources>,0
+_thread.join();,0
+25 |apple st.     |              | us,0
+manager.adduser(jane);,0
+system.out.println("cannot rename file date");,0
+doublequotelevel = 0;,0
+listarosa.setmodel(listmodel);,0
+26 |apple st.     |richman's end | us,0
+arrays.sort(dict);,0
+sport += o.tostring();,0
+newstring = newstring.trim();,0
+button.settext("remove");,0
+shell.open();,0
+das.writebytes("{\"jsonrpc\": \"2.0\" \"method\": \"audiolibrary.getsongs\"",0
+res.addcookie(tempcookie);,0
+rd.close();,0
+it1.remove();,0
+g.fillrect(e2.xe2.ye2.widthe2.height);,0
+pwname.flush();,0
+urlconnection.disconnect();,0
+sb.append(' ');,0
+c.fill=gfill;,0
+ptxtbox.settext("");,0
+system.out.println("category id: " + category.getid() + " name: " + category.getname() + " equals: " + category.equals(categorytobedeleted));,0
+system.out.println(ks.tostring());,0
+system.out.println("*******im free at:"+i+"*******");,0
+primary.add (subpanel1);,0
+stuff.remove();,0
+filedate.delete();,0
+a.x = insets.left;,0
+allstr = allstr + (this.myarray[i] + " ");,0
+system.out.println("error");,0
+system.err.print("element removed");,0
+defaultlistmodel lm1  = (defaultlistmodel) listarosa.getmodel();,0
+manager.removeuser(jane);,0
+map.put(key_venue_name parser.getvalue(e key_venue_name));,0
+currentend = -1;,0
+integer.tostring(n % 10);,0
+g.fillrect(e5.xe5.ye5.widthe5.height);,0
+cal.set(calendar.second 0);,0
+racerdelete.remove(???);,0
+</definition>,0
+lastnode.next = currentnode.next;,0
+keywordset.removeall( set2 );,0
+</main:basic_layout>,0
+racerdelete.add(j);,0
+system.out.println("after remove :");,0
+system.out.println(s+ " -> " + norawr(s));,0
+| citizenship = {{plainlist|,0
+log.info("roles revoked from the user " + user.getusername());,0
+division = gethearingjudge(caseprefixcasenumberhearingtype);,0
+removeleaves(n.left);,0
+bitset key1=(bitset)it1.next();,0
+selectedreq = snoq;,0
+playerviewer.repaint();,0
+j = j -1; //removing the word basically changes the index so swing down one.,0
+system.out.println("row was deleted");,0
+table.setautoresizemode(jtable.auto_resize_all_columns);,0
+system.out.println(finalvalue);,0
+charset.add(c);,0
+system.out.println(l.get(i));,0
+i.remove();,0
+worddulicate.add("bangalore");,0
+sb.append(c);,0
+k++;,0
+arry1.add(arry);,0
+monsterstoadd.remove(monsterstoadd.contains("-1"));,0
+parent.repaint();,0
+dos.close();,0
+calendar.set(calendar.minute 0);,0
+dm.addcolumn(c[k]);,0
+a[i+1] = a[i];,0
+em.remove(p);,0
+daysmap.put("4" "wednesday");,0
+bulletobject.widthbulletobject.height);,0
+smallest = temp.next;,0
+iter.remove();,0
+</div>,0
+r.setlength( s.length() );,0
+list.add(newstring);,0
+de3,0
+data.remove(selectedrow[i]);,0
+finalvalue=finalvalue+char1;,0
+size.contains("origin"),0
+line.split(" "),0
+logger.info("hello wolrd!");,0
+lastselected = tabbedpane.getselectedcomponent();,0
+system.out.println("-----------------------");,0
+out.write(f);,0
+midx++;,0
+duplicatewords.add(e);,0
+"title 1" "title 2" "title 3" "title 4",0
+"are you sure you want to delete racer " + r.getname() + "?" "delete?",0
+prevnode = this.getprevious(anode);,0
+result.setlength(result.length() - separator.length());,0
+row.addelement( rs.getobject(i) );,0
+seriesb.remove(0);,0
+c.gridy=gy;,0
+maliste.add(trimmed);,0
+insertbwptfrecord(caseprefix casenumber summseq charges.substring(i i + 1));,0
+c.weightx=wx;,0
+downheapify();,0
+list.add("this");,0
+list2.addall(arrays.aslist(notonthisday));,0
+defaultlistmodel listmodel = (defaultlistmodel) l_storieslist.getmodel();,0
+updatehearingrecord(caseprefix casenumber hearingtype charges.substring(i i + 1) suspend);,0
+c = str.charat(i);,0
+swt.mousewheel swt.paint 3008 swt.selection swt.touch,0
+button.repaint();,0
+actionmap actionmap = table.getactionmap();,0
+doublequotelevel--;,0
+clip.loop(clip.loop_continuously);,0
+addactionmessage("write review is successful");,0
+centerpanel.remove(buttonindex);,0
+ntxtbox.settext("");,0
+out.close();,0
+o = crt.next.content;,0
+strbuild1.append(chararray[i]);,0
+treelistfreeapartments.reload();,0
+sb.delete(i + 1 currentend);,0
+nonduplist.add(dupword);,0
+logger.debug("responseentity :" + responseentity);,0
+imgview.setvisibility(view.visible);,0
+cursor.requery();,0
+log.e("synchphonebookwithdb" "phonebooksize" + phone_contacts.size());,0
+log.warn("refreshing the database!");,0
+lststr.add("a");,0
+this.myhead = this.myhead.myrest;,0
+d.open();,0
+"feed",0
+( (comparison = this.somecount - that.somecount ))));,0
+movecount = 0;,0
+s.setname(t.optstring("label"));,0
+double.parsedouble(test.trim());,0
+g.fillrect(e7.xe7.ye7.widthe7.height);,0
+numberofcolumns = rsmd.getcolumncount();,0
+----+--------------+--------------+---------,0
+it2.remove();,0
+customer.save();,0
+system.out.println("set"+thing);,0
+fragmentmanager fragmentmanager = getfragmentmanager();,0
+transformer.setoutputproperty(outputkeys.omit_xml_declaration "yes");,0
+firstcopied++;,0
+listmodel.removeallelements();,0
+system.out.print ("enter a name. type q to end inputting.");,0
+"-" + c.get(calendar.hour_of_day) +,0
+thedata= current.getdata();,0
+marshaller.setproperty( marshaller.jaxb_formatted_output boolean.true );,0
+os.contains("winxp.64bit")  ? "winxp.64bit" :,0
+* [[german empire]] (1914â€“1918),0
+polygon triangle;,0
+mappedby = "parentclass"),0
+ft.replace(r.id.fav_layout fav);,0
+shell.pack();,0
+lblresult.settext("wrong password");},0
+nextnode = anode.getnext();,0
+{{infobox scientist,0
+sip += o.tostring();,0
+>xxxrawrawr,0
+lst.remove("whatever");,0
+system.out.println(pure);,0
+ball.r = v;,0
+system.out.println(i+" ");,0
+sitosterol,0
+subpanel1.add (label1);,0
+joptionpane.warning_message);,0
+@lazycollection(lazycollectionoption.false),0
+editor.layout();,0
+count1++;,0
+temp.add(md5);,0
+tree.updateui();,0
+system.out.println("what is the input file?");,0
+docdialog.type_yes_no);,0
+wordlist.remove(inputword);,0
+w=w.next;,0
+{ //system.out.println(data.stats[i][1]);,0
+warrantnumber + "' " + intdivision + " 'n' 1 '" + division + "' " +,0
+system.out.print("too many queue items!");,0
+lst.add("whatever");,0
+lotnumber);,0
+v.setanimation(growanim);,0
+s.setalbum(t.optstring("album"));,0
+g.fillrect(bulletobject.xbulletobject.y,0
+xyseries seriesa = dataset.getseriesat(0);,0
+w= now.next;,0
+char2 = value2.charat(j);,0
+ptxtbox.settext(sport);,0
+localdatetime borndate;,0
+header.setbackground(color.green);,0
+d.close();,0
+c[i]=rsmd.getcolumnname(i+1);,0
+updatejtextpane();,0
+system.out.println("found and removed");,0
+phone_contacts.removeall(common_contacts);,0
+this.winner = blank;,0
+* [[austriaâ€“hungary]] (1911â€“1912),0
+pwdate.flush();,0
+" btype cmnt cuser tuser lupdat scrdat statsdat sumcrdat lupdate )" +,0
+" values ('" + caseprefix + "' " + casenumber + " 1 " + charges.substring(i i + 1) +,0
+clonehomenum[k]=homenum[j];,0
+@jointable(,0
+elementdata[i]=elementdata[i+1];,0
+g.fillrect(bullet.x bullet.y  bullet.width bullet.height);,0
+rs.next();,0
+writer.close();,0
+</h1>,0
+dos.writebytes("java "+sng+" "+par+"\n");,0
+selectionmodel = table.getselectionmodel();,0
+https://ednovo.webex.com/ednovo/j.php?ed=224466857&uid=1465621292&rt=mim0,0
+treelistfreeapartments.removenodefromparent(selectednode);,0
+mapview.getprojection().topixels(geopnt screenpts);,0
+palabra = palabra.substring(0palabra.length()-x-1) + palabra.substring(palabra.length()-x);,0
+urlconnection.setrequestmethod("post");,0
+updatelist();,0
+this.reqtimer.scheduleatfixedrate(reqtask 500l 500l);,0
+pwdate.println(lined);,0
+system.out.println("im still working!!!!");,0
+wordb[i] = 0;,0
+os.contains("win7.64bit")   ? "win7.64bit" :,0
+defaultlistmodel lm2 = (defaultlistmodel) listatitolari.getmodel();,0
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">,0
+sb.append(str.substring(i str.length()));,0
+f.getabsolutepath()); // laver en stream baseret pã¥,0
+input.usedelimiter(" |:||\\.");,0
+os.contains("win7.32bit")   ? "win7.32bit" :,0
+frame.pack();,0
+system.out.print(string.charat(i));,0
+double.parsedouble(myvalue);,0
+thing.add("hi");,0
+system.out.println(palabra);,0
+containingjpanel.remove((abstractbutton) e.getsource());,0
+combovehicle.removeactionlistener(listenercombovehicle);,0
+system.out.println(sb.tostring());,0
+system.out.println("too high! try again.");,0
+l.add(i);,0
+myvalue3;,0
+newbiey.revalidate();///table on another tab///,0
+</beans:bean>,0
+log.info("comparing " + requestsession + " to " + session.getid());,0
+temp.renameto(flightsn);,0
+p++;,0
+e.printstacktrace();,0
+myvalue2,0
+doc.normalize();,0
+image.setfitheight(400);,0
+"generated_name_1": {,0
+myvalue1,0
+i = m.end();,0
+singlemenuitemactivity.class);,0
+creategameui(board.getwidth()board.getheight());,0
+log.info("changed: " + tabbedpane.getselectedindex());,0
+pwdetails.println(linec);,0
+map.put(key_country_name parser.getvalue(e key_country_name));,0
+names.add(txtadd.gettext());,0
+customerinvoicesdto finalcoupledto = (customerinvoicesdto) itfinal.next();,0
+"are you sure you want to delete racer " + mi.gettext() + "?" "delete?",0
+"-" + c.get(calendar.minute) +,0
+parent.updatedrivebuttons();,0
+sublist1.removeall(sublist2);,0
+colvaules.add(datacol1);,0
+system.out.println("internal error: lot number " +,0
+parent.revalidate();,0
+returnbook();,0
+prev.next = smallest.next;,0
+@manytoone,0
+lastnode = lastnode.getpreviousnode();,0
+pwname.println(linen);,0
+swt.modify swt.mousedown swt.mouseup swt.mousedoubleclick,0
+habwesend.setbounds(10 30 290 400);,0
+t = array.getjsonobject(i);,0
+swt.mousemove swt.mouseenter swt.mouseexit swt.mousehover,0
+system.out.println("size= "+s.size());,0
+cdpanel.removeall();,0
+model.addobject("statetype" state.getclass());,0
+thread.currentthread().interrupt();,0
+a.height -= insets.top + insets.bottom;,0
+resultsetmetadata rsmd=rs.getmetadata();,0
+ankey.and(key2);,0
+t elem1 = iter1.next();,0
+button.revalidate();,0
+studentstatement.setstring(4 student.gettel());,0
+"element1" : {,0
+daysmap.put("5" "thursday");,0
+{ division = "0" + division; },0
+@xmlaccessortype(xmlaccesstype.field),0
+cd3,0
+whitelist = newarray;,0
+daysmap.put("7" "saturday");,0
+stdout.println(java.util.arrays.tostring(whitelist));,0
+<scrollview,0
+iter_y.remove();,0
++ " already exists!" "error",0
+log.e("synchphonebookwithdb" "after removing contacts dbsize" + db_contacts.size());,0
+mylist.clear();,0
+system.out.println("the word" +inputword+ "is removed");,0
+map.put(key_url parser.getvalue(e key_url));,0
+joptionpane.yes_no_option);,0
+out.setlevel(deflater.default_compression);,0
+theappttime.repaint();,0
+system.out.println(""+numberofcolumns);,0
+}//end of method,0
+c.gridx=gx;,0
+ptr.next = ptr.next.next;,0
+filesquadra = squadradavisualizzare.gettext();,0
+system.out.println(" " + colm[rand.nextint(colm.length)]);,0
+winner = tie;,0
+java.awt.dimension dim = this.getpreferredsize();,0
+exception.printstacktrace();,0
+manager.removeuser(billy);,0
+system.out.println("what is the output file?");,0
+worda[i] = 0;,0
+selectedpanel++;,0
+sb.replace( firstoccurrence firstoccurrence + replace.length() replacement );,0
+...,0
+e3.printstacktrace();,0
+panel.repaint();,0
+getshortdate() + " " + getshortdate() + " " + getlongdate() + " " + getlongdate() +,0
+out.newline();,0
+primary.setbackground (color.blue);,0
+s.setartist(artist);,0
+reader.close();,0
+stack--;,0
+system.out.print(quearray[i++] + " ");,0
+daysmap.put("6" "friday");,0
+<h1>,0
+system.out.println( "[" + midx + "][" + groupidx + "] = " + m.group(groupidx));,0
+}//end of while,0
+}//end method,0
+inputmap inputmap = table.getinputmap(condition);,0
+lasttabcount = tabbedpane.gettabcount();,0
+bitset key2=(bitset)it2.next();,0
+c.anchor=ganchor;,0
+system.out.println(items.size());,0
+index1++;,0
+daysmap.put("1" "sunday");,0
+uniquechars.add(inputstr.charat(i));,0
+btnremove.doclick(); // this will remove the selected row in jtable,0
+writepoints(mypoints "sortedandremoved.txt");,0
+table.revalidate();,0
+bitset ankey=(bitset)key1.clone();,0
+playerviewer.setviewportview(newbiex);,0
+stopwords.add("i");,0
+: ((type.equals("image") ? "/image" : "/file" )),0
+dos.writebytes("pause \n");,0
+lm2.addelement(listatitolari.getselectedvalue());,0
+g.setcolor(color.blue);,0
+label1.setverticaltextposition (swingconstants.bottom);,0
+system.out.println(categories);,0
+ba12,0
+[...],0
+studentstatement.setstring(3 student.getaddress());,0
+" does not exist.");,0
+pwname.close();,0
+borrowers.remove(borrower);,0
+sb.append(segment);,0
+lsststr.add("c");,0
+.strokewidth(2),0
+lname = in.next();,0
+listatitolari.setmodel(lm2);,0
+system.out.println(it.next());,0
+s3.add(y);,0
+count2 = 0;,0
+"-" + c.get(calendar.second) +,0
+( (comparison = this.id - that.id) != 0 ? comparison :,0
+stopwords.add("an");,0
+t.setoutputproperty(outputkeys.indent "no");,0
+fileutils.copyfile(tmpnewfile thepdffile);,0
+@onetomany(mappedby = "cart",0
+input.usedelimiter("");,0
+"-" + c.get(calendar.month) +,0
+pwdate.close();,0
+studentstatement.setstring(2 student.getname());,0
+update_frames(gf.p);,0
+system.out.println("the word" + inputword + "is removed");,0
+aries,0
+system.out.println("row was not deleted");,0
+* [[statelessness|stateless]] (1896â€“1901),0
+" was returned instead of " +,0
+centerpanel.remove(labelindex);,0
+templist.remove(templist.get(j));,0
+button.settext("x");,0
+label1.sethorizontaltextposition (swingconstants.left);,0
+einstein|eduard "tete"]] (1910â€“1965),0
+* [[weimar republic]] (1919â€“1933),0
+.getendoffset() a this.component);,0
+ft.replace(r.id.list_layout cha);,0
+t.setoutputproperty(outputkeys.omit_xml_declaration "yes");,0
+log.d("mthread" "b4 interrupted");,0
+newbiey.repaint(); ///table on another tab using modelx///,0
+os.contains("winxp")        ? "winxp" :,0
+ints.remove(randomindex);,0
+e1.printstacktrace();,0
+in.putextra(key_desc description1);,0
+system.out.println("not found");,0
+clonecellnum[j]=cellnum[j];,0
+log.info("changed due to add: " + tabbedpane.getselectedindex());,0
+stxtbox.settext(sip);,0
+system.out.println(indent + attribute.getname() + "=" + attribute.getvalue());,0
+system.out.println(wordlist.size());,0
+verbinden.erstelleverbindung();,0
+lecturer.settext("");,0
+str.istrue,0
+"delete?" + "the student will be permamently deleted",0
+list1.addall(arrays.aslist(weekdays));,0
+lststr.add("c");,0
+k=k+1;,0
+newset.add("is");,0
+rt.updateprogress();,0
+songlist.add(s);,0
+filedetails.delete();,0
+map.put(key_start_time parser.getvalue(e key_start_time));,0
+newset.add("hello");,0
+g.fillrect(x+18 y-7 4 7);,0
+sbletter = sbletter.deletecharat(sbletter.length - 1);,0
+"\" tag?",0
+" statut chgabv bwnbr judcod prvflg ct2flg divisn bndamt" +,0
+/**,0
+toplevel.dispose();,0
+</linearlayout>,0
+textgeneratenumber.settext(myrandom.nextint(10));,0
+secondcopied++;,0
+system.out.println("palindrome");,0
+doublequotelevel++;,0
+system.out.println("printing list after removing duplicates");,0
+sb.append(query.charat(query.length() - 1));,0
+listselectionmodel selectionmodel;,0
+tempheader = header.next;,0
+ps.setstring(1queryvalue.concat("%"));,0
+system.out.println("fail");,0
+j++;,0
+system.out.println(indent + "attributes are: ");,0
+system.out.print("enter the kth smallest element you desire (1): ");,0
+log.d("mthread" "interrupted");,0
+jlayeredpane1.remove(fig);,0
+verbinden.schliesseverbindung();,0
+system.out.print("please enter name of file containing points: ");,0
+* switzerland (1901â€“1955),0
+.....,0
+whitelist[i++] = it.next();,0
+currentloans.remove(abook);,0
+secondpass = c + secondpass;,0
+@formdataparam("qqfile") formdatacontentdisposition filedetail){,0
+system.err.println("log error");,0
+map.put(key_stop_time parser.getvalue(e key_stop_time));,0
+ntxtbox.settext(snoq);,0
+</tiles-definitions>,0
+system.out.println("would you like to play again (y/n):");,0
+stopwords.add("a");,0
+unique[j+1] = unique[j];,0
+paramclass = anobject.getclassname();,0
+matchingfiles.add(f.getabsolutepath());,0
+document.open();,0
+localquerystring = "insert into " + library7 + "cmpbwpnd" +,0
+prev.setnext(current.getnext());,0
+++dups;,0
+system.out.println("odd number found: " + i);,0
+seriesa.remove(0);,0
+log.e("synchphonebookwithdb" "dbsize" + db_contacts.size());,0
+i=i+(count-1);,0
+root.add(selectednode);,0
+system.out.println(newset);,0
+lot selectedlot = lots.get(lotnumber - 1);,0
+lowest = l;,0
+system.out.println(nonduplist);,0
+system.out.print(string.charat(0));,0
+icloudcounter++;,0
+calendar.set(calendar.millisecond 0);,0
++ key_sponsor + " dec(42) not null );");,0
+system.out.println("unique words : " + words.size());,0
+menutext.settextcolor(textcolor);,0
+map.put(key_title parser.getvalue(e key_title));,0
+s.setduration(t.optint("duration"));,0
+lots.remove(lot);,0
+system.out.println("you got it in " + tries + " tries.");,0
+i = 0;,0
+statusmsg = "client no show-wi";,0
+</s:if>,0
+list.add("is");,0
+formcombocrews(); //modify jcombobox controls content,0
+java.lang.double.class java.lang.double.class java.lang.double.class java.lang.double.class,0
+out.flush();,0
+" " + summseq + " 9 " + getshortdate() + " 'rcp 12-a ta' 'warrant' '" +,0
+statusmsg = "client iss. warrant failure";,0
+stdout.println(java.util.arrays.tostring(newarray));,0
+/*value initialised to losing*/,0
+lastchar = s.charat(i);,0
+existingmap.put(1 "a");,0
+dog d = dogs.remove(getrandomdog());,0
+i.next();,0
+node.prev = temp.previous ();,0
+ll.removeallviews();,0
+el.settext("");,0
+g.setcolor(color.red);,0
+worddulicate.add("hyderabad");,0
+maliste.set(i trimmed);,0
+toggle();,0
+1   |jim           |26,0
+strbuff.append(c);,0
+in.close();,0
+mythreadinstancemethod(..) {..},0
+"generated_name_2":{},0
+ingredientrow.toggle();,0
+data.clear();,0
+br.close();,0
+chymia,0
+ft.settransition(fragmenttransaction.transit_fragment_open);,0
+length--;,0
+| residence   = germany italy switzerland austria belgium united states,0
+pwdetails.flush();,0
+brdate.close();,0
+elemfield.setfieldname("destinationidsinfo");,0
+builder.append(" ");,0
+allstr=(this.myarray[i] + " ") + allstr ;,0
+system.out.println("quickselect!");,0
+system.out.println("not a palindrome");,0
+playerviewer.remove(newbiex.getselectedrow());,0
+iterator._previous = iterator._next;,0
+ishearingfound = gethearingstatus (caseprefix casenumber hearingtype);,0
+mylist.remove(mylist.getselectedindex());,0
+prev.setnext(tempheader);,0
+selectedport = sport;,0
+selectedlot.getnumber() +,0
+tc.put(c.hash()c);//and add the char to the hashmap,0
+system.out.println("*******mymap is not null*******");,0
+revised = doactionb(revised);,0
+log.e("synchphonebookwithdb" "afetr removing contacts phonebooksize" + phone_contacts.size());,0
+system.out.println(m1.keyset()); // [1 2],0
+secondactivity.textview1.settext(strbuild1.tostring());,0
+currclass = thelist[whereweare].getclassname();,0
+g.fillrect(e3.xe3.ye3.widthe3.height);,0
+urlconnection.setrequestproperty("content-type",0
+worddulicate.add("goa");,0
+/** enforce max data points on the displayed chart */,0
+builder.append(myrandom.nextint(10));,0
+</jsp:body>,0
+file1.removeall(file2);,0
+sb.append(firstchar);,0
+brname.close();,0
+newset.add("name");,0
+input.close();,0
+worddulicate.add("mumbai");,0
+totalsize += l.size();,0
+listofstrings.remove(j);//if they are the same ditch one.,0
+system.out.println();,0
+urlconnection.setrequestproperty("content-language" "vi-vn");,0
+dupiter.remove();,0
+keystroke[] strokes = this.getinputmap().allkeys();,0
+x1.parents.removeall(x1.parents);,0
+docdialog.show();,0
+"-//apache software foundation//dtd tiles configuration 2.0//en",0
+das.flush();,0
+system.out.println("sizeofseries: "+seriesa.getitemcount());,0
+".zip";,0
+newarray[k] = whitelist[i];,0
+studentstatement.setstring(1 student.getidnumber());,0
+list.add(words.get(i));,0
+l_storieslist.removeall();,0
+pname,0
+input.replaceall(" " "");,0
+tv.settext("hello world");,0
+centerpanel.validate();,0
++ "\r\n<img height=286 alt=\"eye_anatomy 1.jpg\" src=\"file:///android_asset/images/eye_anatomy1.png\" width=350 border=0>\r\n";,0
+minmax passin = minmax.min;,0
+system.out.println("correct you've got it! the number was ",0
+borrowers.remove(otherborrower);,0
+removeleaves(n.right);,0
+wordlist.remove(z);,0
+namednodemap attrs = node.getattributes();,0
+prevnode.setnext(nextnode);,0
+localstmt.close();,0
+validcombos.add(tmpworda + "\\t" + tmpwordb);//combo found,0
+notifydatasetchanged();,0
+frame.setdefaultcloseoperation (jframe.exit_on_close);,0
+system.out.println("duplicate words : " + duplicatewords.size());,0
+db.dbconnect();,0
+it.remove();,0
+( (comparison = this.age () - that.age ()) != 0 ? comparison :,0
+node.next = temp.next ();,0
+mycbx.setname("mycbx"); // noi18n,0
+n.removeleftchild();,0
+"generated_name_3":{},0
+triangles.remove (p);,0
+});,0
+hearingdesc = getformattoday() + "  " + gethearingdesc(hearingtype);,0
+log.info("status disabled looking for session ");,0
+system.out.println(indent + " node is: " + nodename);,0
+inpstr[k] = ' ';,0
+k = integer.valueof(k);,0
+is.close();,0
+theme="simple" enctype="multipart/form-data">,0
+xyseries seriesb = dataset.getseriesat(1);,0
+* united states (1940â€“1955),0
++ randomnum);,0
++ " integer primary key autoincrement " + key_name,0
+collections.shuffle(l);,0
+log.d("mthread" "b4 join");,0
+localstmt.executeupdate(localquerystring);,0
+theappttime.removeallitems();,0
+temp.remove(); // what do i do here?,0
+model.removerow(x);,0
+sb.append(token.tostring());,0
+groups.add(newgroup);,0
+list.setadapter(adapter2);,0
+items.remove(ce);,0
+checkedtextview ingredientrow = (checkedtextview)v.findviewbyid(r.id.ingredientname);,0
+-------------------,0
+mydict.add(cur.next.data 1);,0
+/*with this line of  the explode does not show at all,0
+fstream.close();,0
+flights.delete();,0
+crt = crt.next;,0
+studentlist.remove(stu);,0
+g.clearrect(e1.x e1.ye1.width e1.height );,0
+list.remove(r.nextint(list.size()));,0
+temp_data.clear();,0
+tmsearch.setbounds(20022035030);,0
+model.remove(list.getselectedindex());,0
+g.fillrect(e6.xe6.ye6.widthe6.height);,0
+document.close();,0
+quickselect(randomdata k);,0
+? ((type.equals("image") ? "/image_large" : "/file_raw" )),0
+....,0
+...;,0
+/*bitmap bmp = bitmapfactory.deresource(getresources() r.drawable.pushpin);,0
+previous.setnext(element.getnext();,0
+newstring.append(normalized.charat(i));,0
+thing.add("hello");,0
+tv.setpadding(0000);,0
+strbuild1.deletecharat(strbuild1.length()-1);,0
+stxtbox.settext("");,0
+"element2" : {,0
+log.e("synchphonebookwithdb" "common_contacts" + common_contacts.size());,0
+system.out.println (node.data);,0
+habwesend.setmodel(dm);,0
+layeredpane.revalidate();,0
+parentclass parentclass;,0
+stringlist.remove(stringlist.size() - 1); //this is giving me error!,0
+customerinvoicesdao.remove(initialcoupledto.getid());,0
+filename.delete();,0
+system.out.println("categorytobedeleted id: " + categorytobedeleted.getid() + " name: " + categorytobedeleted.getname());,0
+dos.writebytes("javac "+sng+".java"+"\n");,0
+a[n++] = (t) a[m];,0
+v.setanimation(shrinkanim);,0
+"n":{},0
+stdin.fromfile("data/list2.txt");,0
+newbiex.repaint();,0
+system.out.println("enter \"-1\" to quit.");,0
+<methods>;,0
+c.weighty=wy;,0
+location.put(l 0);,0
+c.revalidate();,0
+temp.delete();,0
+a.y = insets.top;,0
+"layeredhighlightinfo") > -1),0
+autoscroll();,0
+{ ... },0
+lineremove++;,0
+newstring = oldstring.replace(c ' ');,0
+thread.sleep(5000);,0
+lsststr.add("a");,0
+strbuf.append( s + " " );,0
+"delete from student where spnr = ? and sname = ? and sadress = ? " +,0
+os.contains("12.04")        ? "ubuntu12.04" :,0
+newstring.replace(delimiter "");,0
+imagemap.put("image" image9j);  // the delimiter json label.,0
+system.out.println("lot number: " + lotnumber +,0
+bondamt + " '" + bondtype +  "' '" + hearingdesc + "' 'taad' 'taad' " +,0
+newset.add("my");,0
+outfile.close();,0
+" " + getlongdate() + ")";,0
+finalcoupleentity = mapper.map(finalcoupledto customerinvoicesentity.class);,0
+ft.commit();,0
+++writteni;,0
++ " text not null " + key_swimmerlaps + " int not null ",0
+frames.notify();,0
+temp.setnext(current.getnext());,0
+char1 = value1.charat(i);,0
+system.out.print ("enter a name. type q to end.");,0
+entitymanager.remove(plane);,0
+lasthighlightedrow.setbackground(unhoveredrowbg);,0
+system.out,0
+t t = _dataheap.get(_datamap.get(element.getkey()));,0
+marshaller marshaller = context.createmarshaller();,0
+t+=replacement;,0
++ " \"params\": { \"limits\": { \"start\" : 0 } \"properties\": [ \"artist\" \"duration\" \"album\" \"track\" ] \"sort\": { \"order\": \"ascending\" \"method\": \"track\" \"ignorearticle\": true } } \"id\": \"getsongs\"}");,0
+out.closeentry();,0
+id.remove();,0
+.fillcolor(color.argb(30 20 20 140))  //default,0
++ "fd  <p align=center><img height=286 alt=\"eye_anatomy 1.jpg\" src=\"file:///android_asset/images/  eye_anato  my 1 .bmp\" width=350 border=0></p>\r\n",0
+refreshbutton.setbounds(188 248 101 23);,0
+totalitems++;,0
+sb.delete(0 currentend);,0
+inpstr[k] = inpstr[k + 1];,0
+thedata = current.getdata();,0
+system.out.println("enter the number:");,0
+tries++;,0
+uniquestr.append(somestr.charat(i));,0
+system.out.println(strdoctor);,0
+system.out.println("issuewarr - error in issuewarrant");,0
+factor = max_zoom_value;,0
+ab12,0
+updatebynamedquery(jobqueries.remove_job_x_by_id_key job.getid()) > 0;,0
+updatebynamedquery(jobqueries.remove_job_by_id_key job.getid());,0
+brdetails.close();,0
+) {,0
+sizeoflist--;,0
+134,0
+whereweare = 0;,0
+"are you sure you want to delete the \"" +,0
+retlist.remove(elem1);,0
+>xxxrawrrawrawr,0
+elements--;,0
+sng=sng.substring(0a);,0
+result.append("");,0
+pnl.removeall();,0
+manager.adduser(james);,0
+_datamap.remove(element.getkey());,0
+arllist.clear();,0
+transformer.setoutputproperty(outputkeys.method "xml");,0
+this.paint(image.getgraphics());,0
+g.fillrect(x y 40 10);,0
+table.repaint();,0
+"please confirm...",0
+index2++;,0
+resultcounter++;,0
+palabra = palabra + palabra.substring(palabra.length()-xpalabra.length()-x+1);,0
+review,0
+unitc.settext("");,0
+mymap.remove(key1);,0
+f = sc.nextline();,0
+circle mycircle = mgooglemap.addcircle(circleoptions);,0
+existingmap.put(2 "b");,0
+system.out.println ();,0
+newrolelist.removeall(userroles);,0
+i++;//skip the next char is it's supposed to be low surrogate,0
+hearingdesc = hearingdesc.substring(030);,0
+manager.adduser(billy);,0
+system.out.println("selected item: \"",0
+log.d("menu""actualizar");,0
+currentletter = chararray[i];,0
+system.out.println("cannot rename file details");,0
+numitems = counter2;,0
+t elem2 = iter2.next();,0
+s = s.substring(0 s.length()-1);,0
+builder.deletecharat(str.length() - 1);,0
+system.out.println("before remove :");,0
+_thread.getthreadgroup().interrupt();,0
+size--;,0
+swt.help swt.keyup swt.keydown 3001 3002 swt.menudetect,0
+g.fillrect(e1.xe1.ye1.widthe1.height);,0
+lblresult.settext("password successful.");,0
+@generatedvalue,0
+mylist.addall(hs);,0
+das.close();,0
+system.out.println(c);,0
+system.out.println("entre string");,0
+shell.settext("stackoverflow");,0
+sortpoints(mypoints); // works fine,0
+}table.clearselection();,0
+at com.badlogic.gdx.utils.array.get(array.java:127),28
+at.getparent().removeattribute(at);,28
+at com.badlogic.gdx.backends.lwjgl.lwjglapplication.mainloop(lwjglapplication.java:199),28
+at com.badlogic.gdx.backends.lwjgl.lwjglinput.processevents(lwjglinput.java:288),28
+at java.util.abstractlist.remove(abstractlist.java:638);,28
+at com.badlogic.gdx.inputmultiplexer.keyup(inputmultiplexer.java:76),28
+cut = at;,28
+1 error,34
+output:,45
+conn = _conn;,61
+android:layout_margin="10px",69
+android:layout_above="@+id/bstartbutton",69
+android:layout_marginbottom="0sp",69
+android:textcolor="#000000",69
+android:paddingtop="@dimen/activity_vertical_margin",69
+android:textsize="75sp",69
+android:textcolor="@color/white",69
+android:layout_marginbottom="75sp",69
+android:layout_alignparentbottom="true",69
+android:paddingbottom="@dimen/activity_vertical_margin",69
+log.e(tag "node transformation exception " + te.getmessage());,76
+log.info("node status " + status);,77
+url = prefixlarge + "win7.64bit" + suffix;,92
+url = prefixlarge + "winxp.64bit" + suffix;,92
+url = prefixlarge + "ubuntu10.04" + suffix;,92
+getaudioinputstream( url );,92
+connect();,92
+url = prefixlarge + "ubuntu12.04" + suffix;,92
+url = prefixlarge + "winxp" + suffix;,92
+url = prefixlarge + "win7.32bit" + suffix;,92
+default:,93
+case r.id.actualizar:{,96
+case android.r.id.home:,96
+case motionevent.action_up:,96
+case motionevent.action_up,96
+case motionevent.action_down,96
+case motionevent.action_down:,96
+file tmpnewfile = file.createtempfile("pdfremovefile" "pdfouttemp.pdf");,97
+file f=fillfile();//my original file,97
+file fe;,97
+system.out.println("key"+key);,106
+(key == keyevent.key_enter)) {,106
+counter++;,110
+tempa[counter] = j;,110
+stack++;,113
+json = gson.tojson(imagemap);,116
+res.sendredirect(path);,121
+treelistselectedapartments.setroot(root);,121
+treepath path = tree.getselectionpath();,121
+}catch(arrayindexoutofboundsexception e) {,128
+} catch (transformerexception te) {,128
+@entity,129
+system.out.println(""+rows);,130
+at com.badlogic.gdx.backends.lwjgl.lwjglapplication$1.run(lwjglapplication.java:113),131
+double slowesttime;,132
+double rightnum = math.random() * 10;,132
+arraysize = integer.valueof(line);,147
+out.println(line);,147
+response.append(line);,147
+line = input.nextline();,147
+dostemp.writebytes(read);,152
+read = in.readline();,152
+lot lot = getlot(number);,154
+<groupid>org.apache.tiles</groupid>,154
+lot = getlot(number);,154
+<artifactid>tiles-template</artifactid>,155
+<artifactid>tiles-api</artifactid>,155
+<artifactid>tiles-servlet</artifactid>,155
+<artifactid>tiles-jsp</artifactid>,155
+<artifactid>tiles-core</artifactid>,155
+set.remove(obj),160
+list.remove(obj);,160
+winner = grid[0][2];,161
+winner = grid[0][0];,161
+winner = grid[i][0];,161
+winner = grid[0][i];,161
+method = requestmethod.post,162
+product,164
+try,164
+try {,164
+con=drivermanager.getconnection("jdbc:mysql://localhost/medi""root""");,164
+try{,164
+calendar.settime(date);,168
+clonename[k]=name[j];,171
+name = stdin.readline ();,171
+<version>3.0.1</version>,171
+| name        = albert einstein,171
+@jointable(name = "tbluser_role" joincolumns={,171
+@xmltype(name = "" proporder = {,171
+name="funcionalidadesliberadas",171
+clonename[j]=name[j];,171
+@ordercolumn(name = "images_order"),171
+<dependency>,183
+connection con = drivermanager.getconnection("jdbc:mysql://localhost:3306/watchlist""root""root");,188
+<p:ajax event="tabclose",188
+@formdataparam("qqfile") inputstream uploadedinputstream,189
+@formdataparam("qqfile") inputstream uploadedinputstream ){,189
+setheader("message-id" "my-message-id");,192
+jlabel label1 ;,194
+last = stringlist.get(stringlist.size()-1);,194
+parent.remove((jlabel)c);,194
+| birth_place = [[ulm]] [[kingdom of wã¼rttemberg]] [[german empire]],201
+* [[kingdom of wã¼rttemberg]] (1879â€“1896),201
+textarea.write(writer);,202
+in.putextra(key_title title);,213
+.println("welcome to the gussing game try to guess the number am thinking of to win!");,216
+.println("am thinking of a number between 0 and 10. try to guess it.");,216
+.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");,216
+weakreference<v> ref = queue.remove();,217
+adapter.remove(adapter.getitem(position));,217
+list.remove(position);,217
+@notfound(action=notfoundaction.ignore),218
+jsonarray artistjson = t.optjsonarray("artist");,218
+cartentry entry = it.next();,220
+zipoutputstream out =,224
+system.out.println(out);,224
+ps=con.preparestatement("select * from medicine where cname like ? or mname like ?");,226
+model.removerow(row);,232
+datavector.removeelementat(row);,232
+data.addelement(row);,232
+row[i]=rs.getstring(i+1);,232
+tagsjt.getvalueat(row column_tag_name) +,232
+tblitems.removeview(row);,232
+dm.addrow(row);,232
+json = "[" + json + "]"; //must have this to work!!,232
+x=searching(nameusername);,235
+} catch (interruptedexception e) {,236
+<textview,245
+}finally{,246
+finally {,246
+}finally,246
+} finally,246
+} finally {,246
+centertainment.additemlistener(new itemlistener(){,249
+song s = new song();,249
+map.put(myobj1 new myobj2();,249
+elemfield.setitemqname(new javax.xml.namespace.qname("" "destinationidinfo"));,249
+linkedhashset hs = new linkedhashset();,249
+secondactivity.backspace.setonclicklistener(new view.onclicklistener() {,249
+modelx = new humanlistmodel();,249
+popup.setonshown(new eventhandler<windowevent>(){,249
+tblpodaci.setmodel(new javax.swing.table.defaulttablemodel(,249
+defaultlistmodel listmodel = new defaultlistmodel();,249
+tmsearch.addkeylistener(new keyadapter(),249
+tbfile.addhierarchylistener(new hierarchylistener() {,249
+docdialog docdialog = new docdialog(parentmainjf,249
+nextbwnumber warrnbr = new nextbwnumber();,249
+com.itextpdf.text.document d = new com.itextpdf.text.document();,249
+button.setonclicklistener(new view.onclicklistener() {,249
+lm2 = new defaultlistmodel();,249
+backspace.setonclicklistener(new view.onclicklistener() {,249
+customerinvoicesentity finalcoupleentity = new customerinvoicesentity();,249
+mailfiling objfile = new mailfiling();,249
+typedesc.setxmltype(new javax.xml.namespace.qname("http://mynamespace"));,249
+jtextfieldextension.addkeylistener(new keyadapter() {,249
+dbconnect verbinden = new dbconnect();,249
+jtabbedpane tabbedpane = new jtabbedpane();,249
+myobj1 myobj1 = new myobj1();,249
+gesturelistener = new view.onlongclicklistener(),249
+tbfile = new jtoolbar();,249
+newbiex.setdefaultrenderer(human.class new humanrenderer());,249
+org.apache.axis.description.elementdesc elemfield = new org.apache.axis.description.elementdesc();,249
+polygon[] triarray = triangles.toarray(new polygon[triangles.size()]);,249
+decomposite.setlayout(new rowlayout(swt.horizontal));,249
+removearray takeoff = new removearray();,249
+col.setlabelprovider(new columnlabelprovider() {,249
+items.add(new cartentry(pid));,249
+mycbx.additemlistener(new myitemlistener());,249
+selectionmodel.addlistselectionlistener(new listselectionlistener() {,249
+buttongenerate.setonclicklistener(new view.onclicklistener() {,249
+elemfield.setxmlname(new javax.xml.namespace.qname("" "destinationidsinfo"));//if i remove this every element inside that tag will have xmlns="".,249
+scriptpanel = new gempanel();,249
+chatinput.addmouselistener(new java.awt.event.mouseadapter() {,249
+circleoptions circleoptions = new circleoptions(),249
+new eventdialog(dbaction.insert);,249
+tabbedpane.addchangelistener(new changelistener() {,249
+et.setonkeylistener(new onkeylistener() {,249
+elemfield.setxmltype(new javax.xml.namespace.qname("" "destinationidinfo"));,249
+changelistener l = new changelistener() {,249
+tokenstream = new stopfilter(version.lucene_43 tokenstream stopwords);,249
+count++;,250
+count = 0;,250
+@controller,252
+mymap.get().put(i++ "test" + i);,252
+bitmap bmp = bitmapfactory.deresource(getresources() r.drawable.pushpin);,254
+textgeneratenumber.settext(text);,255
+text += myrandom.nextint(10)),255
+text += myrandom.nextint(10)) + " ";,255
+} catch (ioexception e) { // skal pã¥ fordi fis.read() smider,260
+catch(ioexception ex2),260
+@post,260
+} catch (ioexception e) {,260
+result.append(values[i][j]);,263
+break;,271
+break sessionsearch;,271
+log.e("getsonglist"err);,272
+@suppresswarnings("unchecked"),273
+preparedstatement studentstatement = getconnected().preparestatement(,274
+file[] files = folder.listfiles();,275
+jpanel c = (jpanel)chessboard.getcomponent(i);,277
+change to abcd,279
+integer [] colm = {123456787};,280
+cursor ingredient = (cursor)this.list.getexpandablelistadapter().getchild(grouppositionchildposition);,286
+string lname;,290
+list.add(string);,290
+string hearingdesc = "" division = "";,290
+string packag = info.activityinfo.applicationinfo.packagename;,290
+string palabra = "hello";,290
+string  cname=rs.getstring("cname");,290
+string allstr="";,290
+string openingquotepattern = "\\\"[a-z0-9\\p{punct}]";,290
+string outfilename = kb.next();,290
+string t="";,290
+string filesquadra;,290
+string nodename = node.getnodename();,290
+string getvaluemethodname,290
+string emails = "" emails2 = "";,290
+string queryvalue;,290
+string prefixlarge = "";,290
+string bookid = request.getparameter("bkid");,290
+string numstr = integer.tostring(evendigits(n / 10)) +,290
+string closingquotepattern = "[a-z0-9\\p{punct}]\\\"";,290
+string colname=rsmd.getcolumnname(i);,290
+string sqlrow = "select count(*) from emp";,290
+string firstpass = "";,290
+string c;,290
+string getdiscontinuedmethodname),290
+string addressline1;,290
+string mname=rs.getstring("mname");,290
+string s = "aabbbeeddsfre";//sample string,290
+string f;,290
+string sel_id = list2.get(arg2).stud_id.tostring();,290
+string snoq = "";,290
+string[] weekdays={"sunday" "monday" "tuesday" "wednesday" "thursday" "friday" "saturday"};,290
+string b = str.replaceall("\\*\\s{2}" "* ");,290
+string[] notonthisday={"sunday" "monday" "tuesday" "wednesday"   "thursday" "friday"};,290
+string charges = getcharges(caseprefix casenumber hearingtype);,290
+string summseq = getsummseq(caseprefix casenumber);,290
+string docid = db.getdocid(strdoctor);,290
+string sqldata = "select deptno from emp";,290
+string getdescriptionmethodname,290
+string s = names.get(i);,290
+string revised = doactiona(s);,290
+string md5 = scan.next();,290
+string dupword = dupiter.next();,290
+string secondpass = "";,290
+string a="apple-banana-pineapple";,290
+string sb1=sb.reverse();//error coming in this line why ?,290
+system.out.println(string);,290
+string c = stringwithdoublequotes.substring(i i + 2);,290
+string paramclass;,290
+string sq1 = "delete from customer where id ='"+customerid+"'";,290
+string warrantnumber = warrnbr.getnextbwnumber();,290
+string address2 = templist.get(j).getaddress();,290
+string currclass;,290
+string requestsession = req.getrequestedsessionid();,290
+string htmlstring = "<div><p style='text-align: center; font-style: italic'>[click the <b>submit</b> button to create the new company.]</p><table><tbody><tr><td>this is table cell value</td></tr></tbody></table><p>miscellaneous contents</p><span>blah</span></div>";,290
+string newstring="";,290
+string suffix = ".zip";,290
+string sip = "";,290
+string str3 = "qux";,290
+list.remove(string);,290
+string finalvalue = "";,290
+string localquerystring;,290
+string urlpattern = "((https?|ftp|gopher|telnet|file|unsure|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)";,290
+string sport = "";,290
+string warrstatus = warrnbr.getnextbwnstatus();,290
+string commentstr1=commentstr;,290
+string decimalpattern = "([0-9]*)(\\.|\\)([0-9]*)";,290
+string trimmed = packag.substring(trimlength);,290
+string sourcestring = "source string to match with pattern";,290
+statement stmt = con.createstatement();,291
+array[i++] = num;,293
+imageview ivcloudview = lcloudarray.get(icloudcounter); // get view from arraylist,299
+} catch (exception e) {,302
+catch (exception e){,302
+catch (exception e),302
+<h2>menu</h2>,304
+m1.remove(one); // does remove,308
+number = "tel:" + number;,309
+.... later on:,313
+dos.writebytes("cd "+s2+"\\"+"\n");,314
+str.setspan(style 0 text.length() 0);,315
+android:layout_width="250px",317
+android:layout_width="fill_parent",317
+android:layout_width="match_parent",317
+android:layout_width="270px",317
+myobj2 myobj2 = referencequeue.remove().get();,318
+android:layout_height="100sp",319
+android:layout_height="125px",319
+android:layout_height="match_parent",319
+android:layout_height="fill_parent" >,319
+android:layout_height="wrap_content",319
+android:layout_height="fill_parent",319
+android:layout_height="200sp",319
+bufferedwriter out;,321
+inputstream is = urlconnection.getinputstream();,321
+finish();},322
+value = 1;,323
+<h:outputtext value="#{iterator.text}" />,323
+tformer.transform(source dest);,323
+singlevalues.add(value);,323
+value = -1;,323
+android:text="@string/startbutton" />,324
+android:text="@string/gametitle" />,324
+android:text="ð”ð¾ð±ð°ð²ð¸ñ‚ñœ ðºð°ð´ñ€" />,324
+android:text="@string/highscorebutton" />,324
+float price=rs.getfloat("price");,325
+catch (classnotfoundexception e),326
+swingutilities.invokelater(new runnable() {,328
+object o;,333
+centerpanel.add(label buttonindex);,333
+pnl.add(label);,333
+centerpanel.add(label labelindex);,333
+label createdetailsde = createdetailsde(decomposite);,333
+<main:basic_layout>,333
+object o = obji.next();,333
+image = ii.getimage();,333
+cal.settimeinmillis(timestamp);,336
+joptionpane.showmessagedialog(null "group with id " + gid,339
+crt.next = null;,339
+canvas.drawbitmap(bmp screenpts.x screenpts.y - 67 null);*/,339
+current.setdata(null);,339
+selectedlot = null;,339
+firstnode = null;,339
+n = null;,339
+myobj1 = null;,339
+1 3 4 null,339
+crt.next.content = null;,339
+start.setprev(null);,339
+elementdata[size-1]=null;,339
+joptionpane.showmessagedialog(null"please select a surname.");,339
+joptionpane.showmessagedialog(null "please make sure you have selected an item from the list");,339
+prevnode.setnext(null);  // set the previous node's next (anode) to null.,339
+_thread = null;//======>here nulling thread,339
+joptionpane.showmessagedialog(null"error");,339
+null,339
+lastnode.setnextnode(null);,339
+result.myrest = null;,339
+joptionpane.showmessagedialog(null datacol1);,339
+null key_swimmerlaps + " desc");,339
+logger logger = logger.getlogger("test");,339
+dog d = null;,339
+head.content = null;,339
+contestant = null;,339
+abook.setborrower(null);,339
+user.setavatarimage( null );  // first set it to null,339
+gameboard = null; //<--this is the thing am trying to null @ gameboard[row][column],339
+testdbadapter.delete("table_name" "_id="+itemid null);,339
+a[i+1] = null;,339
+lot lot = null;,339
+joptionpane.showmessagedialog(null "close to exit!");,339
+dog dog = null;,339
+end.setnext(null);,339
+canvas.drawbitmap(bmp screenpts.x screenpts.y - 67 null);,339
+chartermattribute token = tokenstream.getattribute(chartermattribute.class);,341
+jaxbcontext.newinstance( clazz.getpackage().getname() );,343
+s0.addall(s1);,344
+s.addall(s1);,344
+byte[] bytes = baos.tobytearray();,344
+removedchildren.addall(s1);,344
+byte b = bytes[readi];,344
+string sql = "select * from watchlist";,344
+getholder().removecallback(this);,345
+adapter.addlistener(this);,345
+utils.wait(this);,345
+mytable.addkeylistener(this);,345
+lasthighlightedros = this;,345
+.radius(mapsize)   //set radius in meters,345
+joptionpane.showmessagedialog(thisex2.tostring());,345
+<relativelayout xmlns:android="http://schemas.android.com/apk/res/android",352
+string username="";,353
+toast.maketext(displayactivity.this "you want delete this item" toast.length_short).show();,356
+int whatever = 33;,358
+int n = 3;,358
+int lengtha = a.length();,358
+int n = 0;,358
+int deleterow = stmt.executeupdate(sq1);,358
+int resultcounter = 0;,358
+int counter2 = 0;,358
+int c = 0;,358
+int secondcopied=0;,358
+int wi = 1;,358
+int currenttabcount = tabbedpane.gettabcount();,358
+int itemid = item.getitemid();,358
+int firstsize=mid-start+1;,358
+int tries = 0;,358
+int lengthb = wordb.length;,358
+int[] eventtypes = { 3007 3011 swt.resize swt.move swt.dispose,358
+int i=0;,358
+int currentend = -1;,358
+int arraysize = 10;,358
+int k = 1;,358
+int k = 0;,358
+int whereweare;,358
+int l = chars.length;,358
+int j =0;,358
+int totaltiles = gridsize*gridsize;,358
+int b; // til at putte bytes i,358
+int j;,358
+int m = 0;,358
+int totalitems = 0;,358
+int linenum = 0;,358
+int maxvowelatchar = 4;,358
+randomnum = (int) rightnum;,358
+int k=0x;,358
+int uniquecount = 0;,358
+int datasetcount = dataset.getseriesat(0).getitemcount();,358
+int condition = jcomponent.when_in_focused_window;,358
+int lineremove=1;,358
+int totalsize = 0; // every element in the set,358
+int count2 = 0;,358
+int shiftleft = j;,358
+int lengthb = b.length();,358
+int dups = 0;,358
+int index2 = 0;,358
+int a[] = {5 6 7 8 9 10};,358
+int p = 0;,358
+int i=0 ;,358
+int index1 = 0;,358
+int lasttabcount = tabbedpane.gettabcount();,358
+int labelindex = buttonindex + 1;,358
+int labelindex = buttonindex + 3;,358
+int comparison = 0;,358
+int i = filename.indexof('\n');,358
+int secondsize=end-mid;,358
+int midx = 0;,358
+int doublequotelevel = 0;,358
+int firstcopied=0;,358
+int j k;,358
+int k=0;,358
+int labelindex = buttonindex - 1;,358
+int[] colm = { 1 2 3 4 5 67 87 };,358
+int labelindex = buttonindex - 3;,358
+int a=sng.indexof(".");,358
+long one = 1;,358
+int mpunit=rs.getint("mpunit");,358
+int count1 = 0;,358
+int i = 0;,358
+int pages_number = reader.getnumberofpages();,358
+int[] ys = { startdrag.y startdrag.y midpoint.y };,358
+int lead = model1.getleadselectionindex();,358
+synchronized(reqlist),363
+| caption     = albert einstein in 1921,365
+system.out.println("values"+val);,371
+3: a3    (no bid),376
+4: a4    (no bid),376
+string url = "";,382
+table.removecolumn(table.getcolumnmodel().getcolumn(1));,392
+@id,395
+string key = st.nexttoken();,396
+cleanup = new thread() {,396
+} catch (sqlexception e),398
+i1 = 5;,398
+s.remove(i1);,398
+} catch (sqlexception sql2),398
+catch (sqlexception e),398
+s.add(i1);,398
+catch (illegalargumentexception e) {,399
+element rootelement = doc.getrootelement();,401
+element = element.getnext();,401
+jsonobject t = new jsonobject();,407
+jsonobject jo = new jsonobject(response.tostring());,407
+rs =db.sta.executequery(sqldata);,407
+rs= db.sta.executequery(sqlrow);,407
+rs=ps.executequery();,407
+model.addobject("state" state);,408
+| image       = einstein 1921 by f schmutzer.jpg,408
+mailinglist obj = new mailinglist();,409
+col = createtableviewercolumn(titles[5] bounds[5] 5);,409
+}catch(exception ex){,410
+} catch (exception ex) {,410
+switch (itemid) {,411
+switch (item.getitemid()) {,411
+switch(event.getaction()) {,411
+string path = "mypath";,411
+switch(event.getaction()),411
+switch(enum),411
+int column = tagsjt.columnatpoint(p);,412
+st.removelistener(eventtype listener);,413
+listener[] listeners = st.getlisteners(eventtype);,413
+copy.addpage(copy.getimportedpage(reader i));,417
+copy.freereader(reader);,417
+android:background="@drawable/goededoelenquiz",419
+android:background="@drawable/button",419
+new name(1312/02/2004),420
+new name(1312/02/2005),420
+new name(1212/02/2004),420
+new name(1412/02/2004),420
+customer.setaddress(address);,420
+final highlighter.highlight[] highlights = gethighlights();,425
+start = start.getnext();,431
+system.out.println("heya! "+ op);,431
+start = start.next;,431
+op=integer.parseint(myspace[1])*integer.parseint(myspace[2]);,431
+url = new url(piurl +"/jsonrpc");,434
+} catch (ioexception exception) {,434
+sb.append(ch);,435
+newstring.append(ch);,435
+.filter(_.length() > 1),436
+string line = input.nextline();,437
+string line = "alone amend dates dawns deals lemon lends";,437
+string pure = myfunc(line maxvowelchar);,437
+string line = "";,437
+map[n] |= chbit ;,439
+menuitems.add(map);,439
+.map(_.tolowercase()),439
+fragmenttransaction transaction =  fragmentmanager.begintransaction();,440
+file tempfilec = new file(filedetails.getabsolutefile() + ".tmp");,443
+jsonarray array = result.optjsonarray("songs");,443
+file tempfilen = new file(filename.getabsolutefile() + ".tmp");,443
+file tempfiled = new file(filedate.getabsolutefile() + ".tmp");,443
+file filedetails = new file("reminderdetails.txt");,443
+file filedate = new file("reminderdate.txt");,443
+system.out.println(result);,450
+listnode result = this.myhead;,450
+system.out.println("result: " + result);,450
+result[resultcounter] = chararray[i];,450
+result = result.substring(0 i) + result.substring(i + 4);,450
+matcher.appendtail(result);,450
+result = lastnode.getdata();,450
+result += "" + word.charat(i);,450
+catch (throwable e) {,451
+inattribute = true;,455
+editor.grabhorizontal  = true;,455
+man.setenabled(true);,455
+newbiex.setvisible(true);,455
+gameframe.setvisible(true);,455
+duplicate[j] = true; // j is duplicate,455
+urlconnection.setdoinput(true);,455
+sc.setfillviewport(true);,455
+request.getsession(true).removeattribute("userdetails");,455
+modified = true;,455
+woman.setenabled(true);,455
+couplefind = true;,455
+toplevel.setvisible(true);,455
+urlconnection.setdooutput(true);,455
+child.setenabled(true);,455
+request.getsession(true).invalidate();,455
+newbiex.setfillsviewportheight(true);,455
+isrunning = true;,455
+@onetomany(mappedby="m_owner" targetentity = child.class orphanremoval=true),455
+oddfound = true;,455
+((jdialog) toplevel).setundecorated(true);,455
+isfound = true;,455
+mlistpane.setvisible(true);,455
+frame.setvisible(true);,455
+has_it = true;,455
+checkdiacritics = true;,455
+already_exists = true;,455
+true,455
+editor.grabvertical = true;,455
+wefoundit = true;,455
+userrepository.save( user );  // now "orphanremoval" will delete the old one,456
+userrepository.save( user );,456
+s.add(i2);,456
+if (this.isempty()) {,457
+if(deleterow == 1) {,457
+if (os.contains("win7.32bit")) {,457
+if(ids[i] != -1){,457
+if (labely == buttony && (labelx - buttonx) == -size.width) {,457
+if(i>=v.size()),457
+if(inds.isempty()),457
+if (hearingdesc.length() > 30),457
+if (address.equalsignorecase(address2) && i != j) {,457
+if (!(character.ishighsurrogate(c) || character.islowsurrogate(c))) {,457
+if(removepoints(key2key1))  {,457
+if (c == startchar && i+1 < chararray.length && chararray[i+1] == startchar),457
+if (currentnode.data.equals(x)) {,457
+if(!strline.contains("#")),457
+if (log.isinfoenabled()) {,457
+if(dogs.size() >= 0){,457
+if (arraysize == -1)  {,457
+if (evt.getclickcount() == 2) {,457
+if (labelx == buttonx && (labely - buttony) == size.height) {,457
+if (unique) {,457
+if(!(a.getnumberofcolumns()== b.getnumberofrows())),457
+if(e.getsource()==btnsave){,457
+if (value.equals("") ) {,457
+if(index1 != index2 && elem1.equals(elem2)),457
+if(password.equals("1234")){,457
+if (exis) {,457
+if (collectionutils.isnotempty(userset)),457
+if (type.equals("image")) {,457
+if (segment.startswith("alt=\"") || segment.startswith("src=\"")) {,457
+if(a==replace.charat(j)),457
+if (!ishearingfound),457
+if(removepoints(key1key2))  {,457
+if(z.getword() == inputword),457
+if(ankey.equals(key1)) {//key1 is subset and key2 is superset,457
+if (under.get(x).fire()),457
+if (shot){,457
+if (!shadow) {,457
+if (i != pageindexnotzerobased) {,457
+if(duplicate[i]),457
+if (freshdb) {,457
+if(!couplefind){,457
+if (n < 0) {,457
+if(j!=x){,457
+if (str.charat(str.length()-1)=='x'),457
+if(nonduplist.contains(dupword)),457
+if(character.iswhitespace(sb.charat(i))){,457
+if(selectedlot.getnumber() != lotnumber) {,457
+if (ptr.next.data.equals(x)) {,457
+if (labelx == buttonx && (labely - buttony) == -size.height) {,457
+if(requestsession.equals(tempcookie.getvalue())) {,457
+if (!tc.containsvalue(c))//if the char is not already in the hashmap,457
+if(str.startswith("text editor-"0)),457
+if((lotnumber >= 1) && (lotnumber < nextlotnumber)) {,457
+if (character.iswhitespace(sb.charat(i))) {,457
+if(uniquestr.indexof(string.valueof(somestr.charat(i))) == -1)  {,457
+if (!result.contains("" + word.charat(i))) {,457
+if (s.equals(names.get(j))) {,457
+if(arrays.binarysearch(dict tmpworda) >= 0){,457
+if(pages_number > 0) {,457
+if (!contestant.equals ("q")),457
+if (temp.length() %2 == 0) {,457
+if(word.length() == 1){,457
+if(sublist1.size()<=threshold),457
+if (word.charat(0) >= 32 && word.charat(0) <= 46) {,457
+if (entry.getpid() == pid) {,457
+if (chked) {,457
+if (k != -1) {,457
+if (!e.getvalueisadjusting()) {,457
+if( list1.isempty()) {,457
+if (lastselected != tabbedpane.getselectedindex()),457
+if(!vector.contains("?")),457
+if (ie.getstatechange() == itemevent.selected) { // item was just selected,457
+if (!util.isempty(s)) {,457
+if(arrays.binarysearch(dict tmpwordb) >= 0){,457
+if (sb.length() > 0) {,457
+if (maxsize == nitems),457
+if (!inattribute) {,457
+if (c.contains(i.next())) {,457
+if (!(selection.equals("select an username")))//current selection in combobox is stored as string,457
+if (lineremove>2) {,457
+if (stringlist.size() == 0){,457
+if (iswhitespace) {,457
+if(retlist.indexof(elem1) == retlist.indexof(elem2)),457
+if(str.equals("r")) {,457
+if (checkdiacritics),457
+if(word.length()==5),457
+if (mydict.containskey(cur.next.data)),457
+if(tempheader.data != prev.data),457
+if (this.i == t.i);,457
+if(late_list.get(i).stud_id.tostring() == sel_id.tostring()),457
+if(word.length()%2==0){//even,457
+if (lasttabcount == currenttabcount ) {,457
+if(whitelist[i+1] > whitelist[i]),457
+if(person.ismale()),457
+if (c.matches(openingquotepattern)) {,457
+if (parent.isactivate) {,457
+if(aboolean){,457
+if (!isvacated && ishearingfound),457
+if (line.matches("\\d+")),457
+if(hasnextpanel()){,457
+if(buttons.containskey(cell.getelement())),457
+if (list.getlength() > 0),457
+if (size.contains("origin")) {,457
+if(newuser.getroles().retainall(newrolelist)){,457
+if(curletter != prevletter) {,457
+if(!tempfilec.renameto(filedetails)) {,457
+if (line.startswith("[content]")) {,457
+if(bar.somecondition()){,457
+if (factor < min_zoom_value),457
+if (!str.equals(""),457
+if(record.getlevel() == level.info){,457
+if(list.getselectedindex()>=0),457
+if(ke.getkeychar()== '\b' ),457
+if (!localstmt.isclosed()),457
+if(i != tempa[j]),457
+if (32 <= b && b < 127) {,457
+if(sublist1.isempty()),457
+<linearlayout,457
+if (!groups.contains(newgroup)) {,457
+if (lastselected != tabbedpane.getselectedcomponent()) {,457
+if (minmax == minmax.min) passin = minmax.max;,457
+if (currentend == -1) {,457
+if ((i % 2) != 0) {,457
+if(currclass.equals(paramclass)),457
+if (f.isfile()) {,457
+if (isvacated),457
+if(ce.getpid() == pid),457
+if(rect.contains(p)),457
+if (!ball.flag),457
+if (under.isempty()),457
+if(!tempfiled.renameto(filedate)) {,457
+if(e.getkey() == 127 && mytable.getselectedrow() != -1),457
+if (inattribute && segment.endswith("\"")) {,457
+if(vector.contains("?")),457
+if(list2.contains(iter.next())) {,457
+if (p.contains(startdrag)) //polygon has a 'contains(point)' method,457
+if (e.getstatechange() == itemevent.selected) {,457
+if (datasetcount > maximumdatapoints - 1) {,457
+if (inpstr[i] == inpstr[j] && i != j),457
+if (!display.readanddispatch()),457
+if (labely == buttony && (labelx - buttonx) == size.width) {,457
+if (n.left.isleaf()) {,457
+if( word.length() % 2 == 0 ) {,457
+if (choice.equalsignorecase("y")),457
+if (char1 == char2) {,457
+if(linenum == 2){,457
+if ((event.getaction() == keyevent.action_down) &&,457
+if (currentend != -1) {,457
+if (lineremove==2) {,457
+if(s0.containsall(y.parents)||y.parents.isempty()){,457
+if (doublequotelevel > 0) {,457
+if (n == 0) {,457
+if (oldstring.length() > 0) {,457
+if(ingredientrow.ischecked()),457
+if (currentnode.size() == 0){,457
+if(inflst.getselectedindex() > -1){,457
+if(!dogs.isempty()){,457
+if (count2 == count1),457
+if (! l.isempty()) {,457
+if (movesmade == totaltiles){,457
+if (!isfound),457
+if (character.isdigit(c)),457
+if (c.matches(closingquotepattern)) {,457
+if (intdivision < 10),457
+if (lineremove<2) {,457
+if (string.charat(i) != string.charat(i - 1)) {,457
+string date = reminderdate.gettext();,458
+string date=rs.getstring("exp_date");,458
+string name = remindernamefield.gettext();,461
+statement localstmt = null;,461
+string name;,461
+p.paint(g info.getstartoffset() info,463
+info = highlights[i];,463
+highlighter.highlight info = highlights[i];,463
+object[][] rowdata=cj(sqldatarowsnumberofcolumns);,463
+android:id="@+id/bstartbutton",465
+android:id="@+id/gifcreator_thumbs",465
+android:id="@+id/tvgametitle",465
+firetablerowsdeleted(row row);,465
+android:id="@+id/mainlayout",465
+android:id="@+id/gifcreator_add",465
+<resources>,465
+android:id="@+id/bhighscore",465
+int counter = 0;,468
+@test,469
+system.out.print(" - now test is - " + test);,469
+| death_place = {{nowrap|[[princeton new jersey]] united states}},469
+system.out.print("test is - " + test);,469
+test = test.replaceall("\\s" "");,469
+int stack = 0;//stack for processing,472
+insert 6 3,474
+triangles.add( new polygon(xs ys3));,474
+insert 4 4,474
+byte[] buffer = new byte[18192];,474
+insert 5 2,474
+insert 4 10,474
+insert 2 7,474
+insert 2 0,474
+byte[] buffer = new byte[1000];,474
+insert 3 2,474
+insert 1 6,474
+int answer = docdialog.getanswer();,478
+baos.write(buffer 0 bytesread);,480
+listener="#{bean.removeelement(iterator)}" process="@this" />,483
+string last;,484
+thread cleanup = null;,487
+int rows=rs.getint(1);,489
+dogs.remove(index);,492
+index[k++] = i;,492
+d = dogs.remove(index);,492
+((defaultlistmodel)inflst.getmodel()).removeelementat(index);,492
+dog = dogs.remove(index);,492
+lowest.remove(index); //problem here,492
+type thedata = null;,492
+fastremove(index);,492
+index = location.get(lowest);,492
+result.add(lowest.get(index));,492
+}else,493
+else  {,493
+else // add unique char as a bit '1' to the map,493
+else,493
+} else {,493
+else  // set default cell color.,493
+else {,493
+}else{,493
+else{,493
+} else{ // if the word is in neither first or last position of array,493
+<s:property value="businessname" />,494
+<s:property value="top" />,494
+<put-attribute name="body" value="/web-inf/views/content2.jsp"></put-attribute>,495
+<put-attribute name="title" value=""></put-attribute>,495
+<put-attribute name="header" value="/web-inf/views/header.jsp"></put-attribute>,495
+<put-attribute name="body" value="/web-inf/views/content1.jsp"></put-attribute>,495
+<put-attribute name="title" value="this is the home page being displayed....."></put-attribute>,495
+<put-attribute name="menu" value="/web-inf/views/menu.jsp"></put-attribute>,495
+<put-attribute name="footer" value="/web-inf/views/footer.jsp"></put-attribute>,495
+<put-attribute name="body" value="/web-inf/views/home.jsp"></put-attribute>,495
+<put-attribute name="body" value=""></put-attribute>,495
+<put-attribute name="title" value="page context 1 displaying..."></put-attribute>,495
+<put-attribute name="title" value="employees list"></put-attribute>,495
+... somewhere in the  ...,503
+fname = in.next();,504
+outfile.println(fname + " " + lname);,504
+resultsetmetadata md = rs.getmetadata();,504
+names.add(fname + " " + lname);,504
+package com.stp.myapp;,506
+package foo.bar.baz;,506
+package com.example.commtest;,506
+package controllers;,506
+} catch (sqlexception ex),506
+@transactional,507
+fatal exception: main,508
+frame.getcontentpane().add(primary);,509
+add(objectn);,509
+add(object1);,509
+add(tmsearch);,509
+popup.getcontent().add(popupimage);,509
+add(scriptpanel);,509
+static {,510
+if (column == column_delete_tag){,511
+double tempb [] = new double [ items.length];,513
+"-" + filename;,513
+filename = "" + c.get(calendar.year) +,513
+filestozipp[0] = filename;,513
+double [] tempa = new double[arr.length];,513
+double[] dvalues = singlevalues.toarray(new double[]{});,513
+double tempa [] = new double [items.length];,513
+string out = "\\\\test\\\\";,514
+isrunning = false;,516
+child.setselected(false);,516
+has_it = false;,516
+returnstmt = false;,516
+man.setselected(false);,516
+table.gettableheader().setreorderingallowed(false);,516
+child.setenabled(false);,516
+habwesend.setenabled(false);,516
+"g" : {"isready":false},516
+table.gettableheader().setresizingallowed(false);,516
+_thread.setrunning(false);,516
+unique = false;,516
+woman.setselected(false);,516
+urlconnection.setusecaches(false);,516
+checkdiacritics = false;,516
+woman.setenabled(false);,516
+request.getsession(false).removeattribute(enumobj);,516
+zipstatus = false;,516
+"a" : {"isready":false},516
+go = false;,516
+wefoundit = false;,516
+man.setenabled(false);,516
+retry = false;,516
+"a" : { "isready":false},516
+button.setvisible(false);,516
+@manytoone(optional = false),516
+elemfield.setnillable(false);,516
+inattribute = false;,516
+gameframe.setvisible(false);,516
+&& character.islowsurrogate(query.charat(query.length() - 1)) == false) {,516
+"a" : {"isready":false},516
+tmsearch=new jtextfield();,518
+@override,523
+set.add(input[i]);,524
+system.out.println(input);,524
+input = input.replaceall(" " ""); // change here,524
+newlist.add(input[i]);,524
+input = console.next();,524
+system.out.print(input[i]);,524
+url url = null;,524
+input = console.nextline(); // change here,524
+jpanel primary = new jpanel();,526
+jpanel subpanel1 = new jpanel();,526
+url url = new url("http://ps.org/media/leftright.wav");,527
+flag = 0;,527
+flag=0;,527
+flag=1;,527
+lines++;,528
+linenumbers.append(lines+"\n");,528
+position.add(lines);,528
+jsonobject result = jo.optjsonobject("result");,530
+((viewgroup) ivcloudview.getparent()).removeview(ivcloudview); //remove view,532
+subpanel1.setpreferredsize (new dimension(450 100));,535
+log.i("long click on item " v.gettag().tostring());,537
+framecrewselection.add(formcrewselectionform(spaceobjectarray.findmannedbyname(combovehicle.getselecteditem().tostring()))); //create some controls (jcombobox combovehicle included) and assign listeners to them.,537
+.tostring());,537
+system.out.println( rs.getobject(i).tostring());,537
+integer two = 2;,538
+new string [] {,539
+l.remove(new string [] {"test" "456"});,539
+l.add(new string [] {"test" "456"});,539
+l.add(new string [] {"test" "123"});,539
+l.add(new string [] {"test" "789"});,539
+file file = new file("c:\\logos\\logo_bw.jpg");,540
+file file = new file("c:\\logo_bw.jpg");,540
+string text = "";,545
+return s.substring(0 s.length()-1);,546
+return domimplementationimpl.getdomimplementation().createdocument(,546
+return returnstmt;,546
+return "" + word.charat(0);,546
+return this.whatever;,546
+return reader.readline();,546
+return gameboard;,546
+return word.charat(0) + removepunctuation(word.substring(1));,546
+return newstrings;,546
+return zipstatus;,546
+return strbuf.tostring();,546
+return original.replaceall("(?s)<.+?>" "");,546
+return oddfound;,546
+return newstring.tostring();,546
+return stu ;,546
+return;,546
+return result.intvalue();,546
+return id.hash();,546
+return whitelist;,546
+return dogs.isempty() ?,546
+return slowesttime;,546
+return allstr;,546
+return newarray;,546
+return evendigits(n / 10) * 10 + n % 10;,546
+return uniquestr.tostring();,546
+return calendar.gettime();,546
+return finalarr;,546
+return commentstr1;,546
+return newstring;,546
+return value.replaceall("[^0-9]+" "");,546
+return r.tostring();,546
+return templist;,546
+return "*.fls";,546
+return mcallback.oningredientselected(ingredient);,546
+return -1;,546
+return this.id.equals(thatcategory.id);,546
+return matchingfiles;,546
+return tempheader;,546
+return dog;,546
+return removepunctuation(word.substring(1));,546
+return replaced;,546
+return d;,546
+return b;,546
+return c;,546
+return r;,546
+return o;,546
+return retlist;,546
+return listofstrings;,546
+return winner;,546
+return j;,546
+return coeff == t.coeff && expo == t.expo;,546
+return masterlist;,546
+return x;,546
+return fd;,546
+return s;,546
+return t;,546
+return lot;,546
+return sb.tostring();,546
+return mcallback.oningredientdeselected(ingredient);,546
+return strbuff.tostring();,546
+return,546
+return first.getitem();,546
+return "success";,546
+return selectedlot;,546
+return uniquechars.size() >= 3;,546
+return result.intvalue() * -1;,546
+return newmap;,546
+return doactionc(revised);,546
+return unique;,546
+return file1;,546
+return str.substring(0str.length()-1);,546
+return arrays.copyof(tempa  uniquecount);,546
+return filetemp;,546
+return builder.tostring();,546
+return 0;,546
+return stu;,546
+return "";,546
+return modified;,546
+return thedata;,546
+return emails;,546
+return normalizer.normalize(newstring.tostring() normalizer.form.nfc);,546
+return responseentity;},546
+return wefoundit;,546
+return removeduplicate(s.substring(1));,546
+return list.size();,546
+return "" ; // need to return the new string,546
+return filehandler.removefolder(dblocation);,546
+return arrays.aslist(string.split("\\" + delimiter));,546
+return evendigits(n / 10);,546
+return cal.gettimeinmillis();,546
+return record.getmessage() + "\r\n";,546
+return temp.getitem();,546
+return super.add(e);,546
+return result.tostring();,546
+return sw.tostring();,546
+return songlist;,546
+int buttonindex = pos[buttonposy][buttonposx];,549
+int i = 0 intdivision = 0 pos = 0;,549
+int[] whitelist = in.readints(args[0]);,551
+xmlns:tools="http://schemas.android.com/tools",553
+sc.setlayoutparams(new layoutparams(layoutparams.match_parent layoutparams.wrap_content));,554
+resultset rs= verbinden.sqlstatement.executequery("select ma_id from ab_spanne where(date() >= start and date() <= ende)");,555
+resultset rs = db.gettimings(strdate docid);,555
+system.out.println("collection: " + collection);,559
+fileoutputstream fos;,559
+tableitem item = (tableitem) cell.getitem();,560
+unique.add(item);,560
+result.add(item);,560
+@requestmapping(value="/agent/getoctetstream/{clientid}",562
+@requestmapping(value="/agent/getimagestring/{clientid}",562
+double op=0;,563
+if (key == consolekeytoggle) {,564
+stylespan style = new stylespan(typeface.italic);,564
+string xml = sw.tostring();,564
+startactivity(in);,564
+queue = new referencequeue<weakreference<v>>();,566
+temp_data = data;,566
+id  |name          |address_id,567
+} catch (filenotfoundexception e) { // skal pã¥ fordi,567
+} catch (filenotfoundexception e3) {,567
+if (counter == k),567
+wordb[i] = tmp;,568
+worda[i] = tmp;,568
+tmp = tmp.getnext();,568
+bimap<string integer> inversebimap = bimap.inverse();,570
+bimap<integer string> bimap = hashbimap.create();,570
+int writteni = offset;,570
+bytes[writteni] = bytes[readi]; // writteni <= readi,573
+throw new emptycollectionexception("linkedlist");,575
+throw new classcastexception();,575
+throw new  indexoutofboundsexception("error ");,575
+throw new unsupportedoperationexception();,575
+found = true;,576
+if (answer == docdialog.yes),576
+string image9j = base64.enbase64string(bytes); // creates a sting "/9j/4aaqskzjrgaba...",576
+byte[] bytes2 = new byte[writteni - offset];,577
+if(!found) {,578
+string strdoctor = (string) thetstaffname.getselecteditem();,580
+string string = kb.nextline();,580
+string string = "";,580
+audioinputstream ais = audiosystem.,581
+new object [][] {,582
+int[] xs = { startdrag.x enddrag.x midpoint.x };,584
+integer one = 1;,588
+int row = tagsjt.rowatpoint(p);,591
+this.getinputmap().put(keystroke.getkeystroke("shift ctrl pressed o") null);,591
+system.out.println(temp2);//final string,592
+@pathvariable string clientid) throws ioexception {,593
+component lastselected = tabbedpane.getselectedcomponent();,594
+component fig = evt.getcomponent();,594
+component c = chessboard.getcomponent(i);,594
+label.seticon(new imageicon(clientgui.class,595
+charsequence inputstr = userword;,595
+calendar c = calendar.getinstance();,596
+result.append(separator);,597
+cut = ((text) node.getuserobject()).gettext();,601
+string regex = "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9]",603
+ret.tail = right;,604
+left.next = right;,604
+string sngs2;,604
+right = right.next;,604
+case(add),605
+documentbuilderfactory factory = documentbuilderfactory.newinstance();,606
+newuser = (user) this.sessionfactory.getcurrentsession().load(user.class user.getuid());,607
+@consumes(mediatype.multipart_form_data),607
+resultset rs = stmt.executequery(sql);,609
+int count=0;,609
+int count = 0;,609
+super.onlistitemclick(l v position id);,612
+if((number >= 1)) {,612
+end = end.getprev();,616
+} catch (unsupportedencodingexception e) {,617
+<definition name="displaypagecontent2" extends="base.definition">,627
+<definition name="displaypagecontent1" extends="base.definition">,627
+<definition name="mainpage" extends="base.definition">,627
+tools:context=".mainactivity" >,628
+string linen = null;,629
+string newstring = null;,629
+string linec = null;,629
+string lined = null;,629
+super.oncreate(savedinstancestate);,632
+string str1 = "foo";,633
+copy.addpage(page);,633
+point p = e.getpoint();,638
+point p;,638
+point startdrag enddrag midpoint;,638
+curr++;,639
+return url;,639
+jbutton refreshbutton = new jbutton("refresh");,641
+jbutton btndelete = new jbutton("delete");,641
+gameboard[row][col] = tictactoesquarevalue.empty;,642
+context.startactivity(new intent(intent.action_dial uri.parse(number)));,642
+do // loop to create new nodes for the linked list using user data,645
+do // display contestants,645
+do {,645
+card[] tempcards = new card[cards.length - 1];,646
+} catch (numberformatexception e) {,649
+} catch (numberformatexception ignore) {,649
+example () {,653
+referencequeue<weakreference<v>> queue = null;,656
+produces = mediatype.image_jpeg_value ),656
+@produces("text/plain"),656
+string xml = parser.getxmlfromurl(url); // getting xml,657
+string status = (string)req.getattribute("jk_lb_activation");,657
+gridview.setonitemclicklistener(new onitemclicklistener() {,658
+@indexcolumn(name = "role_index" base = 0),658
+string val = st.nexttoken();,661
+list[j]=swap;,661
+objfile.writetofile2(list);,661
+_thread.getthreadgroup().list();,661
+list[j] = 0;,661
+list[elements-1]=0;,661
+list<role> newrolelist = newuser.getroles();,661
+return json;},662
+while (isrunning) {,664
+while (retry) {,664
+while (!choice.equalsignorecase("n")) {,664
+while (rs.next()) {,664
+while(iter.hasnext()),664
+sessionsearch: while(it.hasnext()) {,664
+while(itfinal.hasnext()){,664
+while ( matcher.find() ) {,664
+while(it.hasnext()) {,664
+while (iter2.hasnext()),664
+while (m.find()){,664
+while (!shell.isdisposed()),664
+while (it.hasnext()) {,664
+while(it2.hasnext()) {,664
+while (iter.hasnext()) {,664
+while(firstcopied < firstsize && secondcopied < secondsize),664
+while(enumsessionobj.hasmoreelements()){,664
+while (f.length()!=0) {,664
+while (!s.isempty()){,664
+while (rs.next()),664
+while (!contestant.equals ("q"));  // loop continues until "q" selected,664
+while (iter1.hasnext()) {,664
+while (sc.hasnextline()) {,664
+while (scan.hasnext()) {,664
+while( firstoccurrence != -1 ),664
+while(itinit.hasnext()){,664
+while(it1.hasnext())  {,664
+while( iterator.hasnext() ) {,664
+while(obji.hasnext()){,664
+while(iter.hasnext()) {,664
+while (m.find()) {,664
+while(dupiter.hasnext()),664
+while (stuff.hasnext()) {,664
+while (itr2.hasnext()) {,664
+while(rs.next()),664
+while (in.hasnext()) {,664
+while (itr1.hasnext()) {,664
+while(input.hasnext()) {,664
+while (scan.hasnextline()) {,664
+while (tokenstream.incrementtoken()) {,664
+while(firstcopied < firstsize),664
+} while (arraysze == -1 || k == -1);,664
+while(rs.next()){,664
+while (result.size() < totalsize) { // while we still have something to add,664
+while(secondcopied < secondsize),664
+while ((b = fis.read()) != -1) // sã¥ lã¦nge den ikke er -1,664
+pdfreader reader = new pdfreader(input_filename);,666
+pdfreader reader = new pdfreader(thepdffile.getabsolutepath());,666
+logger.getlogger(filewrite.class.getname()).log(level.severe null ex);,671
+string details = reminderdetailsfield.gettext();,672
+workingbatch value = it.next().getvalue();,673
+} catch (filenotfoundexception ex) {,674
+final popup popup = new popup();,674
+catch(filenotfoundexception ex),674
+final hierarchylistener hierarchylistener = new hierarchylistener() {,674
+matcher m = re.matcher(sourcestring);,675
+matcher m = p.matcher(commentstr1);,675
+tower testtower = testb.getgrid()[a1.get(i).getx()][a1.get(i).gety()];,675
+system.out.println(" - is this number? ===> " + match);,676
+out.write(buffer 0 len);,678
+domimplementationimpl.getdomimplementation().createdocumenttype( pname null null ) );,678
+throw new storageexception("unable to get customer" ex);,682
+int value = 0;,682
+map<kv> newmap = new arraymap<kv>();,688
+sc.addview(layout);,688
+string first = filelist.remove(0);,689
+assertequals(3 manager.getsize());,690
+assertequals(2 result.size());,690
+assertequals(2 l.size());,690
+assertequals(3 l.size());,690
+right.previous = left;,691
+ret.head = left;,691
+left = left.next;,691
+disconnect();,695
+string icon = "";,697
+toast.maketext(this e.tostring() toast.length_long).show();,702
+fileinputstream fis;,703
+scanner input;,703
+new org.apache.axis.description.typedesc(request.class true);,704
+if (count > 1) {,708
+if(count > 0 ),708
+out.putnextentry(new zipentry(filestozipp[i]));,709
+synchronized (this) {,709
+char prevletter =' ';,710
+char[] wordb = b.tochararray();,710
+char char2 = 0;,710
+char c;,710
+char firstchar = query.charat(i);,710
+char char1;,710
+char currentletter =' ';,710
+char a=str.charat(i);,710
+char c = query.charat(i);,710
+char [] chararray = s.tochararray();,710
+char[] worda = a.tochararray();,710
+char[] tiles = map.tochararray();,710
+char[] chararray = wikitext.tochararray();//all characters in wikipage,710
+char lastchar = '\0';,710
+char nextchar = query.charat(i+1);,710
+char c = chararray[i];,710
+string address = templist.get(i).getaddress();,710
+filecont.append((char) b);// put byten i stringbuilderen,710
+char c = value.charat(i);,710
+system.arraycopy(bytes offset bytes2 0 writteni - offset);,711
+if (!f.equals(content)) {,712
+show = !show;,713
+int randomnum = (int) rightnum; // convert the random number to int,717
+<div class="content-area">,721
+@requestmapping(value = "/source" method = requestmethod.post),725
+if (arraysize == -1) break;,728
+if (k == -1) break;,728
+int bytesread;,729
+map<stringb> dup;,729
+map<stringa> orig;,729
+args = new string[] { "data/list1.txt" };,732
+das = new dataoutputstream(urlconnection.getoutputstream());,733
+chatinputmouseclicked(evt);,733
+new zipoutputstream(new fileoutputstream(zipfilename));,735
+string result = secondpass;,740
+string result = "";,740
+return last;,740
+system.out.println(val + ":" + bimap.get(val));,742
+bimap.forceput(val existingmap.get(val));,742
+object o = table.getvalueat(lead col);,742
+for ( i = 1; i < charges.length(); i++ ),743
+for(t elem1 : retlist),743
+for (j = 1; j < inpstr.length; j++),743
+for (c.movetofirst(); !c.isafterlast(); c.movetonext()) {,743
+gridbagconstraints c = new gridbagconstraints();,743
+for (k = j; k < inpstr.length - 1; k++),743
+for(customerinvoicesdto itemfinalcouple : newcouplelistdto),743
+for (keystroke ks : strokes),743
+for (;;) {,743
+for (polygon p:triangles){,743
+for(customerinvoicesdto iteminitialcouple : originalcoupleslistdto),743
+for (i = 0; i < names.size(); i = i + 1) {,743
+for (map.entry<k v> graphentry : m.entries()) {,743
+for(t elem2 :retlist),743
+for (polygon p:triarray){,743
+for (; k<words.length; k++){ // find the position of the word to delete,743
+for (gifframe gf : temp_data),743
+int cols=rsmd.getcolumncount();,744
+document doc = builder.parse(xmlfile_);,744
+throw new exception("indexoutofboundexception");,749
+return res;,752
+boolean chked = boolean.valueof(retuntable.getvalueat(i 4),757
+boolean creatnewfile = temp.createnewfile();,757
+boolean exis = temp.exists();,757
+boolean iswhitespace = character.iswhitespace(c);,757
+boolean wefoundit;,757
+pattern p = pattern.compile(urlpatternpattern.case_insensitive);,759
+string[] test = strline.split("//s+");,759
+pattern p = pattern.compile("(?<=src=\"file:///android_asset/images/)[^\"]*");,759
+pattern p = pattern.compile("(.*?)(src=\"file:///android_asset/images/)(.*?\\s+.*?)(\")" pattern.dotall);,759
+<?xml version="1.0" encoding="utf-8" ?>,760
+new pointdisplay(mypoints 10 false);  //works fine pre-written class,765
+choice = sc.next();,766
+int state = e.getstatechange();,767
+if(fd.getparentfile().isdirectory()),767
+wait(1000);,768
+return array;,771
+garbage[count] = input[i];,775
+string line = null;,776
+double[] values = new double[]{ 1.0 2.0 2.0 2.0 3.0 10.0 10.0 };,777
+map = null;,778
+if (minmax == minmax.min) value = 1;,781
+final int randomindex = rand.nextint(ints.size());,784
+string doaction(string parameters);,785
+set.add(arr[i]);,787
+tempa[uniquecount++] = arr[i];,787
+finalarr[i] = arr[i];,787
+swap(_datamap.get(element.getkey())length()-1);,787
+whitelist[i] = arr[i];,787
+headers.setcontentlength(baos.tobytearray().length);,787
+mycbx.setmodel(new javax.swing.defaultcomboboxmodel(new string[] { "item 1" "item 2" "item 3" "item 4" }));,788
+long map[] = new long[] {0 0 0 0};,788
+f(x1s0);,794
+string fname;,794
+jframe frame = new jframe ("nested panels");,794
+return new linkedhashset<t>(lista);,795
+user newuser = null;,795
+return new mymessage(asession);,795
+if (n.right != null),796
+if (head.next == null) {,796
+if(prevnode == null) {,796
+if(curr.next == null),796
+if (o == null) {,796
+if (lastnode == null),796
+if(currentnode.getnext()==null),796
+if (b == null),796
+if (n.left != null) {,796
+if(lm2 == null),796
+if(librarynumber == null),796
+if (userroles == null) {,796
+if(somestr != null) {,796
+if (croot == null) {,796
+if(mymap != null){,796
+if (s == null || s.length() == 0) {,796
+if(anode==null),796
+if(lot != null) {,796
+if (n.left != null),796
+if (a == null),796
+if(temp.next != null && temp.next.data < smallest.data){,796
+if (current.next.equals (null)) {,796
+if(temp.next.data<temp.data && temp.next!=null){,796
+if (userset != null && userset.size() > 0) {,796
+int map = 0;,798
+childclass child;,799
+<p:tab id="tab" closable="true">,799
+<beans:property name="definitions" value="/web-inf/spring/tiles.xml"> </beans:property>,800
+if (!(lasthighlightedrow == this)) {,802
+element e = (element) nl.item(i);,802
+if (this == t),802
+this.reqtimer = new timer("request timer" true);,803
+string filename = arg0.getmessage();,803
+string filename = scan.next();,803
+string filename = kb.next();,803
+textview theoutput = (textview) findviewbyid(r.id.edtvertoon);,805
+tableitem item = new tableitem(gettable()swt.none);,809
+integer other_one = new integer(1);,810
+integer other_two = new integer(2);,810
+period p = new period(startdate enddate);,813
+<beans:bean class="org.springframework.web.servlet.view.tiles3.tilesconfigurer" id="tilesconfigurer">,813
+string normalized= normalizer.normalize(input normalizer.form.nfd);,814
+if (show),814
+string normalized = normalizer.normalize(input normalizer.form.nfd);,814
+string input;,814
+e value =(e) elementdata[index];,816
+&& idinvoiceinitial == itemfinalcouple.getinvoice().getid()),816
+&& idinvoicefinal == iteminitialcouple.getinvoice().getid()),816
+else value = -1;,817
+method = requestmethod.get produces = mediatype.image_jpeg_value ),819
+return xml;,821
+buttons.put(cell.getelement() button);,821
+<button,821
+button = buttons.get(cell.getelement());,821
+centerpanel.add(button labelindex);,821
+dataoutputstream das = null;,823
+string enumobj = enumsessionobj.nextelement().tostring();,827
+string datacol1 = retuntable.getvalueat(i 1).tostring();,827
+bufferedimage image = new bufferedimage(dim.width dim.height bufferedimage.type_int_rgb);,828
+string [] artist = new string[artistjson.length()];,829
+string[] filestozipp = new string[1];,829
+string homenum[]=new string[5];,829
+string cellnum[]=new string[5];,829
+string[] temp_arr = new string[words.length-1]; // make array with 1 less length for deleted,829
+string[] x = new string[(len-count)];,829
+printwriter out = null ;,831
+if (view == btnaddevent),832
+myclass.getitems().clear();,833
+books.remove(book);,833
+bookdetails book = dao.listbookdetailsbyid(integer.parseint(bookid));,833
+commentstr1=commentstr1.replaceall(m.group(i)"").trim();,837
+done=true;,838
+m1.put(two new object());,839
+address address = findorcreateaddress(addressline1...);,840
+address address;,840
+entitymanager em = getentitymanager();,840
+popup.getcontent().add(image);,842
+throw new runtimeexception("error converting to string" ex);,844
+throw new illegalargumentexception("a cannot be null");,845
+throw new illegalargumentexception("b cannot be null");,845
+switch (ch) { // lots of cases irrelevant to problem,846
+cards = tempcards;,847
+tempcards[n] = cards[n + 1];,847
+tempcards[i] = cards[i];,847
+int index = -1;,851
+int index;,851
+int index = random.nextint(dogs.size());,851
+label1 = new jlabel ("devil left" icon swingconstants.center);,851
+int index = 0;,851
+int index=0;,851
+if ((student.getid()) == (id)),853
+if ((student.getid()) == (id)) {,853
+first = true;,855
+string[] data = {"hellorawrbye""rawrxxx""xxxrawr""rrawrun""rawrxxxrawrrawrawr"};,856
+if (first) {,856
+return periodformat.getdefault().print(p);,858
+headers.setcontenttype(new mediatype("application" "jpg"));,859
+return s1.replace(s2"");,860
+.getresource("/resources/" + icon)));,861
+arraylist<string> file2 = readfile(filename2);,864
+arraylist<string> arlist;,864
+arraylist<string> file1 = readfile(filename1);,864
+return types [columnindex]; //this is line 83,865
+if (state == itemevent.selected) {,865
+if (col == 0) {,866
+contents.add(split);,867
+split[i] = "0";,867
+return value;,870
+id | addressline1 | addressline2 | country,870
+throws ioexception servletexception,872
+<p:tabview id="tabview" var="iterator" value="#{bean.list}">,873
+final t[] result = (t[]) array.newinstance(newtype input.length);,876
+final t[] result = arrays.copyof ( prototype input.length );,876
+customer = customer.findbyid(custid);,876
+return image;,879
+getcontrol().setbackground(item.getbackground());,880
+setbackground( unhoveredrowbg );,880
+setbackground( hoveredrowbg );,880
+setbackground( selectedrowbg );,880
+string temp2="";//string with no duplicates,882
+int x = input[i];,883
+int[] input = {123145123145-110};,883
+int[] input = {123145123145-11020};,883
+return null;,885
+return (this.map.put(e present) == null);,885
+int lines = 0;,886
+int flag=0;,886
+string separator = "|";,887
+startdrag = new point(e.getx() e.gety());,887
+p = new point(m.getpoint());,887
+documentbuilder builder = factory.newdocumentbuilder();,887
+final highlighter.highlightpainter p = info,889
+m1.put(one new object());,890
+bufferedreader in = null;,891
+<item name="android:windowbackground">@drawable/background_shelf</item>,891
+return this;,892
+if (character.ishighsurrogate(ch)),892
+if (character.gettype(ch) == character.non_spacing_mark),892
+if (character.isuppercase(ch)),892
+android:gravity="center",894
+android:gravity="center_horizontal",894
+if ((map[n] & chbit ) > 0) // duplicate detected,896
+fragmenttransaction ft = getfragmentmanager().begintransaction();,896
+fragmenttransaction ft = getsupportfragmentmanager().begintransaction();,896
+buttongenerate.setonclicklistener(new onclicklistener(){,897
+btnlogin.setonclicklistener(new onclicklistener() {,897
+enumeration enumsessionobj = request.getsession(false).getattributenames();,898
+size=maliste.size();,899
+--size;  // decrement size,899
+result = result + c.getstring(0) + "\n";,901
+string err = (ex.getmessage()==null)?"getsonglist":ex.getmessage();,901
+temp = str.split(delimiter);,905
+mlistmodel.addelement(temp);,905
+current.getnext().setprev(temp);,905
+unique[j+1] = temp;,905
+newstrings.add(temp[i]);,905
+fos=new fileoutputstream(file);,905
+temp= current.getprev();,905
+temp = temp.next ();,905
+temp = temp.next;,905
+if (result) {,908
+if(result),908
+string description1 = ((textview) view,910
+<jsp:body>,911
+if (has_it == true) {,912
+list=list.sublist(0list.size()-(list.size()-count));,912
+resultstate state = new resultstatefactory().fromstring(text);,912
+final rectangle a = this.component.getbounds();,912
+if (ischanged[i] == true),912
+| spouse      = [[mileva mariä‡]]&nbsp;(1903â€“1919)<br />{{nowrap|[[elsa lã¶wenthal]]&nbsp;(1919â€“1936)}},912
+pack();,913
+imageview imgview = (imageview)findviewbyid(r.id.image1);,914
+object[] oo=new object[] { "clark" "skill" };,915
+while( list.size() > count ) {,915
+if (path != null) {,917
+return view;,922
+getselectedpanel().setvisible(true);,923
+test = true;,925
+masterlist.remove(place);,925
+<s:if test="hasactionmessages()">,926
+if(test){,926
+int columns = md.getcolumncount();,926
+if((tempid = snet.chksharednet(_conn test[0] )) != 0),926
+int columns = table.getcolumncount();,926
+int len = selectedrow.length;,927
+int len;,927
+int len = words.length;,927
+int len = str.length; // get the array length.,927
+int len = str.length;,927
+xmlparser parser = new xmlparser();,928
+int rowcount = model.getrowcount();,929
+return anotherclass.methodtwo(id);,942
+list<integer> sublist2=list2.get(j);,942
+list<integer> sublist1=list1.get(i);,942
+list<integer> randomdata = generaterandomdata(arraysize 1 100);,942
+int quantity=rs.getint("quantity");,943
+table.addmouselistener(new jtablerowlistener(table));,944
+jaxbcontext context =,946
+if (m != index[p]),949
+if (o.equals(elementdata[index])) {,949
+} else if (lasttabcount > currenttabcount),950
+else if (c.matches(closingquotepattern)) {,950
+else if (maxsize < nitems),950
+else if (croot.item.equals(o)) {,950
+else if(elem1.equals(elem2)),950
+else if (c.matches(openingquotepattern)) {,950
+} else if (os.contains("12.04")) {,950
+else if(!fragment.isvisible()),950
+else if (chararray[i] == endchar && i+1 < chararray.length && chararray[i+1] == endchar),950
+} else if (os.contains("win7.64bit")) {,950
+int i = front;,950
+} else if (os.contains("winxp")) {,950
+else if(ankey.equals(key2))  {,950
+} else if (os.contains("10.04")) {,950
+else if (factor > max_zoom_value),950
+string password = etpassword.gettext().tostring();,950
+else if (start.data.equals(x)) {,950
+} else if (s.charat(i) != lastchar),950
+} else if (lasttabcount < currenttabcount),950
+} else if (os.contains("winxp.64bit")) {,950
+}else if(j==x),950
+} else if ((math.abs(n) % 10) % 2 == 1) {,950
+file flights = new file("appdata/" + filename);,956
+file filename = new file("remindernames.txt");,956
+<!doctype tiles-definitions public,956
+file flightsn = new file("appdata/" + filename);,956
+if(con==null),960
+if (session != null) {,962
+int []r=new int[input.length];,966
+int[] r = new int[input.length] - dups;,966
+int[] whitelist = new int[set.size()];,966
+int[] garbage = new int[input.length];,966
+int newarray[] = new int[whitelist.length];,966
+filewriter writer = null;,967
+int guess = sc.nextint();,969
+scanner in = new scanner(system.in);,970
+if(!tempfilen.renameto(filename)) {,971
+jlabel label = new jlabel("");,972
+2: a2    (no bid),972
+int end = arr.length;,974
+if (character.issurrogatepair(firstchar nextchar) == false) {,974
+if (character.ishighsurrogate(query.charat(query.length() - 1)) == false,974
+prefixlarge = header + "/image_large";,975
+header = table.gettableheader();,975
+prefixlarge = header + "/file_raw";,975
+system.arraycopy(input 0 result 0 input.length);,975
+curr = null;,979
+result.append(keys[k][l]);,980
+if (input[i]<0){,981
+getselectedpanel().setvisible(false);,984
+if(flag==1),984
+test = false;,986
+assert check();,993
+listmodel.addelement(strline);,995
+system.out.println(strline);,995
+return result;,997
+if (writer != null) {,998
+int curr = 0;,998
+system.out.println(""+columnnames[i]);,998
+columnnames[i] = colname;,998
+chars[m++] = c;,1000
+string name[]=new string[5];,1000
+return true;,1001
+return true;   // not sure why this returns true... false perhaps?,1001
+return user;,1002
+file temp;,1002
+if (checkcolumn(i)) return winner;,1003
+if (inpstr.length < 2) return;,1003
+if (checkdiagbottomleft()) return winner;,1003
+setcontentview(r.layout.main);,1003
+if (checkcriteria(revised)) return revised;,1003
+while (current.getnext()  != null) {,1003
+if (!((basictoolbarui) bar.getui()).isfloating()) return;,1003
+while(tempheader != null),1003
+while (cur.next != null),1003
+if (checkdiagtopleft()) return winner;,1003
+if ((e.getchangeflags() & hierarchyevent.parent_changed) == 0) return;,1003
+while (crt.next.next != null),1003
+setcontentview(r.layout.activity_main);,1003
+if (checkrow(i)) return winner;,1003
+while (w!= null),1003
+if ( s.length() <= 1 ) return s;,1003
+while (tmp.getnext() != null),1003
+<%@taglib prefix="main"  tagdir="/web-inf/tags" %>,1008
+<%@taglib prefix="r"  tagdir="/web-inf/tags/result" %>,1008
+r[index++] = input[i];,1017
+for (file f : files) {,1019
+document doc = parser.getdomelement(xml); // getting dom element,1019
+int swap = list[i];,1020
+int[] list= {5382576737};,1020
+linkedlist<t> retlist;,1021
+for (integer i : inds),1024
+return binarysearch(key low mid-1);,1028
+for ( string s : keywordset ),1033
+if( isselected )  // user clicked on this cell.,1034
+string[] res = validcombos.toarray(new string[0]);,1035
+comboactivate(selection);,1036
+populateunits(selection);,1036
+return dogs.get(index);,1038
+else return s.substring(01) + removeduplicate(s.substring(1));,1039
+bufferedreader reader = new bufferedreader(isreader);,1041
+selectednode = (defaultmutabletreenode) jtree2.getlastselectedpathcomponent();,1042
+defaultmutabletreenode selectednode;,1042
+s.removeall(s3);,1042
+removedchildren.removeall(s3);,1042
+throw new illegalstateexception();,1042
+stringtokenizer st = new stringtokenizer(a"-");,1043
+fileoutputstream fos = new fileoutputstream(tmpnewfile);,1045
+card c = cards[n];,1046
+android:orientation="vertical" >,1047
+android:orientation="vertical",1047
+android:orientation="vertical" />,1047
+pdfimportedpage page = copy.getimportedpage(reader i);,1051
+items = tempb;,1055
+node = node.next;,1055
+mythreadinstancemethod(node);,1055
+node ptr;,1055
+items >> abcd,1055
+node listnode; // node to delete,1055
+node<t> prevnode nextnode;,1055
+tempb[counter2] = items[i];,1055
+parent.remove(node);,1055
+string choice = "y";,1056
+httpheaders headers = new httpheaders();,1057
+return filename;,1060
+return false;,1063
+return false; // only one node,1063
+return false ;,1063
+else if (stack == 0),1064
+if (guess == randomnum) {,1068
+if (guess > randomnum + 10) {,1068
+return model;,1069
+file folder = new file(path);,1070
+return input;,1071
+for(object o :oo),1076
+bufferedreader brdate = new bufferedreader(new filereader("reminderdate.txt"));,1082
+bufferedreader brname = new bufferedreader(new filereader("remindernames.txt"));,1082
+bufferedreader brdetails = new bufferedreader(new filereader("reminderdetails.txt"));,1082
+getcontentpane().add(controlpanel);,1089
+getcontentpane().add(getselectedpanel());,1089
+calendar cal = gregoriancalendar.getinstance();,1092
+nodelist list = node.getchildnodes();,1093
+integer idcustomerfinal = finalcoupledto.getcustomer().getid();,1096
+integer idinvoiceinitial = initialcoupledto.getinvoice().getid();,1096
+integer idinvoicefinal = finalcoupledto.getinvoice().getid();,1096
+integer idcustomerinitial = initialcoupledto.getcustomer().getid();,1096
+peoplebin.getmen().add(person);,1099
+mycomposite.setlayout(new gridlayout(1 false));,1099
+shell.setlayout(new gridlayout(2 false));,1099
+url = prefix + "ubuntu12.04" + suffix;,1101
+url = prefix + "ubuntu10.04" + suffix;,1101
+url = prefix + "winxp.64bit" + suffix;,1101
+url = prefix + "win7.32bit" + suffix;,1101
+url = prefix + "win7.64bit" + suffix;,1101
+url = prefix + "winxp" + suffix;,1101
+for (int i=1;i<normalized.length();++i),1102
+for( int i = 0; i < arr.length; ++i ) {,1102
+for (int i = 0; i < normalized.length(); ++i),1102
+for (int i = 0 ; i < a.length ; i++){,1102
+for(int i=0;i<sb.length();++i){,1102
+for (int i = 0; i < array.length(); i++) {,1102
+for (int k = 0; k < c.length; k++) {,1102
+for (int i=1; i<str.length; i++),1102
+for(int i=0;i<stringlist.size();i++){,1102
+for (int i = 0; i < a1.size(); i++) {,1102
+for(int x=0 z=1; x<temp_arr.length; x++z++),1102
+for (int i = 0; i < values.length; i++) {,1102
+for(int i=0;i<maliste.size();i++){,1102
+for (int i = 0; i < list.getlength(); i++),1102
+for (int i = 0; i < list.length; i++) {,1102
+for (int i = 0; i < k-1; i++){ // add first part of array before the word,1102
+for(int i=0;i<list1.size();i++)  {,1102
+for (int i = 0; i < attrs.getlength(); i++),1102
+for(int j=i+1; j<words.size(); j++) {,1102
+for(int i=0;i<1;i++){,1102
+for (int i = 0; i < cookies.length; i++) {,1102
+for (int j = 0; j < i; j++) {,1102
+for(int i=0; i<temp.length; i++){,1102
+for(int i = 0; i < s.length(); i++){,1102
+for (int i = 0; i < data.stats.length; i++),1102
+for(int i=0;i<str.length();i++) {,1102
+for( int groupidx = 0; groupidx < m.groupcount()+1; groupidx++ ){,1102
+for(int k=0;k<7;k++){,1102
+for (int j = i + 1; j < listofstrings.size(); j++) {,1102
+for(int i = 0; (i<5) && (ints.size() > 0); i ++) {,1102
+for(int i=0;i<string.length();i++){,1102
+for (int i = 1; i < str.length; i++) {,1102
+for( int i = 0; i < set.length; ++i ) {,1102
+for (int i = 0; i < s.length(); i ++) {,1102
+for (int i = 0 ; i < numberofteams ; i++ ),1102
+for (int i = 0; i < filestozipp.length; i++) {,1102
+if((grid[i][0] == grid[i][1]) && (grid[i][1] == grid[i][2])){,1102
+for(int k=0;k<6;k++){,1102
+for (int i = 0; i < original.length; i += 1) {,1102
+for(int j=0;j<replace.length();j++),1102
+for(int x=0 z=0; x<temp_arr.length; x++z++),1102
+for (int i=0; i<input.length; i++){,1102
+for(int j=0;j<5;j++){,1102
+for (int i = 0; i < 5; i++),1102
+for (int i = 0; i < retuntable.getrowcount(); i++) {,1102
+for(int i=0; i<late_list.size(); i++),1102
+for (int j = 0; j < value2.length(); j++) {,1102
+for (int i = 0; i < value.length(); i++) {,1102
+for (int n = 0; n < list.length; n++) {  //goes through each integer,1102
+for(int j = i + 1; j < numitems; j++),1102
+for (int x = 0; x < under.size(); x ++),1102
+for(int i = 0; i < 64; i ++),1102
+for (int j = i+1; j < list.length; j++) {,1102
+for (int i=0; i < gridsize; i++) {,1102
+for (int k = 0; k < keys.length; k++) {,1102
+for (int i = 0; i < input.length; i++) {,1102
+for(int i = 0; i < n; i++),1102
+for (int i = 0; i < times.length; i++) {,1102
+for (int i = 0; i < arr.length; i++) {,1102
+for (int k = 0; k < 6; k++) {,1102
+if((grid[0][i] == grid[1][i]) && (grid[1][i] == grid[2][i])){,1102
+for(int i = 0; i<words.length; i++),1102
+for(int i=0; i<split.length; i++),1102
+for(int i=0; i <somestr.length(); i++)   {,1102
+for(int i = 0; i<lengthb; i++){,1102
+for (int i = 0; i < inpstr.length; ++i),1102
+for (int i=0; i<newarray.length;i++){,1102
+for (int j = i + 1; j < input.length; j++) {,1102
+for (int n = 0; n < l; ) {,1102
+for (int i=0;i<arr.length;i++) {,1102
+for (int i=0 ; i<this.myarray.length; i++){,1102
+for(int j = 0; j<lengthb; j++){,1102
+for(int i=0; i<words.size()-1; i++) {,1102
+for ( int i = 0; i< numitems ; i++),1102
+for (int j = 0; j < input.length; j++) {,1102
+for (int i = 0; i < templist.size(); i++) {,1102
+for (int i = 0; i < finalarr.length; i++) {,1102
+for (int j = i + 1; j < names.size(); j = j + 1) {,1102
+for (int i = 0; i < str.length; i++) {,1102
+for (int i = 0; i < stringwithdoublequotes.length() - 3; i++) {,1102
+for(int j  =0; j < artistjson.length(); j++) {,1102
+for(int i : keystocheck){,1102
+for (int i = 0; i < result.length() - 3; i++) {,1102
+for (int i = 0; i < nl.getlength(); i++) {,1102
+for (int i = 0; i < s.length(); i++) {,1102
+for (int j = n; j<elements-1;j++){ // < -- change from list.length to elements,1102
+for (int i = 0 ; i < listofstrings.size(); i++) {,1102
+for(int j=0;j<list2.size();j++)  {,1102
+for (int i = 0; i < word.length(); i++) {,1102
+for (int i = 0; i < query.length() - 1; i++) {,1102
+for (int eventtype : eventtypes) {,1102
+for (int i = 0; i < value1.length(); i++) {,1102
+for (int j = 0; j < templist.size(); j++) {,1102
+for(int i = 0; i < monsterlist.size(); i++){,1102
+for (int i = 0; i<terms.size(); i++),1102
+for(int i = 0; i < numitems; i++),1102
+for (int i = 0; i < this.myarray.length; i++){,1102
+for(int i=0;i<str.length();i++),1102
+for (int i = 0; i < chararray.length; i++),1102
+for (int x = 1; x <= palabra.length(); x++){,1102
+for(int j = 0; j< lengtha; j++){,1102
+for(int c = k b = k+1; c< temp_arr.length; c++b++){,1102
+for (int x = under.size() - 1; x >= 0; x--),1102
+for (int i=0; i<list.size(); i++),1102
+if((grid[0][2] == grid[1][1]) && (grid[1][1] == grid[2][0])){,1102
+for(int i=2; i <= pages_number;i++) {,1102
+for (int i = 0; i < str.length() ; i++),1102
+for (int j = n; j < list.length - 1; j++) {,1102
+for (int i = 0; i < str.length; i++),1102
+for (int i = 1; i <= reader.getnumberofpages(); ++i) {,1102
+for (int i = 0; i < whitelist.length-1; i++) {,1102
+for (int i = 0; i < query.length(); i++) {,1102
+for(int i=0; i<replace.length; i++),1102
+for(int i=1;i<=numberofcolumns;i++),1102
+for(int i = 0; i < chararray.length; i++) {,1102
+for(int x = 0; x < 19; x++) {,1102
+if((grid[0][0] == grid[1][1]) && (grid[1][1] == grid[2][2])){,1102
+for(int i: colm),1102
+for (int i = 0; i < elements.length; i++) {,1102
+for (int j=0;j<uniquecount && unique;j++) {,1102
+for(int i = 0; i < input.length; ++i),1102
+responseentity responseentity = new responseentity<byte[]>(baos.tobytearray() headers httpstatus.created);,1114
+if (toplevel instanceof jdialog) {,1116
+if (!( t instanceof a)),1116
+ret[c++] = i;,1116
+<div class="success-mesg" id="success-mesg">,1117
+if (this.getlistofteams().get(i).getname() == "free"),1118
+while (true) {,1119
+while (true),1119
+if(value == null || value.isempty()){,1120
+if (value == null || value.isempty()) {,1120
+object result = null;,1123
+success = true;,1123
+uniques.add(elements[i]);,1124
+elements -= k;,1124
+jtable table1;,1124
+if (!success),1125
+<%@page contenttype="text/html" pageencoding="utf-8"%>,1125
+string strdate = thetdate.gettext().trim();,1127
+scanner input = new scanner(scan.nextline());,1130
+list<string> filelist = arrays.aslist(files);,1130
+list.next = current;,1133
+current = current.next;,1133
+current=current.getnext();,1133
+current = current.getnext();,1133
+if (n.left == null && n.right == null){,1135
+if (mymap != null && mymap.get() != null) {,1135
+if (!lecturer.gettext().equals("")){,1139
+if ( integer.tostring(b.getid()).equals(bookid)),1139
+if (!"d".equals(item.getstatus()) {,1139
+if (!unitc.gettext().equals("")){,1139
+if(words.get(i).equals(words.get(j))) {,1139
+if (myspace[0].equals("*")) {,1139
+if (!(coursed.gettext().equals("not enrolled"))){,1139
+if( s.substring(12).equals(s.substring(01))),1139
+if(a[j].equals(a[i])),1139
+if(session.getid().equals(requestsession)) {,1139
+if (result.substring(i i + 4).equals("rawr")) {,1139
+if(!(jop1.returnvalueforkey(i).equals(jop2.returnvalueforkey(i)))){,1139
+if (z.getword().equals(inputword)) {,1139
+-assumenosideeffects public class java.util.logging.* {,1142
+while ((bytesread = stream.read(buffer)) != -1),1144
+int length=end-start+1;,1145
+refreshbutton.addactionlistener(new actionlistener(),1145
+int length = inputstr.length();,1145
+cmbids.addactionlistener(new actionlistener(),1145
+removeindividual.addactionlistener(new actionlistener(),1145
+removebutton.addactionlistener(new actionlistener() {,1145
+int length = string.length();,1145
+btndelete.addactionlistener(new actionlistener() {,1145
+button.addactionlistener(new actionlistener() {,1145
+int length = worda.length;,1145
+j.addactionlistener(new actionlistener() {,1145
+char ch = normalized.charat(i);,1146
+char ch = query.charat(i);,1146
+char ch = str.charat(i);,1146
+arraylist<resolveinfo> listp= (arraylist<resolveinfo>) pm.queryintentactivities( mainintent 0);,1149
+while( (line = in.readline()) != null) {,1150
+while ((line = rd.readline()) != null) {,1150
+while ((line = reader.readline()) != null) {,1150
+point[] mypoints = readpoints(filename);,1152
+system.arraycopy(temp 0 whitelist 0 count);,1156
+boolean first;,1157
+string[] split = string.split("");,1157
+string[] split = template.split("\\|");,1157
+string[] split = template.split("|");,1157
+mycomposite.setlayoutdata(new griddata(swt.fill swt.fill true true));,1160
+user james = new user(001 "jamesbond" "jb007" "admin");,1161
+for (final racer r : racer.getallracers()) {,1169
+for (final racer r : racer.getallracers()),1169
+timertask reqtask = new timertask(),1174
+tablerow row = (tablerow)tblitems.findviewwithtag(v.gettag());,1176
+while (result.get() == false);,1181
+while(whereweare != currentsize && wefoundit == false),1181
+else if( rowindextohighlight == row  )  // user is hovering on this cell.,1183
+else if( rowindextohighlight == row  ) {  // user is hovering on this cell.,1183
+temp2=temp2+c.tostring();//add the char to the output string,1184
+success = false;,1185
+<item name="android:windownotitle">true</item>,1187
+int[] array = new int[set.size()];,1191
+calendar calendar = calendar.getinstance();,1192
+string temp = stuff.next();,1195
+string[] temp;,1195
+string temp;,1195
+@xmlrootelement(name = "rootelement" namespace = ""),1196
+.findviewbyid(r.id.description)).gettext().tostring();,1198
+jcombobox mycbx = new javax.swing.jcombobox();,1199
+if(index==count),1200
+| children    = [[lieserl einstein|"lieserl"]] (1902â€“1903?)<br />[[hans albert einstein|hans albert]] (1904â€“1973)<br />[[eduard,1204
+return list;,1207
+for (resolveinfo info : listp) {,1207
+return stringutils.join(list " ");,1207
+boolean result = pickone();,1208
+integer i1 = new integer(1);,1209
+boolean unique = true;,1213
+boolean go = true;,1213
+boolean zipstatus = true;,1213
+boolean retry = true;,1213
+boolean returnstmt = true;,1213
+return success;,1214
+string c[]=new string[cols];,1215
+if("dis".equals(status)) {,1217
+int[] whitelist = new int[count];,1217
+dostemp = new dataoutputstream(new fileoutputstream(filetemp));,1220
+info: htmlmanager: stop: stopping web application at '/testweb',1221
+return match;,1222
+cdpanel.add(tf borderlayout.north);//tried lots of variations inc. no layout,1222
+rectangle e7 = new rectangle(405753535);,1223
+rectangle bulletobject = new rectangle(x+18 y-7 4 7);,1223
+rectangle e6 = new rectangle(335753535);,1223
+rectangle e4 = new rectangle(205753535);,1223
+rectangle e5 = new rectangle(270753535);,1223
+rectangle e3 = new rectangle(150753535);,1223
+if(choice == joptionpane.yes_option){,1223
+static final string key_desc = "description";,1226
+if (start == null),1227
+for (int i : numbers) {,1228
+if(low > high){,1229
+final textview textgeneratenumber = (textview)findviewbyid(r.id.generatenumber);,1230
+@joincolumn(name = "uid")} inversejoincolumns={,1231
+int age;,1231
+joincolumns={@joincolumn(name="funcionalidades")},1231
+@joincolumn(name="ch1_id" referencedcolumnname="id"),1231
+inversejoincolumns={@joincolumn(name="perfilacesso")}),1231
+string description = key_desc.replaceall("<.*?/>" "");,1232
+el.getparent().removecontent(el);,1232
+cut = el;,1232
+run(.. node .. params .. enum),1233
+* handles requests for the application home page.,1233
+usbserialdriver driver = usbserialprober.acquire(manager);,1234
+board testb = new board(); // a test board to test if locations are valid or not,1235
+else if (l.get(location.get(l)).compareto(lowest.get(location.get(lowest))) <= 0) {,1235
+container parent = c.getparent();,1239
+} catch (ioexception e1) {,1243
+if (arr[i] == tempa[j]) {,1244
+if(ke.getkeychar()== '\b' && tmsearch.gettext().length() == 0 ),1244
+int mid=rs.getint("mid");,1244
+return dogs.size() > 0 ?  dogs.get((int)(math.random()*dogs.size())) : null;,1244
+if(length < 2) {,1244
+if (go == false) break;,1245
+inputstreamreader isreader = new inputstreamreader(in);,1248
+temp = new file("appdata/temp.txt");,1251
+if (user == null) {,1252
+if(chessboard.getcomponent(i) instanceof jpanel),1255
+int size=listp.size();,1257
+system.out.println("the n-th largest element in the modified list is"+ list[n-1]);,1257
+int size = unique.size();,1257
+validate();,1258
+in = new bufferedreader(new filereader("d:\\test.txt"));,1260
+<c:when test="${statetype == statey}"><r:statey param=${state} /></c:when>,1261
+integer result = new integer(numstr);,1261
+<c:when test="${statetype == statea}"><r:statea param=${state} /></c:when>,1261
+<c:when test="${statetype == statec}"><r:statec param=${state} /></c:when>,1261
+<c:when test="${statetype == stateb}"><r:stateb param=${state} /></c:when>,1261
+<c:when test="${statetype == statex}"><r:statex param=${state} /></c:when>,1261
+integer i2 = new integer(2);,1266
+java.util.list<polygon> triangles = new linkedlist<polygon>();,1270
+v = (vector<rectangle>)ball.r;,1270
+vector<rectangle> v;,1270
+j--;,1271
+dataoutputstream dos;,1272
+if(idcustomerinitial == itemfinalcouple.getcustomer().getid(),1273
+if(idcustomerfinal == iteminitialcouple.getcustomer().getid(),1273
+if (value.getserver().getid() == idd) {,1273
+final imageview popupimage = new imageview(image.getimage());,1274
+boolean couplefind = false;,1274
+boolean already_exists = false;,1274
+boolean isfound = false;,1274
+boolean oddfound = false;,1274
+boolean inattribute = false;,1274
+boolean modified = false;,1274
+boolean checkdiacritics = false;,1274
+boolean has_it = false;,1274
+if(e.getsource() == button[0]) {,1279
+char tmp = wordb[i];,1279
+char tmp = worda[i];,1279
+string result = new string("");,1280
+string strline;,1285
+catch (exception e1),1285
+if ("".equals(line)) {,1286
+modelandview model = new modelandview("result/view");,1287
+if (elementdata[index] == null) {,1288
+else if(anode.getnext()==null){,1289
+while((string = br.readline())!= null),1293
+tmp.add(word);,1296
+newset.remove(word); // doesn't help - throws an error exception in thread "main" java.util.concurrentmodificationexception,1296
+stringlist.remove(word);//if it is eventest from the first word  then continue looping,1296
+stringlist.remove(word);,1296
+sportstacker.java:111: error: cannot find symbol,1296
+system.out.println("rmoving "+word);,1296
+system.out.println(word+" "+word.length()+" "+word.length()%2);,1296
+input = new scanner(new file(""));,1298
+string prefix = "";,1299
+for (billingitem item : this.billingitems) {,1303
+tmp.setnext(new node(newitem));,1304
+inputstream = new fileinputstream(filename);,1306
+fileinputstream fis = new fileinputstream(,1306
+arraylist < contacts > db_contacts = userservice.getuserserviceinstance(ctx).getnamenumberidismycontactisblockedfromcontatcstable();,1307
+arraylist < contacts > phone_contacts = commonutility.getallcontacts(ctx);,1307
+if(c instanceof jlabel),1311
+for (; i < len; i++),1312
+continue;,1316
+static final string url = "http://api.eventful.com/rest/events/search?app_key=42t54cx7rbrdfczc&location=singapore";,1319
+transformer t = transformerfactory.newinstance().newtransformer();,1320
+transformer tformer = tfactory.newtransformer();,1320
+if (input == null),1321
+fileinputstream in = new fileinputstream(filestozipp[i]);,1322
+list[i] = list[j];,1323
+for (int i=0; i < from; i++),1323
+list[j]=list[j+1];,1323
+list[j] = list[j + 1];,1323
+selection = (string)cmbids.getselecteditem();,1326
+if (character.isletterordigit(ch) || character.isspacechar(ch)),1327
+list.setadapter(adapter);,1329
+scanner scan = new scanner(system.in);,1330
+dataset = new xymultipleseriesdataset();,1336
+if (inpstr == null) return;,1342
+jscrollpane scroll_pane = new jscrollpane(table);,1342
+if(toplevel == null) return;,1342
+while ((len = in.read(buffer)) > 0) {,1342
+<a href="">go to home page</a><br/>,1347
+imageicon icon = new imageicon ("1.gif");,1349
+set<v> holding = new arrayset<v>(newmap.values());,1351
+matcher matcher = p.matcher(atext);,1351
+final int len = highlights.length;,1352
+final int len = arr.length;,1352
+for(int i = 1; i < count; i++) {,1353
+{null null null null},1356
+filterchain chain)throws ioexception servletexception {,1356
+if (i == size()),1356
+if (k<0 ||  k >= size()),1356
+} else if (col == 1) {,1360
+str2 = str.replaceall("[^\\p{print}\\t\\n]" "");,1362
+usbmanager manager = (usbmanager) getsystemservice(context.usb_service);,1365
+<s:form name="insertreview" action="insertreview" id="insertreview",1372
+a1.add(new location(getcurrentlocation().getx() + 1 getcurrentlocation().gety() + 1));,1378
+a1.add(new location(getcurrentlocation().getx() - 1                    getcurrentlocation().gety() + 1));,1378
+a1.add(new location(getcurrentlocation().getx() - 1 getcurrentlocation().gety() - 1));,1378
+a1.add(new location(getcurrentlocation().getx() + 1 getcurrentlocation().gety() - 1));,1378
+} catch (sqlexception e1) {,1381
+editor.seteditor(button  item columnindex);,1382
+if(!temp.add(place)) {,1382
+editor.seteditor(button  item cell.getcolumnindex());,1382
+tokenstream tokenstream = new standardtokenizer(version.lucene_43 new stringreader(string));,1391
+node tempheader = null;,1394
+for (integer val: existingmap.keyset()) {,1395
+string[] columns = new string[] { key_sponsor };,1396
+boolean found = false;,1396
+arraylist<song> songlist = new arraylist<song>();,1398
+arraylist a = new arraylist[];,1398
+size -= to - from;,1400
+size -= ((to - from)+1);,1400
+return super.format(record);,1400
+for(string val: inversebimap.keyset()) {,1405
+<definition name="base.definition" template="/web-inf/views/maintemplate.jsp">,1410
+i--;,1410
+out = new printwriter (new filewriter ("d:\\test_out.txt"));,1417
+if (info.getclass().getname().indexof(,1419
+if (info.getclass().getname().indexof("layeredhighlightinfo") > -1),1419
+document document = new document(reader.getpagesizewithrotation(1));,1425
+scrollview sc = new scrollview(this);,1426
+for(a[i].equals(a[i+1]){,1426
+person p = new person("x" "y" 200);,1429
+return sortedlist.get(mid);,1431
+while (start != null && start.data.equals(x) {,1434
+if (curr == null),1436
+scanner sc = new scanner(system.in);,1437
+if (bulletobject.intersects(e1)){,1440
+for(requestthread rt : reqlist.values()),1444
+return size;,1445
+return temp;,1451
+string value = node.getnodevalue().trim();,1451
+filewriter fstream;,1452
+node w = first;,1454
+if (character.isdigit(c = chars[n++])) {,1457
+int[] index = new int[100];,1458
+for (final string segment : str.split(" ")) {,1459
+fileinputstream fs = new fileinputstream(_file);,1459
+printwriter pwdate = new printwriter(new filewriter(tempfiled));,1460
+printwriter pwdetails = new printwriter(new filewriter(tempfilec));,1460
+printwriter pwname = new printwriter(new filewriter(tempfilen));,1460
+for (double value : values),1463
+int choice = joptionpane.showconfirmdialog(null,1464
+fis = new fileinputstream(filename);,1466
+if(count>=index)break;,1472
+list l = new arraylist();,1485
+node lastnode = start;,1486
+for(int i=0;i<cols;i++){,1488
+if (list[n] == val) {  //checks if the value is what the user enters,1490
+if(list[n] == val){,1490
+final intent mainintent=new intent(intent.action_mainnull);,1491
+int current = 0;,1492
+user billy = new user(002 "billybob" "woohoonascar" null);,1500
+user jane = new user(003 "caligurl88" "surfboardz" null);,1500
+bufferedreader reader = new bufferedreader(new filereader(,1500
+writer = new filewriter("mbm_log_"+date()+".txt"  true);,1502
+if ((input[i]==input[j])) {,1506
+if (input[i] >= 0 && input[i] <= 9){,1506
+if ((input[i]==input[j]) && (i != j)) {,1506
+if (temp.listnode () == node),1512
+if (node != tree.getmodel().getroot()) {,1512
+for (ptr = start; ptr.next != null; ptr = ptr.next) {,1514
+stringbuilder r = new stringbuilder();,1519
+stringbuilder uniquestr = new stringbuilder();,1519
+stringbuilder filecont = new stringbuilder(); // for at,1519
+stringbuilder newstring = new stringbuilder();,1519
+pattern pattern = pattern.compile("\\p{incombiningdiacriticalmarks}+");,1519
+stringbuilder strbuild1 = new stringbuilder();,1519
+system.out.println(sb);,1521
+return  header,1522
+point screenpts = new point();,1526
+(list<? extends t> objects,1530
+boolean createnewfile = temp.createnewfile();,1533
+object row[]=new object[cols];,1534
+return new string(result);,1536
+columnnames = new string[numberofcolumns+1];,1537
+for(rewritingnode x1 :removedchildren){,1538
+group newgroup = new group(gid groupname);,1550
+set<user> userset = arg.getusers(user.class);,1558
+} else if (guess < randomnum) {,1561
+if (tree != null) {,1565
+while (temp != listnode);   // couldnt remove,1569
+for (listener listener : listeners) {,1571
+if (len < 2) return; // if its less than 2..can't have duplicates..return.,1571
+final int trimlength = "com.android.".length();,1571
+if (len < 2) return;,1571
+ret=true;,1572
+arr[shiftleft] = arr[k];,1575
+int[] whitelist = new int[end];,1582
+string word=stringlist.get(i);,1586
+for(int i=index;i<size-1;i++){,1594
+httpsession session = request.getsession(false);,1595
+out = new bufferedwriter(fstream);,1595
+str[i] = 0;,1598
+str = str.replace(str.substring(str.length()-1) "");,1598
+dos.writebytes(str+"\n");,1598
+str = it.next();,1598
+str[i] = ' ';,1598
+str=str.replacefirst("text editor-""");,1598
+system.out.println(str);,1598
+sng=str;,1598
+for (string s : data) {,1599
+br = new bufferedreader(new inputstreamreader(inputstream));,1600
+try (scanner sc = new scanner(flights)) {,1601
+return items;,1601
+for(int i = 0; i< to - from; i++){,1603
+prev.next () = next;,1607
+arraylist < contacts > common_contacts = getcommoncontacts(phone_contacts db_contacts false);,1615
+file list = new file(filename);,1618
+return new arraylist(new linkedhashset(listofstrings));,1618
+goodargs.add(arg);,1622
+<style name="theme.shelves" parent="android:theme">,1626
+if (book != null && already_exists  ),1630
+set<integer> uniques = new linkedhashset<>();,1631
+scanner in = new scanner(list);,1632
+else if(borrower.getlibrarynumber().equals(librarynumber))),1633
+else if(otherborrower.getlibrarynumber().equals(librarynumber))),1633
+gson gson = new gson(); string json;,1633
+final boolean result =,1634
+button button;,1643
+* @return the winner if blank there is no winner,1651
+| birth_date  = {{birth date|df=yes|1879|3|14}},1651
+string str2 = "bar";,1652
+hs.addall(mylist);,1653
+myclass.setitems(mylist);,1653
+mylist  >> abcadc,1653
+for (user user : userset),1655
+jtoolbar bar = (jtoolbar) e.getcomponent();,1656
+recordlist.remove(bar);,1656
+boolean done = false;,1657
+return ret;,1663
+while (list != null) {,1664
+matcher m = pattern.compile(regex).matcher(filedata);,1665
+string tmpwordb = new string(wordb).trim();,1666
+string tmpworda = new string(worda).trim();,1666
+for (int i=1; i <= columns; i++),1669
+for (int i = 0; i < len; i++),1670
+for (int i = 1; i < len; ++i) {,1670
+for(int i=0; i<len; i++) {,1670
+for (int x = 0; x <=rowcount; x++),1673
+intent in = new intent(getapplicationcontext(),1676
+scanner scan = new scanner(fis);,1679
+while ((linen = brname.readline()) !=null && (lined = brdate.readline()) !=null && (linec = brdetails.readline()) !=null) {,1681
+if ( s == null ) return null;,1681
+dictionary<int int> mydict = new dictionary<int int>();,1683
+arraylist<string> maliste = new arraylist();,1688
+setcontentview(tv);,1692
+for (rectangle rect : v),1697
+mymap = new weakreference<map<integer string>>(map);,1699
+vector.add(split[i].trim());,1704
+if ( ! ( o instanceof person) ),1706
+char[] chars = input.tochararray();,1710
+char[] chars = userword.tochararray();,1710
+for (int i = 0; i < end; i++) {,1718
+for (int k = j+1; k < end; k++ shiftleft++) {,1718
+for(int i = 0; i < end; i++){,1718
+for (int j = i + 1; j < end; j++) {,1718
+framework.removeinputlistener(stage);,1723
+framework.addinputlistener(stage);,1723
+popup.show(stage);,1723
+words = temp_arr;,1725
+temp_arr[x] = words[z];,1725
+x[i] = words[i];,1725
+words = temp_arr; // assign the new values to global array,1725
+temp_arr[c] = words[b];,1725
+temp_arr[i] = words[i];,1725
+temp_arr[x]=words[z];,1725
+cursor c = ourdatabase.query(database_table columns null null null,1728
+urlconnection = (httpurlconnection) url.openconnection();,1730
+.center(new latlng(lat lon))   //set center,1736
+.map(word => word.filter(character.isletter(_))),1736
+if (character.isuppercase(normalized= .charat(i-1)) && character.gettype(normalized.charat(i)) == character.non_spacing_mark){,1743
+boolean test = false;,1744
+exception in thread "lwjgl application" java.lang.indexoutofboundsexception: index can't be >= size: 2 >= 2,1750
+* we don't have a change in indexes of the other nodes.,1754
+for (int i : list) {,1763
+boolean[] duplicate = new boolean[input.length];,1764
++ ((jcombobox)e.getsource()).getselecteditem() + "\"");,1766
+if(header != null),1772
+boolean equals( object t) {,1773
+if (ids[i] == -1) continue; // skip this iteration,1774
+textview tv = new textview(this);,1774
+list<string> goodargs = new arraylist<>();,1775
+while((index = sub.tolowercase().indexof(character.tolowercase(s.charat(i)))) > -1 && !sub.isempty()){,1776
+point[] finalarr = new point[count];,1777
+for (int readi = offset; readi < offset + count; ++readi) {,1778
+if (list[i] == list[j]) {,1780
+if (list[i] < list[j]) {,1780
+if ( listofstrings.get(i).tostring().equalsignorecase( listofstrings.get(j).tostring() )  ) {,1782
+list[elements - 1] = 0;  //elements is the amount of elements in the array,1785
+if(o.tostring().contains(iname)),1786
+if( !contains(e) ) {,1786
+button2 fragment:,1790
+boolean isvacated = false ishearingfound = false;,1791
+else if (((comparable)item).compareto(croot.item)<=0){,1795
+list = current;,1795
+for(cartentry ce : items),1798
+for (int row = 0; row < 3; row++) {,1800
+transformerfactory tfactory = transformerfactory.newinstance();,1812
+mar 18 2010 11:13:07 pm org.apache.catalina.loader.webappclassloader    clearreferencesthreads,1813
+final arraylist duplicatewords = new arraylist() ;,1824
+boolean printodd(list<integer> numbers) {,1826
+scanner console = new scanner(system.in);,1831
+setcontentview(sc);,1834
+bytearrayoutputstream baos = new bytearrayoutputstream();,1837
+lststr.remove(it);,1839
+dos=new dataoutputstream(fos);,1843
+session.put(billtransactionbooksconstants.bokbooks);,1845
+listiterator itr1 = l.listiterator();,1860
+listiterator itr2 = l.listiterator();,1860
+listiterator it2=keys.listiterator(it1.nextindex());,1860
+listiterator it1=keys.listiterator();,1860
+} else if (node.getuserobject() instanceof text) {,1865
+linearnode<object> current = element;,1868
+arraylist<employee> under = new arraylist<employee>();,1869
+int[] temp = new int[end-start+1];,1871
+int[] temp = new int[arr.lenght];,1871
+collection<httpsession> col = turbinesession.getactivesessions();,1881
+map.put(description "description: " + parser.getvalue(e description));,1884
+string replaced = str;,1888
+string str = in.nextline();,1888
+string str = original.replaceall("^<.+>$" "");,1888
+string nfdnormalizedstring = normalizer.normalize(str normalizer.form.nfd);,1888
+string str = iter.next();,1888
+string str = builder.tostring();,1888
+string str = "<img height=286 alt=\"eye_anatomy 1.jpg\" src=\"file:///android_asset/images/eye_anatomy 1  .jpg\" width=350 border=0></p> fd ssda f \r\n",1888
+string str;,1888
+for (char ch : tiles) {,1889
+final jbutton button = new jbutton();,1889
+for(int i=0; i < length; ++i) {,1889
+for(int i=0; i<length; i++),1889
+for (int i = 1; i < length; i++) {,1889
+for(int i = 0; i<length; i++){,1889
+final category categorytobedeleted = ... //get category from database,1896
+string value1 = manikandan;,1897
+if ((customer.getaddress()==null) || (!customer.getaddress().equals(address))) {,1899
+data[start+i]=temp[i];,1902
+boolean match = pattern.matches(decimalpattern test);,1903
+while(temp != null) {,1908
+while(temp!=null){,1908
+<a href="page1">display page 1</a><br/>,1920
+<a href="page2">display page 2</a>,1920
+for(person person : peoplebin.getpeople()),1923
+for(person person: personbin.getmen()),1923
+applicationadapter adapter = new applicationadapter(this listp);,1924
+listadapter adapter = new simpleadapter(this menuitems,1924
+filewriter writer = new filewriter("mbm_log_"+date()+".txt"  true);,1928
+if (current != null),1929
+if (current != null) {,1929
+pattern re = pattern.compile("[^abc\\s+]");,1929
+for (int i=0; i < index && current.getnext()!= null; i++),1933
+list<t> result = new arraylist<t>();,1936
+return binarysearch(key mid+1 high);,1936
+list<billingitem> result = new arraylist<billingitem>();,1936
+object next = itr1.next();,1940
+boolean success = false;,1943
+list<book> result = ... //get list from database,1946
+node now = w.next;,1954
+long chbit = (one << (str[i]%64));,1956
+cur = cur.next;,1957
+r.append(cur);,1957
+button buttongenerate = (button)findviewbyid(r.id.generateme);,1958
+arraylist<integer> arry = new arraylist<integer>();,1959
+node temp = listnode;,1960
+if (unique.remove(original[i])) {,1961
+bufferedreader br = new bufferedreader(new inputstreamreader(in));,1963
+term t = (term)o;,1965
+window toplevel = swingutilities.windowforcomponent(bar);,1972
+arraylist<friendsdata> arraylist    =  new arraylist<friendsdata>();,1973
+arraylist<string> worddulicate = new arraylist<string>();,1978
+arraylist<string> categories = new arraylist<string>();,1978
+arraylist<string> matchingfiles = new arraylist<string>();,1978
+arraylist<string> lststr = new arraylist<string>();,1978
+arraylist<string> nonduplist = new arraylist<string>();,1978
+arraylist<string> maliste = new arraylist<string>();,1978
+if(sb1.contentequals(sb)),1978
+fileinputstream fstream = new fileinputstream("c:/users/franky/documents/netbeansprojects/javaapplication5/src/javaapplication5/rose/"+filesquadra+"");,1982
+prefix = header + "/file";,1984
+prefix = header + "/image";,1984
+stringbuilder builder = new stringbuilder();,1985
+httpsession session = (httpsession) it.next();,1990
+system.arraycopy(original 0 newarray 0 index);,1996
+while ((strline = br.readline()) != null)   {,1999
+while((strline = br.readline()) != null),1999
+else if (node.getuserobject() instanceof element) {,2011
+final string word = iterator.next();,2012
+for(j = i - 1; j>= 0 && (temp.comparetoignorecase(unique[j]) < 0);j--) {,2014
+else return header;,2015
+if( set[i] == true ) {,2015
+string[] words = str.split(" ");,2015
+int mid = (high + low) / 2;,2016
+if (current == start) {,2022
+if (current == start),2022
+char[] chararray = sbletter.tostring().tochararray();,2023
+stringbuffer r = new stringbuffer( s.length() );,2024
+stringbuffer strbuf = new stringbuffer();,2024
+stringbuffer strbuff = new stringbuffer();,2024
+strings =  new arraylist<arraylist<string>>(s);,2030
+listview list = (listview)findviewbyid(r.id.list);,2031
+if(list.get(i).length()==2 || list.get(i).length()==4),2031
+if (arr[i] == arr[j]) {,2032
+element el = (element) parent.getuserobject();,2035
+element el = (element) node.getuserobject();,2035
+map |= 1 << (str[i] - 'a');,2037
+mar 18 2010 11:13:07 pm org.apache.catalina.core.applicationcontext log,2038
+temp = current;,2038
+fragment fav = new tabfavorites();,2039
+fragment cha = new tabchannels();,2039
+buttonfragment fragment = new buttonfragment();,2039
+pdfcopy copy = new pdfcopy(d fos);,2040
+for(word z:wordlist){,2040
+for (word z : wordlist) {,2040
+actionlistener listenercombovehicle = new actionlistener() {,2041
+actionlistener removeitem = (new actionlistener(),2041
+dlink iterator=_firstlink;,2042
+iterator i = set.iterator();,2042
+iterator<customerinvoicesdto> itfinal = newcouplelistdto.iterator();,2042
+iterator<t> iter2 = retlist.iterator();,2042
+iterator=iterator._next;,2042
+slistnode iterator = current.next;,2042
+iterator<customerinvoicesdto> itinit = originalcoupleslistdto.iterator();,2042
+iterator = iterator.next;,2042
+iterator obji = list.iterator();,2042
+head.next = iterator;,2042
+iterator<t> iter1 = retlist.iterator();,2042
+jtextfield tf = new jtextfield(message);,2044
+return chartfactory.gettimechartview(context dataset renderer "`ss h:mm a");,2044
+* check if there is a winner on the board,2054
+if(str.equals("b")){lststr.remove(str);},2055
+composite decomposite = new composite(mycomposite swt.none);,2056
+while (node != null);  // loop until the end of lists is reached,2058
+if (itr2.next() == next){,2064
+arraylist<object> arry1 = new arraylist<object>();,2064
+list<string> validcombos = new arraylist<string>();,2065
+list<string> newstrings=new arraylist<string>();,2065
+list<string> lst = new arraylist<string>();,2065
+return sb;,2067
+httpurlconnection urlconnection = null;,2069
+<!-- this file has several definitions of page layouts -->,2076
+if (isgoodargs(arg)),2080
+int[] ret = new int[totalitems];,2083
+stringbuffer response = new stringbuffer();,2083
+return new string(chars 0 m);,2085
+r.layout.list_item new string[] {description} new int[] {r.id.description});,2088
+if ((word != null) && (word.equals(a))) {,2093
+if (!(o instanceof term),2099
+object obj=set.iterator().next();,2100
+spannablestring str = new spannablestring(text);,2102
+bufferedreader rd = new bufferedreader(new inputstreamreader(is));,2108
+final map<string string> daysmap = new hashmap(7);,2110
+if (!isempty()) {,2111
+if ( isempty() ),2111
+term current = terms.get(i);,2116
+* to it's functional state.,2119
+char[] result = new char[chararray.length];;//characters between spezified chars including those chars,2121
+firstoccurrence = sb.tostring().indexof( replace );,2129
+while (current != null && current.data.equals(list.data)) {,2136
+attr attribute = (attr) attrs.item(i);,2141
+return str;,2144
+return userset.iterator().next();,2153
+for(int j = 0; j < values[i].length; j++){,2153
+fstream = new filewriter("appdata/temp.txt" true);,2156
+null : dogs.remove(new random().nextint(dogs.size()));,2168
+} else if (guess > randomnum && guess <= randomnum + 10) {,2173
+node current = list.next;,2188
+for (integer num : set) {,2194
+linearlayout layout = new linearlayout(this);,2199
+defaultmutabletreenode root = (defaultmutabletreenode) treelistselectedapartments.getroot();,2205
+rectangle e1 = new rectangle(20753535);,2206
+return getcurrentsession().createquery("from device").list();,2209
+person that = (person)o;,2220
+for(int n = 0; n <elements;n++){  // < -- change from list.length to elements,2226
+for (int m = 0; m < elements; m++),2226
+for (int i = 0; i < elements; i++),2226
+for (int j = i + 1; j < elements; j++),2226
+map<integer string> existingmap = new hashmap<integer string>();,2245
+imageicon ii = new imageicon(this.getclass().getresource(explode));,2247
+transaction.remove(fragment).commit();,2247
+transaction.add(r.id.fragment_container fragment ).commit();,2247
+executorservice executorservice = executors.newsinglethreadexecutor();,2256
+random r = new random();,2257
+list<child> children;,2258
+words = tmp.toarray(new string[]);,2264
+list<t> lowest = lists.iterator().next(); // the list with the lowest item to add,2268
+matcher m = p.matcher(str);,2273
+int current = arr[i];,2279
+temp[count] = current;,2289
+delete 4 4,2293
+delete 3 2,2293
+delete = stdin.readline ();,2293
+inputmap.put(keystroke.getkeystroke(keyevent.vk_delete 0) delete);,2293
+str=fd.getparent().substring(0 2);,2304
+char[] str = { 'a' 'b' 'a''b''c''e''c' };,2308
+else if(sortedlist.get(mid).getkey() == key){,2309
+else if(sortedlist.get(mid).getkey() > key){,2309
+int n = (int) str[i]/64;,2315
+sb.append(character);,2316
+character c = oldstring.charat(0);,2316
+if((tempheader == null)) return header ;,2318
+while (i != rear + 1 && !isempty());,2318
+repaint();,2321
+gameframe.getcontentpane().repaint();,2321
+hashmap<string object> imagemap = new hashmap<string object>();,2326
+for(string word: newset),2330
+for (int col = 0; col < 3; col++) {,2331
+iterator<string> stuff = thing.iterator();,2332
+string[] newarray = new string[original - 1];,2332
+iterator<string> dupiter = worddulicate.iterator();,2332
+if (reply == joptionpane.yes_option),2338
+if (reply == joptionpane.yes_option){,2338
+string result = str;,2338
+for (;wi<str.length; wi++) str[wi] = 0;,2341
+set[arr[i]] = true;,2345
+arraylist<string> list = new arraylist<>();,2349
+tableeditor editor = new tableeditor(item.getparent());,2353
+tableeditor editor = new tableeditor(gettable());,2353
+if (node.getuserobject() instanceof attribute) {,2358
+node smallest=new node();,2359
+<s:iterator value="actionmessages">,2366
+linearnode<object> temp = current;,2372
+if(personbin.getpeople().contains(person)),2376
+linearnode<object> previous = null;,2380
+boolean ret=false;,2391
+result dest = new streamresult(xmlfile_);,2393
+if (str == null),2394
+temp[index++] = data[start+firstcopied];,2395
+final window toplevel = swingutilities.windowforcomponent(bar);,2398
+if (cur != c) {,2414
+books = (arraylist) session.get(billtransactionbooksconstants.bok);,2420
+seriesb.add(new date().gettime() 20 + new random().nextint() % 100); // bo // todo;,2426
+seriesa.add(new date().gettime() 20 + new random().nextint() % 100); // pr // todo,2426
+if (node instanceof text) {,2427
+/*---->*/ public static void remv(string clonename[]string clonehomenum[]string clonecellnum[]){,2434
+collection<integer> inds = naivestringsearch(bigword str);,2438
+return s.replaceall(pattern.quote(new stringbuilder().append(c).tostring()) "");,2442
+string description= errex for screen share,2443
+final stringbuffer r = new stringbuffer(s.length());,2449
+arraylist<cartentry> items = new arraylist<cartentry>();,2453
+for (char c : chars) {,2454
+list<bitset> keys = new arraylist<>(mymap.keyset());,2465
+button button = (button) view.findviewbyid(r.id.button2);,2465
+final list<integer> ints = new arraylist<integer>(arrays.aslist(colm));,2472
+elem<e> right = left;,2472
+stringbuffer result = new stringbuffer();,2475
+return (t[]) new linkedhashset<t>(arrays.aslist(arr)).toarray();,2478
+list<string> list=arrays.aslist(split);,2480
+int firstoccurrence = sb.tostring().indexof( replace );,2488
+arrayadapter<string> adapter2 = new arrayadapter<string>(this android.r.layout.simple_list_item_1 maliste);,2490
+return userset.isempty() ? null : userset.iterator().next();,2492
+if ((map & (1 << (str[i] - 'a'))) > 0) // duplicate detected,2494
+jtable habwesend=new jtable();,2497
+if (current.equals(iterator)){,2499
+node.next = head;,2503
+head = head.next;,2503
+head = head.next; //if first element is smallest update the head,2503
+if (previous != null) {,2504
+for (string category : categories),2504
+txtdisplay.settext("" + names);,2509
+removeduplicates(names);,2509
+monsterstoadd.add("" + names[i] + "" + ids[i] + "" + levels[i]);,2509
+for(int i = sb.length() - 1; i >= 0; i--) {,2512
+for (int i = firstpass.length() - 1; i >= 0; i--) {,2512
+for (int i=capacity-1 ; i>=0 ; i--){,2512
+list<string[]> l = new linkedlist<string[]>();,2512
+for(int i = n; i < cards.length; i--),2512
+attribute at = (attribute) node.getuserobject();,2513
+source source = new domsource(doc);,2522
+datainputstream in = new datainputstream(fs);,2528
+node = new node (name);,2531
+actionmap.put(delete new abstractaction() {,2542
+for (list<t> l : lists) {,2547
+* this swap() call is used to swap our target with the end,2549
+scanner kb = new scanner(system.in);,2551
+} catch (ioexception e2) {,2561
+key_desc.replaceall("\n""").replaceall("</{01}.+?>" "");,2564
+if(items[i] ==items[j]),2567
+if(node instanceof element && node.hasattributes()),2572
+int reply = joptionpane.showconfirmdialog(null,2579
+if (fragment != null && fragment.isvisible()) {,2586
+string value2 = manikandan;,2587
+for ( bookdetails b : books ),2589
+table = new jtable(model);       table.setrowheight(20);,2592
+arraylist<string> temp = new arraylist<>();,2593
+for(place place : masterlist) {,2595
+vector vector = new vector();,2598
+if (data.stats[i][1].equals(category)),2610
+vector row = new vector(columns);,2615
+model = new defaulttablemodel();,2630
+if(words[i].compareto(target) !=0),2632
+list<string> tmp = new arraylist<string>();,2633
+arraylist<string> list = new arraylist<string>();,2640
+transformer transformer = tf.newtransformer();,2641
+final jlist list = new jlist(model);,2653
+static public string[ ] sortunique( string [ ] unique int count),2656
+string sub = s.substring(i+1);,2661
+slowesttime = times[i];,2663
+char cur = s.charat(i);,2668
+hashmap<string string> map = new hashmap<string string>();,2680
+final random myrandom = new random();,2683
+map<integer string> map = new hashmap<integer string>();,2685
+arraylist <word> wordlist=new arraylist<>();,2695
+} else if (current == end) {,2700
+else if (current == end),2700
+<!-- page as the body. as we didn't override the menu of footer it will display as specified in tha base.defition-->,2701
+you can find the meeting notes here https://docs.yahoo.com/a/filter.org/document/d/1luf_6q73_lm30t3x6whs_4ztkn7hfxdg4szzwz-cuvw/edit?usp=sharing,2704
+while(iterator!=_lastlink),2706
+if (math.abs(arr[i].getx() - arr[i].gety()) > 19) {,2707
+string str = new string(bytes "ascii");,2713
+file outfile = new file(output_filename);,2713
+button button = new button(gettable()swt.none);,2714
+tmpworda = new stringbuffer(tmpworda).insert(j tmp).tostring();,2717
+tmpwordb = new stringbuffer(tmpwordb).insert(j tmp).tostring();,2717
+list<string> list = new arraylist<string>();,2726
+if (obj instanceof category) {,2747
+if(temp[count - 1] == current),2747
+if(current.getelement() == student) {,2754
+if (value2 == -1 && minmax == minmax.min),2754
+if (value2 == 1 && minmax == minmax.max),2754
+string name delete;,2755
+1: a1    (no bid),2770
+node <type> current= start;,2773
+node<type> current = start;,2773
+if (stu.getname().touppercase().contains(removename.touppercase())) {,2774
+for (iterator<rewritingnode> iter_y= s.iterator(); iter_y.hasnext();) {,2786
+super.draw(canvas mapview shadow);,2789
+cookie[] cookies = request.getcookies();,2790
+cookie delcookie = cookies[i];,2790
+cookie[] cookies = req.getcookies();,2790
+@onetoone(cascade=cascadetype.remove),2794
+@onetomany(cascade = cascadetype.all),2794
+button = new button((composite) cell.getviewerrow().getcontrol()swt.none);,2796
+for (t item: original) {,2807
+display display = new display();,2809
+final packagemanager pm = getapplicationcontext().getpackagemanager();,2824
+for (string str : args) {,2824
+temp=mid+"  "+cname+"  "+mname+"  "+price+"  "+date+"  "+mpunit+"  "+quantity;,2836
+| death_date  = {{death date and age|df=yes|1955|4|18|1879|3|14}},2841
+previous = current;,2841
+head = null;,2842
+head = null; // initialize the head  and tail to null,2842
+temp[index++] = data[mid+1+secondcopied];,2849
+for(string arg : args),2849
+for (book book : result) {,2862
+if( set[arr[i]] == false ) {,2863
+if (words[k].equals(a)) {,2865
+if(words[0].equals(a)){ // if the word is the first in the array,2865
+boolean[] set = new boolean[1001]; //values must default to false,2867
+for(int l = 0; l < keys[k].length; l++){,2870
+final future<boolean> result = executorservice.submit(new callable<boolean>() {,2878
+jmenuitem mi = (jmenuitem)e.getsource();,2889
+for (int col = 0; col < columns; col++) {,2899
+if(data[start+firstcopied] < data[mid+1+secondcopied]),2906
+scanner kb = new scanner(system. in );,2916
+final jtable newbiex = new jtable(modelx);,2923
+return a1;,2939
+if (str == null) return; // if the array does not exist..nothing to do return.,2940
+if (str == null) return;,2940
+@joincolumn(name = "parent_id" referencedcolumnname = "id" nullable = false),2955
+datainputstream stream = new datainputstream(new fileinputstream(file));,2955
+@joincolumn(name = "roleid" nullable = false)}),2955
+if(smallest != head) { //first element is not min,2960
+clip clip = audiosystem.getclip();,2979
+system.arraycopy(original index + 1 newarray index newarray.length - index);,2981
+s = s.substring(0 i+1).concat(sub);,2985
+matcher.appendreplacement(result matcher.group(0).replaceall("\\s+"""));,3015
+<!-- the main definition with the header footer menu and body -->,3026
+transformerfactory tf = transformerfactory.newinstance();,3035
+stringbuilder sb = new stringbuilder(value.length());,3041
+stringbuilder sb = new stringbuilder("");,3041
+stringbuilder sb = new stringbuilder();,3041
+for (student stu : studentlist) {,3041
+while (iterator != null){,3045
+boolean delete; // check to see if deleted,3051
+datainputstream in = new datainputstream(fstream);,3051
+printwriter outfile = new printwriter(outfilename);,3055
+for (character c : chararray)//for each char,3060
+for (int i = 0; i < index && (current = current.getnext()) != null; i++) {,3067
+final char cur = s.charat(i);,3093
+bufferedreader stdin = new bufferedreader (new inputstreamreader (system.in));,3097
+category thatcategory = (category) obj;,3101
+jt.setmodel(new defaulttablemodel(rowdatacolumnnames));,3106
+if (index >= 0 && index < size && start != null) {,3111
+return pattern.matcher(nfdnormalizedstring).replaceall("");,3111
+if (index >= 0 && index < size && start !=null),3111
+if (stu .getname().touppercase().contains(removename.touppercase())) {,3117
+if (times[i] == 0) {,3120
+if (slowesttime < times[i]) {,3120
+jmenuitem j = new jmenuitem(r.getname());,3138
+defaultmutabletreenode node = (defaultmutabletreenode) path.getlastpathcomponent();,3139
+current = iterator;,3176
+list<string> collection = arrays.aslist(str1 str2 str3);,3216
+defaultmutabletreenode parent = (defaultmutabletreenode) node.getparent();,3223
+if(!linen.trim().equals(name) && !lined.trim().equals(date) && !linec.trim().equals(details)) {,3228
+list<integer> newlist = new arraylist<integer>();,3245
+cascade={javax.persistence.cascadetype.all} orphanremoval = true),3249
+arraylist<place> templist = new arraylist<place>(masterlist);,3249
+random random = new random();,3261
+node temp= new node();,3264
+random rand = new random();,3269
+random rand =  new random();,3269
+nodelist nl = doc.getelementsbytagname(key_event);,3270
+++tail; // increment tail...[0tail) is still "unique char list",3287
+++tail;,3287
+if (head!=null),3299
+if (head == null),3299
+marshaller.marshal(document sw);,3325
+list<bookdetails> books = new arraylist<bookdetails>();,3330
+identityhashmap<integer object> m1 = new identityhashmap<integer object>();,3346
+then copy to items,3349
+} else if(words[words.length-1].equals(a)){ // if the word is in the last position of the array,3359
+contents = contents.getnext();,3360
+display(names);,3362
+arraylist<hashmap<string string>> menuitems = new arraylist<hashmap<string string>>();,3389
+else if(data[start+firstcopied] > data[mid+1+secondcopied]),3400
+else if(data[start+firstcopied]==data[mid+1+secondcopied]),3400
+linkedlist<e> ret = new linkedlist<e>();,3408
+arraylist<string> words = new arraylist() {,3414
+hashmap<list<t> integer> location = new hashmap<list<t> integer>();,3418
+set<arraylist<string>> s = new linkedhashset<arraylist<string>>(strings);,3422
+so we will get,3454
+if (filecont.tostring().tolowercase().contains(jtextfieldsearch.gettext().tolowercase())) {,3465
+final stringbuilder sb = new stringbuilder(str.length());,3467
+temp = unique[i].replaceall("([a-z]+)[.?]*" "$1");;,3470
+composite mycomposite = new composite(shell swt.none);,3476
+for (int index = 0; index < size; index++),3478
+rectangle e2 = new rectangle(85753535);,3525
+string result = "a".replaceall("a" out);,3530
+for(cookie tempcookie : cookies) {,3533
+myjsonnode.remove(currentnode);,3542
+lastnode = currentnode;,3542
+currentnode = currentnode.getnext();,3542
+cleanjsonnodes((objectnode)currentnode);,3542
+currentnode = currentnode.next;,3542
+currentnode = this.gethead();,3542
+this.remove(currentnode);,3542
+stringbuffer sb = new stringbuffer("nitin");,3546
+stringbuffer sb = new stringbuffer();,3546
+head = node;,3558
+head = node;  // update the head to point to the new front of the list,3558
+node smallest = head;,3558
+node crt = head;,3558
+final jmenuitem j = new jmenuitem(r.getname());,3563
+listnode = new node (delete);,3597
+final insets insets = this.component.getinsets();,3603
+tail = null;,3627
+slistnode current = head;,3637
+int tail = 1; // number of unique char in the array.,3646
+int tail = 1;,3646
+original[curr] = original[i];,3647
+if (str[i] == str[j]) {,3653
+for (category category : book.getcategories()) {,3685
+defaulttablemodel dm=(defaulttablemodel) retuntable.getmodel();,3718
+string firsttwo = words[0] + "  " + words[1]; // first two words,3741
+string lasttwo = words[words.length - 2] + " " + words[words.length - 1];//last two   words,3741
+set<rewritingnode> removedchildren = new hashset<rewritingnode>();,3743
+set<rewritingnode> s = new hashset<rewritingnode>();,3743
+if (j == tail) {,3744
+head = new node(newitem);,3807
+if (head == null) throw new emptylistexception();,3874
+currentnode = null;,3881
+iterator<cartentry> it = items.iterator();,3882
+if (str[i] == str[j]) break; // break if we find duplicate.,3924
+if (str[i] == str[j]) break;,3924
+defaulttablemodel dm=new defaulttablemodel();,3967
+sub = sub.substring(0 index).concat(sub.substring(index+1 sub.length()));,3969
+s2=jfc.getselectedfile().getparent();//i am having single quote problem from here,3981
+sb.append(m.group(1)).append(m.group(2)).append(m.group(3).replaceall("\\s+" "")).append(m.group(4));,3988
+set<double> singlevalues = new hashset<double>();,4007
+t  next = contents.getnext().getitem();,4014
+set<integer> s = new hashset();,4024
+for (j = 0; j < tail; ++j) {,4031
+for (string word : words) {,4056
+for(bar bar : recordlist){,4056
+location: variable times of type double[],4060
+set<rewritingnode> s1 = new hashset<rewritingnode>();,4088
+file=new file(jfc.getselectedfile().getparent()sng+".bat");,4110
+node tmp = head;,4127
+gameframe.getcontentpane().revalidate();,4145
+revalidate();,4145
+@onetomany(cascade=cascadetype.all fetch=fetchtype.eager),4165
+@manytomany(fetch=fetchtype.lazy cascade = {cascadetype.merge cascadetype.persist} targetentity = role.class),4165
+int value2 = checklevel(removeword(bigword str i) dict passin);,4254
+for (jsonnode currentnode : myjsonnode){,4286
+next.previous () = prev; // removed,4319
+printlist(prev);,4319
+current.getnext().setprev(prev);,4319
+set<string> stopwords = new hashset<string>();,4323
+set<string> newset = new hashset<string>();,4323
+set<string> keywordset = new hashset<string>( arrays.aslist( keyword.split( "\\s+" ) ) );,4323
+tail = node;,4343
+elem<e> left = head;,4372
+iterator<string> iterator = stringlist.iterator();,4375
+contents = new vector();,4392
+node temp = head;,4463
+node temp=head;,4463
+arraylist<string> names = new arraylist<string>();,4487
+arraylist <string> names = new arraylist<string>();,4487
+while(currentnode != null),4545
+while (currentnode != null) {,4545
+i want to make sure it shows but only for 200ms*/,4572
+node<t> currentnode prevnode;,4597
+node currentnode;,4597
+if(!(names[i].isempty() || ids[i]<0 || levels[i]>100)),4621
+@onetomany(fetch = fetchtype.eager cascade = cascadetype.all orphanremoval = true),4621
+@onetoone(cascade = cascadetype.all fetch=fetchtype.lazy orphanremoval = true),4621
+prev = null;,4659
+* after that we downheapify() to fix the whole graph back,4674
+arraylist<location> a1 = new arraylist<location>(); // an array to contain all       possible locations,4700
+if (prev != listnode.next),4777
+set<rewritingnode> s3 = new hashset<rewritingnode>();,4785
+iterator<httpsession> it = col.iterator();,4794
+node<t> first = contents;,4815
+for (iterator<k> i = iterator(); i.hasnext(); ) {,4828
+pdfcopy copy = new pdfcopy(document new fileoutputstream(outfile));,4867
+str[tail] = 0; // add a 0 at the end to mark the end of the unique char.,4885
+str[tail] = 0;,4885
+for (iterator<integer> it = set.iterator(); it.hasnext();) {,4906
+for(iterator<string> it = lststr.iterator(); it.hasnext();) {,4915
+for(iterator<string> it = lststr.iterator(); it.hasnext();),4915
+<!-- homecontroller.java returns aka... as we specified it as displaypagecontent1 and displaypagecontent2 -->,5005
+node currentnode = start;,5029
+... somewhere else in a thread ... (i would like to pass to a checkthis(myobj2) method the value associated with the entry that was removed from the map),5033
+hashset<t> unique = new hashset<t>();,5033
+hashset h = new hashset(arllist);,5033
+if(prev == null) {,5116
+iterator iter = studentlist.iterator();,5118
+stringbuffer sb = new stringbuffer( str );,5144
+stringwriter sw = new stringwriter();,5225
+prev = temp;,5225
+if (str[i]!=0) str[wi++] = str[i];,5251
+currentnode.getprevious().setnext(null);,5253
+prev = header;,5295
+if ( books == null ) books = new arraylist<bookdetails>();,5310
+node < t > temp  = contents;,5320
+node prev = current.getprev();,5375
+set<integer> set = new hashset<integer>();,5407
+iterator<string> iter = dict.iterator();,5408
+iterator<string> iter=list1.iterator();,5408
+if (cur != c) r.setcharat( current++ cur );,5505
+node cur = head;,5515
+@onetoone(cascade = { cascade = { cascadetype.all },5588
+filename = filename.substring(0 i).replaceall("\\s" "_").replaceall(":" "") + ".jpg";,5643
+replaced = replaceall(str replace[i] replacement);,5672
+for (student student : this),5684
+node prev=null;,5714
+node prev = null;,5714
+linkedlist<elem<e>> ret = new linkedlist<elem<e>>();,5763
+jtable table = new jtable(new defaulttablemodel(info myheader)) {,5765
+final shell shell = new shell(display);,5786
+for (character character : charset) {,5908
+iterator<map.entry<long workingbatch>> it = workingmap.entryset().iterator();,5974
+arraylist<student> studentlist= new arraylist<student>();,5993
+defaulttablemodel model = new defaulttablemodel(datacolumnnames);,6054
+final private static set name = new hashset(){,6066
+final private static set name = collections.unmodifiableset(new hashset(){,6066
+list<string> list1=arrays.aslist(weekdays);,6077
+severe: a web application appears to have started a thread named [leakingthread]  but  has failed to stop it. this is very likely to create a memory leak.,6119
+for(string x:list1) {,6159
+if (head == tail) {,6248
+hashmap<integercharacter> tc = new hashmap<integercharacter>();//create a hashmap to store the char's,6275
+node prev = header;,6350
+hashset<integer> set = new hashset<>();,6416
+str[tail] = str[i];,6483
+str[tail] = str[i]; // add,6483
+list<string> list2=arrays.aslist(notonthisday);,6487
+set<place> temp = new hashset<place>();,6500
+set<character> charset = new linkedhashset<character>();,6516
+list<list<integer>> list1=mymap.get(key1);,6729
+<!-- you can override each of the base.definition entries. in this we change the page title and display a different -->,6845
+transformer.transform(new domsource(doc) new streamresult(sw));,7044
+list<list<integer>> list2=mymap.get(key2);,7140
+list<string> list1=new arraylist<string>();,7191
+if(prev == head){,7280
+list<string> list2=new arraylist<string>();,7601
+t.transform(new domsource(node) new streamresult(sw));,7746
+<!-- now you can specify as many layours as you want... the name will match the names the -->,7747
+node node head tail; // node is where string data is kept,7901
+static public string replaceall(string str string[] replace string replacement ),8300
+static public string replaceall(string str string replace string replacement ),8300
+set<character> uniquechars = new hashset<character>();,8377
+^do we want to move to next position or should we check again our string?,8650
+system.out.println("remove: " + remove);,8707
+remove(scriptpanel);,8707
+this.getlistofteams().remove(i);,8707
+planestwo.getairports().remove(aiportone);,8707
+planesone.getairports().remove(aiportone);,8707
+remove (p.contains(startdrag));,8707
+planesone.getairports().remove(aiporttwo);,8707
+book.getcategories().remove(categorytobedeleted);,8707
+static public string replaceall(string str string replace char replacement ),8720
+* remove the cookies.,8846
+* remove the session object.,9012
+groups.get("key").remove(id);,9103
+symbol:   method remove(double),9226
+return remove(croot.rchildo);,9253
+return remove(croot.lchild o);,9253
+personbin.getpeople().remove(person);,9297
+contents = new node ( next contents );,9631
+peoplebin.getpeople().removeall(peoplebin.getmen());,9739
+gameframe.getcontentpane().removeall();,9739
+m1.keyset().removeall(arrays.aslist(other_two)); // ...,9739
+button[x].remove(this);,9875
+assert groups.get("key").remove(id) != null;,9916
+list<string> remove = arrays.aslist(str1);,10002
+collection result = collectionutils.removeall(collection remove);,10278
+getcontentpane().removeall();,10320
+set.stream().filter(string -> string.length() % 2 == 0).foreach(set::remove);,10535
+button[x].getparent().remove(button[x]);,14018
+* of the arraylist. this means that whenever we remove it,14028
+^we are here now and we will remove "rawr",15004

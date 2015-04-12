@@ -1,5 +1,6 @@
 package in.ac.iiitd.pag.structureextractor;
 
+import java.util.List;
 import java.util.Properties;
 
 import in.ac.iiitd.pag.util.FileUtil;
@@ -16,8 +17,9 @@ public class AlgoGrepTester {
 		System.out.println(method);
 		Properties props = FileUtil.loadProps();
 		if (props == null) return;
-		StructureExtractor.init(props);
-		System.out.println(StructureExtractor.extract(method));
+		String operatorsFile = props.getProperty("CANONICALIZED_OPERATORS_FILE"); 
+		List<String> operators = FileUtil.readFromFileAsList(operatorsFile);
+		System.out.println(StructureExtractor.extract(method, operators));
 	}
 	
 }

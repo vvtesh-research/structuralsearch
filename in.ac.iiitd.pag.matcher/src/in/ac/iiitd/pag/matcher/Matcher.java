@@ -4,6 +4,9 @@ import in.ac.iiitd.pag.structureextractor.StructureExtractor;
 import in.ac.iiitd.pag.util.ASTUtil;
 import in.ac.iiitd.pag.util.CodeFragmentInspector;
 import in.ac.iiitd.pag.util.FileUtil;
+import in.ac.iiitd.pag.util.LuceneUtil;
+import in.ac.iiitd.pag.util.MatchResult;
+import in.ac.iiitd.pag.util.MatchResults;
 import in.ac.iiitd.pag.util.StringUtil;
 import in.ac.iiitd.pag.util.StructureUtil;
 
@@ -27,8 +30,7 @@ import org.apache.lucene.document.Document;
  */
 public class Matcher {
 	
-	static String operatorsFile = "";
-	static String luceneIndexFilePath = "";
+	
 	static List<String> algosFromMatchInputFolder = new ArrayList<String>();
 	static Map<String, String> methodSnippets = new HashMap<String,String>();
 	static int count = 0;
@@ -39,7 +41,35 @@ public class Matcher {
 	
 	public static void main(String[] args) {
 		long startTime = (new Date()).getTime();
-		match();
+		
+		Properties props = FileUtil.loadProps();
+		if (props == null) {
+			props = FileUtil.loadProps(true);
+		}
+		if (props == null) return;
+		String luceneIndexFilePath = props.getProperty("ALGO_REPO_INDEX_FILE_PATH");
+		List<MatchResult> mrList =  LuceneUtil.getAllVariants(luceneIndexFilePath, "factorial");
+		for(MatchResult mr: mrList) {
+			System.out.println(mr.title);
+		}
+		/*
+		String operatorsFile = props.getProperty("CANONICALIZED_OPERATORS_FILE"); 
+		List<String> operators = FileUtil.readFromFileAsList(operatorsFile);		
+		List<String> stops = FileUtil.readFromFileAsList("c:\\temp\\javastops.txt");		
+		List<String> prefixStops = FileUtil.readFromFileAsList("c:\\temp\\prefixStops.txt");
+		
+		String filePath = props.getProperty("MATCH_PARENT_FOLDER2");
+		String code1 = FileUtil.readFromFile("c:\\temp\\javaclassinput.java");
+		//matchFromFolder(luceneIndexFilePath, filePath, operators, stops, prefixStops);
+		MatchResults mr = match(luceneIndexFilePath, code1, operators, stops, prefixStops, 4, 10);
+		
+		System.out.println(mr.topicWiseResults.size());
+		
+		mr = match(luceneIndexFilePath, code1, operators, stops, prefixStops, 4, 10);
+		
+		System.out.println(mr.topicWiseResults.size());
+		
+		
 		try {
 			FileUtil.writeListToFile(allVocabItems, "c:\\temp\\matchervocab.txt");
 			FileUtil.saveFile(new File("c:\\temp\\"), "matcheroutput1.txt", output, "");
@@ -48,34 +78,64 @@ public class Matcher {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		*/
 		long finishTime = (new Date()).getTime();
 		System.out.println("Took " + (finishTime - startTime)/60000 + " minutes.");
 	}
+	
+	public static String test() {
+		return "test success";
+	}
+	
+	public static String getOutput() {
+		return output;
+	}
 
-	private static void match() {
-		Properties props = FileUtil.loadProps();
-		if (props == null) return;
-		operatorsFile = props.getProperty("OPERATORS_FILE");
-		String filePath = props.getProperty("MATCH_PARENT_FOLDER2");
-		StructureExtractor.init(props);
+	public static MatchResults match(String luceneIndexFilePath, String code, List<String> operators, List<String> stops, List<String> prefixStops, int minLoc, int maxLoc) {
+		MatchResults mr = null;
+		try {
+				reset();
+				extractMethods(code, operators);
+				mr = processMethods(luceneIndexFilePath, stops, prefixStops, minLoc, maxLoc);				
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return mr;
+	}
+
+	private static void reset() {
+		algosFromMatchInputFolder = new ArrayList<String>();
+		methodSnippets = new HashMap<String,String>();
+		count = 0;
+		output = "";
+		topicDistribution = "";
+		allVocabItems = new HashSet<String>();
+		addedMethods = new HashSet<String>();		
+	}
+
+	public static MatchResults matchFromFolder(String luceneIndexFilePath, String filePath, List<String> operators, List<String> stops, List<String> prefixStops, int minLoc, int maxLoc) {
+		MatchResults mr = null;
 		
-		luceneIndexFilePath = props.getProperty("ALGO_REPO_INDEX_FILE_PATH");
 		//LuceneUtil.printAll(luceneIndexFilePath, "algo");
 		try {
-			processFiles(filePath);
+			reset();		
+			processFiles(filePath, operators);
+			
 			//FileUtil.writeListToFile(algosFromMatchInputFolder, "c:\\temp\\algosFromEclipse.txt");
 			//algosFromMatchInputFolder = FileUtil.readFromFileAsList("c:\\temp\\algosFromEclipse.txt");
-			processMethods();
+			mr = processMethods(luceneIndexFilePath, stops, prefixStops, minLoc, maxLoc);
 			//System.out.println(output);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		//save algos
-		
+		return mr;
 	}
 	
-	private static void processMethods() {
+	private static MatchResults processMethods(String luceneIndexFilePath, List<String> stops, List<String> prefixStops, int minLoc, int maxLoc) {
+		MatchResults resultsMatched = new MatchResults();
+		
 		int found = 0;
 		for(String row: algosFromMatchInputFolder) {
 			//System.out.print(".");
@@ -84,11 +144,12 @@ public class Matcher {
 			if (items.length < 3) continue;
 			String methodName = items[1];
 			String algo = items[2].toLowerCase();
-			if (algo.split(" ").length < 5) continue;
+			if (algo.split(" ").length < 3) continue;
 			String method = methodSnippets.get(methodName + algo);
-			if (!((StringUtil.countLines(method) > 9) && (StringUtil.countLines(method) < 16)))  continue;
+			resultsMatched.input = method;
+			if (!((StringUtil.countLines(method) > minLoc) && (StringUtil.countLines(method) < maxLoc)))  continue;
 					
-			SearchResult results = SimpleLuceneSearch.search(algo, "algo", luceneIndexFilePath, methodSnippets.get(methodName + items[2]), 400);
+			SearchResult results = SimpleLuceneSearch.search(algo, "algo", luceneIndexFilePath, methodSnippets.get(methodName + items[2]), 400, stops, prefixStops);
 			/*if (result.trim().length() > 0) {
 				if (!result.toLowerCase().contains("c#")) {
 					//System.out.println(++found + ". " + methodName + ":" + result);
@@ -121,6 +182,19 @@ public class Matcher {
 					topicDistributionStr += result.get("topic") + ",";
 					topicsFound.add(result.get("topic"));
 					
+					MatchResult mr = new MatchResult();
+					mr.snippet = code;
+					mr.title = result.get("title");
+					mr.postId = result.get("id");
+					if (resultsMatched.topicWiseResults.containsKey(result.get("topic"))) {
+						List<MatchResult> topicWiseResults = resultsMatched.topicWiseResults.get(result.get("topic"));
+						topicWiseResults.add(mr);						
+					} else {
+						List<MatchResult> mrList = new ArrayList<MatchResult>();
+						mrList.add(mr);
+						resultsMatched.topicWiseResults.put(result.get("topic"), mrList);
+					}
+					
 					outputStr += "Topic Found: ";
 					outputStr += result.get("topic") + "(" + result.get("algo") + ")"+ "\n";
 					outputStr += "\tPost id" + result.get("id") + ". SO Title: (" +  result.get("title")  + ")"+ "\n"; 
@@ -143,9 +217,10 @@ public class Matcher {
 			}
 			
 		}
+		return resultsMatched;
 	}
 
-	public static void processFiles( String path ) throws IOException {
+	public static void processFiles( String path, List<String> operators ) throws IOException {
 
         File root = new File( path );
         File[] list = root.listFiles();
@@ -154,24 +229,28 @@ public class Matcher {
 
         for ( File f : list ) {
             if ( f.isDirectory() ) {
-            	processFiles( f.getAbsolutePath() );                
+            	processFiles( f.getAbsolutePath(), operators);                
             }
             else {
-                processFile(f);                
+                processFile(f,operators);                
             }
         }
     }
-	public static void processFile(File f) throws IOException {
+	public static void processFile(File f, List<String> operators) throws IOException {
 		if (!f.getName().toLowerCase().endsWith(".java")) return;
 		
 		String code = FileUtil.readFromFile(f.getAbsolutePath());
+		extractMethods(code,operators);
+	}
+
+	private static void extractMethods(String code, List<String> operators) {
 		Set<String> methods = grabMethods(code);
 		//System.out.println( "File:" + f.getAbsoluteFile() );
 		
 		for(String method: methods) {	
 			try {
 				String methodName = StructureUtil.getMethodName(method).toLowerCase();
-				String algo = StructureExtractor.extract(method).toLowerCase();
+				String algo = StructureExtractor.extract(method, operators).toLowerCase();
 				String row = ++count + "," + methodName + "," + algo;
 				algosFromMatchInputFolder.add(row);
 				if (!addedMethods.contains(method)) {

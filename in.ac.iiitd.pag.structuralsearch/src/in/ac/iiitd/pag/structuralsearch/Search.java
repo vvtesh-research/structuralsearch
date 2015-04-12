@@ -29,7 +29,7 @@ public class Search {
 	static String operatorsFile = "";  //List of operators that we recognize.
 	static String soIndexFilePath = ""; //Path where stackoverflow is indexed
 	static String stopFilePath = ""; //Path for file containing stop words.
-	static String topic = "inch meter"; //Topic to search.
+	static String topic = "reverse string"; //Topic to search.
 	
 	static {
 		Properties props = FileUtil.loadProps();
@@ -46,7 +46,7 @@ public class Search {
 		
 		//LuceneUtil.checkIndex(projectData);
 		//LuceneUtil.checkIndex(soIndexFilePath);
-		Map<String, Integer> map = LuceneUtil.printAll("C:\\data\\minedsnippets\\algorepoindex156", "topic");
+		/*Map<String, Integer> map = LuceneUtil.printAll("C:\\data\\minedsnippets\\algorepoindex156", "topic");
 		try {
 			FileUtil.writeMapToFile(map, "c:\\temp\\topcs.txt", 0);
 			Map<String, Set<String>>  topicVocabMap = LuceneUtil.getTopicVocabularyMap("C:\\data\\minedsnippets\\algorepoindex156");
@@ -72,8 +72,8 @@ public class Search {
 		} catch (IOException e) {
 			
 			e.printStackTrace();
-		}
-		//searchTopic(topic, 500, true);
+		}*/
+		searchTopic(topic, 500, true);
 	}
 	
 	public static List<CodeSnippet> searchTopic(String queryString, int maxResults,

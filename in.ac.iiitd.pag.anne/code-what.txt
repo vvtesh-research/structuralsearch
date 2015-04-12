@@ -1,0 +1,3843 @@
+@ requestmapping ( method = requestmethod.get ) 
+final string currentuser = securitycontextholder.getcontext ( ) 0.0 getauthentication ( ) 0.0 getname ( ) ; 
+0.0 0.0 0.0 
+synchronized ( this ) { 
+geogolfhole hole = ( geogolfhole ) arg ; 
+model.add ( 0.0 hole ) ; 
+jlholesingame.settext ( integer.tostring ( model.getsize ( ) ) ) ; 
+binarytree mirror = new binarytree ( ) ; 
+mirror = clone ( tree ) ; 
+0.0 0.0 0.0 
+treemirror ( 0.0 0.0 0.0 ) 
+0.0 0.0 0.0 
+this.submit = submit ; 
+interface validation { 
+while ( true ) 
+int angle ; 
+try 
+angle = getangle ( ) ; 
+return angle ; 
+catch ( noangleexception e ) 
+foreach ( object item in items ) 
+console.writeline ( item.tostring ( ) ) ; 
+int [ ] numbers = new int [ 10.0 ] ; 
+string [ ] names = new string [ 10.0 ] ; 
+openbutton.setaction ( actionmap.get ( ) ) ; 
+@ action public void open ( ) { 
+navigablemap < double integer > colormap = new treemap < double integer > ( ) 
+new copyonwritearraylist < eventlistener > ( ) ; 
+@ requestmapping ( value = method = requestmethod.post ) 
+modelandview mv = new modelandview ( ) ; 
+return mv ; 
+string rrule = ; 
+java.util.regex.matcher result = regbyday.matcher ( rrule ) ; 
+if ( result.matches ( ) ) 
+int grpcount = result.groupcount ( ) ; 
+for ( int i = 1.0 ; i < grpcount ; i + + ) 
+string g = result.group ( i ) ; 
+0.0 0.0 0.0 
+0.0 * ; byday = ( ? : ( [ + - ] ? [ 0.0 -9.0 ] * ) ( [ a-z ] { 2.0 } ) ? ) * 0.0 * 
+matching : 
+freq = weekly ; wkst = mo ; byday = 22.0 tu -2.0 we + 223.0 fr 
+1.0 = > 22.0 
+1.0 = > -2.0 
+1.0 = > + 223.0 
+2.0 = > tu 
+2.0 = > we 
+2.0 = > fr 
+thread t = new thread ( new runnable ( ) { 
+void run ( ) { 
+0.0 0.0 0.0 < - - is a lock held here ? 
+t.start ( ) ; 
+0.0 0.0 0.0 
+( lengthy stuff performed here keeping the lock held ) 
+0.0 0.0 0.0 
+if ( y = = 0.0 ) 
+return ( 1.0 ) ; 
+else 
+return ( x * abc ( x y-1 ) ) ; 
+decompiler.namesmap = namesmap ; 
+string decompiled = decompile ( source flags properties ) ; 
+decompiler.namesmap = null ; 
+return decompiled ; 
+if ( s = = null ) 
+return null ; 
+stringbuilder sb = new stringbuilder ( ) ; 
+int n = s.length ( ) ; 
+for ( int i = 0.0 ; i < n ; i + + ) { 
+char c = s.charat ( i ) ; 
+int pos = uni.indexof ( c ) ; 
+if ( pos > -1.0 ) { 
+sb.append ( plain_ascii.charat ( pos ) ) ; 
+} else { 
+sb.append ( c ) ; 
+return sb.tostring ( ) ; 
+xmlinputfactory = new wstxinputfactory ( ) ; 
+xmlinputfactory.setproperty ( xmlinputfactory2.is_replacing_entity_references boolean.false ) ; 
+xmlinputfactory.setproperty ( xmlinputfactory2.is_supporting_external_entities boolean.false ) ; 
+xmlinputfactory.setproperty ( xmlinputfactory2.is_coalescing boolean.false ) ; 
+xmlinputfactory.setproperty ( xmlinputfactory2.is_validating boolean.false ) ; 
+xmlinputfactory.configureforspeed ( ) ; 
+list < task > tasks = new linkedlist < task > ( ) ; 
+xmlstreamreader = xmlinputfactory.createxmlstreamreader ( f ) ; 
+int eventtype = xmlstreamreader.geteventtype ( ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+eventtype = xmlstreamreader.next ( ) ; 
+system.out.println ( eventtype ) ; 
+
+string currentelementtext = ; 
+interface a { } 
+c c = new c ( ) ; 
+b b = c ; 
+a a = ( e ) c ; 
+a = ( b ) c ; 
+c = ( c ) ( b ) c ; 
+return new submitlink ( id form ) { 
+@ override 
+this.setresponsepage ( pageclass ) ; 
+if ( e.getsource ( ) = = getframe ( ) 0.0 ? ? ? ? ? ) 
+else 
+folder backupfolder = folder.getfolder ( sbackupfoldername ) ; 
+if ( ! backupfolder.exists ( ) ) { 
+boolean f = backupfolder.create ( folder.holds_folders & folder.holds_messages ) ; 
+if ( ! f ) { 
+this._triggerfaultevent ( new runtimeexception ( ) ) ; 
+backupfolder.open ( folder.read_write ) ; 
+folder.copymessages ( new message [ ] { msg } backupfolder ) ; 
+backupfolder.close ( true ) ; 
+final thread t = new thread ( new runnable ( ) { 
+crunchdata ( ) ; 
+} ) ; 
+t.start ; 
+int points ; 
+points = 1.0 ; 
+switch ( points ) { 
+case 1.0 : 
+system.out.println ( ) ; 
+break ; 
+case 2.0 : 
+system.out.println ( ) ; 
+break ; 
+case 3.0 : 
+system.out.println ( ) ; 
+break ; 
+case 4.0 : 
+system.out.println ( ) ; 
+default : 
+system.out.println ( ) ; 
+break ; 
+if ( head = = tail ) 
+return null ; 
+request r = requests [ head ] ; 
+head = ( head + 1.0 ) % requests.length ; 
+return r ; 
+if ( player.zamorak = = true ) { 
+godfamily = ; 
+if ( player.saradomin = = true ) { 
+godfamily = ; 
+if ( player.guthix = = true ) { 
+godfamily = ; 
+if ( player.zaros = = true ) { 
+godfamily = ; 
+if ( player.seren = = true ) { 
+godfamily = ; 
+if ( player.bandos = = true ) { 
+godfamily = ; 
+if ( player.armadyl = = true ) { 
+godfamily = ; 
+static { 
+fileoutputstream fos ; 
+try { 
+fos = openfileoutput ( filename context.mode_private ) ; 
+objectoutputstream oos = new objectoutputstream ( fos ) ; 
+oos.writeobject ( theobjectar ) ; 
+oos.close ( ) ; 
+} catch ( filenotfoundexception e ) { 
+e.printstacktrace ( ) ; 
+} catch ( ioexception e ) { 
+e.printstacktrace ( ) ; 
+final static private pattern includepattern = pattern.compile ( ) ; 
+0.0 0.0 0.0 
+matcher mtest = includepattern.matcher ( ) ; 
+string ftest = mtest.group ( 1.0 ) ; 
+if ( args.length < 2.0 ) 
+printinfoandexit ( ) ; 
+string cmd = args [ 0.0 ] ; 
+security.addprovider ( new bouncycastleprovider ( ) ) ; 
+signature signature = signature.getinstance ( ) ; 
+if ( 0.0 equalsignorecase ( cmd ) ) { 
+string pemfilename = args [ 1.0 ] ; 
+string datafilename = args [ 2.0 ] ; 
+byte [ ] data = readfile ( datafilename ) ; 
+filereader fr = new filereader ( new file ( pemfilename ) ) ; 
+pemreader pemreader = new pemreader ( fr ) ; 
+keypair keypair = ( keypair ) pemreader.readobject ( ) ; 
+fr.close ( ) ; 
+signature.initsign ( keypair.getprivate ( ) ) ; 
+signature.update ( data ) ; 
+byte [ ] signaturebytes = signature.sign ( ) ; 
+writefile ( signaturebytes datafilename + ) ; 
+string end = base64.en ( signaturebytes ) ; 
+writefile ( end.getbytes ( ) datafilename + ) ; 
+} else { 
+printinfoandexit ( ) ; 
+for ( int i = 0.0 ; i < rows ; i + + ) 
+for ( j = 0.0 ; j < columns ; j + + ) 
+table [ i ] [ j ] = new blabla ( i j ) ; 
+other ( ) ; 
+points.add ( p ) ; 
+return points.add ( p ) ; 
+extremes ( ) ; 
+char x = ; 
+int i = 0.0 ; 
+system.out.print ( true ? x : 0.0 ) ; 
+system.out.print ( false ? i : x ) ; 
+org.w3c.dom.events.eventlistener refreshannotationslistener = new org.w3c.dom.events.eventlistener ( ) { 
+@ override 
+@ requestmapping ( value = method = requestmethod.get ) 
+@ pathvariable long portfolioidpath @ requestparam long portfolioidrequest ) 
+string firstname = null ; 
+string lastname = null ; 
+point point = ( point ) get ; 
+point point1 = ( point ) get0 ; 
+point point2 = ( point ) get1 ; 
+int [ ] [ ] data = new int [ 3.0 ] [ 2.0 ] ; 
+data [ 0.0 ] [ 0.0 ] = point.getx ( ) ; 
+data [ 0.0 ] [ 1.0 ] = point.gety ( ) ; 
+data [ 1.0 ] [ 0.0 ] = point1.getx ( ) ; 
+data [ 1.0 ] [ 1.0 ] = point1.gety ( ) ; 
+data [ 2.0 ] [ 0.0 ] = point2.getx ( ) ; 
+data [ 2.0 ] [ 1.0 ] = point2.gety ( ) ; 
+system.out.println ( data [ 1.0 ] [ 1.0 ] ) ; 
+return ( ( data [ 0.0 ] [ 0.0 ] - data [ 2.0 ] [ 0.0 ] ) * ( data [ 2.0 ] [ 1.0 ] - data [ 2.0 ] [ 1.0 ] ) * ( data [ 1.0 ] [ 0.0 ] - 
+data [ 2.0 ] [ 1.0 ] ) * ( data [ 0.0 ] [ 1.0 ] - data [ 2.0 ] [ 1.0 ] ) ) ; 
+for ( int i = 0.0 ; i < adminopertionfirstlayerarr.length ; i + + ) { 
+string s = string.format ( 
+i + 1.0 
+adminopertionfirstlayerarr [ i ] 0.0 tostring ( ) ) ; 
+screen.print ( s ) ; 
+adminopertionfirstlayer chosen = adminopertionfirstlayerarr 
+[ ( integer.parseint ( datain.readline ( ) ) ) -1.0 ] ; 
+{ manage_supply 
+manage_customers_service 
+orders_management 
+reporting_oprationes } 
+for ( int i = ( size > > > 1.0 ) - 1.0 ; i > = 0.0 ; i-- ) 
+siftdown ( i ( e ) queue [ i ] ) ; 
+while ( i < = candidateno 
+if ( candidateno % i = = 0.0 & & i ! = 1.0 ) { 
+return false ; 
+else 
+return true ; 
+set < coordinate > result = new linkedhashset < coordinate > ( ) ; 
+set < coordinate > tosearch = new linkedhashset < coordinate > ( ) ; 
+tosearch.add ( coordinatestart ) ; 
+while ( tosearch.size ( ) > 0.0 ) 
+coordinate coordinate = ( coordinate ) tosearch.toarray ( ) [ 0.0 ] ; 
+result.add ( coordinate ) ; 
+tosearch.remove ( coordinate ) ; 
+for ( coordinate coordinateadjacent : getadjacentcoordinates ( coordinate ) ) 
+if ( this.query.getcoordinatevalue ( coordinateadjacent ) = = value ) 
+if ( ! result.contains ( coordinateadjacent ) ) 
+tosearch.add ( coordinateadjacent ) ; 
+return result ; 
+11.0 public static void test ( string str ) { 
+12.0 if ( str = = null | str.lellgth ( ) = = 0.0 ) { 
+13.0 system.out.println ( ) ; 
+14.0 } else { 
+15.0 system.out.println ( ) ; 
+16.0 } 
+17.0 } 
+debuglog ( module_name ) ; 
+resultobject resultobject = new resultobject ( lcrresponse.lcr_configure_search_error_ejb null ) ; 
+string strselectquery = null ; 
+string strmessage = null ; 
+resultset resset = null ; 
+collection colinvaliderecord = new arraylist ( ) ; 
+collection colerrormessage = new arraylist ( ) ; 
+collection colvalidrecord = new arraylist ( ) ; 
+collection coldatavalidation = null ; 
+try { 
+for ( int i = 0.0 ; i < prefixgroupname.size ( ) ; i + + ) 
+strselectquery = + prefixgroupname.get ( i ) + ; 
+debuglog ( module_name + strselectquery ) ; 
+resultobject = execute ( strselectquery ) ; 
+if ( resultobject.getresponse ( ) = = lcrresponse.success_response_ ) 
+resset = ( resultset ) resultobject.getresponseobject ( ) ; 
+debuglog ( module_name + resset ) ; 
+if ( resset ! = null ) 
+while ( resset.next ( ) ) 
+colvalidrecord.add ( resset.getstring ( ) ) ; 
+else 
+strmessage = lcrresponse.errortomessage ( lcrresponse.prefix_group_does_not_exist_error ) ; 
+debuglog ( module_name + strmessage ) ; 
+colerrormessage.add ( strmessage ) ; 
+colinvaliderecord.add ( prefixgroupname ) ; 
+debuglog ( module_name ) ; 
+coldatavalidation = new arraylist ( ) ; 
+coldatavalidation.add ( colvalidrecord ) ; 
+coldatavalidation.add ( colinvaliderecord ) ; 
+coldatavalidation.add ( colerrormessage ) ; 
+resultobject.setresponseobject ( coldatavalidation ) ; 
+resultobject.setresponse ( lcrresponse.success_response_ ) ; 
+else 
+debuglog ( module_name ) ; 
+resultobject.setresponse ( lcrresponse.lcr_configure_search_error_ejb ) ; 
+catch ( exception e ) 
+e.printstacktrace ( ) ; 
+errorlog ( module_name ) ; 
+resultobject.setresponse ( lcrresponse.lcr_configure_search_error_ejb ) ; 
+resultobject.setexception ( e ) ; 
+return resultobject ; 
+object obj = null ; 
+if ( ! ehcachevindicator.getcache ( ) 0.0 isdisabled ( ) & & ehcachevindicator.getcache ( ) 0.0 iskeyincache ( nodename ) ) { 
+element element = ehcachevindicator.getcache ( ) 0.0 get ( nodename ) ; 
+if ( ehcachevindicator.getcache ( ) 0.0 isexpired ( element ) ) { 
+obj = readobject ( classobj filename nodename ) ; 
+updateobject ( nodename obj ) ; 
+else 
+obj = getobject ( nodename ) ; 
+} else { 
+obj = readobject ( classobj filename nodename ) ; 
+addobject ( nodename obj ) ; 
+return obj ; 
+com.companyconnector.model.homepagebean homepage = new com.companyconnector.model.homepagebean ( ) ; 
+list < openresponse > ors = databasebean.getrecentreviews ( ) ; 
+list < reviewbean > rbs = new arraylist < reviewbean > ( ) ; 
+for ( int x = 0.0 ; ors.size ( ) > x ; x = + 2.0 ) { 
+string employer = ; 
+rbs.add ( new reviewbean ( ors.get ( x ) 0.0 getuid ( ) employer ors.get ( x ) 0.0 getresponse ( ) ors.get ( x + 1.0 ) 0.0 getresponse ( ) ) ) ; 
+return rbs ; 
+final edittext et = ( edittext ) findviewbyid ( r.id.t ) ; 
+button b = ( button ) findviewbyid ( r.id.b1 ) ; 
+b.setonclicklistener ( new button.onclicklistener ( ) { 
+intent on = new intent ( intent.action_call uri.parse ( + et.gettext ( ) ) ) ; 
+startactivity ( on ) ; 
+} ) ; 
+main-app 
+| - - - pom.xml ( depends on < sdk > ) 
+| - - - src 
+| - - - [ com.etcâ€¦ ] 
+| - - - target 
+| - - - main-app.jar ( does this include sdk.jar ? ) 
+sdk 
+| - - - pom.xml 
+| - - - src 
+| - - - [ com.etcâ€¦ ] 
+| - - - iplugin ( public interface iplugin ) 
+| - - - target 
+| - - - sdk.jar 
+( sdk - defines the interface that plugins need to implement ) 
+plugins 
+| - - - plugin1 
+| - - - pom.xml ( depends on < sdk > ) 
+| - - - src 
+| - - - [ com.etcâ€¦ ] 
+| - - - target 
+| - - - plugin1.jar 
+plugin1 is a plugin that implements iplugin interface and has the following classpath 
+< com.foo.plugin1 > 
+deploy 
+| - - - app.folder 
+| - - - main-app.jar 
+| - - - sdk.jar 
+| - - - plugins.folder 
+| - - - plugin1.jar 
+return obj ! = null & & getclass ( ) 0.0 isinstance ( obj ) ; 
+map < string integer > map = new hashmap < string integer > ( ) ; 
+map < string integer > map2 = new hashmap < string integer > ( ) ; 
+for ( string sequence : values ) 
+if ( ! map.containskey ( sequence ) ) 
+map.put ( sequence 0.0 ) ; 
+map.put ( sequence map.get ( sequence ) + 1.0 ) ; 
+for ( string sequence : value2 ) 
+if ( ! map2.containskey ( sequence ) ) { 
+map2.put ( sequence 0.0 ) ; 
+map2.put ( sequence map2.get ( sequence ) + 1.0 ) ; 
+double result = 0.0 ; 
+double frequency2 = 0.0 ; 
+for ( string sequence : map.keyset ( ) ) 
+double frequency1 = ( double ) map.get ( sequence ) 
+system.out.println ( + frequency1.tostring ( ) ) ; 
+if ( map2.containskey ( sequence ) ) 
+frequency2 = ( double ) map2.get ( sequence ) 
+result + = frequency1 * ( math.log ( frequency1 
+return result 
+@ post < br > 
+@ path ( ) < br > 
+@ produces ( { } ) < br > 
+@ consumes ( ) < br > 
+java.awt.eventqueue.invokelater ( new runnable ( ) { 
+new newjframe ( ) 0.0 setvisible ( true ) ; 
+} ) ; 
+actionlistener one = new actionlistener ( ) { 
+if ( gr1.getcounter1 ( ) < 5.0 ) { 
+gr1.setcounter1 ( gr1.getcounter1 ( ) + 1.0 ) ; 
+if ( arraybtn [ 1.0 ] 0.0 isselected ( ) ) 
+test1.seticon ( play1a ) ; 
+if ( arraybtn [ 2.0 ] 0.0 isselected ( ) ) 
+test1.seticon ( play1b ) ; 
+if ( arraybtn [ 3.0 ] 0.0 isselected ( ) ) 
+test1.seticon ( play1c ) ; 
+if ( arraybtn [ 4.0 ] 0.0 isselected ( ) ) 
+test1.seticon ( play1d ) ; 
+if ( arraybtn [ 5.0 ] 0.0 isselected ( ) ) 
+test1.seticon ( play1e ) ; 
+} else { 
+pn5.settext ( ) ; 
+string table ; 
+string schema ; 
+string deletesql = string.format ( 
+
+schema 
+table 
+baseobject.attr_id 
+stringutils.escapeforsqlstring ( object.getid ( ) ) 
+baseobject.attr_revision 
+stringutils.escapeforsqlstring ( object.getrevision ( ) ) 
+return deletesql ; 
+startbutton.setonclicklistener ( new view.onclicklistener ( ) { 
+â  â  â  â  public void onclick ( view view ) 
+â  â  â  â  { â  â  â  â  
+â  â  â  â  â  â  â  â  â  â  â  â  â  â  â  
+â  â  â  â  usrnameobj = ( edittext ) findviewbyid ( r.id.et_usename ) ; 
+â  â  â  â  â  â usrpassobj = ( edittext ) findviewbyid ( r.id.et_password ) ; 
+â  â  â  â  string username = usrnameobj.gettext ( ) 0.0 tostring ( ) ; 
+â  â  â  â  string password = usrpassobj.gettext ( ) 0.0 tostring ( ) ; 
+â  â  â  â  
+â  â  â  â  intent i = new intent ( getapplicationcontext ( ) androidxmlresource.class ) ; 
+â  â  â  â  i.putextra ( username.tostring ( ) + password.tostring ( ) ) ; 
+â  â  â  â  startactivityforresult ( i req_ ) ; 
+â  â  â  
+â  â  â  â  } â  
+â  â  â  â  } ) ; 
+[ testmethod ] 
+var result = mycomponent.validator ( 4.0 ) ; 
+assert.istrue ( result [ 0.0 ] ) ; 
+@ path ( ) 
+@ put 
+@ consumes ( ) 
+jsonobject jobj = null ; 
+entitymanager em = null ; 
+entitytransaction txn = null ; 
+try { 
+jsonobject jobj = new jsonobject ( content ) ; 
+em = emprovider.getinstance ( ) 0.0 getentitymanagerfactory ( ) 0.0 createentitymanager ( ) ; 
+if ( em.gettransaction ( ) 0.0 isactive ( ) ) { 
+return httpstatushandler.sendconflict ( ) ; 
+txn = em.gettransaction ( ) ; 
+txn.begin ( ) ; 
+catch ( 0.0 0.0 0.0 0.0 0.0 
+logger.debug ( ) ; 
+session session = sessionfactory.getcurrentsession ( ) ; 
+session.save ( person ) ; 
+if ( ! isempty ( ) ) { 
+return stack [ pos ] ; 
+} else { 
+throw new underflow ( ) ; 
+string iplay ; 
+string pcplay ; 
+int value ; 
+scanner scan = new scanner ( system.in ) ; 
+random num = new random ( ) ; 
+iplay = joptionpane.showmessagedialog ( ) ; 
+iplay = scan.next ( ) ; 
+iplay = iplay.touppercase ( ) ; 
+pcplay = num.nextint ( 3.0 ) ; 
+switch ( value ) ; 
+case 0.0 : 
+pcplay = ; 
+break ; 
+case 1.0 : 
+pcplay = ; 
+break ; 
+case 2.0 : 
+pcplay = ; 
+break ; 
+default : 
+pcplay = ; 
+joptionpane.showmessagedialog ( null + pcplays ) ; 
+if ( iplay.equals ( pcplays ) ) 
+joptionpane.showmessagedialog ( null ) ; 
+else if ( iplay.equals ( r ) & & pcplays.equals ( p ) ) 
+joptionpane.showmessagedialog ( null ) ; 
+else if ( iplay.equals ( r ) & & pcplays.equal ( s ) ) 
+joptionpane.showmessagedialog ( null ) ; 
+else if ( iplay.equals ( s ) & & pcplays.equal ( r ) ) 
+joptionpane.showmessagedialog ( null ) ; 
+else if ( iplay.equals ( s ) & & pcplays.equal ( p ) ) 
+joptionpane.showmessagedialog ( null ) ; 
+else if ( iplay.equals ( p ) & & pcplays.equals ( r ) ) 
+joptionpane.showmessagedialog ( null ) ; 
+else if ( iplay.equals ( p ) & & pcplays.equals ( s ) ) 
+joptionpane.showmessagedialog ( null ) ; 
+@ override 
+if ( a.getname ( ) 0.0 length ( ) > b.getname ( ) 0.0 length ( ) ) { 
+return -1.0 ; 
+} else if ( a.getname ( ) 0.0 length ( ) < b.getname ( ) 0.0 length ( ) ) { 
+return 1.0 ; 
+} else 
+return 0.0 ; 
+for ( int i = 0.0 n = buttons.length ; i < n ; i + + ) { 
+if ( buttons [ i ] 0.0 isselected ( ) ) { 
+return i + 1.0 ; 
+return buttons.length + 1.0 ; 
+try { 
+file wave1 = new file ( wavfile1 ) ; 
+if ( ! wave1.exists ( ) ) 
+throw new exception ( wave1.getpath ( ) + ) ; 
+audioinputstream clip1 = audiosystem.getaudioinputstream ( wave1 ) ; 
+audioinputstream clip2 = audiosystem.getaudioinputstream ( new file ( wavfile2 ) ) ; 
+audioinputstream emptyclip = 
+audiosystem.getaudioinputstream ( new file ( emptywavpath ) ) ; 
+audioinputstream appendedfiles = 
+new audioinputstream ( 
+new sequenceinputstream ( clip1 emptyclip ) 
+clip1.getformat ( ) 
+clip1.getframelength ( ) + 100.0 
+clip1 = appendedfiles ; 
+appendedfiles = 
+new audioinputstream ( 
+new sequenceinputstream ( clip1 clip2 ) 
+clip1.getformat ( ) 
+clip1.getframelength ( ) + clip2.getframelength ( ) 
+audiosystem.write ( appendedfiles audiofileformat.type.wave new file ( newwavfilepath ) ) ; 
+} catch ( exception e ) { 
+e.printstacktrace ( ) ; 
+file inputfile = new file ( ) ; 
+file tempfile = new file ( ) ; 
+try 
+bufferedreader reader = new bufferedreader ( new filereader ( inputfile ) ) ; 
+bufferedwriter writer = new bufferedwriter ( new filewriter ( tempfile ) ) ; 
+string linetoremove = tf_custid.gettext ( ) + + tf_custname.gettext ( ) + + tf_contactname.gettext ( ) + + tf_lastcontact.gettext ( ) + + tf_phonenumber.gettext ( ) + + tf_shippingaddress.gettext ( ) + + tf_shippingaddress2.gettext ( ) + + tf_city.gettext ( ) + + cb_state.getselecteditem ( ) 0.0 tostring ( ) + + tf_zip.gettext ( ) + ; 
+string currentline ; 
+while ( ( currentline = reader.readline ( ) ) ! = null ) 
+string trimmedline = currentline.trim ( ) ; 
+if ( trimmedline.equals ( linetoremove ) ) continue ; 
+writer.write ( currentline ) ; 
+writer.write ( ) ; 
+reader.close ( ) ; 
+writer.close ( ) ; 
+catch ( filenotfoundexception e ) 
+e.printstacktrace ( ) ; 
+catch ( ioexception e ) 
+e.printstacktrace ( ) ; 
+if ( inputfile.delete ( ) ) 
+system.out.println ( ) ; 
+boolean successful = tempfile.renameto ( inputfile ) ; 
+if ( successful ) 
+system.out.println ( ) ; 
+else 
+system.err.println ( ) ; 
+else 
+system.err.println ( ) ; 
+btnopen.setonclicklistener ( new onclicklistener ( ) 
+toast.maketext ( getbasecontext ( ) 
++ 
+timepicker.getcurrenthour ( ) + 
++ timepicker.getcurrentminute ( ) 
+toast.length_short ) 0.0 show ( ) ; 
+} ) ; 
+string response = makerequest ( email.gettext ( ) 0.0 tostring ( ) fname 
+0.0 gettext ( ) 0.0 tostring ( ) lname.gettext ( ) 0.0 tostring ( ) ) ; 
+if ( response ! = null ) { 
+org.json.jsonobject obj = new org.json.jsonobject ( response ) ; 
+if ( 0.0 equals ( obj.getstring ( ) ) ) { 
+new alertdialog.builder ( createaccount.this ) 
+0.0 settitle ( ) 
+0.0 setmessage ( 
+) 
+0.0 setneutralbutton ( null ) 0.0 show ( ) ; 
+} else if ( 0.0 equals ( obj.getstring ( ) ) ) { 
+new alertdialog.builder ( createaccount.this ) 
+0.0 settitle ( ) 
+0.0 setmessage ( 
+) 
+0.0 setneutralbutton ( null ) 0.0 show ( ) ; 
+finish ( ) ; 
+final outputstream os = socket.getoutputstream ( ) ; 
+final dataoutputstream dos = new dataoutputstream ( os ) ; 
+dos.writeutf ( data ) ; 
+dos.flush ( ) ; 
+try { 
+double check = double.parsedouble ( args [ 0.0 ] ) ; 
+} catch ( numberformatexception e ) { 
+system.exit ( 0.0 ) ; 
+sin ( args [ 0.0 ] ) ; 
+final charsequence [ ] items = { } ; 
+alertdialog.builder builder = new alertdialog.builder ( this ) ; 
+builder.settitle ( ) ; 
+builder.setsinglechoiceitems ( items -1.0 new dialoginterface.onclicklistener ( ) { 
+items [ 0.0 ] 0.0 notify ( ) ; 
+items [ 1.0 ] 0.0 charat ( 2.0 ) ; 
+} ) ; 
+builder.show ( ) ; 
+return anobject ; 
+string mystring = ; 
+mystring.concat ( ) ; 
+system.out.println ( mystring ) ; 
+
+* creates a empty database on the system and rewrites it with your own database. 
+* * 
+boolean dbexist = checkdatabase ( ) ; 
+if ( dbexist ) { 
+} else { 
+this.getreadabledatabase ( ) ; 
+try { 
+copydatabase ( ) ; 
+} catch ( ioexception e ) { 
+throw new error ( ) ; 
+bufferedimage img = imageio.read ( new file ( args [ 0.0 ] ) ) ; 
+iplimage origimg = iplimage.createfrom ( img ) ; 
+system.out.println ( + origimg ) ; 
+notificationmanager nm ; 
+static final int uniqueid = 1394885.0 ; 
+@ override 
+super.oncreate ( savedinstancestate ) ; 
+nm = ( notificationmanager ) getsystemservice ( context.notification_service ) ; 
+intent intent = new intent ( intent.action_main ) ; 
+intent.setclass ( getapplicationcontext ( ) schoolblichactivity.class ) ; 
+pendingintent pi = pendingintent.getactivity ( this 0.0 intent 0.0 ) ; 
+string body = ; 
+string title = ; 
+notification n = new notification ( r.drawable.table body system.currenttimemillis ( ) ) ; 
+n.setlatesteventinfo ( this title body pi ) ; 
+n.defaults = notification.default_all ; 
+n.flags = notification.flag_auto_cancel ; 
+nm.notify ( uniqueid n ) ; 
+finish ( ) ; 
+int value = 0.0 ; 
+for ( int i = 0.0 ; i < 5.0 ; i + + ) 
+if ( i = = 2.0 ) 
+value = 2.0 ; 
+return value ; 
+if ( ! userid.equals ( otherid ) ) { 
+this.userid = userid ; 
+this.otherid = otherid ; 
+int i j k = 0.0 ; 
+string tagn check = ; 
+int spos epos ; 
+byte [ ] len = xd.getbytes ( ) ; 
+tags = new string [ len.length * 3.0 
+int nextpos = 0.0 ; 
+for ( i = 0.0 ; i < len.length * 3.0 
+spos = xd.indexof ( nextpos ) ; 
+epos = xd.indexof ( spos ) ; 
+tagn = xd.substring ( spos epos ) ; 
+if ( i = = 0.0 | | i = = 1.0 | | i = = 2.0 ) { 
+if ( tagn.indexof ( ) = = -1.0 ) { 
+tags [ k ] = + tagn + ; 
+k + = 1.0 ; 
+} else { 
+continue ; 
+} else { 
+if ( tagn.indexof ( ) = = -1.0 ) { 
+for ( j = 0.0 ; j < tags.length ; j + + ) { 
+if ( tags [ i ] 0.0 equals ( tags [ j ] ) ) { 
+check = ; 
+} else { 
+check = ; 
+if ( check.equals ( ) ) { 
+tags [ i ] = + tagn + ; 
+k + = 1.0 ; 
+} else { 
+continue ; 
+} else { 
+continue ; 
+nextpos = epos + 1.0 ; 
+if ( variable = = value ) 
+return true ; 
+return false ; 
+string stringpart ; 
+if ( front = true ) { 
+stringpart = str.substring ( 0.0 1.0 ) ; 
+} else { 
+stringpart = str.substring ( str.length ( ) -1.0 str.length ( ) ) ; 
+return stringpart ; 
+button1.setonclicklistener ( new view.onclicklistener ( ) { 
+@ override 
+bundle bundle1 = new bundle ( ) ; 
+bundle1.putint ( r.drawable.1 ) ; 
+bundle1.putint ( r.drawable.2 ) ; 
+bundle1.putint ( r.drawable.3 ) ; 
+intent intet1 = new intent ( curclass.this nextclass.class ) ; 
+intent1.putextras ( bundle1 ) ; 
+startactivity ( intent1 ) ; 
+bundle asd = getintent ( ) 0.0 getextras ( ) ; 
+int asdasd = asd.getint ( ) ; 
+im1 = ( imageview ) findviewbyid ( r.id.imagetop ) ; 
+im1.setimageresource ( newimage ) ; 
+bu1 = ( button ) findviewbyid ( r.id.buttontop ) ; 
+bu1.settext ( ) ; 
+thread refreshthread = new thread ( new runnable ( ) { 
+while ( true ) 
+if ( tasksmanager.isdirty ( ) ) 
+tasksmanager.refreshtasks ( true ) ; 
+panel.repaint ( ) ; 
+} ) ; 
+refreshthread.start ( ) ; 
+object [ ] r = new object [ size ( ) ] ; 
+iterator < e > it = iterator ( ) ; 
+for ( int i = 0.0 ; i < r.length ; i + + ) { 
+if ( ! it.hasnext ( ) ) 
+return arrays.copyof ( r i ) ; 
+r [ i ] = it.next ( ) ; 
+return it.hasnext ( ) ? finishtoarray ( r it ) : r ; 
+ok.addactionlistener ( new actionlistener ( ) { 
+try { 
+
++ ) ; 
+bufferedwriter buffer = new bufferedwriter ( dir ) ; 
+buffer.write ( nameofsong.gettext ( ) ) ; 
+buffer.newline ( ) ; 
+buffer.write ( artist.gettext ( ) ) ; 
+buffer.newline ( ) ; 
+buffer.newline ( ) ; 
+buffer.write ( lyrics.gettext ( ) ) ; 
+buffer.close ( ) ; 
+statement statement = connection.createstatement ( ) ; 
+statement.executeupdate ( + 
+nameofsong.gettext ( ) + + artist.gettext ( ) + ) ; 
+} catch ( exception z ) { 
+system.err.println ( + z.getmessage ( ) ) ; 
+internalframe.dispose ( ) ; 
+} ) ; 
+< 
+< pre > < > public void onactivityresult ( int request int result intent intent ) { 
+if ( request = = 0.0 ) { 
+if ( result = = result_ok ) { 
+string contents = intent.getstringextra ( ) ; 
+string format = intent.getstringextra ( ) ; 
+if ( format = = ) { 
+toast.maketext ( getapplicationcontext ( ) + contents 3.0 ) 0.0 show ( ) ; 
+else { 
+toast.maketext ( getapplicationcontext ( ) 3.0 ) 0.0 show ( ) ; 
+} else if ( result = = result_canceled ) { 
+toast.maketext ( getapplicationcontext ( ) 3.0 ) 0.0 show ( ) ; 
+integer i1 = new integer ( 1.0 ) ; 
+int i2 = 2.0 ; 
+string str = ; 
+jbutton5.addactionlistener ( new java.awt.event.actionlistener ( ) { 
+jbutton5actionperformed ( evt ) ; 
+} ) ; 
+connection conn = null ; 
+preparedstatement pstmt = null ; 
+string insertsql = ; 
+try { 
+conn = con.getconnection ( ) ; 
+pstmt = conn.preparestatement ( insertsql ) ; 
+pstmt.setint ( 1.0 std_id ) ; 
+pstmt.setint ( 2.0 course_id ) ; 
+pstmt.setstring ( 3.0 semester_no ) ; 
+pstmt.executeupdate ( ) ; 
+pstmt.close ( ) ; 
+conn.close ( ) ; 
+} 
+finally { 
+if ( conn ! = null ) { 
+conn.close ( ) ; 
+if ( pstmt ! = null ) { 
+try { 
+pstmt.close ( ) ; 
+} catch ( exception ignore ) { 
+throws sqlexception { 
+string sql = ; 
+con.setautocommit ( false ) ; 
+pre = con.preparestatement ( sql ) ; 
+pre.setint ( 1.0 shipmentnumber ) ; 
+pre.setstring ( 2.0 currentlocation ) ; 
+pre.executeupdate ( ) ; 
+con.commit ( ) ; 
+pre.close ( ) ; 
+con.setautocommit ( true ) ; 
+@ override 
+string msg = super.format ( event ) ; 
+msg = msg.replace ( ) ; 
+return msg ; 
+graphics2d g = ( graphics2d ) getgraphics ( ) ; 
+graphics2d gb = ( graphics2d ) buffer.getgraphics ( ) ; 
+gb.drawimage ( background 0.0 0.0 null ) ; 
+gb.setcolor ( new color ( 45.0 45.0 45.0 ) ) ; 
+gb.setfont ( new font ( font.bold 18.0 ) ) ; 
+gb.drawstring ( 175.0 185.0 ) ; 
+cont.draw ( gb contstate ) ; 
+g.drawimage ( buffer 0.0 0.0 null ) ; 
+0.0 0.0 0.0 
+string [ ] forrussell3 = load2ery.load2er ( ) ; 
+jcombobox monstercombobox = new jcombobox ( forrussell3 ) ; 
+frame.add ( monstercombobox ) ; 
+monstercombobox.setbounds ( 900.0 160.0 200.0 30.0 ) ; 
+0.0 0.0 0.0 
+mouselistener a2 = new mouseadapter ( ) { 
+string whatmonster = monstercombobox.getselecteditem ( ) ; 
+monstercombobox.addmouselistener ( a2 ) ; 
+system.out.println ( + image.getwidth ( ) ) ; 
+system.out.println ( + image.getheight ( ) ) ; 
+affinetransform affinetransform = new affinetransform ( ) ; 
+affinetransform.settoquadrantrotation ( 1.0 image.getwidth ( ) 
+affinetransformop oprotated = new affinetransformop ( affinetransform affinetransformop.type_bilinear ) ; 
+bufferedimage transformedimage = oprotated.createcompatibledestimage ( image image.getcolormodel ( ) ) ; 
+system.out.println ( + transformedimage.getwidth ( ) ) ; 
+system.out.println ( + transformedimage.getheight ( ) ) ; 
+transformedimage = oprotated.filter ( image transformedimage ) ; 
+return transformedimage ; 
+map < string object > contentmap = getservicelocator ( ) 0.0 gethyperlocalservice ( ) 0.0 getoffershubcontents ( searchpost gmapkey ip ) ; 
+return getviewgenerator ( ) 0.0 generateoffershubmapview ( brand contentmap ) ; 
+@ requestmapping ( value = method = requestmethod.get ) 
+return new modelandview ( ) ; 
+int number = 225.0 ; 
+system.out.println ( 
++ number 
++ 
++ math.sqrt. ( number ) 
+myobject myobject = new myobject ( ) ; 
+myobject.dosomething ( ) ; 
+doanotherthing ( ) ; 
+andevenmorethings ( ) ; 
+boolean alreadyguessed = false anymatches = false ; 
+matches = 0.0 ; 
+guesses + + ; 
+if ( guesses = = 1.0 ) { 
+guessedchars [ 0.0 ] = c ; 
+for ( int i = 0.0 ; i < guessedchars.length ; i + + ) { 
+if ( guessedchars [ i ] = = c ) { 
+alreadyguessed = true ; 
+break ; 
+else if ( guessedchars [ i ] ! = c & & guessedchars [ i ] = = 0.0 ) { 
+guessedchars [ i ] = c ; 
+if ( alreadyguessed = = false ) { 
+for ( int i = 0.0 ; i < word.length ; i + + ) { 
+if ( word [ i ] = = c ) { 
+anymatches = true ; 
+matches + + ; 
+disguisedword [ i ] = c ; 
+if ( anymatches = = true ) { 
+system.out.println ( ) ; 
+system.out.println ( + matches + ) ; 
+else if ( alreadyguessed = = true ) { 
+system.out.println ( ) ; 
+else { 
+system.out.println ( ) ; 
+wrongguesses + + ; 
+system.out.println ( ) ; 
+string slpoint = ; 
+string sltype = ; 
+string tldpoint = ; 
+string tlupoint = ; 
+double stpoint ; 
+double ltpoint ; 
+double mapoint ; 
+boolean btluishorizontal = false ; 
+double dpointdef ; 
+double dhorizontalpoints ; 
+boolean tldhorizontalisset = false ; 
+boolean tluhorizontalisset = false ; 
+double dentryprice = 0.0 ; 
+double dstoplossprice = 0.0 ; 
+list objopenltorders = null ; 
+int intopenltorderscount = 0.0 ; 
+list objliveltorders = null ; 
+int intliveltorderscount = 0.0 ; 
+list objopenstorders = null ; 
+int intopenstorderscount = 0.0 ; 
+list objlivestorders = null ; 
+int intlivestorderscount = 0.0 ; 
+list objcontractsettings = null ; 
+double dvolume = 0.0 ; 
+double dgrossprofit = 0.0 ; 
+double dnetprofit = 0.0 ; 
+double dbrokeragecharge = 0.0 ; 
+double dspreadcharge = 0.0 ; 
+for ( int i = 0.0 ; i < count ; i + + ) 
+string caseof = ( settingsbusinessservice.readrow ( 1.0 ) 0.0 getsettingname ( ) ) ; 
+enumrule enum1 = enumrule.valueof ( ) ; 
+switch ( enum1 ) 
+case caseof : 
+if ( ( settingsbusinessservice.getallsettings ( username settings ) ) 0.0 size ( ) ! = 0.0 ) 
+savelog ( username + symbolname + + transdate now ( ) 2.0 ) ; 
+return 1.0 ; 
+log.i ( ) ; 
+strictmode.setvmpolicy ( new strictmode.vmpolicy.builder ( ) 
+0.0 detectleakedsqlliteobjects ( ) 
+0.0 detectleakedclosableobjects ( ) 
+0.0 penaltylog ( ) 
+0.0 penaltydeath ( ) 
+0.0 build ( ) ) ; 
+log.i ( ) ; 
+super.oncreate ( ) ; 
+mymap = null ; 
+mymap = providertester.downloadinfo ( value1 value2 ) ; 
+list_my = new arraylist < string > ( mymap.keyset ( ) ) ; 
+adapter = new arrayadapter < string > ( classname.this android.r.layout.simple_list_item_multiple_choice list_my ) ; 
+getlistview ( ) 0.0 setchoicemode ( 2.0 ) ; 
+setlistadapter ( adapter ) ; 
+jpanel centerpanel = new jpanel ( ) ; 
+centerpanel.setborder ( borderfactory.createtitledborder ( ) ) ; 
+gregoriancalendar cal = new gregoriancalendar ( ) ; 
+date initialdate = cal.gettime ( ) ; 
+cal.add ( calendar.year -50.0 ) ; 
+date earliestdate = cal.gettime ( ) ; 
+cal.add ( calendar.year 100.0 ) ; 
+date latestdate = cal.gettime ( ) ; 
+spinnerdatemodel datemodel = new spinnerdatemodel ( initialdate 
+earliestdate 
+latestdate 
+calendar.date ) ; 
+jspinner datespinner = new jspinner ( datemodel ) ; 
+centerpanel.add ( datespinner ) ; 
+return centerpanel ; 
+0.0 0.0 0.0 
+order lastodr = order.find ( ) 0.0 first ( ) ; 
+if ( lastodr ! = null ) { 
+lastodr.refresh ( ) ; 
+0.0 0.0 0.0 
+user user = user.findbyid ( id ) ; 
+user.edit ( params.all ( ) ) ; 
+validation.valid ( user ) ; 
+if ( validation.haserrors ( ) ) { 
+user.refresh ( ) ; 
+edit ( id ) ; 
+show ( id ) ; 
+player stats = new player ( this ) ; 
+stats.open ( ) ; 
+string playername = stats.getstringfield ( stats.key_name ) ; 
+string playercity = stats.getstringfield ( stats.key_city ) ; 
+int playerhealth = stats.getintfield ( stats.key_health ) ; 
+int playerenergy = stats.getintfield ( stats.key_energy ) ; 
+int playerrank = stats.getintfield ( stats.key_rank ) ; 
+int playercash = stats.getintfield ( stats.key_cash ) ; 
+stats.close ( ) ; 
+name.settext ( playername ) ; 
+city.settext ( playercity ) ; 
+energy.settext ( playerenergy ) ; 
+health.settext ( playerhealth ) ; 
+cash.settext ( playercash ) ; 
+rank.settext ( playerrank ) ; 
+@ post 
+@ consumes ( mediatype.application_json ) 
+@ produces ( mediatype.application_json ) 
+jsonobject jobj = new jsonobject ( ) ; 
+return jobj ; 
+final string property_name_regex = ; 
+final string property_reference_regex = + property_name_regex + ; 
+pattern pattern = pattern.compile ( property_reference_regex ) ; 
+string value = ; 
+matcher matcher = pattern.matcher ( value ) ; 
+stringbuffer sb = new stringbuffer ( ) ; 
+while ( matcher.find ( ) ) { 
+system.out.println ( string.format ( 
+matcher.group ( ) 
+matcher.start ( ) 
+matcher.end ( ) ) ) ; 
+for ( int i = 0.0 ; i < matcher.groupcount ( ) ; + + i ) { 
+system.out.println ( string.format ( i matcher.group ( i ) ) ) ; 
+if ( obj instanceof objclass ) { 
+bitlength - bitlength of the returned biginteger. 
+certainty - a measure of the uncertainty that the caller is willing to tolerate. the probability that the new biginteger represents a prime number will exceed ( 1.0 - 1.0 
+rnd - source of random bits used to select candidates to be tested for primality. 
+int certainty 
+random rnd ) 
+for ( int i = 0.0 ; i < activeword.length ( ) ; i + + ) { 
+if ( letter.equals ( activeword. [ i ] ) ) { 
+else { 
+string failed = ; 
+int data ; 
+treenode left ; 
+treenode right ; 
+int min ( treenode n ) { 
+if ( n.left ! = null ) { 
+n = n.left ; 
+min ( n ) ; 
+system.out.println ( + n.value ) ; 
+return n.value ; 
+list < c > list = new arraylist < c > ( ) ; 
+for ( int i = 0.0 ; i < data.length ( ) ; i + + ) { 
+list.add ( new c ( data.get ( i ) ) ) ; 
+return list ; 
+string [ ] arr = null ; 
+int i = 0.0 ; 
+arr [ i ] = null ; 
+string line = new string ( ) ; 
+while ( ( line = buffr.readline ( ) ) ! = null ) { 
+arr [ i ] = line ; 
+i = i + 1.0 ; 
+return arr ; 
+@ requestmapping ( 0.0 0.0 0.0 0.0 method = requestmethod.post ) 
+modelandview mav = new modelandview ( ) ; 
+mav.addobject ( mymodel ) ; 
+if ( bindingresult.haserrors ( ) ) { 
+return mav ; 
+model1 model1 = new model1 ( ) ; 
+model2 model2 = new model2 ( ) ; 
+model1.setproperty10 ( globalsettings.getdefaultproperty10 ( ) ) ; 
+model2.setproperty11 ( globalsettings.getdefaultproperty11 ( ) ) ; 
+if ( bindingresult.haserrors ( ) ) { 
+return mav ; 
+model1service.save ( model1 ) ; 
+model2service.save ( model2 ) ; 
+redirect to another view 
+if ( stream.canwrite ) 
+byte [ ] candy = encoding.ascii.getbytes ( message + ) ; 
+stream.write ( candy 0.0 candy.length ) ; 
+stream.flush ( ) ; 
+console.writeline ( + message ) ; 
+else { console.writeline ( ) ; } 
+fringe = new priorityqueue < node > ( 10.0 new comparator < node > ( ) { 
+@ override 
+if ( f ( node1 ) > f ( node2 ) ) 
+return 1.0 ; 
+else 
+return -1.0 ; 
+} ) ; 
+i = i + 1.0 ; 
+return i ; 
+@ preauthorize ( ) 
+@ requestmapping ( value = method = requestmethod.post ) 
+try { 
+authentication req = new usernamepasswordauthenticationtoken ( request.getparameter ( ) 
+request.getparameter ( ) ) ; 
+authentication result = authenticationmanager.authenticate ( req ) ; 
+securitycontextholder.getcontext ( ) 0.0 setauthentication ( result ) ; 
+logger.debug ( ) ; 
+logger.debug ( securitycontextholder.getcontext ( ) 0.0 getauthentication ( ) ) ; 
+return ; 
+} catch ( authenticationexception e ) { 
+e.printstacktrace ( ) ; 
+logger.debug ( ) ; 
+return ; 
+double calcmass = bodymass * gendervalue ; 
+int qty1 = integer.parseint ( findviewbyid ( r.id.calcitemqty1 ) 0.0 tostring ( ) ) ; 
+double vol1 = double.parsedouble ( findviewbyid ( r.id.calcitemvol1 ) 0.0 tostring ( ) ) ; 
+double percent1 = double.parsedouble ( findviewbyid ( r.id.calcitemqty1 ) 0.0 tostring ( ) ) ; 
+double alcoholtotal = 0.0 ; 
+double alcoholconcentration = alcoholtotal 
+int time = integer.parseint ( findviewbyid ( r.id.calcinputtime ) 0.0 tostring ( ) ) ; 
+double alcoholcurrentconcentration = alcoholconcentration - ( 0.15 * time ) ; 
+collections.unmodifiablelist ( 
+arrays.aslist ( new suit [ ] { clubs diamonds hearts spades } ) ) ; 
+for ( int i = 0.0 ; i < sb.length ( ) ; + + i ) { 
+if ( character.iswhitespace ( sb.charat ( i ) ) ) { 
+sb.deletecharat ( i ) ; 
+i-- ; 
+return sb ; 
+helloworld app = new helloworld ( ) ; 
+system.out.println ( ) ; 
+app.print ( ) ; 
+system.out.println ( ) ; 
+app.print ( ) ; 
+file file = new file ( ) ; 
+system.out.print ( ) ; 
+thread.sleep ( 5000.0 ) ; 
+while ( true ) { 
+char [ ] buffer = new char [ 1024.0 ] ; 
+filereader fr = new filereader ( file ) ; 
+fr.read ( buffer ) ; 
+system.out.println ( buffer ) ; 
+int hash ; 
+k key ; 
+v value ; 
+entry < k v > next ; 
+0.0 0.0 0.0 
+} 
+short s0 = 4095.0 ; 
+short s1 = 13.0 ; 
+short sh = ( short ) ( ( s1 < < 12.0 ) | s0 ) ; 
+system.out.println ( sh ) ; 
+short [ ] sa = new short [ ] { 
+( short ) ( sh & 0.0 xfff ) 
+( short ) ( ( sh > > > 12.0 ) & 0.0 xf ) 
+system.out.println ( sa [ 0.0 ] ) ; 
+system.out.println ( sa [ 1.0 ] ) ; 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+current = parent = grand = header ; 
+{ obj = new a ( ) 
+{ 0.0 0.0 0.0 0.0 
+int result = lastname.compareto ( person.lastname ) ; 
+return result = = 0.0 ? firstname.compareto ( person.firstname ) : result ; 
+
+* @ see cascadas.supervision.components.sensordataready # evaluate ( cascadas.ace.event.event cascadas.ace.session.contract cascadas.ace.session.session cascadas.ace.session.session ) 
+@ override 
+session executionsession session globalsession ) { 
+return false ; 
+string puser string ppass string commandline ) 
+try { 
+synchronized ( this ) 
+session = jsch.getsession ( nuser host 22.0 ) ; 
+session.setconfig ( ) ; 
+pstr = npass ; 
+string authmethods = session.getconfig ( ) ; 
+system.out.println ( authmethods ) ; 
+userinfo ui = new susessionexecution.uinfo ( ) ; 
+thread.sleep ( 150.0 ) ; 
+if ( authmethods.contains ( ) ) 
+{ system.out.print ( ) ; session.setuserinfo ( ui ) ; } 
+else if ( authmethods.contains ( ) ) 
+{ system.out.print ( ) ; session.setpassword ( pstr ) ; } 
+session.connect ( ) ; 
+channel = session.openchannel ( ) ; 
+nuser = null ; 
+npass = null ; 
+( ( channelexec ) channel ) 0.0 setpty ( true ) ; 
+( ( channelexec ) channel ) 0.0 setptytype ( ) ; 
+string command = + puser + + commandline + ; 
+byte [ ] cmdbuffer = command.getbytes ( ) ; 
+bytearrayinputstream bi = new bytearrayinputstream ( cmdbuffer ) ; 
+channel.setinputstream ( bi ) ; 
+bytearrayoutputstream bo = new bytearrayoutputstream ( ) ; 
+( ( channelexec ) channel ) 0.0 seterrstream ( bo ) ; 
+sessionoutput = channel.getinputstream ( ) ; 
+channel.connect ( ) ; 
+session_open = true ; 
+boolean sustatus ; 
+string standardoutbuffer = ; 
+string standarderrbuffer = ; 
+int counter ; 
+byte [ ] bytebuffer = new byte [ 1024.0 ] ; 
+while ( sessionoutput.available ( ) > 0.0 ) 
+{ counter = 0.0 ; 
+counter = sessionoutput.read ( bytebuffer 0.0 bytebuffer.length ) ; 
+if ( counter < 0.0 ) { throw new java.io.ioexception ( ) ; } 
+standardoutbuffer + = new string ( bytebuffer 0.0 counter ) ; 
+if ( standardoutbuffer.contains ( ) ) { break ; } 
+
+{ counter = 0.0 ; 
+counter = sessionerror.read ( bytebuffer 0.0 bytebuffer.length ) ; 
+if ( counter < 0.0 ) { throw new java.io.ioexception ( ) ; } 
+standarderrbuffer + = new string ( bytebuffer 0.0 counter ) ; 
+if ( standarderrbuffer.contains ( ) ) { break ; } } * 
+commandio = new pipedoutputstream ( ) ; 
+sessioninput = new pipedinputstream ( commandio ) ; 
+channel.setinputstream ( sessioninput ) ; 
+commandio.write ( new string ( ppass + ) 0.0 getbytes ( ) ) ; 
+commandio.flush ( ) ; 
+counter = 0.0 ; standardoutbuffer = ; 
+while ( ( counter = sessionoutput.read ( bytebuffer 0.0 bytebuffer.length ) ) ! = -1.0 ) 
+{ standardoutbuffer + = new string ( bytebuffer 0.0 counter ) ; } 
+closecomponents ( ) ; 
+return standardoutbuffer ; 
+catch ( com.jcraft.jsch.jschexception jse ) 
+{ session_open = false ; su_space_open = false ; jse.printstacktrace ( ) ; 
+closecomponents ( ) ; return null ; } 
+catch ( java.io.ioexception ioe ) 
+{ session_open = false ; su_space_open = false ; ioe.printstacktrace ( ) ; 
+closecomponents ( ) ; return null ; } 
+catch ( interruptedexception ie ) 
+{ ie.printstacktrace ( ) ; } 
+return null ; 
+if ( evt.getsource ( ) 0.0 equals ( jradiobutton1 ) ) 
+meal = jradiobutton1.gettext ( ) ; 
+< 
+long.class task.class 
+error : java.lang.runtimeexception : org.apache.cxf.service.factory.serviceconstructionexception 
+java.lang.runtimeexception : org.apache.cxf.service.factory.serviceconstructionexception 
+at org.apache.cxf.frontend.abstractservicefactory.createservice ( abstractservicefactory.java : 80.0 ) 
+at org.apache.cxf.tools.java2wsdl.processor.javatowsdlprocessor.process ( javatowsdlprocessor.java : 101.0 ) 
+at org.apache.cxf.tools.java2ws.javatowscontainer.processwsdl ( javatowscontainer.java : 110.0 ) 
+at org.apache.cxf.tools.java2ws.javatowscontainer.execute ( javatowscontainer.java : 75.0 ) 
+at org.apache.cxf.tools.common.toolspec.toolrunner.runtool ( toolrunner.java : 103.0 ) 
+at org.apache.cxf.tools.common.toolspec.toolrunner.runtool ( toolrunner.java : 58.0 ) 
+at org.apache.cxf.tools.common.toolspec.toolrunner.runtool ( toolrunner.java : 40.0 ) 
+at org.apache.cxf.tools.java2ws.javatows.run ( javatows.java : 77.0 ) 
+at org.apache.cxf.tools.java2ws.javatows.main ( javatows.java : 45.0 ) 
+caused by : org.apache.cxf.service.factory.serviceconstructionexception 
+at org.apache.cxf.jaxb.jaxbdatabinding.initialize ( jaxbdatabinding.java : 297.0 ) 
+at org.apache.cxf.service.factory.abstractservicefactorybean.initializedatabindings ( abstractservicefactorybean.java : 86.0 ) 
+at org.apache.cxf.service.factory.reflectionservicefactorybean.buildservicefromclass ( reflectionservicefactorybean.java : 474.0 ) 
+at org.apache.cxf.jaxws.support.jaxwsservicefactorybean.buildservicefromclass ( jaxwsservicefactorybean.java : 685.0 ) 
+at org.apache.cxf.service.factory.reflectionservicefactorybean.initializeservicemodel ( reflectionservicefactorybean.java : 536.0 ) 
+at org.apache.cxf.service.factory.reflectionservicefactorybean.create ( reflectionservicefactorybean.java : 248.0 ) 
+at org.apache.cxf.jaxws.support.jaxwsservicefactorybean.create ( jaxwsservicefactorybean.java : 205.0 ) 
+at org.apache.cxf.frontend.abstractwsdlbasedendpointfactory.createendpoint ( abstractwsdlbasedendpointfactory.java : 101.0 ) 
+at org.apache.cxf.frontend.abstractservicefactory.createservice ( abstractservicefactory.java : 78.0 ) 
+0.0 0.0 0.0 8.0 more 
+caused by : com.sun.xml.bind.v2.runtime.illegalannotationsexception : 20.0 counts of illegalannotationexceptions 
+this problem is related to the following location : 
+at public java.lang.string com.abhibus.oprs.pojo.booking.printticket.getboardingpoint ( ) 
+at com.abhibus.oprs.pojo.booking.printticket 
+at com.abhibus.oprs.pojo.booking.ticketbooking 
+at com.abhibus.oprs.pojo.booking.servicepassengerbookinginfo 
+int port ) { 
+try { 
+mftpclient = new ftpclient ( ) ; 
+mftpclient.connect ( host ) ; 
+mftpclient.connect ( inetaddress.getbyname ( host ) ) ; 
+if ( ftpreply.ispositivecompletion ( mftpclient.getreply ( ) ) ) { 
+boolean status = mftpclient.login ( username password ) ; 
+mftpclient.setfiletype ( ftp.binary_file_type ) ; 
+mftpclient.enterlocalpassivemode ( ) ; 
+return status ; 
+} catch ( exception e ) { 
+log.d ( tag + host ) ; 
+return false ; 
+if ( this.name.equals ( nodename.name ) ) { 
+return this ; 
+for ( familynode child : this.children ) { 
+if ( child.findnodebyname ( nodename ) ! = null ) 
+return child ; 
+return null ; 
+int count = 0.0 ; 
+for ( int i = 0.0 ; i < haystack.length ( ) ; i + + ) 
+if ( haystack.charat ( i ) = = needle ) 
+count + + ; 
+return count ; 
+list < string > results = service.bulkupdate ( issues newvalues ) ; 
+request.setattribute ( stringutils.join ( results ) ) 
+some.thirdpartyclass.somestaticmethod ( param ) ; 
+list < minterm > minterms = new arraylist < minterm > ( ) ; 
+minterm m1 = new minterm ( ) ; 
+minterm m2 = new minterm ( ) ; 
+for ( int k = 0.0 ; k < minterms.size ( ) ; k + + ) { 
+for ( int i = 0.0 ; i < variables.length ( ) ; i + + ) { 
+m1 = minterms.get ( k ) ; 
+m1.addatom ( new atom ( variables.charat ( i ) false ) ) ; 
+m2 = minterms.get ( k ) ; 
+m2.addatom ( new atom ( variables.charat ( i ) true ) ) ; 
+at a.b.e.f ( e.java : 500.0 ) 
+0.0 0.0 0.0 
+at java.lang.j9vminternals.initializeimpl ( native method ) 
+at java.lang.j9vminternals.initialize ( j9vminternals.java : 200.0 ) 
+at a.b.c.d ( c.java : 300.0 ) 
+0.0 0.0 0.0 
+e.f ( ) ; 
+0.0 0.0 0.0 
+system.out.print ( ) ; 
+static 
+system.out.println ( newclass.string + + newclass.integer ) ; 
+final static string string = ; 
+final static integer integer = 1.0 ; 
+@ test 
+login login = new login ( ) ; 
+login.setup ( ) ; 
+addsingledomain asd = new addsingledomain ( ) ; 
+asd.addsingledomain ( ) ; 
+addarecord ar = new addarecord ( ) ; 
+ar.addarecordtest ( ) ; 
+com.example.qa.pageobject 
+com.exmaple.qa.setup 
+com.example.qa.test 
+com.example.qa.utils 
+imageview img ; 
+if ( convertview = = null ) 
+{ 
+img = new imageview ( mcontext ) ; 
+img.setlayoutparams ( new gridview.layoutparams ( 85.0 85.0 ) ) ; 
+img.setscaletype ( imageview.scaletype.center_crop ) ; 
+img.setpadding ( 8.0 8.0 8.0 8.0 ) ; 
+else 
+img = ( imageview ) convertview ; 
+img.setimageresource ( mthumbid [ position ] ) ; 
+return img ; 
+return something.getorganization ( id ) ; 
+jdialog.setdefaultlookandfeeldecorated ( true ) ; 
+system.out.println ( uimanager.getlookandfeel ( ) 0.0 getname ( ) ) ; 
+string first = joptionpane.showinputdialog ( ) ; 
+string second = joptionpane.showinputdialog ( ) ; 
+int n = integer.parseint ( first ) ; 
+int m = integer.parseint ( second ) ; 
+int sum = n + m ; 
+joptionpane.showmessagedialog ( null + sum joptionpane.plain_message ) ; 
+int yearin = 2008.0 ; 
+int monthin = 1.0 ; 
+if ( arguments.length > 0.0 ) 
+monthin = integer.parseint ( arguments [ 0.0 ] ) ; 
+if ( arguments.length > 1.0 ) 
+yearin = integer.parseint ( arguments [ 1.0 ] ) ; 
+system.out.println ( monthin + + yearin + 
++ countdays ( monthin yearin ) + ) ; 
+
+* returns the team with the most wins 
+team teamwithmostwins = new team ( ) ; 
+list < team > teams = new list < team > ( ) ; 
+if ( ! players.isempty ( ) ) { 
+for ( int i = 0.0 ; i < players.size ( ) ; i + + ) { 
+if ( ! teams.contains ( players.get ( i ) 0.0 getteam ( ) ) ) { 
+teams.add ( new team ( players.get ( i ) 0.0 getteam ( ) ) ) ; 
+for ( int i = 0.0 ; i < players.size ( ) ; i + + ) { 
+string team = players.get ( i ) 0.0 getteam ( ) ; 
+int winninggoals = players.get ( i ) 0.0 getwinninggoals ( ) ; 
+for ( int j = 0.0 ; j < teams.size ( ) ; j + + ) { 
+if ( ( teams.get ( j ) 0.0 getname ( ) ) 0.0 equals ( team ) ) { 
+teams.get ( j ) 0.0 incrementwinsby ( winninggoals ) ; 
+int mostwins = teams.get ( 0.0 ) 0.0 getwins ( ) ; 
+for ( int i = 1.0 ; i < teams.size ( ) ; i + + ) { 
+if ( teams.get ( i ) 0.0 getwins ( ) > mostwins ) { 
+teamwithmostwins = teams.get ( i ) ; 
+else { 
+teamwithmostwins = null ; 
+return teamwithmostwins ; 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+bufferedreader br = new bufferedreader ( new inputstreamreader ( system.in ) ) ; 
+inputword = br.readline ( ) ; 
+setinputword ( inputword ) ; 
+setwordlenght ( inputword.length ( ) ) ; 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+try { 
+stringladder = br.readline ( ) ; 
+setladder ( integer.parseint ( stringladder ) ) ; 
+} catch ( numberformatexception nfe ) { 
+system.out.println ( ) ; 
+searchformatch ( ) ; 
+create_appointment = database.preparestatement ( + table_appointments + ) ; 
+int [ ] ids = new int [ appointments.length ] ; 
+int count = 0.0 ; 
+try { 
+for ( appointment a : appointments ) { 
+create_appointment.setdate ( 2.0 a.date ) ; 
+create_appointment.settime ( 3.0 a.time ) ; 
+create_appointment.setint ( 4.0 a.duration ) ; 
+create_appointment.setstring ( 5.0 a.clientname ) ; 
+create_appointment.addbatch ( ) ; 
+create_appointment.executebatch ( ) ; 
+resultset resultset = create_appointment.getgeneratedkeys ( ) ; 
+if ( resultset ! = null ) 
+while ( resultset.next ( ) ) { 
+ids [ count + + ] = resultset.getint ( 1.0 ) ; 
+} catch ( sqlexception ex ) { 
+system.err.println ( ex ) ; 
+return ids ; 
+dog [ ] doglist = new dog [ 10.0 ] ; 
+doglist [ 5.0 ] 0.0 bark ( 5.0 ) ; 
+for ( int i = 0.0 ; i < doglist.length ; i + + ) 
+doglist [ i ] = new dog ( ) ; 
+doglist [ 3.0 ] 0.0 setname ( â€œbowzerâ€? ) ; 
+static public double [ ] [ ] calcstats ( string [ ] [ ] x ) throws ioexception { 
+double [ ] [ ] array = new double [ 7.0 ] [ 2.0 ] ; 
+double total = 0.0 std_dev = 0.0 amount = 0.0 ; 
+int row2 = 0.0 ; 
+for ( int row = 1.0 ; row < x.length ; row + + ) { 
+array [ row2 ] [ 0.0 ] = ( total ) ; 
+array [ row2 ] [ 1.0 ] = math.sqrt ( amount ) ; 
+amount = 0.0 ; 
+total = 0.0 ; 
+if ( row > = 2.0 ) { 
+row2 + + ; 
+for ( int col = 1.0 ; col < x [ row ] 0.0 length ; col + + ) { 
+total + = integer.parseint ( x [ row ] [ col ] ) ; 
+if ( col = = 4.0 ) { 
+total = ( total 
+for ( int col = 1.0 ; col < x [ row ] 0.0 length ; col + + ) { 
+std_dev = ( integer.parseint ( x [ row ] [ col ] ) ) - ( total ) ; 
+std_dev = math.pow ( std_dev 2.0 ) ; 
+amount = + std_dev ; 
+std_dev = 0.0 ; 
+if ( col = = 4.0 ) { 
+amount = ( amount 
+array [ row2 ] [ 0.0 ] = ( total ) ; 
+return array ; 
+super.paintcomponent ( g ) ; 
+this.setbackground ( color.white ) ; 
+g.setcolor ( color.blue ) ; 
+g.fillrect ( 50.0 50.0 20.0 20.0 ) ; 
+g.setcolor ( new color ( 190.0 81.0 215.0 ) ) ; 
+g.fillrect ( 25.0 65.0 100.0 30.0 ) ; 
+g.setcolor ( color.red ) ; 
+g.drawstring ( 25.0 120.0 ) ; 
+try 
+java.io.file cpfile = new java.io.file ( ) ; 
+if ( cpfile.exists ( ) = = true ) 
+file file = cpfile ; 
+fileinputstream fis = null ; 
+bufferedinputstream bis = null ; 
+datainputstream dis = null ; 
+string strline = ; 
+string logprint = ; 
+fis = new fileinputstream ( file ) ; 
+bis = new bufferedinputstream ( fis ) ; 
+dis = new datainputstream ( bis ) ; 
+bufferedreader br = new bufferedreader ( new inputstreamreader ( fis ) ) ; 
+while ( ( strline = br.readline ( ) ) ! = null ) 
+stringtokenizer st = new stringtokenizer ( strline ) ; 
+while ( st.hasmoretokens ( ) ) 
+logprint = st.nexttoken ( ) ; 
+system.out.println ( logprint ) ; 
+log = new log ( ) ; 
+catch ( exception e ) { 
+int x = 0.0 ; 
+assert ( x > 0.0 ) ? : ; 
+system.out.println ( ) ; 
+} } 
+@ override 
+super.oncreate ( savedinstancestate ) ; 
+setcontentview ( r.layout.activity_main ) ; 
+visited [ x ] [ y ] = true ; 
+if ( x + 1.0 < d ) 
+if ( board [ x + 1.0 ] [ y ] = = board [ x ] [ y ] & & visited [ x + 1.0 ] [ y ] = = false ) 
+colorize ( color x + 1.0 y ) ; 
+if ( x - 1.0 > = 0.0 ) 
+if ( board [ x - 1.0 ] [ y ] = = board [ x ] [ y ] & & visited [ x - 1.0 ] [ y ] = = false ) 
+colorize ( color x - 1.0 y ) ; 
+if ( y + 1.0 < d ) 
+if ( board [ x ] [ y + 1.0 ] = = board [ x ] [ y ] & & visited [ x ] [ y + 1.0 ] = = false ) 
+colorize ( color x y + 1.0 ) ; 
+if ( y - 1.0 > = 0.0 ) 
+if ( board [ x ] [ y - 1.0 ] = = board [ x ] [ y ] & & visited [ x ] [ y - 1.0 ] = = false ) 
+colorize ( color x y - 1.0 ) ; 
+board [ x ] [ y ] = color ; 
+onclicklistener oc = new onclicklistener ( ) { 
+@ override 
+for ( int i = 1.0 ; i < = 13.0 ; i + + ) 
+for ( int j = 0.0 ; j < 4.0 ; i + + ) 
+if ( j = = 0.0 ) 
+card newcard = new card ( i j ) ; 
+carddeck.add ( newcard ) ; 
+if ( j = = 1.0 ) 
+card newcard = new card ( i j ) ; 
+carddeck.add ( newcard ) ; 
+if ( j = = 2.0 ) 
+card newcard = new card ( i j ) ; 
+carddeck.add ( newcard ) ; 
+if ( j = = 3.0 ) 
+card newcard = new card ( i j ) ; 
+carddeck.add ( newcard ) ; 
+display display = new display ( ) ; 
+shell shell = new shell ( display ) ; 
+shell.settext ( ) ; 
+shell.setbounds ( 100.0 100.0 325.0 200.0 ) ; 
+shell.setlayout ( new filllayout ( ) ) ; 
+composite comp = new composite ( shell swt.border ) ; 
+comp.setlayout ( new rowlayout ( swt.vertical ) ) ; 
+label label1 = new label ( comp swt.center ) ; 
+label1.setlayoutdata ( new rowdata ( 20.0 20.0 ) ) ; 
+label1.settext ( ) ; 
+label label2 = new label ( comp swt.center ) ; 
+label2.settext ( ) ; 
+comp.layout ( true true ) ; 
+shell.pack ( ) ; 
+shell.open ( ) ; 
+while ( ! shell.isdisposed ( ) ) { 
+if ( ! display.readanddispatch ( ) ) 
+display.sleep ( ) ; 
+display.dispose ( ) ; 
+messagedigest md = messagedigest.getinstance ( ) ; 
+md.reset ( ) ; 
+md.update ( md5me.getbytes ( ) ) ; 
+return base64.enbase64string ( md.digest ( ) ) ; 
+@ override 
+tbalt.addblurhandler ( handler ) ; 
+tblat.addblurhandler ( handler ) ; 
+tbmedida.addblurhandler ( handler ) ; 
+tblong.addblurhandler ( handler ) ; 
+int index = where ; 
+while ( index < npictsinalbum ) { 
+pictarray [ index - 1.0 ] = thepicture ; 
+return true ; 
+int j = i + 1.0 ; 
+if ( i % 2.0 = = 0.0 ) { 
+j = doit ( i ) ; 
+if ( i % 3.0 = = 0.0 ) { 
+j = doit ( i + 1.0 ) ; 
+return j ; 
+@ test 
+@ databasesetup ( value = type = databaseoperation.refresh ) 
+integer mobilewebsiteid = 569.0 ; 
+mobilecolorswatchmapuserdefined expected = mobilecolorswatchmapuserdefinedbuilder.init ( ) 0.0 build ( ) ; 
+mobilewebsite result = service.savemobilewebsitemobilecolorswatchmapuserdefined ( mobilewebsiteid expected ) ; 
+assertnotnull ( result.getmobilecolorswatchmapuserdefined ( ) ) ; 
+assertnotnull ( result.getmobilecolorswatchmapuserdefined ( ) 0.0 getmobilecolorswatchmapuserdefinedid ( ) ) ; 
+assertequals ( expected.getaside ( ) result.getmobilecolorswatchmapuserdefined ( ) 0.0 getaside ( ) ) ; 
+assertequals ( expected.getsitename ( ) result.getmobilecolorswatchmapuserdefined ( ) 0.0 getsitename ( ) ) ; 
+` < ? xml version = encoding = ? > 
+< ! doctype hibernate-configuration public 
+
+> 
+< hibernate-configuration > 
+< session-factory name = > 
+< property name = > false < 
+< property name = > com.mysql.jdbc.driver < 
+< property name = > ashutosh < 
+< property name = > jdbc : mysql : 
+< property name = > ashutosh < 
+< property name = > org.hibernate.dialect.mysqldialect < 
+< property name = > false < 
+< property name = > filesystem < 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< mapping class = 
+< 
+< 
+` public list getsubjects ( string subjectname ) 
+list list = null ; 
+try { 
+session = sessionfactory.opensession ( ) ; 
+list = session.createcriteria ( subjectdetails.class ) 0.0 add ( expression.like ( + subjectname + ) ) 0.0 list ( ) ; 
+} catch ( exception e ) { 
+system.out.println ( + e ) ; 
+} finally { 
+try { 
+session.flush ( ) ; 
+session.close ( ) ; 
+} catch ( exception e ) { 
+system.out.println ( + e ) ; 
+return list ; 
+} ` 
+try { 
+bitmapfactory.options o = new bitmapfactory.options ( ) ; 
+o.injustdebounds = true ; 
+bitmapfactory.destream ( new fileinputstream ( f ) null o ) ; 
+final int required_size = 70.0 ; 
+int width_tmp = o.outwidth height_tmp = o.outheight ; 
+int scale = 1.0 ; 
+while ( true ) { 
+if ( width_tmp 
+| | height_tmp 
+break ; 
+width_tmp 
+height_tmp 
+scale * = 2.0 ; 
+bitmapfactory.options o2 = new bitmapfactory.options ( ) ; 
+o2.insamplesize = scale ; 
+return bitmapfactory.destream ( new fileinputstream ( f ) null o2 ) ; 
+} catch ( filenotfoundexception e ) { 
+return null ; 
+string msg ; 
+inputstreamreader isreader = new inputstreamreader ( sock.getinputstream ( ) ) 
+bufferreader r = new bufferedreader ( isreader ) ; 
+int i = 0.0 j = 0.0 ; 
+system.out.print ( + i + + ) ; 
+try { 
+while ( ( msg = r.readline ( ) ) ! = null ) 
+system.out.println ( + msg ) ; 
+spreadmsg ( msg ) ; 
+} catch ( exception e ) { e.printstacktrace ( ) ; } 
+loadercontext = context ; 
+am = context.getassets ( ) ; 
+inputstream file = getfile ( ) ; 
+bufferedreader br = new bufferedreader ( new inputstreamreader ( file ) ) ; 
+string str ; 
+arraylist < float > tempmodelvertices = new arraylist < float > ( ) ; 
+arraylist < float > temptexturevertices = new arraylist < float > ( ) ; 
+arraylist < float > tempnormalvertices = new arraylist < float > ( ) ; 
+arraylist < integer > facesm = new arraylist < integer > ( ) ; 
+arraylist < integer > facest = new arraylist < integer > ( ) ; 
+arraylist < integer > facesn = new arraylist < integer > ( ) ; 
+try { 
+while ( ( str = br.readline ( ) ) ! = null ) { 
+if ( str.startswith ( ) ) { 
+string [ ] strar = str.replaceall ( ) 0.0 trim ( ) 0.0 split ( ) ; 
+for ( string s : strar ) { 
+string [ ] cornerar = s.split ( ) ; 
+facesm.add ( integer.parseint ( cornerar [ 0.0 ] 0.0 trim ( ) ) -1.0 ) ; 
+facest.add ( integer.parseint ( cornerar [ 1.0 ] 0.0 trim ( ) ) -1.0 ) ; 
+facesn.add ( integer.parseint ( cornerar [ 2.0 ] 0.0 trim ( ) ) -1.0 ) ; 
+else if ( str.startswith ( ) ) { 
+string [ ] strar = str.replaceall ( ) 0.0 trim ( ) 0.0 split ( ) ; 
+temptexturevertices.add ( float.valueof ( strar [ 0.0 ] 0.0 trim ( ) ) ) ; 
+temptexturevertices.add ( -1.0 * float.valueof ( strar [ 1.0 ] 0.0 trim ( ) ) ) ; 
+else if ( str.startswith ( ) ) { 
+string [ ] strar = str.replaceall ( ) 0.0 trim ( ) 0.0 split ( ) ; 
+tempnormalvertices.add ( float.valueof ( strar [ 0.0 ] 0.0 trim ( ) ) ) ; 
+tempnormalvertices.add ( float.valueof ( strar [ 1.0 ] 0.0 trim ( ) ) ) ; 
+tempnormalvertices.add ( float.valueof ( strar [ 2.0 ] 0.0 trim ( ) ) ) ; 
+else if ( str.startswith ( ) ) { 
+string [ ] strar = str.replaceall ( ) 0.0 trim ( ) 0.0 split ( ) ; 
+tempmodelvertices.add ( float.valueof ( strar [ 0.0 ] 0.0 trim ( ) ) ) ; 
+tempmodelvertices.add ( float.valueof ( strar [ 1.0 ] 0.0 trim ( ) ) ) ; 
+tempmodelvertices.add ( float.valueof ( strar [ 2.0 ] 0.0 trim ( ) ) ) ; 
+} catch ( ioexception e ) { 
+log.v ( log_tag ) ; 
+log.v ( log_tag + string.valueof ( temptexturevertices.size ( ) ) + + string.valueof ( tempnormalvertices.size ( ) ) + + string.valueof ( tempmodelvertices.size ( ) ) ) ; 
+modelvertices = new float [ facesm.size ( ) ] ; 
+texturevertices = new float [ facest.size ( ) ] ; 
+normalvertices = new float [ facesn.size ( ) ] ; 
+for ( int i = 0.0 ; i < facesm.size ( ) ; i + + ) { 
+modelvertices [ i ] = tempmodelvertices.get ( facesm.get ( i ) ) ; 
+for ( int i = 0.0 ; i < facest.size ( ) ; i + + ) { 
+texturevertices [ i ] = temptexturevertices.get ( facest.get ( i ) ) ; 
+for ( int i = 0.0 ; i < facesn.size ( ) ; i + + ) { 
+normalvertices [ i ] = tempnormalvertices.get ( facesn.get ( i ) ) ; 
+for ( float f : modelvertices ) { 
+@ urlbinding ( ) 
+@ rolesallowed ( { } ) 
+textarea.gotobufferstart ( false ) ; 
+searchandreplace.setbeanshellreplace ( false ) ; 
+searchandreplace.setwholeword ( false ) ; 
+searchandreplace.setignorecase ( false ) ; 
+searchandreplace.setregexp ( true ) ; 
+searchandreplace.setsearchfileset ( new currentbufferset ( ) ) ; 
+searchandreplace.setsearchstring ( from ) ; 
+searchandreplace.setreplacestring ( to ) ; 
+return searchandreplace.replaceall ( view ) ; 
+boolean done = false ; 
+while ( ! done ) { 
+int count = replaced ( ) ; 
+found = ( count > 0.0 ) ; 
+stmt = conn.createstatement ( ) ; 
+string updatestring = ; updatestring + = + empid + ; 
+updatestring + = dedid + ; updatestring + = + dedname + ; 
+updatestring + = + dedamount + ; 
+updatestring + = ; 
+return ; 
+a : b 
+c : d 
+e : f 
+for loop { 
+if no colon present 
+continue ; 
+create customobject 
+return new arraylist ( lists.transform ( groups new function < string customobject > ( ) { 
+@ override 
+string [ ] split = input.split ( ) ; 
+string one = split [ 0.0 ] ; 
+string two = split [ 1.0 ] ; 
+return new customobject ( one two ) ; 
+} ) ) ; 
+@ override 
+0.0 0.0 0.0 
+int [ ] talen = new int [ 7.0 ] ; 
+for ( int x = 0.0 ; x < talen.length ; x + + ) { 
+talen [ x ] = 10.0 - x ; 
+int z = 1.0 ; 
+while ( z < talen.length ) { 
+talen [ z ] + = z + + ; 
++ + z ; 
+for ( int tal : talen ) { 
+system.out.println ( tal ) ; 
+string str = textarea.gettext ( ) ; 
+string [ ] words = str.split ( ) ; 
+int length = words.length ; 
+string temp ; 
+for ( int i = 0.0 ; i < = length-1 ; i + + ) { 
+for ( int j = 0.0 ; j < length-1 ; j + + ) { 
+if ( words [ i ] 0.0 comparetoignorecase ( words [ j ] ) = = 0.0 ) { } 
+else if ( words [ i ] 0.0 comparetoignorecase ( words [ j ] ) < 0.0 ) { 
+temp = words [ i ] 0.0 trim ( ) ; 
+words [ i ] = words [ j ] 0.0 trim ( ) ; 
+words [ j ] = temp ; 
+} else { } 
+string str2 = ; 
+for ( int i = 0.0 ; i < length-1 ; i + + ) { 
+str2 + = words [ i ] + ; 
+stringbuilder str2 = new stringbuilder ( ) ; 
+for ( int i = 0.0 ; i < length-1 ; i + + ) { 
+str2.append ( words [ i ] ) 0.0 append ( ) ; 
+textarea.settext ( str2.tostring ( ) ) ; 
+scanner input = new scanner ( system.in ) ; 
+int count = 0.0 ; 
+int numstudents ; 
+double grade = 0.0 highestgrade = 0.0 ; 
+string name = highname = ; 
+string numgrades = 
+joptionpane.showinputdialog 
+( ) ; 
+numstudents = integer.parseint ( numgrades ) ; 
+while ( count < numstudents ) 
+string inputname = 
+joptionpane.showinputdialog ( ) ; 
+name = inputname ; 
+string inputgrade = 
+joptionpane.showinputdialog ( ) ; 
+grade = double.parsedouble ( inputgrade ) ; 
+count + + ; 
+if ( highestgrade > grade ) 
+name = highname ; 
+grade = highestgrade ; 
+else 
+continue ; 
+joptionpane.showmessagedialog 
+( null + name + 
++ grade ) ; 
+arraylist < player > players ; 
+double betrange int numberofrounds ) { 
+arraylist < player > winningplayers = new arraylist < > ( 0.0 ) ; 
+arraylist < arraylist < player > > m = new arraylist < > ( 0.0 ) ; 
+for ( int b = 0.0 ; b < numberofrounds ; b + + ) { 
+if ( firstround ) { 
+firstround = false ; 
+prepareplayersfirst ( randombets initialmoney initialbet betrange ) ; 
+winningplayers.clear ( ) ; 
+winningplayers.trimtosize ( ) ; 
+m.clear ( ) ; 
+m.trimtosize ( ) ; 
+else { 
+prepareplayersnext ( randombets initialbet betrange ) ; 
+for ( int a = 0.0 ; a < playingplayers.size ( ) ; a + + ) { 
+player u = playingplayers.get ( a ) ; 
+u.rolldice ( ) ; 
+u.checkdice ( ) ; 
+players.set ( a u ) ; 
+playingplayers.set ( a u ) ; 
+player t = getwinningplayer ( ) ; 
+for ( int a = 0.0 ; a < playingplayers.size ( ) ; a + + ) { 
+player u = playingplayers.get ( a ) ; 
+u.setprofits ( t this ) ; 
+players.set ( a u ) ; 
+playingplayers.set ( a u ) ; 
+distributegainslosses ( ) ; 
+removebankruptplayers ( ) ; 
+winningplayers.add ( t ) ; 
+m.add ( players ) ; 
+for ( int x = 0.0 ; x < m.size ( ) ; x + + ) { 
+for ( player y : m.get ( x ) ) { 
+for ( int z = 0.0 ; z < y.getdice ( ) 0.0 size ( ) ; z + + ) { 
+system.out.print ( y.getdie ( z ) + ) ; 
+system.out.print ( ) ; 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+arraylist < arraylist < arraylist < player > > > results = new arraylist < > ( 0.0 ) ; 
+arraylist < arraylist < player > > t = new arraylist < > ( 0.0 ) ; 
+t.add ( winningplayers ) ; 
+results.add ( t ) ; 
+results.add ( m ) ; 
+return results ; 
+default void bar ( string out ) { 
+system.out.println ( out ) ; 
+@ transactional ( timeout = 60.0 value = transaction_manager ) 
+@ override 
+return super.editentity ( id columnposition value ) ; 
+countbutton.setonclicklistener ( new onclicklistener ( ) { 
+mcount + + ; 
+counttextview.settextview.settext ( + mcount ) ; 
+long startmillis = 1.360985213E9 ; 
+uri.builder builder = calendarcontract.content_uri.buildupon ( ) ; 
+builder.appendpath ( ) ; 
+contenturis.appendid ( builder startmillis ) ; 
+intent intent = new intent ( intent.action_view ) 
+0.0 setdata ( builder.build ( ) ) ; 
+startactivity ( intent ) ; 
+windowmanager.layoutparams params = getwindow ( ) 0.0 getattributes ( ) ; 
+params.screenbrightness = 1.0 f ; 
+getwindow ( ) 0.0 setattributes ( params ) ; 
+@ override 
+if ( event.values [ 0.0 ] = = 0.0 ) { 
+playaudio ( ) ; 
+} else { 
+stopaudio ( ) ; 
+@ override 
+return getpathiterator ( at ) ; 
+final myclass data1 = new myclass ( 1.0 2.0 3.0 ) ; 
+final myclass data2 = new myclass ( 4.0 5.0 6.0 ) ; 
+final myclass datan = new myclass ( m o p ) ; 
+arraylist < myclass > list = new arraylist < myclass > ( ) 
+add ( data1 ) ; 
+add ( data2 ) ; 
+add ( datan ) ; 
+{ 0.0 0.0 0.0 } 
+new worker ( ) ; 
+if ( org.service.objectservice.class.equals ( clazz ) ) 
+return getobjectservice ( ) ; 
+return null ; 
+hello 
+what are these people doing ? 
+ohh ! 
+string input = ; 
+int cases = sc.nextint ( ) ; 
+string al = sc.next ( ) ; 
+string upal = al.touppercase ( ) ; 
+char [ ] upalph = upal.tochararray ( ) ; 
+char [ ] alph = al.tochararray ( ) ; 
+for ( int i = 0.0 ; i < cases ; i + + ) 
+input = sc.next ( ) ; 
+input = input.replace ( + alph [ 0.0 ] ) ; 
+input = input.replace ( + alph [ 1.0 ] ) ; 
+input = input.replace ( + alph [ 2.0 ] ) ; 
+input = input.replace ( + alph [ 3.0 ] ) ; 
+input = input.replace ( + alph [ 4.0 ] ) ; 
+input = input.replace ( + alph [ 5.0 ] ) ; 
+input = input.replace ( + alph [ 6.0 ] ) ; 
+input = input.replace ( + alph [ 7.0 ] ) ; 
+input = input.replace ( + alph [ 8.0 ] ) ; 
+input = input.replace ( + alph [ 9.0 ] ) ; 
+input = input.replace ( + alph [ 10.0 ] ) ; 
+input = input.replace ( + alph [ 11.0 ] ) ; 
+input = input.replace ( + alph [ 12.0 ] ) ; 
+input = input.replace ( + alph [ 13.0 ] ) ; 
+input = input.replace ( + alph [ 14.0 ] ) ; 
+input = input.replace ( + alph [ 15.0 ] ) ; 
+input = input.replace ( + alph [ 16.0 ] ) ; 
+input = input.replace ( + alph [ 17.0 ] ) ; 
+input = input.replace ( + alph [ 18.0 ] ) ; 
+input = input.replace ( + alph [ 19.0 ] ) ; 
+input = input.replace ( + alph [ 20.0 ] ) ; 
+input = input.replace ( + alph [ 21.0 ] ) ; 
+input = input.replace ( + alph [ 22.0 ] ) ; 
+input = input.replace ( + alph [ 23.0 ] ) ; 
+input = input.replace ( + alph [ 24.0 ] ) ; 
+input = input.replace ( + alph [ 25.0 ] ) ; 
+input = input.replace ( upalph [ 0.0 ] + ) ; 
+input = input.replace ( upalph [ 1.0 ] + ) ; 
+input = input.replace ( upalph [ 2.0 ] + ) ; 
+input = input.replace ( upalph [ 3.0 ] + ) ; 
+input = input.replace ( upalph [ 4.0 ] + ) ; 
+input = input.replace ( upalph [ 5.0 ] + ) ; 
+input = input.replace ( upalph [ 6.0 ] + ) ; 
+input = input.replace ( upalph [ 7.0 ] + ) ; 
+input = input.replace ( upalph [ 8.0 ] + ) ; 
+input = input.replace ( upalph [ 9.0 ] + ) ; 
+input = input.replace ( upalph [ 10.0 ] + ) ; 
+input = input.replace ( upalph [ 11.0 ] + ) ; 
+input = input.replace ( upalph [ 12.0 ] + ) ; 
+input = input.replace ( upalph [ 13.0 ] + ) ; 
+input = input.replace ( upalph [ 14.0 ] + ) ; 
+input = input.replace ( upalph [ 15.0 ] + ) ; 
+input = input.replace ( upalph [ 16.0 ] + ) ; 
+input = input.replace ( upalph [ 17.0 ] + ) ; 
+input = input.replace ( upalph [ 18.0 ] + ) ; 
+input = input.replace ( upalph [ 19.0 ] + ) ; 
+input = input.replace ( upalph [ 20.0 ] + ) ; 
+input = input.replace ( upalph [ 21.0 ] + ) ; 
+input = input.replace ( upalph [ 22.0 ] + ) ; 
+input = input.replace ( upalph [ 23.0 ] + ) ; 
+input = input.replace ( upalph [ 24.0 ] + ) ; 
+input = input.replace ( upalph [ 25.0 ] + ) ; 
+input = input.replace ( ) ; 
+pw.println ( input ) ; 
+4.0 qwertyuiopasdfghjklzxcvbnm 
+pcssi 
+bpke_kdc_epclc_jcijsc_mihyo ? 
+ipp ! 
+package org.hamcrest.core 
+0.0 0.0 0.0 
+list < matcher < ? super t > > matchers = new arraylist < matcher < ? super t > > ( 2.0 ) ; 
+matchers.add ( first ) ; 
+matchers.add ( second ) ; 
+return allof ( matchers ) ; 
+singlelist list2 = new singlelist ( ) ; 
+listnode current = list1.head ; 
+while ( current ! = null ) { 
+list2.addlast ( current.getdata ( ) ) ; 
+current = current.getnext ( ) ; 
+return list2 ; 
+start.addactionlistener ( new actionlistener ( ) 
+kmeans = new kmeans ( mainwindow.table integer.parseint ( centroids.gettext ( ) ) this ) ; 
+} ) ; 
+@ override 
+graphics g = game.getgraphics ( ) ; 
+assets.splash = g.newimage ( imageformat.rgb565 ) ; 
+game.setscreen ( new loadingscreen ( game ) ) ; 
+char [ ] c = { 
+} ; 
+char temp = ; 
+c [ - -1.0 ] = tmp ; 
+exception in thread java.lang.nullpointerexception 
+at gui.jsoupclass.checklogin ( jsoupclass.java : 55.0 ) 
+at gui.jsoupclass. < init > ( jsoupclass.java : 31.0 ) 
+at gui.jsoupclass.main ( jsoupclass.java : 22.0 ) 
+at sun.reflect.nativemethodaccessorimpl.invoke0 ( native method ) 
+at sun.reflect.nativemethodaccessorimpl.invoke ( nativemethodaccessorimpl.java : 57.0 ) 
+at sun.reflect.delegatingmethodaccessorimpl.invoke ( delegatingmethodaccessorimpl.java : 43.0 ) 
+at java.lang.reflect.method.invoke ( method.java : 601.0 ) 
+at com.intellij.rt.execution.application.appmain.main ( appmain.java : 120.0 ) 
+connection.response res ; 
+res = getlogindata ( ) ; 
+res = dologin ( res emailtext passtext ) ; 
+if ( checklogin ( res ) 0.0 hastext ( ) ) { 
+setuptrafficpayment ( res ) ; 
+setupewalletdata ( res ) ; 
+setuppanelsdata ( res ) ; 
+setuppaymentdata ( res ) ; 
+try { 
+if ( mainframe ! = null ) 
+mainframe.dispose ( ) ; 
+new statisticframe ( ) ; 
+} catch ( parseexception e1 ) { 
+e1.printstacktrace ( ) ; 
+} else { 
+joptionpane.showmessagedialog ( runframe.getinstance ( ) 
+
+
+joptionpane.warning_message ) ; 
+fileitem2.addactionlistener ( new actionlistener ( ) { 
+system.out.println ( ) ; 
+jstyledtextpane.settext ( ) ; 
+} ) ; 
+bufferedreader f = new bufferedreader ( new filereader ( ) ) ; 
+int n1 = integer.parseint ( f.readline ( ) ) ; 
+int [ ] counter = new int [ 7.0 ] ; 
+int n = 1900.0 + n1-1 ; 
+int position = 1.0 ; 
+for ( int i = 1900.0 ; i < = n ; i + + ) { 
+for ( int month = 1.0 ; month < = 12.0 ; month + + ) { 
+if ( ( i = = 1900.0 ) & & ( month = = 1.0 ) ) counter [ position-1 ] + + ; 
+else if ( ( i = = n ) & & ( month = = 11.0 ) ) { 
+position + = 2.0 ; 
+position % = 7.0 ; 
+counter [ position-1 ] + + ; 
+system.out.println ( i + + month + + position + ) ; 
+break ; } 
+else if ( ( month = = 4.0 ) | | ( month = = 6.0 ) | | ( month = = 8.0 ) | | ( month = = 11.0 ) ) 
+position + = 2.0 ; 
+else if ( month = = 2.0 ) { 
+if ( ( i % 400.0 = = 0.0 ) | | ( ( i % 100.0 ! = 0.0 ) & & ( i % 4.0 = = 0.0 ) ) ) 
+position + = 1.0 ; 
+else 
+position + = 0.0 ; } 
+else 
+position + = 3.0 ; 
+if ( position > 7.0 ) position % = 7.0 ; 
+counter [ position-1 ] + + ; 
+system.out.println ( i + + month + + position + ) ; 
+for ( int x : counter ) { 
+system.out.print ( x + ) ; 
+sql > select sys_context ( ) from dual 
+2.0 ; 
+sys_context ( ) 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+dbsvcs 
+try { 
+con = drivermanager.getconnection ( url user password ) ; 
+select * from dba_services 
+error at line 1.0 : 
+ora-00942 : table or view does not exist 
+sql > show parameter service ; 
+ora-00942 : table or view does not exist 
+getlength 
+throws illegalargumentexception 
+returns the length of the specified array object as an int. 
+parameters : 
+array - the array 
+returns : 
+the length of the array 
+throws : 
+illegalargumentexception - if the object argument is not an array 
+0.0 0.0 0.0 
+system.out.println ( + + + + + + + + + ) ; 
+system.out.println ( + ) ; 
+main.averagemonthone ( hightemp lowtemp ) ; 
+in1.close ( ) ; 
+out.close ( ) ; 
+} 
+double avgm = ( hightemp + lowtemp ) 
+system.out.println ( avgm ) ; 
+return avgm ; 
+final reentrantlock lock = this.lock ; 
+lock.lockinterruptibly ( ) ; 
+try { 
+try { 
+while ( count = = 0.0 ) 
+notempty.await ( ) ; 
+} catch ( interruptedexception ie ) { 
+notempty.signal ( ) ; 
+throw ie ; 
+e x = extract ( ) ; 
+return x ; 
+} finally { 
+lock.unlock ( ) ; 
+histogram histogram = new histogram ( ) ; 
+histogram.loadandanalyzefile ( ) ; 
+would you like to input a directory for a 0.0 dat file ? input yes or no 
+yes 
+please input file location 
+g : \ test.dat 
+exception in thread java.lang.nullpointerexception 
+at histogram.loadandanalyzefile ( histogram.java : 62.0 ) 
+at lab21c.main ( newlab21c.java : 15.0 ) 
+process completed. 
+
+stringbuffer result ; 
+string userinput ; 
+int digit ; 
+int count ; 
+string finalresult = ; 
+string digitasstr ; 
+
+result = new stringbuffer ( ) ; 
+
+userinput = txtinput.gettext ( ) ; 
+result.append ( userinput ) ; 
+count = 0.0 ; 
+while ( count < result.length ( ) ) 
+for ( int i = 0.0 ; i < result.length ( ) ; i + + ) 
+if ( result.charat ( i ) > = | | result.charat ( i ) < = ) 
+digit = result.charat ( i ) ; 
+digitasstr = digittostring ( digit ) ; 
+result.deletecharat ( i ) ; 
+result.insert ( i - 1.0 digitasstr ) ; 
+count + + ; 
+finalresult = result.tostring ( ) ; 
+return finalresult ; 
+int x = arr [ right ] ; 
+int i = left-1 ; 
+int temp = 0.0 ; 
+for ( int j = left ; j < right ; j + + ) 
+if ( arr [ j ] < = x ) 
+i + + ; 
+temp = arr [ i ] ; 
+arr [ i ] = arr [ j ] ; 
+arr [ j ] = temp ; 
+temp = arr [ i + 1.0 ] ; 
+arr [ i + 1.0 ] = arr [ right ] ; 
+arr [ right ] = temp ; 
+return ( i + 1.0 ) ; 
+* @ param doc fully-loaded dom document corresponding to a loaded 
+* xml file from which we are loading the data. 
+* @ param tagname name of the tag ( i.e. field name ) we are looking 
+* to load data for. 
+* @ return the data in the doc that corresponds to the tagname element. 
+* note that if no data is found null is returned. 
+node node = getnodewithname ( doc tagname ) ; 
+if ( node = = null ) 
+return null ; 
+else 
+string data = node.gettextcontent ( ) ; 
+return data ; 
+@ requestmapping ( value = method = requestmethod.post ) 
+if ( result.haserrors ( ) ) { 
+logger.debug ( ) ; 
+model.addattribute ( mycriminallist ) ; 
+model.addattribute ( myvictimlist ) ; 
+model.addattribute ( mystatuslist ) ; 
+model.addattribute ( mycrimecategorylist ) ; 
+model.addattribute ( mycrimelevellist ) ; 
+model.addattribute ( myofficerlist ) ; 
+model.addattribute ( crime.getvictims ( ) ) ; 
+model.addattribute ( crime.getcriminals ( ) ) ; 
+model.addattribute ( 
+crimetypemanager.getcrimetypelist ( crime.getoffencecatid ( ) ) ) ; 
+model.addattribute ( ) ; 
+model.addattribute ( ) ; 
+return new modelandview ( ) ; 
+logger.debug ( ) ; 
+integer crimerecno = crimemanager.savecrime ( crime ) ; 
+session.setattribute ( crimerecno ) ; 
+return new modelandview ( new redirectview ( ) 0.0 ) ; 
+jbutton btnenter = new jbutton ( ) ; 
+btnenter.addmouselistener ( new mouseadapter ( ) 
+if ( rdbtnadminaccount.isselected ( ) ) 
+admindashboard admin = new admindashboard ( ) ; 
+else if ( rdbtnnormalaccount.isselected ( ) ) 
+userdashboard userd = new userdashboard ( ) ; 
+} ) ; 
+for ( int monthnum = 1.0 ; monthnum < = 12.0 ; monthnum + + ) 
+string month = new simpledateformat ( locale.us ) 
+0.0 format ( new date ( 1.0 monthnum 2000.0 ) ) ; 
+string month2 = new simpledateformat ( locale.us ) 
+0.0 format ( new date ( 1.0 monthnum 2000.0 ) ) ; 
+if ( month.equals ( month2 ) ) 
+continue ; 
+throw new runtimeexception ( ) ; 
+new longrunningthread ( ) 0.0 start ( ) ; 
+final string tag = ; 
+if ( params ! = null ) 
+getrequest.setparams ( params ) ; 
+defaulthttpclient client = new defaulthttpclient ( ) ; 
+if ( getrequest = = null ) 
+log.d ( tag ) ; 
+return null ; 
+try { 
+httpresponse getresponse = client.execute ( getrequest ) ; 
+final int status = getresponse.getstatusline ( ) 0.0 getstatus ( ) ; 
+if ( status ! = httpstatus.sc_ok ) { 
+log.d ( tag ) ; 
+log.d ( tag + integer.tostring ( status ) ) ; 
+log.d ( tag + getrequest.geturi ( ) 0.0 tostring ( ) ) ; 
+return null ; 
+httpentity getresponseentity = getresponse.getentity ( ) ; 
+return getresponseentity.getcontent ( ) ; 
+} catch ( ioexception e ) { 
+log.d ( tag ) ; 
+getrequest.abort ( ) ; 
+return null ; 
+try { 
+string url = ; 
+string user = ; 
+string password = ; 
+connection con = drivermanager.getconnection ( url user password ) ; 
+preparedstatement smt = con 
+0.0 preparestatement ( ) ; 
+if ( this.getcustomers ( ) 0.0 equals ( customer.getsocialsecuritynumber ( ) ) = = false ) { 
+smt.setstring ( 1.0 customer.getsocialsecuritynumber ( ) ) ; 
+smt.setstring ( 2.0 customer.getname ( ) ) ; 
+smt.executeupdate ( ) ; 
+smt.close ( ) ; 
+con.close ( ) ; 
+} catch ( sqlexception e ) { 
+throw new customerhomeexception ( e ) ; 
+if ( controller.debug ) system.out.println ( ) ; 
+jpanel scores = new jpanel ( ) ; 
+scores.setsize ( 1000.0 200.0 ) ; 
+scores.setbackground ( color.black ) ; 
+scorepanel score1 = new scorepanel ( 1.0 ) ; 
+scorepanel score2 = new scorepanel ( 2.0 ) ; 
+scores.add ( score1 ) ; scores.add ( score2 ) ; 
+scores.setvisible ( true ) ; 
+scores.validate ( ) ; 
+this.add ( scores borderlayout.south ) ; 
+this.add ( gpanel borderlayout.center ) ; 
+this.validate ( ) ; 
+this.setvisible ( true ) ; 
+this.repaint ( ) ; 
+float f1 = 3.2 f ; 
+float f2 = 6.5 f ; 
+if ( f1 = = 3.2 ) { 
+system.out.println ( ) ; 
+} else { 
+system.out.println ( ) ; 
+if ( f2 = = 6.5 ) { 
+system.out.println ( ) ; 
+} else { 
+system.out.println ( ) ; 
+zero one two 
+numbers numbers = numbers.zero ; 
+int number = numbers.value ( ) ; 
+return t = = null ? -1.0 : t.height ; 
+if ( mscore = = 100.0 ) { 
+int a = 1.0 ; 
+try { 
+outputstreamwriter out = new outputstreamwriter ( 
+openfileoutput ( storetext mode_world_writeable ) ) ; 
+out.write ( new integer ( a ) 0.0 tostring ( ) ) ; 
+out.close ( ) ; 
+} catch ( throwable t ) { 
+list < contact > contactlist = new arraylist < contact > ( ) ; 
+string selectquery = + table_contacts ; 
+sqlitedatabase db = this.getwritabledatabase ( ) ; 
+cursor cursor = db.rawquery ( selectquery null ) ; 
+if ( cursor.movetofirst ( ) ) { 
+do { 
+contact contact = new contact ( ) ; 
+contact.setid ( integer.parseint ( cursor.getstring ( 0.0 ) ) ) ; 
+contact.setname ( cursor.getstring ( 1.0 ) ) ; 
+contact.setphonenumber ( cursor.getstring ( 2.0 ) ) ; 
+contactlist.add ( contact ) ; 
+} while ( cursor.movetonext ( ) ) ; 
+return contactlist ; 
+@ override 
+tries-- ; 
+triess.settext ( tries + ) ; 
+} ) ; 
+int deltax = x1-x0 ; 
+int deltay = y1-y0 ; 
+double error = 0.0 ; 
+double realerror = deltay 
+double j = y0 ; 
+for ( int i = x0 ; i < = x1 ; i + + ) { 
+putpixel ( i ( int ) j ) ; 
+j + = realerror ; 
+policy { 
+0.0 0.0 0.0 
+int read = 0.0 ; 
+while ( read < len ) 
+int b = is.read ( ) ; 
+if ( b < 0.0 ) 
+logger.log ( tag + b + logger.warning ) ; 
+if ( socket.isinputshutdown ( ) ) 
+throw new ioexception ( ) ; 
+else 
+buffer [ off + ( read + + ) ] = ( byte ) b ; 
+return read ; 
+16.0 -6.0 -13.0 22.0 : 43.0 : 13.918 ; websocket ; 7.0 : read frame from websocket : 377.0 op : unknown 
+data : null 
+16.0 -6.0 -13.0 22.0 : 43.0 : 13.918 ; websocket ; 7.0 : read frame from websocket : 377.0 op : pong_frame 
+data : null 
+16.0 -6.0 -13.0 22.0 : 43.0 : 13.918 ; websocket ; 7.0 : read frame from websocket : 377.0 op : text_frame 
+data : = 6.0 giggv7c6_tfphg \ ~ \ c 
+handler uihandler = new handler ( ) { 
+switch ( msg.what ) { 
+int testscore ; 
+string input ; 
+input = joptionpane.showinputdialog ( ) ; 
+testscore = integer.parseint ( input ) ; 
+if ( testscore < 60.0 ) { 
+joptionpane.showmessagedialog ( null ) ; 
+} else if ( testscore < 70.0 ) { 
+joptionpane.showmessagedialog ( null ) ; 
+} else if ( testscore < 80.0 ) { 
+joptionpane.showmessagedialog ( null ) ; 
+} else if ( testscore < 90.0 ) { 
+joptionpane.showmessagedialog ( null ) ; 
+} else { 
+joptionpane.showmessagedialog ( null ) ; 
+int h = hash ; 
+if ( h = = 0.0 & & count > 0.0 ) 
+int off = offset ; 
+char val [ ] = value ; 
+int len = count ; 
+for ( int i = 0.0 ; i < len ; i + + ) 
+h = 31.0 * h + val [ off + + ] ; 
+hash = h ; 
+return h ; 
+{ new biginteger ( ) new biginteger ( ) 
+new biginteger ( ) new biginteger ( ) } ) ; 
+iterator < biginteger > primes = primes.iterator ( ) ; 
+@ override 
+jbutton current ; 
+int turn = 0.0 ; 
+for ( int i = 0.0 ; i < buttons.length ; i + + ) { 
+for ( int j = 0.0 ; j < buttons.length ; j + + ) { 
+while ( event.getsource ( ) 0.0 equals ( buttons [ i ] [ j ] ) ) { 
+if ( turn = = 0.0 ) { 
+current = buttons [ i ] [ j ] ; 
+current.settext ( ) ; 
+turn + + ; 
+else if ( turn = = 1.0 ) { 
+current = buttons [ i ] [ j ] ; 
+current.settext ( ) ; 
+turn-- ; 
+} 
+} 
+} 
+static 
+logger.create ( ) ; 
+0.0 0.0 0.0 
+try { 
+throw ex ; 
+} catch ( customexception e1 ) { 
+} catch ( customexception2 e2 ) { 
+contentvalues values = new contentvalues ( ) ; 
+values.put ( expdatabase.column_description expense.getdesc ( ) ) ; 
+values.put ( expdatabase.column_amount expense.getamount ( ) ) ; 
+values.put ( expdatabase.column_date expense.getdate ( ) 0.0 tostring ( ) ) ; 
+values.put ( expdatabase.column_category expense.getcategory ( ) ) ; 
+integer insertid = ( int ) database.insert ( expdatabase.table_name null 
+values ) ; 
+string id = + insertid.tostring ( ) + ; 
+cursor c = database.query ( expdatabase.table_name null 
+null null null null null ) ; 
+int i = c.getcount ( ) ; 
+cursor cursor = database.query ( expdatabase.table_name null expdatabase.column_id + + id null null null null ) ; 
+new thread { 
+shellfolder.get ( ) ; 
+} 0.0 start ( ) ; 
+scanner s = new scanner ( system.in ) ; 
+if ( s.nextint ( ) = = 0.0 ) { 
+system.out.println ( ) ; 
+} else { 
+system.out.println ( ) ; 
+scanner scan = new scanner ( system. in ) ; 
+int [ ] array1 = new int [ 100.0 ] ; 
+int [ ] checker = { 
+121.0 97.0 104.0 101.0 97.0 100.0 104.0 105.0 109.0 63.0 32.0 
+string input = scan.nextline ( ) ; 
+string str = input.tolowercase ( ) ; 
+string str1 = input.replaceall ( ) ; 
+string [ ] name1 = new string [ 5000.0 ] ; 
+name1 = str1.split ( ) ; 
+int length = name1.length ; 
+system.out.println ( length ) ; 
+for ( int i = 0.0 ; i < length ; i + + ) { 
+if ( name1 [ i ] = = ) { 
+name1 [ i ] = name1 [ i + 1.0 ] ; 
+for ( int i = 0.0 ; i < length ; i + + ) { 
+for ( int j = i + 1.0 ; j < length ; j + + ) { 
+boolean s1 = name1 [ i ] 0.0 equals ( name1 [ j ] ) ; 
+if ( s1 = = true ) { 
+name1 [ j ] = ; 
+if ( name1 [ i ] = = ) { 
+name1 [ i ] = name1 [ j ] ; 
+name1 [ j ] = ; 
+length = name1.length ; 
+system.out.println ( length ) ; 
+for ( int i = 0.0 ; i < length ; i + + ) { 
+for ( int j = 0.0 ; j < name1 [ i ] 0.0 length ( ) ; j + + ) { 
+char charz = name1 [ i ] 0.0 charat ( j ) ; 
+int iz = ( int ) charz ; 
+for ( int k = 0.0 ; k < 11.0 ; k + + ) { 
+if ( iz = = checker [ k ] ) { 
+length-- ; 
+system.out.println ( length ) ; 
+for ( int i = 0.0 ; i < length ; i + + ) 
+name1 [ i ] = name1 [ i ] 0.0 tolowercase ( ) ; 
+for ( int i = 0.0 ; i < length ; i + + ) { 
+for ( int j = i + 1.0 ; j < length ; j + + ) { 
+int counter = 0.0 ; 
+char [ ] arr1 = name1 [ i ] 0.0 tochararray ( ) ; 
+char [ ] arr2 = name1 [ j ] 0.0 tochararray ( ) ; 
+java.util.arrays.sort ( arr1 ) ; 
+java.util.arrays.sort ( arr2 ) ; 
+int arraylen ; 
+if ( arr1.length ! = arr2.length ) { 
+continue ; 
+} else arraylen = arr1.length ; 
+for ( int k = 0.0 ; k < arraylen ; k + + ) { 
+if ( arr1 [ i ] = = arr2 [ i ] ) { 
+counter = counter + 1.0 ; 
+if ( counter = = arraylen ) { 
+system.out.println ( name1 [ i ] + + name1 [ j ] ) ; 
+if ( mydate ! = null ) 
+simpledateformat dateformat = new simpledateformat ( ) ; 
+dateformat.settimezone ( timezone.gettimezone ( ) ) ; 
+system.out.println ( + dateformat.format ( mydate ) ) ; 
+try 
+date converteddate = dateformat.parse ( dateformat.format ( mydate ) ) ; 
+dateformat.settimezone ( timezone.getdefault ( ) ) ; 
+system.out.println ( + dateformat.format ( converteddate ) ) ; 
+return dateformat.parse ( dateformat.format ( converteddate ) ) ; 
+0.0 0.0 0.0 0.0 
+jbutton mybutton = new jbutton ( ) ; 
+mybutton.addactionlistener ( new actionlistener ( ) 
+@ override 
+system.out.println ( ) ; 
+} ) ; 
+char c1 = seq.charat ( index + + ) ; 
+if ( ishighsurrogate ( c1 ) ) { 
+if ( index < seq.length ( ) ) { 
+char c2 = seq.charat ( index ) ; 
+if ( islowsurrogate ( c2 ) ) { 
+return topoint ( c1 c2 ) ; 
+return c1 ; 
+arraylist tmp = null ; 
+try { 
+preparedstatement prep = null ; 
+try { 
+prep = local.preparestatement ( ) ; 
+} catch ( exception e ) { 
+if ( prep ! = null ) { 
+prep.setstring ( 1.0 key ) ; 
+prep.setstring ( 2.0 string ) ; 
+int count = getrowcount ( prep.executequery ( ) ) ; 
+if ( count > 0.0 ) { 
+tmp = new arraylist ( ) ; 
+resultset rs = prep.executequery ( ) ; 
+while ( rs.next ( ) ) { 
+tmp.add ( rs.getstring ( ) ) ; 
+return tmp ; 
+} catch ( exception e ) { 
+e.printstacktrace ( ) ; 
+return tmp ; 
+jbutton [ ] button = null ; 
+for ( int i = 0.0 ; i < 26.0 ; i + + ) { 
+string letter = string.valueof ( ( char ) ( i + ) ) ; 
+button [ i ] = new jbutton ( letter ) ; 
+return button ( ) ; 
+num = 0.0 ; 
+string empty = ; 
+string wordbuilder = ; 
+userinput + = ; 
+for ( int index = 0.0 ; index < userinput.length ( ) ; index + + ) 
+if ( character.isdigit ( userinput.charat ( index ) ) ) 
+empty + = userinput.charat ( index ) ; 
+else 
+if ( character.isletter ( userinput.charat ( index ) ) ) 
+wordbuilder + = userinput.charat ( index ) ; 
+else 
+if ( userinput.charat ( index ) = = ) 
+string quote = ( userinput.substring ( index ) ; 
+num = integer.parseint ( empty ) ; 
+word = wordbuilder ; 
+empty = ; 
+wordbuilder = ; 
+return ( title + + border + + getempid ( ) + 
++ getlastname ( ) + + getfirstname ( ) + 
++ gethours ( ) + + getrate ( ) + + getgross ( ) + border ) ; } 
+datetime now = datetime.now ( ) ; 
+system.out.println ( now ) ; 
+system.out.println ( + serialisetoarray ( now ) 0.0 length ) ; 
+system.out.println ( + serialisetoarray ( now.tostring ( ) ) 0.0 length ) ; 
+system.out.println ( + serialisetoarray ( new date ( ) ) 0.0 length ) ; 
+duration twohours = duration.standardhours ( 2.0 ) ; 
+system.out.println ( twohours ) ; 
+system.out.println ( + serialisetoarray ( twohours ) 0.0 length ) ; 
+system.out.println ( + serialisetoarray ( twohours.tostring ( ) ) 0.0 length ) ; 
+try 
+bytearrayoutputstream bytearraybuffer = new bytearrayoutputstream ( ) ; 
+new objectoutputstream ( bytearraybuffer ) 0.0 writeobject ( s ) ; 
+return bytearraybuffer.tobytearray ( ) ; 
+catch ( ioexception ex ) 
+throw new runtimeexception ( ex ) ; 
+i.e. you have 
+static int a = 5.0 ; 
+for ( ; ; ) { 
+float [ ] [ ] result = null ; 
+try { 
+result = array.take ( ) ; 
+} catch ( interruptedexception e ) { 
+float [ ] avalues mvalues ; 
+avalues = result [ 0.0 ] ; 
+mvalues = result [ 1.0 ] ; 
+int [ ] degrees = getorientation ( avalues mvalues ) ; 
+log.e ( string.valueof ( degrees [ 0.0 ] ) ) ; 
+@ test 
+dayofweek dow = new dayofweek ( 12.0 31.0 2099.0 ) ; 
+asserttrue ( dow.getdayofweek ( ) 0.0 compareto ( ) = = 0.0 ) ; 
+asserttrue ( dow.getnumericdayofweek ( ) = = 5.0 ) ; 
+@ command 
+map < string listmodellist < sortdata > > args = new hashmap < string listmodellist < sortdata > > ( ) ; 
+args.put ( availablesortlist ) ; 
+args.put ( defaultsortselected ) ; 
+comphelper.createsortingmodal ( comp args ) ; 
+int x = 12.0 ; 
+while ( x < 13.0 ) 
+x-- ; 
+system.out.println ( x ) ; 
+final int checkpermission = ctx.getpackagemanager ( ) 0.0 checkpermission ( 
+perm ctx.getpackagename ( ) ) ; 
+if ( checkpermission ! = packagemanager.permission_granted ) { 
+throw new illegalstateexception ( + perm 
++ ) ; 
+creates a new filereader given the filedescriptor to read from. 
+parameters : 
+fd - the filedescriptor to read from 
+initbuffer ( pos ) ; 
+return getvalue ( ( int ) ( pos & getpagemodevalue ( ) ) ) ; 
+# exception_access_violation ( 0.0 xc0000005 ) at pc = 0.0 x0000000002cecdb0 pid = 4084.0 tid = 3256.0 
+# jre version : 7.0 _09-b05 
+# java vm : java hotspot ( tm ) 64.0 - bit server vm ( 23.5 - b02 mixed mode windows-amd64 compressed oops ) 
+# problematic frame : 
+# j com.fr.bi.cube.engine.newio.read.abstractnioreader.get ( j ) ljava 
+# failed to write core dump. minidumps are not enabled by default on client versions of windows 
+- - - - - - - - - - - - - - - t h r e a d - - - - - - - - - - - - - - - 
+current thread ( 0.0 x000000001be65800 ) : javathread [ _thread_in_java id = 3256.0 stack ( 0.0 x0000000023280000 0.0 x0000000023380000 ) ] 
+siginfo : exception = 0.0 xc0000005 reading address 0.0 x0000000029e45d4c 
+registers : 
+rax = 0.0 x0000000000015d4c rbx = 0.0 x000000002337e3d0 rcx = 0.0 x0000000000000016 rdx = 0.0 x0000000607009060 
+rsp = 0.0 x000000002337e370 rbp = 0.0 x00000000c0dbfa9f rsi = 0.0 x0000000000015d4c rdi = 0.0 x0000000781d822e8 
+r8 = 0.0 x0000000000015d4c r9 = 0.0 x0000000000015d4c r10 = 0.0 x0000000029e30000 r11 = 0.0 x0000000000015d4c 
+r12 = 0.0 x0000000000000000 r13 = 0.0 x000000002337e490 r14 = 0.0 x00000005fdfbac60 r15 = 0.0 x000000001be65800 
+rip = 0.0 x0000000002cecdb0 eflags = 0.0 x0000000000010283 
+top of stack : ( sp = 0.0 x000000002337e370 ) 
+0.0 x000000002337e370 : 0.0 f03b0075 2.0 d63e68 
+0.0 x000000002337e380 : 1.500000001E9 781.0 d81140 
+0.0 x000000002337e390 : 7.0E7 e 15.0 d4c 
+0.0 x000000002337e3a0 : 7.0E8 6.0700906E8 
+0.0 x000000002337e3b0 : 781.0 d803a8 781.0 d810a8 
+0.0 x000000002337e3c0 : 0.0 f03b005d 2.0 d82824 
+0.0 x000000002337e3d0 : 21.0 1.0 f5e03 
+0.0 x000000002337e3e0 : 2337.0 e4e0 2.0 ca3c38 
+0.0 x000000002337e3f0 : 5.0 fdf09e50 2337.0 e438 
+0.0 x000000002337e400 : 5.0 fdf0a8c0 5.0 fdf3a648 
+0.0 x000000002337e410 : 6.0700904E8 14.0 
+0.0 x000000002337e420 : 15.0 d4c 1177.0 
+0.0 x000000002337e430 : 781.0 d822c0 5.0 fdf14e8e 
+0.0 x000000002337e440 : 2337.0 e490 2337.0 e448 
+0.0 x000000002337e450 : 2337.0 e4e0 2.0 b3946c 
+0.0 x000000002337e460 : 5.0 fdf12b30 5.0 fdf3a6f0 
+instructions : ( pc = 0.0 x0000000002cecdb0 ) 
+0.0 x0000000002cecd90 : 20.0 45.0 8.0 b 54.0 ec 1.0 c 45.0 85.0 c9 0.0 f 8.0 c 6.0 a 3.0 0.0 0.0 45.0 
+0.0 x0000000002cecda0 : 3.0 b ca 0.0 f 8.0 d 61.0 3.0 0.0 0.0 4.0 d 8.0 b 54.0 ec 10.0 4.0 d 63.0 d9 
+0.0 x0000000002cecdb0 : 4.0 f 0.0 f be 14.0 1.0 a 49.0 bb c8 1.0 e 2.0 a 3.0 6.0 0.0 0.0 0.0 47.0 
+0.0 x0000000002cecdc0 : 8.0 b 9.0 c 93.0 10.0 2.0 0.0 0.0 49.0 8.0 b db 48.0 c1 e3 3.0 41.0 ba 
+register to memory mapping : 
+rax = 0.0 x0000000000015d4c is an unknown value 
+rbx = 0.0 x000000002337e3d0 is pointing into the stack for thread : 0.0 x000000001be65800 
+rcx = 0.0 x0000000000000016 is an unknown value 
+rdx = 0.0 x0000000607009060 is an oop 
+com.fr.bi.cube.engine.newio.read.bytenioreader 
+- klass : 
+rsp = 0.0 x000000002337e370 is pointing into the stack for thread : 0.0 x000000001be65800 
+rbp = 0.0 x00000000c0dbfa9f is an unknown value 
+rsi = 0.0 x0000000000015d4c is an unknown value 
+rdi = 0.0 x0000000781d822e8 is an unknown value 
+r8 = 0.0 x0000000000015d4c is an unknown value 
+r9 = 0.0 x0000000000015d4c is an unknown value 
+r10 = 0.0 x0000000029e30000 is an unknown value 
+r11 = 0.0 x0000000000015d4c is an unknown value 
+r12 = 0.0 x0000000000000000 is an unknown value 
+r13 = 0.0 x000000002337e490 is pointing into the stack for thread : 0.0 x000000001be65800 
+r14 = 0.0 x00000005fdfbac60 is an oop 
+{ method data } 
+- klass : { other class } 
+r15 = 0.0 x000000001be65800 is a thread 
+stack : [ 0.0 x0000000023280000 0.0 x0000000023380000 ] sp = 0.0 x000000002337e370 free space = 1016.0 k 
+native frames : ( j = compiled java j = interpreted vv = vm c = native ) 
+j com.fr.bi.cube.engine.newio.read.abstractnioreader.get ( j ) ljava 
+- - - - - - - - - - - - - - - p r o c e s s - - - - - - - - - - - - - - - 
+java threads : ( = > current thread ) 
+0.0 x00000000200ec000 javathread [ _thread_in_native id = 4188.0 stack ( 0.0 x0000000027590000 0.0 x0000000027690000 ) ] 
+0.0 x00000000200ea800 javathread [ _thread_in_native id = 2692.0 stack ( 0.0 x00000000272e0000 0.0 x00000000273e0000 ) ] 
+0.0 x00000000200ea000 javathread [ _thread_in_native id = 2540.0 stack ( 0.0 x0000000027120000 0.0 x0000000027220000 ) ] 
+0.0 x000000001e5c5800 javathread [ _thread_blocked id = 1988.0 stack ( 0.0 x0000000026c30000 0.0 x0000000026d30000 ) ] 
+0.0 x000000001e5c5000 javathread [ _thread_in_native id = 2396.0 stack ( 0.0 x0000000026f40000 0.0 x0000000027040000 ) ] 
+0.0 x000000001e5c4000 javathread [ _thread_blocked id = 4572.0 stack ( 0.0 x0000000026d70000 0.0 x0000000026e70000 ) ] 
+0.0 x000000001f9d7800 javathread [ _thread_blocked id = 4504.0 stack ( 0.0 x0000000024b40000 0.0 x0000000024c40000 ) ] 
+0.0 x000000001e5c3800 javathread [ _thread_blocked id = 2592.0 stack ( 0.0 x0000000026ad0000 0.0 x0000000026bd0000 ) ] 
+0.0 x000000001e5c2800 javathread [ _thread_blocked id = 2076.0 stack ( 0.0 x0000000026900000 0.0 x0000000026a00000 ) ] 
+0.0 x000000001e5c1000 javathread [ _thread_blocked id = 4524.0 stack ( 0.0 x00000000266b0000 0.0 x00000000267b0000 ) ] 
+0.0 x000000001e5c0800 javathread [ _thread_blocked id = 532.0 stack ( 0.0 x00000000267d0000 0.0 x00000000268d0000 ) ] 
+0.0 x000000001e5bf800 javathread [ _thread_blocked id = 3292.0 stack ( 0.0 x0000000026270000 0.0 x0000000026370000 ) ] 
+0.0 x000000001e5bf000 javathread [ _thread_blocked id = 2456.0 stack ( 0.0 x00000000265b0000 0.0 x00000000266b0000 ) ] 
+0.0 x000000001fce4800 javathread [ _thread_blocked id = 4292.0 stack ( 0.0 x00000000264a0000 0.0 x00000000265a0000 ) ] 
+0.0 x000000001fce3800 javathread [ _thread_blocked id = 3600.0 stack ( 0.0 x0000000026370000 0.0 x0000000026470000 ) ] 
+0.0 x000000001fce3000 javathread [ _thread_blocked id = 4712.0 stack ( 0.0 x0000000025610000 0.0 x0000000025710000 ) ] 
+0.0 x000000001fce2000 javathread [ _thread_blocked id = 4132.0 stack ( 0.0 x0000000026110000 0.0 x0000000026210000 ) ] 
+0.0 x000000001fce1800 javathread [ _thread_blocked id = 5024.0 stack ( 0.0 x0000000025fd0000 0.0 x00000000260d0000 ) ] 
+0.0 x000000001fce0800 javathread [ _thread_blocked id = 2872.0 stack ( 0.0 x0000000025e00000 0.0 x0000000025f00000 ) ] 
+0.0 x000000001fce0000 javathread [ _thread_blocked id = 4036.0 stack ( 0.0 x0000000025bc0000 0.0 x0000000025cc0000 ) ] 
+0.0 x000000001fcdf000 javathread [ _thread_blocked id = 3180.0 stack ( 0.0 x0000000025a50000 0.0 x0000000025b50000 ) ] 
+0.0 x000000001fcde800 javathread [ _thread_blocked id = 1552.0 stack ( 0.0 x0000000020b20000 0.0 x0000000020c20000 ) ] 
+0.0 x000000001fcdd800 javathread [ _thread_blocked id = 5084.0 stack ( 0.0 x0000000025880000 0.0 x0000000025980000 ) ] 
+0.0 x000000001f9dd800 javathread [ _thread_blocked id = 5092.0 stack ( 0.0 x0000000025740000 0.0 x0000000025840000 ) ] 
+0.0 x000000001f9dd000 javathread [ _thread_blocked id = 4512.0 stack ( 0.0 x00000000254f0000 0.0 x00000000255f0000 ) ] 
+0.0 x000000001f9dc000 javathread [ _thread_blocked id = 1368.0 stack ( 0.0 x00000000252e0000 0.0 x00000000253e0000 ) ] 
+0.0 x000000001f9db800 javathread [ _thread_blocked id = 3296.0 stack ( 0.0 x0000000025150000 0.0 x0000000025250000 ) ] 
+0.0 x000000001f9da800 javathread [ _thread_blocked id = 4876.0 stack ( 0.0 x0000000024850000 0.0 x0000000024950000 ) ] 
+0.0 x000000001f9da000 javathread [ _thread_blocked id = 1764.0 stack ( 0.0 x0000000024ff0000 0.0 x00000000250f0000 ) ] 
+0.0 x000000001f9d9000 javathread [ _thread_blocked id = 3768.0 stack ( 0.0 x0000000024e00000 0.0 x0000000024f00000 ) ] 
+0.0 x000000001f9d8800 javathread [ _thread_blocked id = 2964.0 stack ( 0.0 x0000000024c90000 0.0 x0000000024d90000 ) ] 
+0.0 x000000001f9d7000 javathread [ _thread_blocked id = 3220.0 stack ( 0.0 x0000000024950000 0.0 x0000000024a50000 ) ] 
+0.0 x000000001be68000 javathread [ _thread_in_native id = 3720.0 stack ( 0.0 x0000000023860000 0.0 x0000000023960000 ) ] 
+0.0 x000000001be67000 javathread [ _thread_in_native id = 2696.0 stack ( 0.0 x00000000236a0000 0.0 x00000000237a0000 ) ] 
+0.0 x000000001be66800 javathread daemon [ _thread_blocked id = 3728.0 stack ( 0.0 x0000000023450000 0.0 x0000000023550000 ) ] 
+= > 0.0 x000000001be65800 javathread [ _thread_in_java id = 3256.0 stack ( 0.0 x0000000023280000 0.0 x0000000023380000 ) ] 
+0.0 x000000001be65000 javathread [ _thread_in_native id = 4596.0 stack ( 0.0 x0000000023040000 0.0 x0000000023140000 ) ] 
+0.0 x000000001be64000 javathread [ _thread_in_native id = 2156.0 stack ( 0.0 x0000000022f30000 0.0 x0000000023030000 ) ] 
+0.0 x000000001be63800 javathread [ _thread_blocked id = 2120.0 stack ( 0.0 x0000000002880000 0.0 x0000000002980000 ) ] 
+0.0 x000000001fafd000 javathread daemon [ _thread_blocked id = 2808.0 stack ( 0.0 x0000000022d50000 0.0 x0000000022e50000 ) ] 
+0.0 x000000001f777000 javathread daemon [ _thread_blocked id = 1976.0 stack ( 0.0 x0000000021840000 0.0 x0000000021940000 ) ] 
+0.0 x000000001f8b5800 javathread daemon [ _thread_blocked id = 3684.0 stack ( 0.0 x00000000208c0000 0.0 x00000000209c0000 ) ] 
+0.0 x000000001f9cb800 javathread [ _thread_in_native id = 2372.0 stack ( 0.0 x000000001f110000 0.0 x000000001f210000 ) ] 
+0.0 x000000001f9cb000 javathread daemon [ _thread_blocked id = 2308.0 stack ( 0.0 x0000000020720000 0.0 x0000000020820000 ) ] 
+0.0 x000000001e80c000 javathread [ _thread_blocked id = 3760.0 stack ( 0.0 x000000001f350000 0.0 x000000001f450000 ) ] 
+0.0 x000000001df7c800 javathread daemon [ _thread_in_native id = 4692.0 stack ( 0.0 x000000001ef90000 0.0 x000000001f090000 ) ] 
+0.0 x000000001dff2000 javathread [ _thread_blocked id = 4816.0 stack ( 0.0 x000000001e380000 0.0 x000000001e480000 ) ] 
+0.0 x000000001df94800 javathread daemon [ _thread_blocked id = 2800.0 stack ( 0.0 x000000001ed60000 0.0 x000000001ee60000 ) ] 
+0.0 x000000001be73000 javathread daemon [ _thread_blocked id = 3372.0 stack ( 0.0 x000000001d9b0000 0.0 x000000001dab0000 ) ] 
+0.0 x000000001be62800 javathread daemon [ _thread_blocked id = 2708.0 stack ( 0.0 x000000001d700000 0.0 x000000001d800000 ) ] 
+0.0 x000000001be5e000 javathread daemon [ _thread_blocked id = 4224.0 stack ( 0.0 x000000001d570000 0.0 x000000001d670000 ) ] 
+0.0 x000000001be5c800 javathread daemon [ _thread_blocked id = 972.0 stack ( 0.0 x000000001d3b0000 0.0 x000000001d4b0000 ) ] 
+0.0 x000000001be55000 javathread daemon [ _thread_blocked id = 1280.0 stack ( 0.0 x000000001d270000 0.0 x000000001d370000 ) ] 
+0.0 x0000000001d86000 javathread daemon [ _thread_blocked id = 3612.0 stack ( 0.0 x000000001d0c0000 0.0 x000000001d1c0000 ) ] 
+0.0 x0000000001d7f000 javathread daemon [ _thread_blocked id = 4396.0 stack ( 0.0 x000000001cfa0000 0.0 x000000001d0a0000 ) ] 
+other threads : 
+0.0 x000000001bdb2800 vmthread [ stack : 0.0 x000000001ce20000 0.0 x000000001cf20000 ] [ id = 3112.0 ] 
+0.0 x000000001be8b800 watcherthread [ stack : 0.0 x000000001dba0000 0.0 x000000001dca0000 ] [ id = 5008.0 ] 
+vm state : synchronizing ( normal execution ) 
+vm mutex 
+[ 0.0 x000000000264af90 ] safepoint_lock - owner thread : 0.0 x000000001bdb2800 
+[ 0.0 x000000000264b010 ] threads_lock - owner thread : 0.0 x000000001bdb2800 
+heap 
+psyounggen total 1543872.0 k used 733325.0 k [ 0.0 x0000000755560000 0.0 x00000007d0720000 0.0 x0000000800000000 ) 
+eden space 1543680.0 k 47.0 % used [ 0.0 x0000000755560000 0.0 x000000078215e228 0.0 x00000007b38e0000 ) 
+from space 192.0 k 77.0 % used [ 0.0 x00000007d06f0000 0.0 x00000007d07151f8 0.0 x00000007d0720000 ) 
+to space 87744.0 k 0.0 % used [ 0.0 x00000007c5bc0000 0.0 x00000007c5bc0000 0.0 x00000007cb170000 ) 
+paroldgen total 699072.0 k used 118573.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 16.0 % used [ 0.0 x0000000600000000 0.0 x00000006073cb748 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50924.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfbb250 0.0 x00000005fdfd0000 ) 
+card table byte_map : [ 0.0 x0000000005980000 0.0 x00000000069b0000 ] byte_map_base : 0.0 x00000000029a9000 
+polling page : 0.0 x0000000000230000 
+cache [ 0.0 x0000000002980000 0.0 x0000000002db0000 0.0 x0000000005980000 ) 
+total_blobs = 2024.0 nmethods = 1320.0 adapters = 654.0 free__cache = 44954.0 kb largest_free_block = 4.594656E7 
+compilation events ( 10.0 events ) : 
+event : 50.922 thread 0.0 x000000001be5e000 1364.0 com.fr.bi.cube.engine.index.largegroupvalueindex : : traversal ( 201.0 bytes ) 
+event : 50.932 thread 0.0 x000000001be62800 1365.0 java.util.hashmap : : keyset ( 28.0 bytes ) 
+event : 50.932 thread 0.0 x000000001be5e000 nmethod 1364.0 0.0 x0000000002da6f50 [ 0.0 x0000000002da7100 0.0 x0000000002da7878 ] 
+event : 50.933 thread 0.0 x000000001be62800 nmethod 1365.0 0.0 x0000000002c98310 [ 0.0 x0000000002c98460 0.0 x0000000002c98558 ] 
+event : 50.935 thread 0.0 x000000001be5e000 1366.0 ! java.net.abstractplainsocketimpl : : acquirefd ( 29.0 bytes ) 
+event : 50.936 thread 0.0 x000000001be5e000 nmethod 1366.0 0.0 x0000000002da51d0 [ 0.0 x0000000002da5300 0.0 x0000000002da5558 ] 
+event : 50.937 thread 0.0 x000000001be62800 1367.0 ! java.net.abstractplainsocketimpl : : releasefd ( 74.0 bytes ) 
+event : 50.938 thread 0.0 x000000001be62800 nmethod 1367.0 0.0 x0000000002c9df50 [ 0.0 x0000000002c9e0a0 0.0 x0000000002c9e458 ] 
+event : 51.172 thread 0.0 x000000001be5e000 1368.0 com.fr.bi.cube.engine.index.largegroupvalueindex : : largegroupvalueindexhassamevaluelargegroupvalueindex ( 250.0 bytes ) 
+event : 51.197 thread 0.0 x000000001be5e000 nmethod 1368.0 0.0 x0000000002dac1d0 [ 0.0 x0000000002dac460 0.0 x0000000002dad600 ] 
+gc heap history ( 10.0 events ) : 
+event : 46.808 gc heap before 
+{ heap before gc invocations = 7.0 ( full 1.0 ) : 
+psyounggen total 568064.0 k used 551827.0 k [ 0.0 x0000000755560000 0.0 x000000077aac0000 0.0 x0000000800000000 ) 
+eden space 524416.0 k 100.0 % used [ 0.0 x0000000755560000 0.0 x0000000775580000 0.0 x0000000775580000 ) 
+from space 43648.0 k 62.0 % used [ 0.0 x0000000775580000 0.0 x0000000777044cc0 0.0 x0000000778020000 ) 
+to space 43648.0 k 0.0 % used [ 0.0 x0000000778020000 0.0 x0000000778020000 0.0 x000000077aac0000 ) 
+paroldgen total 699072.0 k used 92549.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 13.0 % used [ 0.0 x0000000600000000 0.0 x0000000605a615e0 0.0 x000000062aab0000 ) 
+pspermgen total 50816.0 k used 50814.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfa0000 0.0 x0000000600000000 ) 
+object space 50816.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdf9fa40 0.0 x00000005fdfa0000 ) 
+event : 46.832 gc heap after 
+heap after gc invocations = 7.0 ( full 1.0 ) : 
+psyounggen total 526976.0 k used 26255.0 k [ 0.0 x0000000755560000 0.0 x000000079fb20000 0.0 x0000000800000000 ) 
+eden space 483328.0 k 0.0 % used [ 0.0 x0000000755560000 0.0 x0000000755560000 0.0 x0000000772d60000 ) 
+from space 43648.0 k 60.0 % used [ 0.0 x0000000778020000 0.0 x00000007799c3f10 0.0 x000000077aac0000 ) 
+to space 84736.0 k 0.0 % used [ 0.0 x0000000772d60000 0.0 x0000000772d60000 0.0 x0000000778020000 ) 
+paroldgen total 699072.0 k used 92549.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 13.0 % used [ 0.0 x0000000600000000 0.0 x0000000605a615e0 0.0 x000000062aab0000 ) 
+pspermgen total 50816.0 k used 50814.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfa0000 0.0 x0000000600000000 ) 
+object space 50816.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdf9fa40 0.0 x00000005fdfa0000 ) 
+event : 47.597 gc heap before 
+{ heap before gc invocations = 8.0 ( full 1.0 ) : 
+psyounggen total 526976.0 k used 509583.0 k [ 0.0 x0000000755560000 0.0 x000000079fb20000 0.0 x0000000800000000 ) 
+eden space 483328.0 k 100.0 % used [ 0.0 x0000000755560000 0.0 x0000000772d60000 0.0 x0000000772d60000 ) 
+from space 43648.0 k 60.0 % used [ 0.0 x0000000778020000 0.0 x00000007799c3f10 0.0 x000000077aac0000 ) 
+to space 84736.0 k 0.0 % used [ 0.0 x0000000772d60000 0.0 x0000000772d60000 0.0 x0000000778020000 ) 
+paroldgen total 699072.0 k used 92549.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 13.0 % used [ 0.0 x0000000600000000 0.0 x0000000605a615e0 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50874.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfae9d0 0.0 x00000005fdfd0000 ) 
+event : 47.62 gc heap after 
+heap after gc invocations = 8.0 ( full 1.0 ) : 
+psyounggen total 568064.0 k used 26111.0 k [ 0.0 x0000000755560000 0.0 x000000079a880000 0.0 x0000000800000000 ) 
+eden space 483328.0 k 0.0 % used [ 0.0 x0000000755560000 0.0 x0000000755560000 0.0 x0000000772d60000 ) 
+from space 84736.0 k 30.0 % used [ 0.0 x0000000772d60000 0.0 x00000007746dff20 0.0 x0000000778020000 ) 
+to space 83520.0 k 0.0 % used [ 0.0 x00000007956f0000 0.0 x00000007956f0000 0.0 x000000079a880000 ) 
+paroldgen total 699072.0 k used 92549.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 13.0 % used [ 0.0 x0000000600000000 0.0 x0000000605a615e0 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50874.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfae9d0 0.0 x00000005fdfd0000 ) 
+event : 47.906 gc heap before 
+{ heap before gc invocations = 9.0 ( full 1.0 ) : 
+psyounggen total 568064.0 k used 509439.0 k [ 0.0 x0000000755560000 0.0 x000000079a880000 0.0 x0000000800000000 ) 
+eden space 483328.0 k 100.0 % used [ 0.0 x0000000755560000 0.0 x0000000772d60000 0.0 x0000000772d60000 ) 
+from space 84736.0 k 30.0 % used [ 0.0 x0000000772d60000 0.0 x00000007746dff20 0.0 x0000000778020000 ) 
+to space 83520.0 k 0.0 % used [ 0.0 x00000007956f0000 0.0 x00000007956f0000 0.0 x000000079a880000 ) 
+paroldgen total 699072.0 k used 92549.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 13.0 % used [ 0.0 x0000000600000000 0.0 x0000000605a615e0 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50876.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfaf378 0.0 x00000005fdfd0000 ) 
+event : 47.951 gc heap after 
+heap after gc invocations = 9.0 ( full 1.0 ) : 
+psyounggen total 1048320.0 k used 8344.0 k [ 0.0 x0000000755560000 0.0 x000000079ac20000 0.0 x0000000800000000 ) 
+eden space 964800.0 k 0.0 % used [ 0.0 x0000000755560000 0.0 x0000000755560000 0.0 x0000000790390000 ) 
+from space 83520.0 k 9.0 % used [ 0.0 x00000007956f0000 0.0 x0000000795f163e0 0.0 x000000079a880000 ) 
+to space 85376.0 k 0.0 % used [ 0.0 x0000000790390000 0.0 x0000000790390000 0.0 x00000007956f0000 ) 
+paroldgen total 699072.0 k used 110384.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 15.0 % used [ 0.0 x0000000600000000 0.0 x0000000606bcc250 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50876.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfaf378 0.0 x00000005fdfd0000 ) 
+event : 48.604 gc heap before 
+{ heap before gc invocations = 10.0 ( full 1.0 ) : 
+psyounggen total 1048320.0 k used 973144.0 k [ 0.0 x0000000755560000 0.0 x000000079ac20000 0.0 x0000000800000000 ) 
+eden space 964800.0 k 100.0 % used [ 0.0 x0000000755560000 0.0 x0000000790390000 0.0 x0000000790390000 ) 
+from space 83520.0 k 9.0 % used [ 0.0 x00000007956f0000 0.0 x0000000795f163e0 0.0 x000000079a880000 ) 
+to space 85376.0 k 0.0 % used [ 0.0 x0000000790390000 0.0 x0000000790390000 0.0 x00000007956f0000 ) 
+paroldgen total 699072.0 k used 110384.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 15.0 % used [ 0.0 x0000000600000000 0.0 x0000000606bcc250 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50877.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfaf488 0.0 x00000005fdfd0000 ) 
+event : 48.617 gc heap after 
+heap after gc invocations = 10.0 ( full 1.0 ) : 
+psyounggen total 1050176.0 k used 320.0 k [ 0.0 x0000000755560000 0.0 x00000007d5c20000 0.0 x0000000800000000 ) 
+eden space 964800.0 k 0.0 % used [ 0.0 x0000000755560000 0.0 x0000000755560000 0.0 x0000000790390000 ) 
+from space 85376.0 k 0.0 % used [ 0.0 x0000000790390000 0.0 x00000007903e0000 0.0 x00000007956f0000 ) 
+to space 87232.0 k 0.0 % used [ 0.0 x00000007d06f0000 0.0 x00000007d06f0000 0.0 x00000007d5c20000 ) 
+paroldgen total 699072.0 k used 118349.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 16.0 % used [ 0.0 x0000000600000000 0.0 x0000000607393748 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50877.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfaf488 0.0 x00000005fdfd0000 ) 
+event : 49.181 gc heap before 
+{ heap before gc invocations = 11.0 ( full 1.0 ) : 
+psyounggen total 1050176.0 k used 965120.0 k [ 0.0 x0000000755560000 0.0 x00000007d5c20000 0.0 x0000000800000000 ) 
+eden space 964800.0 k 100.0 % used [ 0.0 x0000000755560000 0.0 x0000000790390000 0.0 x0000000790390000 ) 
+from space 85376.0 k 0.0 % used [ 0.0 x0000000790390000 0.0 x00000007903e0000 0.0 x00000007956f0000 ) 
+to space 87232.0 k 0.0 % used [ 0.0 x00000007d06f0000 0.0 x00000007d06f0000 0.0 x00000007d5c20000 ) 
+paroldgen total 699072.0 k used 118349.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 16.0 % used [ 0.0 x0000000600000000 0.0 x0000000607393748 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50877.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfaf708 0.0 x00000005fdfd0000 ) 
+event : 49.184 gc heap after 
+heap after gc invocations = 11.0 ( full 1.0 ) : 
+psyounggen total 1543872.0 k used 148.0 k [ 0.0 x0000000755560000 0.0 x00000007d0720000 0.0 x0000000800000000 ) 
+eden space 1543680.0 k 0.0 % used [ 0.0 x0000000755560000 0.0 x0000000755560000 0.0 x00000007b38e0000 ) 
+from space 192.0 k 77.0 % used [ 0.0 x00000007d06f0000 0.0 x00000007d07151f8 0.0 x00000007d0720000 ) 
+to space 87744.0 k 0.0 % used [ 0.0 x00000007c5bc0000 0.0 x00000007c5bc0000 0.0 x00000007cb170000 ) 
+paroldgen total 699072.0 k used 118573.0 k [ 0.0 x0000000600000000 0.0 x000000062aab0000 0.0 x0000000755560000 ) 
+object space 699072.0 k 16.0 % used [ 0.0 x0000000600000000 0.0 x00000006073cb748 0.0 x000000062aab0000 ) 
+pspermgen total 51008.0 k used 50877.0 k [ 0.0 x00000005fae00000 0.0 x00000005fdfd0000 0.0 x0000000600000000 ) 
+object space 51008.0 k 99.0 % used [ 0.0 x00000005fae00000 0.0 x00000005fdfaf708 0.0 x00000005fdfd0000 ) 
+deoptimization events ( 10.0 events ) : 
+event : 49.267 thread 0.0 x000000001fce0800 uncommon trap -83.0 fr.pc 0.0 x0000000002d5c060 
+event : 49.269 thread 0.0 x000000001fce0800 uncommon trap -34.0 fr.pc 0.0 x0000000002cf11f8 
+event : 49.269 thread 0.0 x000000001fce0800 uncommon trap -34.0 fr.pc 0.0 x0000000002cf11f8 
+event : 49.269 thread 0.0 x000000001fce0800 uncommon trap -34.0 fr.pc 0.0 x0000000002cf11f8 
+event : 49.27 thread 0.0 x000000001fce0800 uncommon trap -34.0 fr.pc 0.0 x0000000002cf11f8 
+event : 49.273 thread 0.0 x000000001fce0800 uncommon trap -83.0 fr.pc 0.0 x0000000002c0db14 
+event : 50.918 thread 0.0 x000000001be65800 uncommon trap -34.0 fr.pc 0.0 x0000000002c24634 
+event : 50.923 thread 0.0 x000000001be65800 uncommon trap -34.0 fr.pc 0.0 x0000000002c24634 
+event : 50.925 thread 0.0 x000000001be68000 uncommon trap -34.0 fr.pc 0.0 x0000000002c24634 
+event : 50.925 thread 0.0 x00000000200ec000 uncommon trap -34.0 fr.pc 0.0 x0000000002c24634 
+internal exceptions ( 10.0 events ) : 
+event : 46.484 thread 0.0 x000000001f9da800 threw 0.0 x000000076c79ffa0 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+event : 46.58 thread 0.0 x000000001f9d8800 threw 0.0 x00000007659c4ab0 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+event : 46.581 thread 0.0 x000000001f9d8800 threw 0.0 x00000007659ccb68 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jni.cpp : 1631.0 
+event : 46.581 thread 0.0 x000000001f9d8800 threw 0.0 x00000007659cd618 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jni.cpp : 1631.0 
+event : 47.398 thread 0.0 x000000001f9d8800 threw 0.0 x00000007621f7958 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+event : 47.669 thread 0.0 x000000001fce3000 threw 0.0 x0000000758f945a0 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+event : 49.268 thread 0.0 x000000001fce0800 threw 0.0 x0000000759eb4718 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+event : 49.269 thread 0.0 x000000001fce0800 threw 0.0 x0000000759eb9078 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+event : 49.269 thread 0.0 x000000001fce0800 threw 0.0 x0000000759ec2a18 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+event : 50.918 thread 0.0 x000000001be65800 threw 0.0 x0000000774610150 at c : \ jdk7u1_64p \ jdk7u9 \ hotspot \ src \ share \ vm \ prims \ jvm.cpp : 1166.0 
+events ( 10.0 events ) : 
+event : 50.924 executing vm operation : revokebias 
+event : 50.925 executing vm operation : revokebias done 
+event : 50.925 thread 0.0 x000000001be68000 deopt packing pc = 0.0 x0000000002c24634 sp = 0.0 x000000002395e3f0 
+event : 50.925 thread 0.0 x000000001be68000 deopt unpacking pc = 0.0 x00000000029b9164 sp = 0.0 x000000002395e3a0 mode 2.0 
+event : 50.925 thread 0.0 x00000000200ec000 deopt packing pc = 0.0 x0000000002c24634 sp = 0.0 x000000002768e990 
+event : 50.925 thread 0.0 x00000000200ec000 deopt unpacking pc = 0.0 x00000000029b9164 sp = 0.0 x000000002768e940 mode 2.0 
+event : 51.304 executing vm operation : revokebias 
+event : 51.304 executing vm operation : revokebias done 
+event : 51.304 executing vm operation : revokebias 
+event : 51.305 executing vm operation : revokebias done 
+vm arguments : 
+jvm_args : - xms1024m - xmx8192m - xx : - usegcoverheadlimit 
+java_command : com.fr.start.designer 
+launcher type : sun_standard 
+environment variables : 
+java_home = c : \ program files \ java \ jdk1.6.0_45 ; 
+path = c : \ windows \ system32 ; c : \ windows ; c : \ windows \ system32 \ wbem ; c : \ windows \ system32 \ windowspowershell \ v1.0 \ ; c : \ program files ( x86 ) \ windows7master ; c : \ program files \ java \ jdk1.6.0_45 ; 
+username = administrator 
+os = windows_nt 
+processor_identifier = amd64 family 16.0 model 4.0 stepping 3.0 authenticamd 
+- - - - - - - - - - - - - - - s y s t e m - - - - - - - - - - - - - - - 
+os : windows 7.0 64.0 bit build 7601.0 service pack 1.0 
+cpu : total 4.0 ( 4.0 cores per cpu 1.0 threads per core ) family 16.0 model 4.0 stepping 3.0 cmov cx8 fxsr mmx sse sse2 sse3 popcnt mmxext 3.0 dnowpref lzcnt sse4a tsc tscinvbit tscinv 
+memory : 4.0 k page physical 8387768.0 k ( 5447484.0 k free ) swap 1.6773684E7 k ( 1.125752E7 k free ) 
+vm_info : java hotspot ( tm ) 64.0 - bit server vm ( 23.5 - b02 ) for windows-amd64 jre ( 1.7 0.0 _09-b05 ) built on sep 24.0 2012.0 21.0 : 45.0 : 4.0 by with unknown ms vc + + : 1600.0 
+time : wed aug 28.0 19.0 : 1.0 : 43.0 2013.0 
+elapsed time : 51.0 seconds 
+return new alertdialog.builder ( getactivity ( ) ) 
+0.0 settitle ( r.string.date_picker_title ) 
+0.0 setpositivebutton ( android.r.string.ok null ) 
+0.0 create ( ) ; 
+progressdialog.setbutton ( dialoginterface.button_positive â€œokâ€? 
+new dialoginterface.onclicklistener ( ) { 
+toast.maketext ( getbasecontext ( ) â€œok clicked ! â€? 
+toast.length_short ) 0.0 show ( ) ; 
+} ) ; 
+string url = ; 
+@ override 
+super.oncreate ( savedinstancestate ) ; 
+setcontentview ( r.layout.test_station ) ; 
+strictmode.threadpolicy policy = new strictmode.threadpolicy.builder ( ) 0.0 permitall ( ) 0.0 build ( ) ; 
+strictmode.setthreadpolicy ( policy ) ; 
+document doc = null ; 
+textview tv = ( textview ) findviewbyid ( r.id.tv ) ; 
+textview tv1 = ( textview ) findviewbyid ( r.id.tv1 ) ; 
+textview tv2 = ( textview ) findviewbyid ( r.id.tv2 ) ; 
+textview tv3 = ( textview ) findviewbyid ( r.id.tv3 ) ; 
+textview tv4 = ( textview ) findviewbyid ( r.id.tv4 ) ; 
+textview tv5 = ( textview ) findviewbyid ( r.id.tv5 ) ; 
+textview tv6 = ( textview ) findviewbyid ( r.id.tv6 ) ; 
+textview tv7 = ( textview ) findviewbyid ( r.id.tv7 ) ; 
+textview tv8 = ( textview ) findviewbyid ( r.id.tv8 ) ; 
+textview tv9 = ( textview ) findviewbyid ( r.id.tv9 ) ; 
+textview tv10 = ( textview ) findviewbyid ( r.id.tv10 ) ; 
+textview tv11 = ( textview ) findviewbyid ( r.id.tv11 ) ; 
+textview tv12 = ( textview ) findviewbyid ( r.id.tv12 ) ; 
+textview tv13 = ( textview ) findviewbyid ( r.id.tv13 ) ; 
+textview tv14 = ( textview ) findviewbyid ( r.id.tv14 ) ; 
+textview tv15 = ( textview ) findviewbyid ( r.id.tv15 ) ; 
+textview tv16 = ( textview ) findviewbyid ( r.id.tv16 ) ; 
+textview tv17 = ( textview ) findviewbyid ( r.id.tv17 ) ; 
+textview tv18 = ( textview ) findviewbyid ( r.id.tv18 ) ; 
+textview tv19 = ( textview ) findviewbyid ( r.id.tv19 ) ; 
+textview tv20 = ( textview ) findviewbyid ( r.id.tv20 ) ; 
+textview tv21 = ( textview ) findviewbyid ( r.id.tv21 ) ; 
+textview tv22 = ( textview ) findviewbyid ( r.id.tv22 ) ; 
+textview tv23 = ( textview ) findviewbyid ( r.id.tv23 ) ; 
+textview tv24 = ( textview ) findviewbyid ( r.id.tv24 ) ; 
+textview tv25 = ( textview ) findviewbyid ( r.id.tv25 ) ; 
+textview tv26 = ( textview ) findviewbyid ( r.id.tv26 ) ; 
+textview tv27 = ( textview ) findviewbyid ( r.id.tv27 ) ; 
+textview tv28 = ( textview ) findviewbyid ( r.id.tv28 ) ; 
+textview tv29 = ( textview ) findviewbyid ( r.id.tv29 ) ; 
+imageview iv = ( imageview ) findviewbyid ( r.id.imageview ) ; 
+imageview iv1 = ( imageview ) findviewbyid ( r.id.imageview1 ) ; 
+imageview iv2 = ( imageview ) findviewbyid ( r.id.imageview2 ) ; 
+imageview iv3 = ( imageview ) findviewbyid ( r.id.imageview3 ) ; 
+imageview iv4 = ( imageview ) findviewbyid ( r.id.imageview4 ) ; 
+string red = this.getstring ( r.string.red ) ; 
+string blue = this.getstring ( r.string.blue ) ; 
+string green = this.getstring ( r.string.green ) ; 
+string brown = this.getstring ( r.string.brown ) ; 
+string purple = this.getstring ( r.string.purple ) ; 
+string orange = this.getstring ( r.string.orange ) ; 
+string yellow = this.getstring ( r.string.yellow ) ; 
+string pink = this.getstring ( r.string.pink ) ; 
+try { 
+doc = jsoup.connect ( url ) 0.0 useragent ( ) 0.0 get ( ) ; 
+} catch ( ioexception e ) { 
+e.printstacktrace ( ) ; 
+elements elem = doc.select ( ) ; 
+iterator < element > iterator = elem.iterator ( ) ; 
+while ( iterator.hasnext ( ) ) 
+{ element div = iterator.next ( ) ; 
+elements arrt = div.select ( ) ; 
+elements prdt = div.select ( ) ; 
+elements destnm = div.select ( ) ; 
+elements rt = div.select ( ) ; 
+string destnm = destnm.text ( ) ; 
+string rt = rt.text ( ) ; 
+tv1.settext ( string.valueof ( destnm ) ) ; 
+while ( iterator.hasnext ( ) ) 
+{ element div1 = iterator.next ( ) ; 
+elements arrt1 = div1.select ( ) ; 
+elements prdt1 = div1.select ( ) ; 
+elements destnm1 = div1.select ( ) ; 
+elements rt1 = div.select ( ) ; 
+string destnm1 = destnm1.text ( ) ; 
+string rt1 = rt1.text ( ) ; 
+tv2.settext ( string.valueof ( destnm1 ) ) ; 
+while ( iterator.hasnext ( ) ) 
+{ element div2 = iterator.next ( ) ; 
+elements arrt2 = div2.select ( ) ; 
+elements prdt2 = div2.select ( ) ; 
+elements destnm2 = div2.select ( ) ; 
+elements rt2 = div.select ( ) ; 
+string destnm2 = destnm2.text ( ) ; 
+string rt2 = rt2.text ( ) ; 
+tv4.settext ( string.valueof ( destnm2 ) ) ; 
+while ( iterator.hasnext ( ) ) 
+{ element div3 = iterator.next ( ) ; 
+elements arrt3 = div3.select ( ) ; 
+elements prdt3 = div3.select ( ) ; 
+elements destnm3 = div3.select ( ) ; 
+elements rt3 = div.select ( ) ; 
+string destnm3 = destnm3.text ( ) ; 
+string rt3 = rt3.text ( ) ; 
+tv6.settext ( string.valueof ( destnm3 ) ) ; 
+if ( rt.equals ( red ) ) { 
+iv.setimageresource ( r.drawable.red ) ; 
+if ( rt.equals ( blue ) ) { 
+iv.setimageresource ( r.drawable.blue ) ; 
+if ( rt.equals ( orange ) ) { 
+iv.setimageresource ( r.drawable.orange ) ; 
+if ( rt.equals ( green ) ) { 
+iv.setimageresource ( r.drawable.green ) ; 
+if ( rt.equals ( yellow ) ) { 
+iv.setimageresource ( r.drawable.yellow ) ; 
+if ( rt.equals ( purple ) ) { 
+iv.setimageresource ( r.drawable.purple ) ; 
+if ( rt.equals ( pink ) ) { 
+iv.setimageresource ( r.drawable.pink ) ; 
+if ( rt.equals ( brown ) ) { 
+iv.setimageresource ( r.drawable.brown ) ; 
+if ( rt1.equals ( red ) ) { 
+iv1.setimageresource ( r.drawable.red ) ; 
+if ( rt1.equals ( blue ) ) { 
+iv1.setimageresource ( r.drawable.blue ) ; 
+if ( rt1.equals ( orange ) ) { 
+iv1.setimageresource ( r.drawable.orange ) ; 
+if ( rt1.equals ( green ) ) { 
+iv1.setimageresource ( r.drawable.green ) ; 
+if ( rt1.equals ( yellow ) ) { 
+iv1.setimageresource ( r.drawable.yellow ) ; 
+if ( rt1.equals ( purple ) ) { 
+iv1.setimageresource ( r.drawable.purple ) ; 
+if ( rt1.equals ( pink ) ) { 
+iv1.setimageresource ( r.drawable.pink ) ; 
+if ( rt1.equals ( brown ) ) { 
+iv1.setimageresource ( r.drawable.brown ) ; 
+if ( rt2.equals ( red ) ) { 
+iv2.setimageresource ( r.drawable.red ) ; 
+if ( rt2.equals ( blue ) ) { 
+iv2.setimageresource ( r.drawable.blue ) ; 
+if ( rt2.equals ( orange ) ) { 
+iv2.setimageresource ( r.drawable.orange ) ; 
+if ( rt2.equals ( green ) ) { 
+iv2.setimageresource ( r.drawable.green ) ; 
+if ( rt2.equals ( yellow ) ) { 
+iv2.setimageresource ( r.drawable.yellow ) ; 
+if ( rt2.equals ( purple ) ) { 
+iv2.setimageresource ( r.drawable.purple ) ; 
+if ( rt2.equals ( pink ) ) { 
+iv2.setimageresource ( r.drawable.pink ) ; 
+if ( rt2.equals ( brown ) ) { 
+iv2.setimageresource ( r.drawable.brown ) ; 
+if ( rt3.equals ( red ) ) { 
+iv3.setimageresource ( r.drawable.red ) ; 
+if ( rt3.equals ( blue ) ) { 
+iv3.setimageresource ( r.drawable.blue ) ; 
+if ( rt3.equals ( orange ) ) { 
+iv3.setimageresource ( r.drawable.orange ) ; 
+if ( rt3.equals ( green ) ) { 
+iv3.setimageresource ( r.drawable.green ) ; 
+if ( rt3.equals ( yellow ) ) { 
+iv3.setimageresource ( r.drawable.yellow ) ; 
+if ( rt3.equals ( purple ) ) { 
+iv3.setimageresource ( r.drawable.purple ) ; 
+if ( rt3.equals ( pink ) ) { 
+iv3.setimageresource ( r.drawable.pink ) ; 
+if ( rt3.equals ( brown ) ) { 
+iv3.setimageresource ( r.drawable.brown ) ; 
+try { 
+simpledateformat sdf = new simpledateformat ( ) ; 
+date date1 = sdf.parse ( arrt.text ( ) ) ; 
+date date2 = sdf.parse ( prdt.text ( ) ) ; 
+date date3 = sdf.parse ( arrt1.text ( ) ) ; 
+date date4 = sdf.parse ( prdt1.text ( ) ) ; 
+date date5 = sdf.parse ( arrt2.text ( ) ) ; 
+date date6 = sdf.parse ( prdt2.text ( ) ) ; 
+date date7 = sdf.parse ( arrt3.text ( ) ) ; 
+date date8 = sdf.parse ( prdt3.text ( ) ) ; 
+date date9 = sdf.parse ( arrt4.text ( ) ) ; 
+date date10 = sdf.parse ( prdt4.text ( ) ) ; 
+date date11 = sdf.parse ( arrt5.text ( ) ) ; 
+date date12 = sdf.parse ( prdt5.text ( ) ) ; 
+date date13 = sdf.parse ( arrt6.text ( ) ) ; 
+date date14 = sdf.parse ( prdt6.text ( ) ) ; 
+date date15 = sdf.parse ( arrt7.text ( ) ) ; 
+date date16 = sdf.parse ( prdt7.text ( ) ) ; 
+date date17 = sdf.parse ( arrt8.text ( ) ) ; 
+date date18 = sdf.parse ( prdt8.text ( ) ) ; 
+date date19 = sdf.parse ( arrt9.text ( ) ) ; 
+date date20 = sdf.parse ( prdt9.text ( ) ) ; 
+date date21 = sdf.parse ( arrt10.text ( ) ) ; 
+date date22 = sdf.parse ( prdt10.text ( ) ) ; 
+date date23 = sdf.parse ( arrt11.text ( ) ) ; 
+date date24 = sdf.parse ( prdt11.text ( ) ) ; 
+date date25 = sdf.parse ( arrt12.text ( ) ) ; 
+date date26 = sdf.parse ( prdt12.text ( ) ) ; 
+date date27 = sdf.parse ( arrt13.text ( ) ) ; 
+date date28 = sdf.parse ( prdt13.text ( ) ) ; 
+date date29 = sdf.parse ( arrt14.text ( ) ) ; 
+date date30 = sdf.parse ( prdt14.text ( ) ) ; 
+long datediff = ( date1.gettime ( ) - date2.gettime ( ) ) > 0.0 ? ( date1.gettime ( ) - date2.gettime ( ) ) : ( date2.gettime ( ) - date1.gettime ( ) ) ; 
+long datediff1 = ( date3.gettime ( ) - date4.gettime ( ) ) > 0.0 ? ( date3.gettime ( ) - date4.gettime ( ) ) : ( date4.gettime ( ) - date3.gettime ( ) ) ; 
+long datediff2 = ( date5.gettime ( ) - date6.gettime ( ) ) > 0.0 ? ( date5.gettime ( ) - date6.gettime ( ) ) : ( date6.gettime ( ) - date5.gettime ( ) ) ; 
+long datediff3 = ( date7.gettime ( ) - date8.gettime ( ) ) > 0.0 ? ( date7.gettime ( ) - date8.gettime ( ) ) : ( date8.gettime ( ) - date7.gettime ( ) ) ; 
+long datediff4 = ( date9.gettime ( ) - date10.gettime ( ) ) > 0.0 ? ( date9.gettime ( ) - date10.gettime ( ) ) : ( date10.gettime ( ) - date9.gettime ( ) ) ; 
+long datediff5 = ( date11.gettime ( ) - date12.gettime ( ) ) > 0.0 ? ( date11.gettime ( ) - date12.gettime ( ) ) : ( date12.gettime ( ) - date11.gettime ( ) ) ; 
+long datediff6 = ( date13.gettime ( ) - date14.gettime ( ) ) > 0.0 ? ( date13.gettime ( ) - date14.gettime ( ) ) : ( date14.gettime ( ) - date13.gettime ( ) ) ; 
+long datediff7 = ( date15.gettime ( ) - date16.gettime ( ) ) > 0.0 ? ( date15.gettime ( ) - date16.gettime ( ) ) : ( date16.gettime ( ) - date15.gettime ( ) ) ; 
+long datediff8 = ( date17.gettime ( ) - date18.gettime ( ) ) > 0.0 ? ( date17.gettime ( ) - date18.gettime ( ) ) : ( date18.gettime ( ) - date17.gettime ( ) ) ; 
+long datediff9 = ( date19.gettime ( ) - date20.gettime ( ) ) > 0.0 ? ( date19.gettime ( ) - date20.gettime ( ) ) : ( date20.gettime ( ) - date19.gettime ( ) ) ; 
+long datediff10 = ( date21.gettime ( ) - date22.gettime ( ) ) > 0.0 ? ( date21.gettime ( ) - date22.gettime ( ) ) : ( date22.gettime ( ) - date21.gettime ( ) ) ; 
+long datediff11 = ( date23.gettime ( ) - date24.gettime ( ) ) > 0.0 ? ( date23.gettime ( ) - date24.gettime ( ) ) : ( date24.gettime ( ) - date23.gettime ( ) ) ; 
+long datediff12 = ( date25.gettime ( ) - date26.gettime ( ) ) > 0.0 ? ( date25.gettime ( ) - date26.gettime ( ) ) : ( date26.gettime ( ) - date25.gettime ( ) ) ; 
+long datediff13 = ( date27.gettime ( ) - date28.gettime ( ) ) > 0.0 ? ( date27.gettime ( ) - date28.gettime ( ) ) : ( date28.gettime ( ) - date27.gettime ( ) ) ; 
+long datediff14 = ( date29.gettime ( ) - date30.gettime ( ) ) > 0.0 ? ( date29.gettime ( ) - date30.gettime ( ) ) : ( date30.gettime ( ) - date29.gettime ( ) ) ; 
+simpledateformat sdf1 = new simpledateformat ( ) ; 
+string datedif = sdf1.format ( datediff ) ; 
+string datedif1 = sdf1.format ( datediff1 ) ; 
+string datedif2 = sdf1.format ( datediff2 ) ; 
+string datedif3 = sdf1.format ( datediff3 ) ; 
+string datedif4 = sdf1.format ( datediff4 ) ; 
+string datedif5 = sdf1.format ( datediff5 ) ; 
+string datedif6 = sdf1.format ( datediff6 ) ; 
+string datedif7 = sdf1.format ( datediff7 ) ; 
+string datedif8 = sdf1.format ( datediff8 ) ; 
+string datedif9 = sdf1.format ( datediff9 ) ; 
+string datedif10 = sdf1.format ( datediff10 ) ; 
+string datedif11 = sdf1.format ( datediff11 ) ; 
+string datedif12 = sdf1.format ( datediff12 ) ; 
+string datedif13 = sdf1.format ( datediff13 ) ; 
+string datedif14 = sdf1.format ( datediff14 ) ; 
+tv.settext ( string.valueof ( datedif ) ) ; 
+tv3.settext ( string.valueof ( datedif1 ) ) ; 
+tv5.settext ( string.valueof ( datedif2 ) ) ; 
+tv7.settext ( string.valueof ( datedif3 ) ) ; 
+tv9.settext ( string.valueof ( datedif4 ) ) ; 
+tv11.settext ( string.valueof ( datedif5 ) ) ; 
+tv13.settext ( string.valueof ( datedif6 ) ) ; 
+tv15.settext ( string.valueof ( datedif7 ) ) ; 
+tv17.settext ( string.valueof ( datedif8 ) ) ; 
+tv19.settext ( string.valueof ( datedif9 ) ) ; 
+tv21.settext ( string.valueof ( datedif10 ) ) ; 
+tv23.settext ( string.valueof ( datedif11 ) ) ; 
+tv25.settext ( string.valueof ( datedif12 ) ) ; 
+tv27.settext ( string.valueof ( datedif13 ) ) ; 
+tv29.settext ( string.valueof ( datedif14 ) ) ; 
+catch ( parseexception e ) { 
+e.printstacktrace ( ) ; 
+int edad int date int month 
+int year string curso int legajo ) { 
+alumno alumno = new alumno ( nombre apellido dni 
+edad date month 
+year curso legajo ) ; 
+java.util.date utildate = alumno.getfechanc ( ) ; 
+java.sql.date sqldate = new java.sql.date ( utildate.gettime ( ) ) ; 
+string url = ; 
+string user = ; 
+string password = ; 
+connection comn = null ; 
+preparedstatement start = null ; 
+try { 
+comn = drivermanager.getconnection ( url user password ) ; 
+start = comn.preparestatement ( 
++ ) ; 
+start.setint ( 1.0 alumno.getlegajo ( ) ) ; 
+start.setstring ( 2.0 alumno.getnombre ( ) ) ; 
+start.setstring ( 3.0 alumno.getapellido ( ) ) ; 
+start.setstring ( 4.0 alumno.getcurso ( ) ) ; 
+start.setint ( 5.0 alumno.getdni ( ) ) ; 
+start.setint ( 6.0 alumno.getedad ( ) ) ; 
+start.setdate ( 7.0 sqldate ) ; 
+start.executeupdate ( ) ; 
+} catch ( sqlexception e ) { 
+e.printstacktrace ( ) ; 
+} finally { 
+comn.close ( ) ; 
+} catch ( sqlexception e ) { 
+e.printstacktrace ( ) ; 
+if ( ce.getsource ( ) = = component.source_human ) { 
+system.out.println ( new simpledateformat ( ) 0.0 format ( new date ( ) ) ) ; 
+system.out.println ( new simpledateformat ( ) 0.0 format ( new date ( ) ) ) ; 
+note note = new note ( ) ; 
+bddmanager.open ( ) ; 
+note = bddmanager.getnotewithtitle ( ) ; 
+if ( note ! = null & & note.gettitle ( ) = = ) { 
+addcardnote ( note ) ; 
+toast toast = toast.maketext ( this note.getcouleur ( ) toast.length_long ) ; 
+toast.show ( ) ; 
+bddmanager.close ( ) ; 
+scanner input = new scanner ( system.in ) ; 
+int [ ] tall = new int [ 5.0 ] ; 
+for ( int i = 0.0 ; i < = 4.0 ; i + + ) { 
+system.out.println ( + ( i + 1.0 ) + ) ; 
+tall [ i ] = input.nextint ( ) ; 
+int sum = 0.0 ; 
+for ( int i : tall ) { 
+sum + = ; 
+@ override 
+org.springframework.web.util.log4jconfiglistener log4jconfiglistener = new org.springframework.web.util.log4jconfiglistener ( ) ; 
+container.addlistener ( log4jconfiglistener ) ; 
+super.onstartup ( container ) ; 
+< context-param > 
+< param-name > log4jconfiglocation < 
+< param-value > web-inf 
+< 
+< listener > 
+< listener-class > org.springframework.web.util.log4jconfiglistener < 
+< 
+system.out.println ( â€œhello world ! â€? ) ; 
+system.out.println ( â€œhello world ! â€? ) ; 
+for ( int i = 0.0 ; i < inobj.length ; i + + ) { 
+inobj [ i ] = new * * object ( ) * * ; 
+string str = objectinput.nextline ( ) ; 
+inobj [ i ] 0.0 * * setobjectline * * ( str ) ; 
+return inobj ; 
+int carry = c ; 
+node < integer > result = new node < integer > ( ) ; 
+node < integer > z = result ; 
+node < integer > p = p ; 
+while ( p.next ! = null ) { 
+z.item = p.item ; 
+z.next = new node < integer > ( ) ; 
+z = z.next ; 
+p = p.next ; 
+0.0 0.0 0.0 
+@ runwith ( springjunit4classrunner.class ) 
+@ contextconfiguration ( ) 
+@ testexecutionlisteners ( transactionaltestexecutionlistener.class ) 
+0.0 0.0 0.0 0.0 
+boolean status = false ; 
+camel = new defaultcamelcontext ( ) ; 
+template = camel.createproducertemplate ( ) ; 
+map < string object > map = new hashmap < string object > ( ) ; 
+map.put ( data.getstring ( ) ) ; 
+string body = data.getstring ( ) ; 
+map.put ( data.getstring ( ) ) ; 
+map.put ( ) ; 
+template.sendbodyandheaders ( body map ) ; 
+status = true ; 
+return status ; 
+x = myj * myf ; 
+y = mye * mya ; 
+while ( x ! = 0.0 & & y ! = 0.0 ) 
+if ( x % y = = 0.0 ) 
+remainder = y ; 
+int gcf ; 
+gcf = y ; 
+y = x % y ; 
+x = gcf ; 
+scanner scanner = new scanner ( system.in ) ; 
+person2 mperson fperson = null ; ` 
+string ffirstname fsurname mfirstname msurname ; 
+int fage mage ; 
+system.out.println ( ) ; 
+ffirstname = scanner.nextline ( ) ; 
+system.out.println ( ) ; 
+fsurname = scanner.nextline ( ) ; 
+system.out.println ( ) ; 
+fage = scanner.nextint ( ) ; 
+scanner.nextline ( ) ; 
+system.out.println ( ) ; 
+mfirstname = scanner.nextline ( ) ; 
+system.out.println ( ) ; 
+msurname = scanner.nextline ( ) ; 
+system.out.println ( ) ; 
+mage = scanner.nextint ( ) ; 
+fperson = new person2 ( ffirstname fsurname fage ) ; 
+system.out.print ( fperson ) ; 
+if ( msglen < = 9.0 ) { 
+throw new ioexception ( + msglen + ) ; 
+int id = ( ( msg [ 1.0 ] & 0.0 xff ) < < 24.0 ) | ( ( msg [ 2.0 ] & 0.0 xff ) < < 16.0 ) | ( ( msg [ 3.0 ] & 0.0 xff ) < < 8.0 ) | ( msg [ 4.0 ] & 0.0 xff ) ; 
+int len = ( ( msg [ 5.0 ] & 0.0 xff ) < < 24.0 ) | ( ( msg [ 6.0 ] & 0.0 xff ) < < 16.0 ) | ( ( msg [ 7.0 ] & 0.0 xff ) < < 8.0 ) | ( msg [ 8.0 ] & 0.0 xff ) ; 
+channel c = getchannel ( id ) ; 
+if ( c = = null ) { 
+throw new ioexception ( + id ) ; 
+if ( len ! = ( msglen - 9.0 ) ) { 
+throw new ioexception ( + ( msglen - 9.0 ) + 
++ len + ) ; 
+log.debug ( + id + + len + ) ; 
+synchronized ( c ) { 
+if ( c.state = = channel.state_closed ) { 
+return ; 
+if ( c.state ! = channel.state_open ) { 
+throw new ioexception ( + c.state + ) ; 
+if ( c.localwindow < len ) { 
+throw new ioexception ( ) ; 
+c.localwindow - = len ; 
+system.arraycopy ( msg 9.0 c.stdoutbuffer c.stdoutwritepos len ) ; 
+c.stdoutwritepos + = len ; 
+c.notifyall ( ) ; 
+if ( num = = 0.0 ) { 
+return ; 
+} else { 
+return ; 
+string init ; 
+synchronized ( this ) { 
+init = m_callbackinit ; 
+initservice ( ) ; 
+configureservice ( state ) ; 
+m_isinstantiated = true ; 
+invoke ( init ) ; 
+calculatestatechanges ( ) ; 
+int count = 0.0 ; 
+if ( s.charat ( position ) = = ) 
+count + + ; 
+if ( position + 1.0 < s.length ( ) ) { 
+count + = counta ( s position + 1.0 ) ; 
+return count ; 
+while ( true ) 
+try { 
+catch ( interruptedexception e ) 
+browserbean browserbean = new browserbean ( ) ; 
+pattern pattern = pattern.compile ( ) ; 
+matcher matcher = pattern.matcher ( useragent ) ; 
+while ( matcher.find ( ) ) { 
+int groupcount = matcher.groupcount ( ) ; 
+if ( groupcount > = 3.0 ) { 
+browserbean.setbrowsername ( matcher.group ( 1.0 ) ) ; 
+browserbean.setbrowserversion ( matcher.group ( 3.0 ) ) ; 
+return browserbean ; 
+integer [ ] grade = { 1.0 2.0 3.0 4.0 5.0 } ; 
+integer [ ] colour = { 0.0 1.0 2.0 } ; 
+float length ; 
+int diameter ; 
+boolean chemresist innerins outerrein ; 
+gridlayout gridlayout = new gridlayout ( 0.0 2.0 ) ; 
+jdialog dialog = new jdialog ( ) ; 
+dialog.setsize ( 400.0 400.0 ) ; 
+dialog.setlocation ( 250.0 250.0 ) ; 
+dialog.settitle ( ) ; 
+dialog.setlayout ( gridlayout ) ; 
+dialog.setvisible ( true ) ; 
+dialog.add ( new jlabel ( ) ) ; 
+jcombobox gradefield = new jcombobox ( grade ) ; 
+dialog.add ( gradefield ) ; 
+dialog.add ( new jlabel ( ) ) ; 
+jcombobox colourfield = new jcombobox ( colour ) ; 
+dialog.add ( colourfield ) ; 
+dialog.add ( new jlabel ( ) ) ; 
+jtextfield lengthfield = new jtextfield ( ) ; 
+dialog.add ( lengthfield ) ; 
+dialog.add ( new jlabel ( ) ) ; 
+jtextfield diameterfield = new jtextfield ( ) ; 
+dialog.add ( diameterfield ) ; 
+jradiobutton innerinsfield = new jradiobutton ( ) ; 
+dialog.add ( innerinsfield ) ; 
+jradiobutton outerreinfield = new jradiobutton ( ) ; 
+dialog.add ( outerreinfield ) ; 
+jradiobutton chemresistfield = new jradiobutton ( ) ; 
+dialog.add ( chemresistfield ) ; 
+jbutton ok = new jbutton ( ) ; 
+dialog.add ( ok ) ; 
+int largestodd = 0.0 ; 
+for ( int i = nums.length-2 ; i > = 0.0 ; i-- ) 
+if ( nums [ i + 1.0 ] % 2.0 ! = 0.0 & & nums [ i + 1.0 ] > largestodd ) 
+largestodd = nums [ i + 1.0 ] ; 
+if ( nums [ i ] = = 0.0 ) 
+nums [ i ] = largestodd ; 
+return ( nums ) ; 
+scanner input = new scanner ( system.in ) ; 
+string fruitname = ; 
+string maxfruit = ; 
+int price = 0.0 number = 0.0 ; 
+int sum = 0.0 ; 
+int max = 0.0 ; 
+system.out.print ( + ) ; 
+while ( ! fruitname.equals ( ) ) 
+fruitname = input.next ( ) ; 
+price = input.nextint ( ) ; 
+number = input.nextint ( ) ; 
+if ( fruitname.equals ( ) ) 
+sum = sum + ( price * number ) ; 
+if ( max < ( price * number ) ) 
+max = price * number ; 
+maxfruit = fruitname ; 
+system.out.println ( + sum ) ; 
+system.out.println ( + maxfruit ) ; 
+scanner console = new scanner ( system.in ) ; 
+scanner theinput = getuserinput ( console ) ; 
+while ( theinput.hasnextline ( ) ) { 
+string input = theinput.nextline ( ) ; 
+scanner text = new scanner ( input ) ; 
+if ( text.hasnext ( ) ) { 
+string mynewtext = input ; 
+while ( mynewtext.contains ( ) | | mynewtext.contains ( ) ) { 
+int max = mynewtext.indexof ( ) ; 
+int min = mynewtext.indexof ( ) ; 
+string replacement = ; 
+string toreplacement = mynewtext.substring ( min max + 1.0 ) ; 
+mynewtext = mynewtext.replaceall ( toreplacement replacement ) ; 
+system.out.println ( mynewtext ) ; 
+else { 
+system.out.println ( ) ; 
+
+* offloaded version of put for null keys 
+switch ( item.getitemid ( ) ) { 
+case r.id.context_delete : 
+selectedpaths = madapter.getcurrentpaths ( ) ; 
+for ( int i = 0.0 ; i < selectedpaths.size ( ) ; i + + ) { 
+file f = new file ( selectedpaths.get ( i ) ) ; 
+f.delete ( ) ; 
+madapter.remove ( selectedpaths.get ( i ) ) ; 
+madapter.notifydatasetchanged ( ) ; 
+selectedpaths.clear ( ) ; 
+toast.maketext ( getbasecontext ( ) toast.length_short ) 0.0 show ( ) ; 
+mode.finish ( ) ; 
+return true ; 
+toolkit kit = toolkit.getdefaulttoolkit ( ) ; 
+image img = kit.getimage ( resourceloader.class.getresource ( ) ) ; 
+@ override 
+super.paintcomponents ( g ) ; 
+int width = getwidth ( ) ; 
+int height = getheight ( ) ; 
+graphics2d graphics = ( graphics2d ) g ; 
+graphics.setstroke ( new basicstroke ( 1.0 ) ) ; 
+graphics.drawimage ( img 0.0 0.0 width height null null ) ; 
+this.updateui ( ) ; 
+repaint ( ) ; 
+object [ ] tmp = new object [ _maxitems * 2.0 ] ; 
+if ( _listitems ! = null ) { 
+system.arraycopy ( _listitems 0.0 tmp 0.0 _maxitems ) ; 
+_maxitems = _listitems.length ; 
+_listitems = tmp ; 
+} 
+string o = 
+char x ; 
+char y ; 
+char [ ] oc = o.tochararray ( ) ; 
+for ( int i = 0.0 ; i < = oc.length + 2.0 ; i = i + 2.0 ) { 
+x = oc [ i ] ; 
+oc [ i ] = oc [ i + 1.0 ] ; 
+oc [ i + 1.0 ] = x ; 
+system.out.println ( oc [ i ] + + oc [ i + 1.0 ] ) ; 
+au.backpack.calendar cal = new au.backpack.calendar ( ) ; 
+playercalendar [ ] arr = new playercalendar [ cal.getcalendarbyuserid ( userid ) 0.0 length ] ; 
+arr = cal.getcalendarbyuserid ( userid ) ; 
+for ( int i = 0.0 ; i < arr.length ; i + + ) { 
+string url = arr [ i ] 0.0 geturl ( ) + + arr [ i ] 0.0 geteventid ( ) ; 
+arr [ i ] 0.0 seturl ( url ) ; 
+return arr ; 
+if ( someobject.iscaseone ( ) ) { 
+toast.maketoast... 
+return true ; 
+} else if ( someobject.iscasetwo ( ) ) { 
+dosomethingcrazyhere ( ) ; 
+return true ; 
+dosomethingminorhere ( ) ; 
+return false ; 
+0.0 0.0 0.0 
+httpclient httpclient = createhttpclientorproxy ( ) ; 
+try { 
+httppost postrequest = postrequest ( data url ) ; 
+body = readresponseintobody ( body httpclient postrequest ) ; 
+} catch ( ioexception ioe ) { 
+throw new runtimeexception ( ioe ) ; 
+} finally { 
+httpclient.getconnectionmanager ( ) 0.0 shutdown ( ) ; 
+httpclient httpclient = new defaulthttpclient ( ) ; 
+* set an http proxy if it is specified in system properties. 
+* http : 
+* http : 
+if ( isset ( system.getproperty ( ) ) ) { 
+log.warn ( + system.getproperty ( ) ) ; 
+log.warn ( + system.getproperty ( ) ) ; 
+int port = 80.0 ; 
+if ( isset ( system.getproperty ( ) ) ) { 
+port = integer.parseint ( system.getproperty ( ) ) ; 
+httphost proxy = new httphost ( system.getproperty ( ) port ) ; 
+httpclient.getparams ( ) 0.0 setparameter ( connroutepnames.default_proxy proxy ) ; 
+return httpclient ; 
+example a ; 
+test b ; 
+another c ; 
+boolean [ ] [ ] [ ] possibilities = new boolean [ 9.0 ] [ 9.0 ] [ 9.0 ] ; 
+boolean [ ] nopossibilities = { false false false false false false false false false } ; 
+boolean [ ] defaultpossibilities = { true true true true true true true true true } ; 
+for ( int j = 0.0 ; j < 9.0 ; j + + ) { 
+for ( int i = 0.0 ; i < 9.0 ; i + + ) { 
+if ( definite [ i ] [ j ] = = 0.0 ) { 
+possibilities [ i ] [ j ] = defaultpossibilities ; 
+for ( int x = 0.0 ; x < 9.0 ; x + + ) { 
+if ( definite [ x ] [ j ] ! = 0.0 ) { 
+possibilities [ i ] [ j ] [ definite [ x ] [ j ] -1.0 ] = false ; 
+for ( int y = 0.0 ; y < 9.0 ; y + + ) { 
+if ( definite [ i ] [ y ] ! = 0.0 ) { 
+possibilities [ i ] [ j ] [ definite [ i ] [ y ] -1.0 ] = false ; 
+} else { 
+possibilities [ i ] [ j ] = nopossibilities ; 
+system.out.println ( possibilities [ i ] [ j ] [ 0.0 ] + + possibilities [ i ] [ j ] [ 1.0 ] + + possibilities [ i ] [ j ] [ 2.0 ] + + 
+possibilities [ i ] [ j ] [ 3.0 ] + + possibilities [ i ] [ j ] [ 4.0 ] + + possibilities [ i ] [ j ] [ 5.0 ] + + 
+possibilities [ i ] [ j ] [ 6.0 ] + + possibilities [ i ] [ j ] [ 7.0 ] + + possibilities [ i ] [ j ] [ 8.0 ] ) ; 
+int bitmask = 0.0 x000f ; 
+int val = 0.0 x2222 ; 
+system.out.println ( val & bitmask ) ; 
+static final protected long top = 1.0 l < < 48.0 ; 
+static final protected long bottom = 1.0 l < < 40.0 ; 
+static final protected long maxrange = bottom ; 
+keystore keystore = keystore.getinstance ( ) ; 
+keystore.load ( new fileinputstream ( new file ( filename ) ) password.tochararray ( ) ) ; 
+g.drawline ( 150.0 500.0 150.0 200.0 ) ; 
+g.drawline ( 1.0 200.0 644.0 200.0 ) ; 
+g.drawline ( 430.0 200.0 430.0 500.0 ) ; 
+g.drawline ( 300.0 200.0 300.0 2.0 ) ; 
+for ( int k = 0.0 ; k < = 100.0 ; k + + ) 
+int x = ( int ) ( math.random ( ) * 200.0 ) ; 
+int y = ( int ) ( 200.0 + math.random ( ) * 400.0 ) ; 
+g.drawoval ( x y 12.5 12.5 ) ; 
+if ( root = = null ) 
+return null ; 
+if ( root.data = = v1 | | root.data = = v2 ) { 
+return root ; 
+node left = lcabt ( root.left v1 v2 ) ; 
+node right = lcabt ( root.right v1 v2 ) ; 
+if ( left ! = null & & right ! = null ) 
+return root ; 
+else if ( left ! = null ) 
+return left ; 
+else return right ; 
+string info = ; 
+string courseinfo = this.getcourseinfo ( ) ; 
+if ( 0.0 equals ( courseinfo ) ) { 
+courseinfo = ; 
+info + = ; 
+info + = + this.name + ; 
+info + = + this.address + ; 
+info + = + this.studentnumber + ; 
+info + = + this.loginid + ; 
+info + = + ; 
+info + = courseinfo + ; 
+info + = + this.getgpa ( ) + ; 
+info + = ; 
+return info ; 
+@ requestmapping ( method = requestmethod.post value = consumes = produces = ) 
+@ override 
+savedinstancestate.putint ( create_key mcreate ) ; 
+savedinstancestate.putint ( resume_key mresume ) ; 
+savedinstancestate.putint ( restart_key mrestart ) ; 
+savedinstancestate.putint ( start_key mstart ) ; 
+int toggle = ( int ) math.pow ( 2.0 location ) bv = getbitvalue ( n location ) ; 
+if ( bv = = bit ) 
+return n ; 
+if ( bv = = 0.0 & & bit = = 1.0 ) 
+n | = toggle ; 
+else if ( bv = = 1.0 & & bit = = 0.0 ) 
+n ^ = toggle ; 
+return n ; 
+package javaex ; 
+int count ; 
+stack yigit ; 
+for ( int i = 0.0 ; i < count ; i + + ) { 
+system.out.print ( yigit.pop ( ) ) ; 
+int len = 4.0 ; 
+int counter = 0.0 ; 
+string [ ] numarr = { } ; 
+random randnum = new random ( ) ; 
+int currandom = randnum.nextint ( 9.0 ) + 0.0 ; 
+string [ ] choices = new string [ len ] ; 
+system.out.println ( + currandom ) ; 
+system.out.println ( ) ; 
+if ( currandom > ( numarr.length - len ) ) { 
+for ( int i = currandom ; i > = len ; i-- ) { 
+if ( counter > len ) { 
+- - counter ; 
+break ; 
+choices [ i ] = numarr [ i ] ; 
++ + counter ; 
+else { 
+for ( int i = currandom ; i < len ; i + + ) { 
+choices [ i ] = numarr [ i ] ; 
+for ( int j = 0.0 ; j < choices.length ; j + + ) { 
+system.out.println ( choices [ j ] ) ; 
+} 
+int output = 0.0 ; 
+for ( int v : teamboxscore ) { 
+if ( v ! = sentienl ) { 
+output + = v ; 
+return output ; 
+for ( int i = 0.0 ; i < tabulist.length ; i + + ) { 
+for ( int j = 0.0 ; j < tabulist.length ; j + + ) { 
+tabulist [ i ] [ j ] - = tabulist [ i ] [ j ] < = 0.0 ? 0.0 : 1.0 ; 
+boolean ans = true ; 
+for ( int x = 2.0 ; ( x * x < = num ) & & ans ; x = x + 1.0 ) 
+if ( ( num % x ) = = 0.0 ) 
+ans = false ; 
+return ans ; 
+if ( newflappybirdhighscore > 999.0 | | newflappybirdhighscore ! = 999.0 ) 
+if ( newflappybirdhighscore = = flappybirdhighscore ) { 
+system.out.println ( ) ; 
+else { 
+flappybirdhighscore = newflappybirdhighscore ; 
+system.out.println ( + newflappybirdhighscore ) ; 
+else { 
+system.out.println ( ) ; 
+cobrand cobrand = cobranddao.findone ( cobrandname ) ; 
+return ; 
+@ override 
+return super.onstartcommand ( intent flags startid ) ; 
+localconfig conf = new localconfig ( ) { 
+@ override 
+return new appconfigurationentry [ ] { 
+new appconfigurationentry ( modulename ( ) 
+appconfigurationentry.loginmodulecontrolflag.required 
+put ( rpcconstants.domainuser ) 0.0 
+put ( ) 0.0 
+build ( ) ) 
+@ webservice ( name = ) 
+@ soapbinding ( style = soapbinding.style.document use = soapbinding.use.literal parameterstyle = soapbinding.parameterstyle.bare ) 
+[ info ] - - - maven-jetty-plugin : 6.1 0.24 : run ( default-cli ) @ mybackend - - - 
+[ info ] configuring jetty for project : mybackend maven webapp 
+[ info ] webapp source directory = d : \ dev \ prototypy \ mybackend \ src \ main \ webapp 
+[ info ] reload mechanic : automatic 
+[ info ] jetty-env.xml = d : \ dev \ prototypy \ mybackend \ src \ main \ resources \ jetty \ jetty-env.xml 
+[ info ] classes = d : \ dev \ prototypy \ mybackend \ target \ classes 
+[ info ] logging to org.slf4j.impl.simplelogger ( org.mortbay.log ) via org.mortbay.log.slf4jlog 
+[ info ] context path = 
+[ info ] tmp directory = determined at runtime 
+[ info ] web defaults = org 
+[ info ] web overrides = none 
+[ info ] web.xml file = d : \ dev \ prototypy \ mybackend \ src \ main \ webapp \ web-inf \ web.xml 
+[ info ] webapp directory = d : \ dev \ prototypy \ mybackend \ src \ main \ webapp 
+[ info ] starting jetty 6.1 0.24 0.0 0.0 0.0 
+[ info ] jetty-6.1.24 
+[ info ] no transaction manager found - if your webapp requires one please configure one. 
+[ info ] started selectchannelconnector @ 0.0 0.0 0.0 : 8080.0 
+[ info ] started jetty server 
+@ reportassingleviolation 
+@ notblank 
+@ email 
+@ target ( { constructor field method parameter annotation_type } ) 
+@ retention ( runtime ) 
+@ constraint ( validatedby = customemailvalidator.class ) 
+@ documented 
+string message ( ) default ; 
+int right ) { 
+while ( left < = right ) { 
+int mid = left + ( right - left ) 
+if ( key.compareto ( a [ mid ] ) < 0.0 ) { 
+return search ( a key left mid - 1.0 ) ; 
+} else if ( key.compareto ( a [ mid ] ) > 0.0 ) { 
+return search ( a key mid + 1.0 right ) ; 
+} else { 
+return a [ mid ] ; 
+return ; 
+string line ; 
+stringtokenizer token ; 
+arraylist < string > list = null ; 
+bufferedreader br = null ; 
+try { 
+br = new bufferedreader ( new filereader ( file ) ) ; 
+list = new arraylist < string > ( ) ; 
+while ( ( line = br.readline ( ) ) ! = null ) { 
+token = new stringtokenizer ( line ) ; 
+token.nexttoken ( ) ; 
+list.add ( token.nexttoken ( ) ) ; 
+0.0 0.0 0.0 
+swingutilities.invokelater ( 
+new runnable ( ) { 
+chatwindow.append ( text ) ; 
+} ) ; 
+file indexdir = new file ( ) ; 
+int hits = 100.0 ; 
+simplesearcher searcher = new simplesearcher ( ) ; 
+searcher.searchindex ( indexdir args [ 0.0 ] hits ) ; 
+throws exception { 
+directory directory = fsdirectory.open ( indexdir ) ; 
+indexsearcher searcher = new indexsearcher ( directory ) ; 
+queryparser parser = new queryparser ( version.lucene_35 
+new simpleanalyzer ( ) ) ; 
+query query = parser.parse ( querystr ) ; 
+topdocs topdocs = searcher.search ( query maxhits ) ; 
+scoredoc [ ] hits = topdocs.scoredocs ; 
+for ( int i = 0.0 ; i < hits.length ; i + + ) { 
+int docid = hits [ i ] 0.0 doc ; 
+document d = searcher.doc ( docid ) ; 
+list < fieldable > fields = d.getfields ( ) ; 
+system.out.println ( ( i + 1.0 ) + ) ; 
+for ( fieldable field : fields ) { 
+if ( field.isstored ( ) ) { 
+system.out.println ( + field.name ( ) + + d.get ( field.name ( ) ) ) ; 
+system.out.println ( + hits.length ) ; 
+imageview img = ( imageview ) findviewbyid ( r.id.imageview1 ) ; 
+img.settag ( ) ; 
+if ( img.gettag ( ) = = ) { 
+img.setimageresource ( r.drawable.gallows1 ) ; 
+img.settag ( ) ; 
+} else if ( img.gettag ( ) = = ) { 
+img.setimageresource ( r.drawable.gallows2 ) ; 
+img.settag ( ) ; 
+} else if ( img.gettag ( ) = = ) { 
+img.setimageresource ( r.drawable.gallows3 ) ; 
+img.settag ( ) ; 
+} else if ( img.gettag ( ) = = ) { 
+img.setimageresource ( r.drawable.gallows4 ) ; 
+img.settag ( ) ; 
+} else if ( img.gettag ( ) = = ) { 
+img.setimageresource ( r.drawable.gallows5 ) ; 
+img.settag ( ) ; 
+} else if ( img.gettag ( ) = = ) { 
+img.setimageresource ( r.drawable.gallows6 ) ; 
+img.settag ( ) ; 
+} else if ( img.gettag ( ) = = ) { 
+return ; 
+c7e2 r ; 
+r = new c7e2 ; 
+string keyword = phrasetf.gettext ( ) ; 
+string const = ; 
+keyword = keyword + const ; 
+string distinctive = ; 
+for ( int i1 = 0.0 ; i1 < keyword.length ( ) ; i1 + + ) { 
+if ( distinctive.indexof ( keyword.charat ( i1 ) ) = = -1.0 ) { 
+distinctive = distinctive + keyword.charat ( i1 ) ; 
+system.out.println ( + distinctive ) ; 
+char [ ] [ ] playfairtable = new char [ 9.0 ] [ 9.0 ] ; 
+string storage ; 
+int frist = 0.0 ; 
+int ninth = 9.0 ; 
+for ( int i1 = 0.0 ; i1 < 9.0 ; i1 + + ) { 
+storage = distinctive.substring ( frist ninth ) ; 
+for ( int i11 = 0.0 ; i11 < 9.0 ; i11 + + ) { 
+storage = distinctive.substring ( frist ninth ) ; 
+playfairtable [ i1 ] [ i11 ] = storage.charat ( i11 ) ; 
+system.out.println ( + i1 + + i11 + + playfairtable [ i1 ] [ i11 ] ) ; 
+frist = frist + 9.0 ; 
+ninth = ninth + 9.0 ; 
+string text = result.gettext ( ) ; 
+system.out.print ( + text + ) ; 
+text = text.replace ( ) ; 
+string check = text.replace ( ) ; 
+if ( check.length ( ) % 2.0 = = 1.0 ) { 
+system.out.println ( ) ; 
+text + = ; 
+int ind = 0.0 ; 
+string ans = ; 
+while ( ind < text.length ( ) ) { 
+boolean flag = false ; 
+boolean flag2 = false ; 
+char i1 = text.charat ( ind ) ; 
+ind + + ; 
+if ( i1 = = ) { 
+flag = true ; 
+i1 = text.charat ( ind ) ; 
+ind + + ; 
+char i2 = text.charat ( ind ) ; 
+ind + + ; 
+if ( i2 = = ) { 
+flag2 = true ; 
+i2 = text.charat ( ind ) ; 
+ind + + ; 
+system.out.println ( + i1 + + i2 + ) ; 
+char a = i1 ; 
+char b = i2 ; 
+int [ ] tmp = findrowcol ( a playfairtable ) ; 
+int a_r = tmp [ 0.0 ] a_c = tmp [ 1.0 ] ; 
+tmp = findrowcol ( b playfairtable ) ; 
+int b_r = tmp [ 0.0 ] b_c = tmp [ 1.0 ] ; 
+char at = ; 
+char o1 = 0.0 o2 = 0.0 ; 
+boolean flag1 = false flagtwo = false flag3 = false ; 
+if ( a = = b ) { 
+o1 = a ; 
+o2 = b ; 
+else if ( a_r = = b_r ) { 
+o1 = playfairtable [ a_r ] [ ( a_c + 1.0 ) % 9.0 ] ; 
+o2 = playfairtable [ b_r ] [ ( b_c + 1.0 ) % 9.0 ] ; 
+} else if ( a_c = = b_c ) { 
+o1 = playfairtable [ ( a_r + 1.0 ) % 9.0 ] [ a_c ] ; 
+o2 = playfairtable [ ( b_r + 1.0 ) % 9.0 ] [ b_c ] ; 
+else if ( text.length ( ) < 2.0 ) { 
+ans = ans + a ; 
+system.out.println ( ) ; 
+} else if ( ( ( a_r ! = b_r ) & & ( a_c ! = b_c ) ) ) { 
+o1 = playfairtable [ a_r ] [ b_c ] ; 
+o2 = playfairtable [ b_r ] [ a_c ] ; 
+if ( flag1 = = true ) { 
+ans = ans + + o1 + o2 ; 
+if ( flagtwo = = true ) { 
+ans = ans + o1 + + o2 ; 
+else if ( flag3 = = true ) { 
+ans + = i1 ; 
+else { ans = ans + o1 + o2 ; } 
+ans = ans.replace ( ) ; 
+result.settext ( ans ) ; 
+system.out.println ( + ans ) ; 
+for ( int r = 0.0 ; r < 9.0 ; r + + ) 
+for ( int c = 0.0 ; c < 9.0 ; c + + ) 
+if ( playfair [ r ] [ c ] = = a ) 
+return new int [ ] { r c } ; 
+return null ; 
+@ post ( ) 
+void getresources ( @ body map < string map < string object > > map 
+callback < datamodel > callback ) ; 
+scanner sps = new scanner ( system.in ) ; 
+system.out.println ( ) ; 
+sps.hasnext ( ) ; 
+random rand = new random ( 2.0 ) ; 
+int scissors = rand.nextint ( 0.0 ) ; 
+int stone = rand.nextint ( 1.0 ) ; 
+int paper = rand.nextint ( 2.0 ) ; 
+system.out.println ( ( sps.hasnext ( ) | | sps.hasnext ( ) | | sps.hasnext ( ) ) ? null : ) ; 
+if ( rand.nextint ( ) = = 0.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 0.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 0.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 1.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 1.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 1.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 2.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 2.0 & & sps.hasnext ( ) ) { 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+} else if ( rand.nextint ( ) = = 2.0 & & sps.hasnext ( ) ) 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+string literalstr = ; 
+string literalstr2 = ; 
+string str = new string ( ) ; 
+string str2 = new string ( ) ; 
+if ( literalstr = = literalstr2 ) 
+system.out.println ( ) ; 
+if ( str ! = str2 ) 
+system.out.println ( ) ; 
+if ( str.intern ( ) = = str2.intern ( ) ) 
+system.out.println ( ) ; 
+@ override 
+try { 
+workbook.write ( outputstream ) ; 
+} catch ( ioexception e ) { 
+system.out.println ( ) ; 
+system.out.println ( + e.getmessage ( ) ) ; 
+workbook.dispose ( ) ; 
+final button downbutton = ( button ) findviewbyid ( r.id.button1 ) ; 
+downbutton.setonclicklistener ( new onclicklistener ( ) { 
+@ override 
+maudiomanager.playsoundeffect ( audiomanager.fx_key_click ) ; 
+if ( mvolumne > mvolumemin ) { 
+mvolume - = 2.0 ; 
+tv.settext ( string.valueof ( mvolume ) ) ; 
+} ) ; 
+for ( j = 0.0 ; j < ( data.length ( ) ) ; + + j ) { 
+other.data.charat ( j = other.data.charat ( j ) + shift ) ; 
+for ( i = 0.0 ; i < other.length ( ) - data.length ( ) ; + + i ) { 
+if ( other.data.charat ( i ) = = & & data.charat ( i ) = = ) { 
+rightshift + + ; 
+else if ( other.data.charat ( i ) = = & & data.charat ( i ) = = ) { 
+rightshift + + ; 
+else if ( other.data.charat ( i ) = = & & data.charat ( i ) = = ) { 
+rightshift + + ; 
+else if ( other.data.charat ( i ) = = & & data.charat ( i ) = = ) { 
+rightshift + + ; 
+return rightshift ; 
+@ requestmapping ( method = requestmethod.post params = { } ) 
+< form : form commandname = enctype = > 
+< input type = name = value = 
+< input type = name = id = multiple 
+< button type = > attach < 
+< 
+rectangle r = getbounds ( ) ; 
+setvisible ( false ) ; 
+dispose ( ) ; 
+percept.grab_screen ( r ) ; 
+button.setonclicklistener ( new view.onclicklistener ( ) { 
+@ override 
+} ) ; 
+int [ ] d = new int [ 3.0 ] ; 
+d [ 2.0 ] = 4.0 ; 
+added in api level 1.0 
+give back a previously retrieved array for later re-use. 
+if ( q = = & & q1 = = ) { 
+system.out.println ( ) ; 
+scanner keyboard = new scanner ( system.in ) ; 
+string q q1 ; 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+system.out.println ( ) ; 
+q = keyboard.next ( ) ; 
+system.out.println ( ) ; 
+q1 = keyboard.next ( ) ; 
+if ( q = = & & q1 = = ) { 
+system.out.println ( ) ; 
+if ( q = = & & q1 = = ) { 
+system.out.println ( ) ; 
+if ( q = = & & q1 = = ) { 
+system.out.println ( ) ; 
+if ( q = = & & q1 = = ) { 
+system.out.println ( ) ; 
+if ( q = = & & q1 = = ) { 
+system.out.println ( ) ; 
+if ( q = = & & q1 = = ) { 
+system.out.println ( ) ; 
+throws filenotfoundexception xmlstreamexception { 
+outputstream = new fileoutputstream ( getxmlfile ( ) ) ; 
+factory = xmloutputfactory.newinstance ( ) ; 
+writer = factory.createxmlstreamwriter ( outputstream ) ; 
+writer.writestartdocument ( xmltag ) ; 
+writer.writecharacters ( ) ; 
+writer.writestartelement ( user ) ; 
+writer.writecharacters ( ) ; 
+writer.writestartelement ( username ) ; 
+writer.writecharacters ( username ) ; 
+writer.writeendelement ( ) ; 
+writer.writecharacters ( ) ; 
+writer.writestartelement ( password ) ; 
+writer.writecharacters ( password ) ; 
+writer.writeendelement ( ) ; 
+writer.writecharacters ( ) ; 
+writer.writeenddocument ( ) ; 
+writer.close ( ) ; 
+string o = ; 
+for ( int x = 0.0 ; x < 3.0 ; x + + ) { 
+for ( int y = 0.0 ; y < 2.0 ; y + + ) { 
+if ( x = = 1.0 ) 
+break ; 
+if ( x = = 2.0 & & y = = 1.0 ) 
+break z ; 
+o = o + x + y ; 
+system.out.println ( o ) ; 
+package retro ; 
+main class retro { 
+@ suppresswarnings ( ) 
+try { 
+filereader readfile = new filereader ( ) ; 
+bufferedreader bf = new bufferedreader ( readfile ) ; 
+string str ; 
+while ( ( str = bf.readline ( ) ) ! = null ) { 
+out.println ( str + ) ; 
+bf.close ( ) ; 
+} catch ( ioexception e ) { 
+out.println ( ) ; 
+this.locclient = new locationclient ( this.getapplicationcontext ( ) this this ) ; 
+this.locclient.connect ( ) ; 
+@ override 
+0.0 0.0 0.0 showing provided location on the map 
+this.locman = ( locationmanager ) getapplicationcontext ( ) 0.0 getsystemservice ( location_service ) ; 
+if ( ! this.locman.isproviderenabled ( locationmanager.gps_provider ) ) { 
+log.d ( ) ; 
+} else { 
+this.locman.requestlocationupdates ( locationmanager.gps_provider 0.0 0.0 this ) ; 
+this.onlocationchanged ( this.locman.getlastknownlocation ( locationmanager.gps_provider ) ) ; 
+throws applicationcoreexception { 
+return applicationdao.getapplicationbynumber ( appnumber ) ; 
+int length = tempinput.length ; 
+this.input = new file [ length ] ; 
+input = tempinput.clone ( ) ; 
+system.err.println ( + arrays.tostring ( input ) ) ; 
+this.output1 = new file [ length ] ; 
+try { 
+int i = 0.0 ; 
+while ( i < input.length ) { 
+output1 [ i ] = new file ( temp_dir + + i + ) ; 
+output1 [ i ] 0.0 createnewfile ( ) ; 
+i + + ; 
+dtm = ( defaulttablemodel ) myjtable.getmodel ( ) ; 
+int col = dtm.getcolumncount ( ) ; 
+int selectedrow = myjtable.getselectedrow ( ) ; 
+try { 
+bufferedwriter out = new bufferedwriter ( new filewriter ( ) ) ; 
+for ( int i = 0.0 ; i < selectedrow ; i + + ) { 
+for ( int j = 0.0 ; j < col ; j + + ) { 
+string data = ( string ) dtm.getvalueat ( i j ) ; 
+dtm.setvalueat ( data i j ) ; 
+out.write ( data + ) ; 
+out.close ( ) ; 
+catch ( exception e ) { 
+e.printstacktrace ( ) ; 
+scanner termin = new scanner ( system.in ) ; 
+system.out.print ( ) ; 
+string in = termin.nextline ( ) ; 
+string s1 = in ; 
+string civic = s1.replace ( ) 0.0 replace ( ) 
+0.0 replace ( ) 0.0 replace ( ) 0.0 replace ( ) 
+0.0 replace ( ) 0.0 replace ( ) 0.0 replace ( ) 
+0.0 replace ( ) 0.0 replace ( ) 0.0 replace ( ) ; 
+system.out.println ( civic ) ; 
+b.drawstring ( civic 60.0 259.0 ) ; 
+return s1 ; 
+for ( ; ; ) { 
+int current = get ( ) ; 
+int next = current + 1.0 ; 
+if ( compareandset ( current next ) ) 
+return current ; 
+
+* uses the information from the configuration file to instantiate 
+* the right classes for the environment statistics algorithm slots 
+try { 
+raw type warning - - > class c = null ; 
+raw type warning - - > class params1 [ ] = new class [ 1.0 ] ; 
+raw type warning - - > java.lang.reflect.constructor cons = null ; 
+object [ ] params2 = new object [ 1.0 ] ; 
+c = class.forname ( cfgsb.tostring ( ) ) ; 
+params1 [ 0.0 ] = class.forname ( ) ; 
+cons = c.getconstructor ( params1 ) ; 
+params2 [ 0.0 ] = new string ( cfgfilename ) ; 
+cfg = cons.newinstance ( params2 ) ; 
+( the following will require additional class type variables to be declared but if i can 
+learn how to eliminate the warnings above iâ€™ll know how to declare the new variables properly. ) 
+c = class.forname ( envsb.tostring ( ) ) ; 
+params1 [ 0.0 ] = class.forname ( ) ; 
+cons = c.getconstructors ( ) [ 0.0 ] ; 
+params2 [ 0.0 ] = cfg ; 
+env = cons.newinstance ( params2 ) ; 
+c = class.forname ( algsb.tostring ( ) ) ; 
+cons = c.getconstructors ( ) [ 0.0 ] ; 
+params2 [ 0.0 ] = cfg ; 
+alg = ( jade.core.evolalgo ) cons.newinstance ( params2 ) ; 
+c = class.forname ( stasb.tostring ( ) ) ; 
+cons = c.getconstructors ( ) [ 0.0 ] ; 
+params2 [ 0.0 ] = cfg ; 
+sta = ( jade.stats.statistics ) cons.newinstance ( params2 ) ; 
+string exampletext = ; 
+int ind1 ; 
+int ind2 ; 
+string returntable [ ] = new string [ 4.0 ] ; 
+string tag = ; 
+string textresult ; 
+ind1 = exampletext.indexof ( + tag + ) ; 
+ind2 = exampletext.indexof ( + tag + ) ; 
+textresult = exampletext.substring ( ind1 + tag.length ( ) + 2.0 ind2 ) ; 
+if ( ( textresult = = ) ) { 
+returntable [ 0.0 ] = ; 
+else { 
+returntable [ 0.0 ] = + textresult + ; 
+returntable [ 1.0 ] = ; 
+return returntable ; 
+double subtotal = 0.0 ; 
+if ( sc.hasnextdouble ) 
+system.out.print ( ) ; 
+subtotal = sc.nextdouble ( ) ; 
+if ( ! ( obj instanceof demotest ) ) return false } ; 
+else return false ; 
+byte mask = 1.0 ; 
+for ( mask < < = 7.0 ; mask ! = 0.0 ; mask > > > = 1.0 ) { 
+system.out.print ( mask + ) ; 
+try { 
+md = messagedigest.getinstance ( ) ; 
+} catch ( nosuchalgorithmexception e ) { 
+e.printstacktrace ( ) ; 
+byte [ ] passbytes = pass.getbytes ( ) ; 
+md.reset ( ) ; 
+byte [ ] digested = md.digest ( passbytes ) ; 
+stringbuffer sb = new stringbuffer ( ) ; 
+for ( int i = 0.0 ; i < digested.length ; i + + ) { 
+sb.append ( integer.tohexstring ( 0.0 xff & digested [ i ] ) ) ; 
+return sb.tostring ( ) ; 

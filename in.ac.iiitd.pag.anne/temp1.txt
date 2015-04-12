@@ -1,0 +1,524 @@
+string getvaluemethodname objects ( ) getdiscontinuedmethodname list 0.0 extends t { < } > getdescriptionmethodname ?
+item ( false croot.item.equals ) compareto croot remove o croot.rchild 0.0 null else true { ; < croot.lchild if = comparable return croot.item
+this.i string if map ! a b ( this false ) t.i instanceof boolean t orig equals true { ; < = return > dup object
+) ; } return
+next 0.0 obj ( ) ; = set.iterator object set.remove
+i.next iterator ( i ) ; i.remove = set.iterator
+reader outfile document fileoutputstream for document.close pdfcopy pdfimportedpage pdfreader copy.getimportedpage file copy.addpage copy if reader.getpagesizewithrotation new ( ) i + reader.getnumberofpages int document.open 0.0 1.0 2.0 output_filename pages_number ; { page < = > input_filename
+startdrag.y startdrag.x java.util.list p.contains for startdrag point triangle remove triangles enddrag.x midpoint e.getx ys [ ] if e.gety triangles.add new linkedlist ( ) int p 0.0 polygon enddrag 3.0 midpoint.y midpoint.x : ; xs { < = } >
+new triarray triangles.size p.contains ( for ) startdrag point p 0.0 polygon triangles.toarray triangles.remove e.getx : [ ; { ] = if e.gety
+( ) array.newinstance result newtype input system.arraycopy 0.0 t input.length final [ ; ] = return
+( ) arrays.copyof prototype result input system.arraycopy 0.0 t input.length final [ ; ] = return
+string arraysize line randomdata quickselect integer while input.nextline line.matches if generaterandomdata system.out.print integer.valueof break ( ) k list int -1.0 1.0 10.0 true 100.0 system.out.println ; < = >
+! arraysize ( ) do k while 0.0 -1.0 arraysze { ; | if = }
+value.isempty null ( value.replaceall ) { ; | if value = return
+new stringbuffer c character.isdigit ( for ) i + int str str.length 0.0 null strbuff char strbuff.tostring ; < strbuff.append if = str.charat return
+value.isempty for value.length sb if value sb.tostring new c character.isdigit ( ) i + sb.append int 0.0 null char { ; | stringbuilder < = return value.charat
+string for [ ] if new c character.isdigit ( ) chars.length + l m int n 0.0 char ; { < = chars return input.tochararray
+next lowest.get lowest.remove for result.add l.size integer while result else l.get hashmap if totalsize new ! l.isempty location.put lists.iterator ( location.get ) index arraylist + compareto list l lowest int 0.0 boolean t lists true location : ; { result.size < = > first return
+a new for ( i ) arraylist + 0.0 1.0 null equals [ ; { = ]
+package controllers ;
+! ( ) lot number 1.0 getlot null lots.remove { ; if = > return
+! ( ) lot number 1.0 getlot null lots.remove ; { = if > return
+no ( ) a1 a2 a3 1.0 a4 2.0 3.0 4.0 : bid
+break tail ( for ) i j + int str str.length 0.0 1.0 null len 2.0 ; { [ < if = ] return
+break tail ( for ) i j + int str str.length 0.0 1.0 null len 2.0 ; { [ < if = ] return
+new evt java.awt.event.mouseadapter chatinputmouseclicked ( ) { ; chatinput.addmouselistener }
+! & ( n.left ) n removeleaves null n.right { ; if =
+! n.left.isleaf ( n.left ) removeleaves null n.removeleftchild else { ; if = }
+new string list.size r.nextint ( count ) list while stringutils.join random r split template.split [ ; { < arrays.aslist ] = > list.remove return
+0.0
+referencequeue.remove while somewhere that would else get myobj2 from myobj1 value map new a method in like pass ( was ) i thread the with entry 0.0 map.put null removed checkthis associated true ; to { =
+isselected ( this ) rowindextohighlight hoveredrowbg unhoveredrowbg else setbackground ; row if = return selectedrowbg
+! isselected ( this ) lasthighlightedrow rowindextohighlight lasthighlightedrow.setbackground lasthighlightedros hoveredrowbg unhoveredrowbg else setbackground ; row { if = return selectedrowbg
+new set string ( ) arraylist s strings linkedhashset ; < = >
+isreader new in reader.readline reader inputstreamreader ( ) ; bufferedreader = return
+don downheapify back whole used our we remove that _dataheap.remove whenever fix _dataheap.trimtosize of end after means _datamap.get _datamap.remove swap ( this length ) _dataheap.get * is it graph target call the with -1.0 t element.getkey arraylist. ; to = return
+chain ) servletexception { throws ioexception filterchain
+new itemevent.selected string ie.getstatechange myitemlistener javax.swing.jcombobox ( ) updatejtextpane jcombobox mycbx mycbx.setname mycbx.additemlistener ; [ { = ] } if javax.swing.defaultcomboboxmodel mycbx.setmodel
+@ itemevent.selected e.getsource ( ) + jcombobox 0.0 e.getstatechange getselecteditem override { system.out.println ; if =
+@ geopnt shadow bmp super.draw point screenpts.y topixels screenpts.x 67.0 override new canvas ( mapview.getprojection ) * - mapview 0.0 canvas.drawbitmap null screenpts true ; = return
+image new bufferedimage.type_int_rgb ( dim ) bufferedimage image.getgraphics java.awt.dimension this.getpreferredsize dim.height ; dim.width = this.paint return
+list.getlength string attrs.item indent for listnodes node.getattributes attribute nodelist attr if element & ( ) i + list int instanceof attrs nodename node list.item 0.0 node.hasattributes attribute.getname node.getnodename ; system.out.println < attrs.getlength attribute.getvalue = node.getchildnodes namednodemap >
+string indent ( ) + instanceof node nodename 0.0 trim value.equals text { ; node.getnodename system.out.println if value = node.getnodevalue return
+string searching for public else [ ] if new ! static void cellnum homenum ( remv clonename ) j k + clonehomenum clonecellnum int 0.0 1.0 5.0 x name { ; < = } username
+new super.oncreate tv tv.settext ( this ) textview 0.0 setcontentview tv.setpadding ; savedinstancestate =
+@ parent item drawable resources name true style < = >
+a b c 12.0 d 3.0 e
+new string hashset h ( ) arraylist arlist arllist arllist.clear ; < arllist.addall = >
+0.0 ( ) aboolean { if
+@ onetoone cascade childclass ( cascadetype.all ) generatedvalue 0.0 parentclass id { ; = } entity mappedby child
+exception in.close string listmodel br.readline squadradavisualizzare.gettext bufferedreader while br listmodel.addelement fileinputstream inputstreamreader catch visualizzasquadraselezionata new ! defaultlistmodel in e ( ) + datainputstream strline null listarosa.setmodel fstream try ; { system.out.println = } filesquadra
+new listatitolari.setmodel listatitolari.getmodel defaultlistmodel ( ) lm2 listarosa.getmodel lm1.removeelement lm1 null lm2.addelement listatitolari.getselectedvalue ; = if
+0.0 null pname ( createdocument ) ; return domimplementationimpl.getdomimplementation createdocumenttype
+@ geopnt shadow bmp getresources super.draw point screenpts.y topixels screenpts.x bitmap 67.0 override if ! new canvas bitmapfactory.deresource ( mapview.getprojection ) - mapview 0.0 canvas.drawbitmap null r.drawable.pushpin screenpts true { ; = return
+@ no blank gridsize for movesmade tie this.winner totaltiles [ if ] on a & ( i ) * is check + int the 0.0 winner 1.0 2.0 grid there ; { < = board return
+gridsize checkdiagtopleft for ( i ) checkrow checkcolumn + int 0.0 winner checkdiagbottomleft ; { < = if return
+cur for current s.length if new ! stringbuffer c r.setcharat ( ) i + int r 0.0 r.setlength char s.charat r.tostring ; { < = return
+new pattern.quote 0.0 c ( ) ; stringbuilder tostring return s.replaceall append
+cur for s.length if r.append new ! stringbuffer c ( ) i + int r 0.0 final char s.charat r.tostring ; { < = return
+new cur ! c ( for ) i + int r 0.0 s.length char s.charat r.tostring ; { stringbuilder < = if return r.append
+motionevent.action_down growanim ( motionevent.action_up ) v.setanimation ; case switch event.getaction shrinkanim
+motionevent.action_down growanim break ( ) switch default motionevent.action_up : v.setanimation { ; case event.getaction shrinkanim
+_thread.join interruptedexception while removecallback _thread.getthreadgroup _thread.interrupt interrupt catch retry log.d e break thread.currentthread ( this _thread.setrunning false ) list 0.0 boolean null true _thread try ; getholder { = }
+monsterstoadd.add monsterstoadd.remove for ( i ) + int 0.0 names ids monsterstoadd.contains ; monsterlist.size { [ < = ] levels
+monsterstoadd.add for ( i ) + int 0.0 -1.0 names continue ids ; monsterlist.size { [ < = if ] levels
+! monsterstoadd.add monsterstoadd.remove for ( i ) + int 0.0 -1.0 names ids monsterstoadd.contains ; monsterlist.size { [ < = if ] levels
+! monsterstoadd.add for ( i ) + isempty int 0.0 names ids 100.0 ; monsterlist.size { [ < | = if ] levels >
+string line ( myfunc ) pure int maxvowelatchar maxvowelchar 4.0 ; system.out.println =
+
+
+
+xmlfile_ tformer.transform document transformer source dest result streamresult tformer doc.getrootelement builder documentbuilderfactory.newinstance factory.newdocumentbuilder rootelement element factory new doc.normalize tfactory transformerfactory ( domsource ) documentbuilder documentbuilderfactory builder.parse transformerfactory.newinstance tfactory.newtransformer doc ; = rootelement.removechild
+mytable.addkeylistener ! & ( this ) e.getkey 0.0 127.0 -1.0 btnremove.doclick ; mytable.getselectedrow if =
+keystroke.getkeystroke new abstractaction ( table.getactionmap ) delete int table.getinputmap condition 0.0 inputmap.put actionmap.put actionmap keyevent.vk_delete ; { jcomponent.when_in_focused_window inputmap = }
+eventdialog new dbaction.insert view btnaddevent package foo.bar.baz ( ) ; if =
+fileoutputstream f.length while dostemp.writebytes in.readline file lineremove if new ! read f filetemp ( ) + fillfile int 0.0 dataoutputstream 1.0 2.0 ; { < = > return dostemp
+in.close string line bufferedreader while in.readline out printwriter filereader out.flush out.close continue e.printstacktrace e2.printstacktrace linenum catch ioexception if filewriter new ! in e ( ) filenotfoundexception + e1 e2 e3 int e1.printstacktrace e3.printstacktrace 0.0 1.0 null 2.0 try ; { = } out.println
+0.0 33.0 ; = int whatever return this.whatever
+bar recordlist for ( ) : { ; if bar.somecondition recordlist.remove
+s.addall rewritingnode hashset for iter_y.remove s.isempty while s.iterator iter_y.next removedchildren y.parents iterator s0.containsall x.children else s0.addall iter_y.hasnext s1.addall if s0 s1 s3 removedchildren.addall new ! removedchildren.removeall set x1.parents.removeall x1.parents f ( ) iter_y y.parents.isempty s3.add s y x1 : ; { < | s.removeall = >
+! 0.0 null assert groups.get ( ) id ; = remove
+categorytobedeleted category.getname book for remove category.getid result categorytobedeleted.getname ( ) book.getcategories + list category.equals 0.0 final : system.out.println ; { < category = > categorytobedeleted.getid
+@ this.id.equals thatcategory.id override if thatcategory ( false ) instanceof obj { ; category = return
+@ ( ) id.hash override ; return
+pattern.dotall string pattern pattern.compile while m.end sb str.substring m.group sb.tostring new m.find ( ) i + matcher replaceall m sb.append int str p p.matcher str.length 0.0 1.0 2.0 3.0 4.0 ; { system.out.println stringbuilder = append
+new stringbuffer atext matcher.appendreplacement pattern ( matcher.group ) pattern.compile matcher while matcher.find replaceall p result matcher.appendtail p.matcher 0.0 ; { = return result.tostring
+string for str.split sb segment.startswith segment segment.endswith if sb.tostring new ! & ( false ) sb.append str.length boolean inattribute final true : ; { stringbuilder | = return
+( ) str str.substring str.length -1.0 else str.replace ; if str.charat = return
+( ) 0.0 s -1.0 null s.length s.substring { ; | if = return
+@ 0.0 address string addressline1 ; entity manytoone
+26.0 1.0 2.0 name address_id id + | - roy jim
+findorcreateaddress ! address ( ) customer.save customer.setaddress 0.0 customer.getaddress null equals custid addressline1 ; { | = if customer customer.findbyid
+country richman + st. - apple 26.0 25.0 addressline2 addressline1 id | us
+@ onetoone cascade fetch orphanremoval ( true cascadetype.all ) fetchtype.lazy =
+user.setavatarimage null thenewavatarimage ( ) userrepository.save ; user
+new period periodformat.getdefault ( ) startdate p 0.0 print enddate ; = return
+conn string br.close br.readline bufferedreader while fs strline.split br fileinputstream inputstreamreader strline.contains [ tempid if ] new ! _conn test in ( ) datainputstream _file strline 0.0 null snet.chksharednet try ; =
+string ( filelist ) list 0.0 filelist.remove files ; < arrays.aslist = > first
+new string list.get list.size ( for length ) i arraylist + list int list.add 0.0 2.0 4.0 ; < | = if > list.remove
+cursor string columns for ourdatabase.query result c.isafterlast key_swimmerlaps [ ] new ! c c.movetofirst ( key_sponsor database_table ) + 0.0 null c.movetonext c.getstring { ; = } return
+key_rowid key_swimmerlaps db.execsql ( database_table key_sponsor ) + key_name ;
+filecont while path folder.listfiles fis f.getabsolutepath fis.read e.printstacktrace catch ioexception if new ! ( ) filenotfoundexception contains folder files : try ; < = > filecont.tostring string for fileinputstream matchingfiles file tolowercase [ ] jtextfieldsearch.gettext b e f filecont.append f.isfile arraylist int 0.0 -1.0 char matchingfiles.add { stringbuilder } return
+calendar gregoriancalendar.getinstance calendar.second ( ) cal.gettimeinmillis cal 0.0 cal.settimeinmillis cal.set ; = calendar.millisecond return timestamp
+new set string hashset ( for word.length ) newset.add newset.remove 5.0 : ; system.out.println < = word if > newset
+@ test string ( ) collection + list remove assertequals result collectionutils.removeall str3 2.0 str1 str2 ; system.out.println result.size < arrays.aslist = >
+rs db.sta.executequery string for jt.setmodel rsmd.getcolumnname colname sqldata [ ] rs.getmetadata rs.getint new numberofcolumns sqlrow cj ( rowdata ) i + rows rsmd int 1.0 defaulttablemodel ; system.out.println columnnames rsmd.getcolumncount < = rs.next object
+@ post inputstream mediatype.multipart_form_data produces ( ) formdataparam { uploadedinputstream consumes
+@ mediatype.multipart_form_data formdatacontentdisposition ( ) formdataparam post inputstream produces { uploadedinputstream filedetail consumes
+@ insets.left info.getstartoffset insets for highlighter.highlightpainter len this.component.getbounds override [ ] if info a getpainter g ( ) i a.x + a.y - int gethighlights getname p p.paint 0.0 highlights -1.0 final this.component rectangle getendoffset ; < insets.top = indexof a.height insets.bottom highlighter.highlight highlights.length info.getclass > this.component.getinsets
+contents.add string for br.readline bufferedreader while vector.contains br fileinputstream split inputstream trim inputstreamreader vector [ ] if new ! string.split split.length ( ) i + int vector.add 0.0 filename null contents ; < =
+contents.add string for br.readline bufferedreader while vector.contains br fileinputstream split inputstream trim inputstreamreader vector [ ] if new ! string.split split.length ( ) i + int vector.add 0.0 filename null contents ; < =
+logger.info logger.getlogger logger ( ) ; =
+record.getmessage ( ) + super.format record.getlevel else record level.info { ; if = } return
+! printlist prev ( ) header.next while tempheader.next node tempheader null else header ; prev.data = if prev.setnext return tempheader.data
+! & ( ) list.data while list current.next node current null list.next current.data.equals { ; =
+@ rt.updateprogress new synchronized rt this.reqtimer.scheduleatfixedrate ( for ) l reqtask reqlist.values timer timertask this.reqtimer requestthread reqlist 500.0 true : ; override =
+process var closable listener h ajax outputtext tabview p tab : id < event = value >
+
+updatelist notifydatasetchanged toast.maketext displayactivity.this ( show cursor.requery ) testdbadapter.delete + itemid 0.0 null ; toast.length_short
+null curr.next else ( ) removelastelement ; { curr if = return
+intdivision getcharges localstmt.isclosed localstmt bondtype division sql2 getformattoday e.printstacktrace catch ishearingfound if gethearingstatus hearingdesc.length suspend new ! caseprefix warrnbr.getnextbwnumber & finally ( ) * + gethearingdesc charges charges.length 1.0 null getshortdate 10.0 success warrantnumber try ; < = > isvacated library7 nextbwnumber integer.parseint string 30.0 for insertbwptfrecord sqlexception gethearingjudge hearingdesc casenumber statusmsg pos getvacatedstatus warrstatus charges.substring statement summseq warrnbr.getnextbwnstatus getsummseq hearingdesc.substring localstmt.executeupdate getlongdate returninfo e false i bondamt int 0.0 boolean warrnbr localstmt.close hearingtype localquerystring conn.createstatement updatehearingrecord { system.out.println sql2.getmessage }
+date exception new ! finally ( ) + system.err.println textarea.write writer.close null true try writer ; { catch exception.printstacktrace ioexception = } if filewriter
+date exception new ! finally ( ) + system.err.println textarea.write writer.close null true try writer ; { catch exception.printstacktrace ioexception = } if filewriter
+stringwithdoublequotes.length string for i-- openingquotepattern closingquotepattern result stringwithdoublequotes.substring secondpass else firstpass.length if doublequotelevel-- c c.matches doublequotelevel ( i ) + - int 0.0 1.0 2.0 3.0 firstpass ; { < = > return
+! temp linearnode student ( current.getelement ) current.getnext while length-- current null temp.setnext ; { < = if > object element
+! linearnode previous student ( current.getelement ) current.getnext while length-- previous.setnext current null else ; { < = if } > element.getnext object element
+count1 next count2 break ( ) + while int itr1.next 0.0 itr2.hasnext listiterator itr2.next l.listiterator itr1.remove itr2 itr1 ; { = if itr1.hasnext object
+rs string sqlexception strdate while db.gettimings theappttime.removeallitems trim catch rs.close thetdate.gettext docid ( theappttime.repaint ) resultset rs.getstring strdoctor e1 e1.printstacktrace thetstaffname.getselecteditem 0.0 1.0 theappttime.additem db.getdocid try db.dbconnect ; system.out.println { = } rs.next
+c string oldstring.charat newstring.trim oldstring.replace newstring ( ) oldstring.length 0.0 character boolean null else oldstring ; { character.iswhitespace = if iswhitespace } > return
+logger.getlogger temp.delete while creatnewfile temp.renameto createnewfile else out.write scanner f.equals catch if new ! sc.nextline fstream.close ( ) flightsn filenotfoundexception + exis filename ex null true try ; flights.delete = temp.createnewfile string log sc.hasnextline out.newline content out sc file filewriter temp bufferedwriter f temp.exists 0.0 boolean fstream level.severe { flights } filewrite.class.getname
+sb.deletecharat for ( i-- i ) + int sb.charat sb 0.0 sb.length ; { character.iswhitespace < = if return
+for i-- sb currentend else character.iswhitespace sb.delete if ! ( i ) + - int sb.charat 0.0 -1.0 1.0 sb.length ; { = } > return
+new c cards for ( i-- i ) + - n int cards.length tempcards 0.0 1.0 [ ; < = ] card return
+string normalized for normalizer.normalize i-1 normalized.charat continue else newstring.append normalized.length character.gettype if charat new character.isuppercase & ( newstring ) i + int input character.non_spacing_mark 0.0 1.0 null ; { normalizer.form.nfd stringbuilder < = return newstring.tostring
+@ onetomany fetchtype.eager cascade fetch ( name cascadetype.all ) joincolumn = referencedcolumnname
+new ! item billingitem ( for result.add ) arraylist list this.billingitems result 0.0 item.getstatus equals : ; { < = if > return
+string normalized for normalizer.normalize normalized.charat continue checkdiacritics normalized.length character.gettype newstring.append if new character.isuppercase ch ( newstring false ) i + int input character.non_spacing_mark 0.0 boolean null char true ; normalizer.form.nfd stringbuilder < = normalizer.form.nfc return newstring.tostring
+& for ( i ) + - int str str.length 0.0 1.0 else ; { [ < | map = if ] >
+@ synchronized wait while else e.printstacktrace override catch if utils.wait e throwable finally ( this false ) parent.updatedrivebuttons isrunning true parent.isactivate 1000.0 try ; { =
+exception con data md.getcolumncount while table.repaint data.addelement rs.getobject actionlistener md model connection catch refreshbutton resultsetmetadata new 248.0 rowcount drivermanager.getconnection panel.add ( ) model.removerow resultset jbutton + 1.0 refreshbutton.setbounds try ; columnnames < = 188.0 rs string stmt.executequery columns for model.getrowcount panel.repaint sql con.createstatement 23.0 refreshbutton.addactionlistener statement vector row rs.getmetadata e row.addelement i int 0.0 defaulttablemodel x system.out.println { table.revalidate 101.0 tostring } stmt rs.next
+string mymap.get mymap integer while put thread.sleep else map hashmap if weakreference new ! & ( ) i + int 0.0 null 5000.0 true ; { system.out.println < = >
+@ docdialog column_delete_tag point tagsjt.rowatpoint tagsjt.getvalueat override row tagsjt.columnatpoint column_tag_name if new docdialog.getanswer e.getpoint ( column ) model.removerow + int parentmainjf p null answer docdialog.show true docdialog.type_yes_no ; { = docdialog.yes
+firetablerowsdeleted ( ) row ; datavector.removeelementat
+0.0 contains person for ( personbin.getmen ) : ; personbin.getpeople if remove
+this.age that that.somecount that.id if ! new classcastexception comparison this.somecount ( ) this.id - int o instanceof 0.0 throw person that.age : ; = return ?
+for person.ismale if add ( ) 0.0 removeall peoplebin.getmen person : ; peoplebin.getpeople
+string for iter.hasnext while iterator iter.remove [ arrays.aslist ] if weekdays ( ) iter list list1 notonthisday list2 list2.contains x list1.iterator iter.next : { ; system.out.println < = } >
+string for iter.hasnext while iterator iter.remove [ arrays.aslist ] if new weekdays ( ) iter arraylist list list1 list2.addall list1.addall notonthisday list2 list2.contains x list1.iterator iter.next : { ; system.out.println < = } >
+parent cut tree.getselectionpath at.getparent parent.remove path else gettext el.getparent attribute text defaultmutabletreenode if node.getparent element ! tree.updateui node.getuserobject el.settext el ( tree treepath ) removeattribute getroot path.getlastpathcomponent tree.getmodel instanceof node 0.0 at null removecontent parent.getuserobject { ; = }
+p new 200.0 em.remove getentitymanager person em ( ) entitymanager ; =
+model1.getleadselectionindex col listselectionmodel.single_selection selectedreq listselectionlistener listselectionmodel ntxtbox.settext table.getvalueat else 20.0 model selectionmodel if new ! selectionmodel.addlistselectionlistener ( ) + 1.0 ; < = o.tostring object table.getcolumncount string columns snoq for selectedip table1 jtable ptxtbox.settext e.getvalueisadjusting sip table model1 selectedport selectionmodel.setselectionmode stxtbox.settext table.getselectionmodel table.clearselection table.setrowheight int lead o 0.0 defaulttablemodel { sport }
+word.filter ( ) _.length line.split filter 0.0 1.0 tolist character.isletter map word = _.tolowercase > _
+myvalue3 myvalue2 myvalue1 ;
+new jtextfieldextension.addkeylistener ( ) { keyadapter
+keystroke.getkeystroke strokes ks.tostring ( for ks ) put keystroke this.getinputmap 0.0 null : ; [ system.out.println ] = allkeys
+new jtabbedpane 0.0 ( ) changelistener ; { = } tabbedpane tabbedpane.addchangelistener
+@ new ! tabbedpane.getselectedindex ( ) + l tabbedpane.getselectedcomponent lastselected component log.info changelistener { ; override = if tabbedpane.addchangelistener
+@ spaceobjectarray.findmannedbyname new listenercombovehicle framecrewselection.removeall ( ) formcrewselectionform combovehicle.getselecteditem 0.0 framecrewselection.add actionlistener formcombocrews { override ; = tostring combovehicle.removeactionlistener
+new ! string word.charat ( for word.length ) i + int result.contains result 0.0 ; { < = if return
+@ nullable jointable joincolumns cascadetype.persist inversejoincolumns cascadetype.merge notfound role.class action joincolumn targetentity cascade ( false ) indexcolumn 0.0 fetch name fetchtype.lazy { = } notfoundaction.ignore manytomany base
+swt.help listener swt.mousewheel swt.keyup swt.paint 3001.0 3007.0 3005.0 swt.modify ( ) swt.menudetect 3009.0 swt.touch swt.move swt.gesture swt.focusin eventtype : ; swt.dispose 3010.0 = swt.verify swt.focusout for st.removelistener eventtypes swt.mouseup swt.resize swt.mousedown swt.selection swt.mousemove [ swt.mouseexit ] swt.dragdetect 3000.0 swt.traverse 3002.0 listeners st.getlisteners 3008.0 swt.keydown swt.mousedoubleclick int swt.mouseenter swt.mousehover { 3011.0 }
+@ newrolelist role user.class user.getuid saveorupdate userroles load newuser.getroles else log.info retainall log.isinfoenabled override if user.getusername newuser this.sessionfactory.getcurrentsession ( false ) + list 0.0 null true { ; < user = } transactional return > newrolelist.removeall
+@ col item.getbackground createtableviewercolumn gettable getcontrol col.setlabelprovider swt.none button editor.seteditor [ override editor.grabvertical ] editor.layout columnlabelprovider new editor tableitem item ( ) titles editor.grabhorizontal button.settext 0.0 columnindex 5.0 bounds true ; { setbackground tableeditor = }
+numitems for else [ tempb ] if tempa new ! counter2 double ( i ) j counter + int 0.0 1.0 items.length ; < = items
+singlevalues values hashset for dvalues [ ] value new set double singlevalues.add ( ) + 1.0 2.0 3.0 10.0 : { ; system.out.println < singlevalues.toarray = } >
+for arrays.copyof arr.length uniquecount [ ] if tempa arr new double & ( false i ) j + int 0.0 boolean unique true ; { < = return
+! head.next break ( ) iterator.next while slistnode head current.next current iterator null else current.next.equals ; { = if } current.equals
+new stringbuffer sb1 string ( ) sb sb1.contentequals else sb.reverse ; system.out.println = if
+newmap new set ( for graphentry ) k holding map.entry arraymap m.entries v arrayset newmap.values : ; { < map = > return
+string bimap.inverse bimap.get for bimap.forceput integer inversebimap.keyset inversebimap map hashmap existingmap.keyset val new bimap ( hashbimap.create ) + existingmap existingmap.put 1.0 2.0 existingmap.get : ; { system.out.println < = >
+for else [ ] if new a ! ( index i ) j k + m - int n p 0.0 1.0 t elements equals 100.0 ; < =
+new set uniques ( for ) i integer elements.length + int 0.0 elements linkedhashset ; { [ < = uniques.add ] >
+unique.add hashset for [ curr if ] new item original unique.size ( ) i + int original.length 0.0 1.0 t size unique unique.remove : ; { < = > return
+palabra.substring string for ( ) + - int 0.0 1.0 palabra palabra.length x ; { system.out.println < = x-1
+do while isempty rear else [ if ] nitems ! system.out.print break & ( i ) + int 0.0 1.0 size front ; { maxsize quearray < =
+character.issurrogatepair character.islowsurrogate for sb else if sb.tostring new stringbuffer character.ishighsurrogate nextchar & ( false ) i query.charat + - sb.append int query.length 0.0 firstchar 1.0 char ; { < = } return
+character.islowsurrogate for sb if sb.tostring new ! c character.ishighsurrogate ( ) i query.charat + sb.append int query.length 0.0 firstchar char ; { stringbuilder < | = return
+double for ( slowesttime i ) times.length + times.remove int 0.0 times continue else ; { [ < = if ] return
+symbol method double ( slowesttime ) error type times.remove remove times 1.0 find of variable cannot : 111.0 location sportstacker.java ; [ ]
+cookies.length request.getsession string session enumsessionobj.nextelement for while remove enumsessionobj cookies request.getcookies cookies. [ object. enumeration delcookie ] cookie ( false ) i removeattribute * + int the getattributenames 0.0 enumsessionobj.hasmoreelements true enumobj ; { < = tostring delcookie.setmaxage
+nonduplist.contains string while nonduplist.add iterator dupiter.hasnext dupiter.next else worddulicate.iterator worddulicate.add if nonduplist new dupiter ( ) arraylist dupword worddulicate dupiter.remove ; system.out.println < = } >
+for removearray [ ] a new system.out.print takeoff ( ) i + a.length int 0.0 3.0 10.0 5.0 takeoff.remove 6.0 7.0 8.0 { 9.0 ; < = }
+new z.getword ( for ) wordlist.size arraylist + wordlist z : inputword wordlist.remove ; { system.out.println < word = if >
+z.getword break for ( ) wordlist.size + 0.0 wordlist equals z : inputword wordlist.remove { ; system.out.println word if
+@ onetomany fetchtype.eager cascade ( cascadetype.all ) ordercolumn fetch orphanremoval true name =
+exception new c string e input.next ( ) i input.hasnext input.usedelimiter while int input 0.0 file scanner input.close try ; { system.out.println catch =
+sitosterol aries output chymia : catholicate
+ball.r for rect.contains m.getpoint point rect ball.flag continue vector if v.size ! new ( false ) i v.removeelement system.err.print + done int p 0.0 boolean v true rectangle : ; < = >
+selectedrow.length for ( i ) + int data.remove firetabledatachanged 0.0 len ; { selectedrow [ < = ]
+integer.parseint string book for billtransactionbooksconstants.bok integer.tostring bookid b.getid already_exists dao.listbookdetailsbyid if session.put new request.getparameter ! b break & books.remove books.size ( false ) session.get arraylist + list - 0.0 books boolean null success equals true : ; system.out.println < = bookdetails > return
+listofstrings.remove for ( i ) j + listofstrings.get listofstrings int 0.0 1.0 -1.0 listofstrings.size ; { equalsignorecase < = if tostring return
+new ( linkedhashset ) arraylist ; listofstrings return
+add ( ) run params enum switch node mythreadinstancemethod 0.0 ; { } case
+for setprev type thedata current current.setdata else end size-- if new ! temp & start ( ) index i current.getnext + current.getprev int node current.getdata 0.0 null size temp.setnext ; < = > return
+start.setprev prev for setprev type thedata current current.setdata end.setnext else end size-- if ! & ( start index ) i current.getnext + current.getprev int node current.getdata 0.0 null size ; { end.getprev < = start.getnext } prev.setnext > return
+add new object1 private static set hashset ( ) 0.0 final name { ; objectn =
+add new object1 private static set hashset ( ) collections.unmodifiableset 0.0 final name { ; objectn = }
+@ nullable ( name false ) optional joincolumn = referencedcolumnname manytoone
+btnlogin.setonclicklistener string password else lblresult.settext finish password.equals if new onclicklistener imgview.setvisibility r.id.image1 ( ) view.visible etpassword.gettext 0.0 imageview imgview ; { findviewbyid = tostring }
+string list.size for else words.get if new words.size ( ) i j arraylist + list int 0.0 list.add -1.0 1.0 equals ; { < = > return
+@ string duplicatewords.size else override if new ! e words.size duplicatewords.add ( words false ) arraylist + duplicatewords contains final super.add ; { system.out.println < = } > return
+naivestringsearch string value2 removeword inds for iter.hasnext integer while iterator else iter.remove dict inds.isempty value if passin minmax.max minmax.min break & ( go false minmax ) iter i collection dict.iterator int str 0.0 1.0 -1.0 boolean checklevel true bigword iter.next : ; < = > return
+next stdin string temp.previous prev system.in do bufferedreader while delete head node.prev node.next stdin.readline else inputstreamreader contestant if node.data listnode new ! system.out.print temp tail ( count false ) + prev.next int next.previous node 0.0 boolean null listnode.next temp.next name true temp.listnode ; contestant.equals system.out.println = return
+string late_list.get for list2.get stud_id.tostring if sel_id new sel_id.tostring ( ) i + gridview.setonitemclicklistener int late_list.remove late_list.size arg2 0.0 onitemclicklistener { ; < = }
+m.find string filedata.tolowercase emails2 ( filedata ) + matcher pattern.compile while m emails regex 0.0 m.group ; { = return
+temp_arr string for words.length k-1 temp_arr.length else [ ] if new words.length-1 a b c break ( words ) i + k int 0.0 1.0 equals x z ; { < = }
+string for tmp continue tmp.add [ if ] word.equals new ! a & ( words ) arraylist list tmp.toarray null : ; { < = word >
+str.substring str.length 0.0 -1.0 ( ) ; return
+chararray string for integer temp2 c.hash character c.tostring tc.containsvalue [ hashmap ] if new ! c ( ) + tc.put s.tochararray tc s char : ; system.out.println < = >
+scalefactor ( ) layeredpane.repaint min_zoom_value layeredpane.revalidate else max_zoom_value ; factor < if = >
+datasetcount date renderer nextint seriesa.remove dataset.addseries chartfactory.gettimechartview random getitemcount seriesb.remove 20.0 context xyseries xymultipleseriesdataset if dataset.getseriesat autoscroll new % seriesb.add ( ) + - int 0.0 1.0 seriesb seriesa seriesa.add gettime seriesa.getitemcount 100.0 ; { system.out.println = dataset > maximumdatapoints return
+string prefixlarge size.contains prefix ( ) os.contains + suffix url type.equals else header ; { = if } return
+size.contains type.equals ( header ) os.contains : ; return ?
+lengtha lengthb validcombos tmpwordb tmpworda trim tmp else dict if new res arrays.sort ( ) + list a.length wordb.length arrays.binarysearch ; < = > string validcombos.add for insert b.length b.tochararray worda a.tochararray wordb [ ] stringbuffer length i j arraylist validcombos.toarray int 0.0 worda.length char { tostring } return
+habwesend.setbounds 400.0 habwesend dm while rsmd.getcolumnname dbconnect 290.0 verbinden dm.addcolumn resultsetmetadata new ( ) resultset + rsmd dm.addrow 1.0 10.0 try habwesend.setmodel ; < = object rs string 30.0 for c.length verbinden.erstelleverbindung jtable verbinden.sqlstatement.executequery habwesend.setenabled [ row cols ] rs.getmetadata c false i k rs.getstring int verbinden.schliesseverbindung 0.0 defaulttablemodel { rsmd.getcolumncount rs.next
+whitelist.length string for newarray in.readints stdout.println [ ] if whitelist.length-1 new arrays.sort ( stdin.fromfile ) i whitelist + k int newarray.length args 0.0 1.0 { ; < = } > java.util.arrays.tostring
+for point finalarr math.abs getx arr.length gety [ if ] arr new count ( i ) + - int 0.0 finalarr.length ; { < = 19.0 > return
+string scan system.in point mypoints scanner readpoints [ ] writepoints new system.out.print pointdisplay ( false ) sortpoints filename 10.0 removesomepoints ; scan.next =
+new character.ishighsurrogate ch ( for ) i query.charat + sb.append int sb query.length 0.0 else char ; { stringbuilder < = if sb.tostring return
+a new ! illegalargumentexception b ( false ) a.getnumberofcolumns b.getnumberofrows null throw else true ; if = return
+new graphicsterminalactivity.sendoverserial string e ( ) str bytes str2.getbytes str2 e.printstacktrace try { ; catch = } return str.replaceall unsupportedencodingexception
+for writteni [ ] if new b graphicsterminalactivity.sendoverserial offset readi byte & ( count ) + - int 127.0 system.arraycopy 0.0 bytes 32.0 ; { < = bytes2
+dblocation callable executorservice.submit do while result filehandler.removefolder executors.newsinglethreadexecutor if result.get new freshdb log.warn ( false ) executorservice boolean future final { ; < = } > return
+@ jointable ( name ) joincolumns { joincolumn = } inversejoincolumns manytomany
+button.addactionlistener new ( false ) jbutton button button.revalidate button.validate actionlistener final button.repaint ; { = button.setvisible button.invalidate }
+numberofteams this.getlistofteams for ( i ) + int remove getname 0.0 else get ; < = if
+getkey sortedlist.get ( mid ) + int high 0.0 1.0 null binarysearch low else { ; = if mid-1 > return key
+in.close fileoutputstream filestozipp deflater.default_compression while out.closeentry len out.write buffer catch new in out.putnextentry byte ( ) + out.setlevel 1.0 filename true filestozipp.length 1000.0 try ; < = > illegalargumentexception string for out fileinputstream zipstatus zipoutputstream out.close [ ] in.read e false zipfilename i int zipentry 0.0 boolean { return
+tries string system.in sc.next math.random while rightnum system.out randomnum sc println else scanner if new ! double & ( ) choice.equalsignorecase * + int 0.0 guess 10.0 ; system.out.println { choice < = sc.nextint } >
+exception transformer sw.tostring transformer.transform tf.newtransformer streamresult runtimeexception stringwriter catch new outputkeys.method sw transformerfactory ( domsource ) tf ex outputkeys.encoding throw transformerfactory.newinstance transformer.setoutputproperty doc try outputkeys.indent { ; outputkeys.omit_xml_declaration = } return
+fromstring resultstate prefix pageencoding main body when requestmethod.post modelandview model state text new state.getclass method test $ % ( ) : ; page < stateb = statea > statec @ statey jsp model.addobject resultstatefactory tagdir choose statex basic_layout requestmapping taglib param value c contenttype 0.0 r { } return
+student.getid student id.remove for ( this false ) true : id ; if = return
+student.getid student id.remove for ( this false ) true : id { ; if = return
+numbers for integer printodd if ! % ( false ) i + list int 0.0 boolean oddfound 2.0 true : { ; system.out.println < = > return
+! lots.get & ( ) + nextlotnumber - selectedlot.getnumber lot selectedlot 1.0 null lotnumber else { ; system.out.println < if = > return
+key1 key2 sublist1.size threshold integer bitset while mymap.keyset else ankey if mymap.remove ret new it2.next ( ) sublist2 + list it2.remove sublist1 removepoints listiterator true ; < = > it1.hasnext ankey.equals keys mymap.get for list2.size list2.get sublist1.removeall sublist1.isempty list1.get list1.size break it2 it1 it1.remove false i j arraylist list1.isempty int keys.listiterator list1 0.0 boolean key1.clone list2 it2.hasnext ankey.and { it1.nextindex it1.next list1.remove return
+packag.substring android.r.layout.simple_list_item_1 info.activityinfo.applicationinfo.packagename pm.queryintentactivities listview list.setadapter maliste.set info new intent.action_main ( this r.id.list ) + list listp null size final getpackagemanager trimlength listp.size : ; < trimmed findviewbyid = > maliste string for setcontentview packagemanager packag getapplicationcontext mainintent.addcategory intent.category_launcher adapter2 length i log.v arraylist intent int 0.0 arrayadapter r.layout.main resolveinfo maliste.size mainintent { pm
+pm.queryintentactivities listview adapter.addlistener list.setadapter new adapter intent.action_main ( this r.id.list ) list listp null final getpackagemanager ; < findviewbyid = > packagemanager getapplicationcontext mainintent.addcategory intent.category_launcher arraylist intent 0.0 resolveinfo mainintent applicationadapter pm
+packag.substring android.r.layout.simple_list_item_1 info.activityinfo.applicationinfo.packagename maliste string pm.queryintentactivities listview for setcontentview list.setadapter packagemanager maliste.add packag getapplicationcontext info mainintent.addcategory new intent.category_launcher adapter2 intent.action_main ( length this r.id.list ) arraylist list intent int listp 0.0 arrayadapter r.layout.main null resolveinfo final mainintent getpackagemanager trimlength : ; { < trimmed findviewbyid = pm >
+@ commit buttonfragment transaction.remove r.id.button2 fragmenttransaction fragment.isvisible button view r.id.fragment_container else override if new ! button2 & transaction.add ( ) button.setonclicklistener fragment 0.0 null getfragmentmanager fragmentmanager.begintransaction view.onclicklistener : view.findviewbyid ; { fragmentmanager = } transaction return
+@ super.oncreate r.layout.activity_main textgeneratenumber.settext r.id.generateme for integer arry.add button random arry1.add setcontentview buttongenerate.setonclicklistener arry override new onclicklistener ( ) i myrandom textgeneratenumber arraylist + k int textview string.valueof 0.0 1.0 myrandom.nextint r.id.generatenumber arry1 10.0 buttongenerate final 7.0 ; { findviewbyid < savedinstancestate = } > object
+@ string textgeneratenumber.settext for ( ) k + int 0.0 myrandom.nextint 10.0 6.0 override text ; { < =
+@ super.oncreate r.layout.activity_main textgeneratenumber.settext r.id.generateme for integer button random arry1.add setcontentview buttongenerate.setonclicklistener arry override new onclicklistener ( ) i myrandom textgeneratenumber arraylist + k int textview 0.0 1.0 myrandom.nextint r.id.generatenumber arry1 10.0 buttongenerate final 7.0 ; { findviewbyid < savedinstancestate = } > object
+@ textgeneratenumber.settext for builder.tostring buttongenerate.setonclicklistener builder.append builder override new ( ) k + int 0.0 myrandom.nextint 10.0 6.0 view.onclicklistener { ; stringbuilder < = }
+string integer integer.tostring result math.abs else if new % evendigits ( ) * result.intvalue n 0.0 numstr 1.0 -1.0 2.0 10.0 { ; < = } return
+0.0 setheader ( ) ;
+new mymessage asession ( ) ; return
+% evendigits ( ) n 0.0 math.abs 1.0 2.0 else 10.0 { ; if = } return
+@ keyevent.action_down new linenumbers.append & ( false ) et.setonkeylistener + { override ; lines if = keyevent.key_enter onkeylistener key return event.getaction
+string sortunique for j-- temp.comparetoignorecase public [ ] temp static & ( count ) i j + replaceall - int 0.0 1.0 unique ; { < = > return
+@ xmltype ( xmlaccessortype ) xmlaccesstype.field proporder 0.0 name namespace xmlrootelement { =
+string % stringlist.remove for ( word.length i ) + int stringlist.size 0.0 stringlist.get 2.0 ; { < = word if
+string % stringlist.remove for ( word.length stringlist i ) + int stringlist.size 0.0 stringlist.get 2.0 ; { system.out.println < removeevenlength = word if
+string iterator.hasnext % ( word.length ) iterator.next while iterator.remove iterator 0.0 2.0 final ; { < = stringlist.iterator word if >
+removename.touppercase student studentlist for iter.hasnext while iterator studentlist.iterator iter.remove if new ( ) iter arraylist getname 0.0 contains null stu : ; { system.out.println < touppercase = > return
+removename.touppercase student studentlist for ( ) studentlist.remove 0.0 contains null stu stu.getname : { system.out.println ; touppercase if return
+right.previous for ret.head head right.next from elem ret linkedlist new e left.next ( i ) + right - int 0.0 size left ret.tail ; to { < = > return
+right.previous for ret.head head right.next from elem ret linkedlist new e left.next ( i ) + right - int 0.0 1.0 size left ret.tail ; to { < = > return
+new ! gid ( groups.contains ) joptionpane.showmessagedialog + groups.add groupname null else joptionpane.warning_message newgroup ; { = if } return group
+new lststr.iterator string it.hasnext lsststr.add ( for ) it.next lststr.remove arraylist it str str.equals lststr iterator ; { system.out.println < = if } >
+new lststr.iterator string it.hasnext ( for ) lststr.add it.next lststr.remove arraylist it str str.equals lststr iterator ; { system.out.println < = if >
+add setvisible ( false ) getselectedpanel + getcontentpane controlpanel selectedpanel hasnextpanel 0.0 removeall revalidate else true { ; system.exit repaint if }
+htmlstring string ( ) ; htmlstring.replaceall =
+string for icon clientgui.class jlabel switch getresource tiles pnl.add pnl.removeall [ ] new ch imageicon ( ) label.seticon label + 0.0 char map.tochararray : ; { =
+new dogs.size ( dogs.get ) index random.nextint int random 0.0 null else { ; dogs.remove if = > return
+new dogs.size d ( ) index random.nextint int random 0.0 null ; { dogs.remove dog = if > return
+new dogs.size ( ) index random.nextint int random 0.0 null ; { dogs.remove dog = if > return
+dogs.size d ( dogs.get ) * getrandomdog math.random int 0.0 null : ; dogs.remove dog = return > ?
+! new dogs.size finally ( dogs.get ) index random.nextint int dogs.isempty random null else try { ; dogs.remove if = } return
+new dogs.size nextint ( ) dogs.isempty random 0.0 null : ; dogs.remove return ?
+0.0 product 1.0 2.0 3.0 4.0 10.0 5.0 6.0 insert 7.0 delete
+terms.get terms.size for ( i ) current.getexpo terms.remove + int 0.0 current term current.getcoeff ; < =
+@ ! & t.expo t.coeff ( false ) o instanceof t term override ; if = expo return coeff
+w.next while else assert now if new ! ( ) now.next counter k + check int node 0.0 size null throw w indexoutofboundsexception ; < | = first >
+str args string for ( ) str.istrue : {
+new string isgoodargs ( for ) arraylist list args goodargs.add arg : ; < = if > goodargs
+component jlayeredpane1.repaint fig evt.getcomponent ( jlayeredpane1.remove ) ; system.out.println =
+selection.equals coursed.gettext string lecturer.gettext joptionpane.showmessagedialog else actionlistener unitc.settext cmbids.getselecteditem lecturer.settext if new ! comboactivate ( ) 0.0 cmbids.addactionlistener selection null equals unitc.gettext ; { populateunits = }
+( for false under.isempty ) + under.get int under.remove 0.0 else true x fire ; < if = return under.size
+new string ( ) arraylist employee name ; < under = >
+( for false under.isempty ) - under.get int under.remove 0.0 1.0 else true x x-- fire ; if = return under.size >
+data firstcopied for mid firstsize while result else [ ] if mid-start new temp secondsize & length ( start index ) pickone i + length-- int 0.0 secondcopied 1.0 boolean end-start end-mid ; < = >
+new string ( newstring for ) i arraylist + list newstring.replace int string.charat list.add 0.0 delimiter ; { < string.length = > list.remove return
+
+( ) ; s1.replace return s2
+string.split delimiter ( ) + ; arrays.aslist return
+string for str.split newstrings.add delimiter [ ] new temp ( ) i arraylist + list int temp.length newstrings 0.0 ; { < = > return
+next new temp getitem ( ) contents.getnext isempty node 0.0 t throw contents emptycollectionexception count-- ; temp.getitem < if = > return
+new first.getitem ( ) contents.getnext isempty node t throw contents emptycollectionexception count-- ; < if = > first return
+head ! head.next null ( ) ; if =
+head.next tail ( ) head null else ; { if = } return
+but very named memory log clearreferencesthreads appears leak. org.apache.catalina.core.applicationcontext org.apache.catalina.loader.webappclassloader 2010.0 web have create [ has ] mar info a likely it. leakingthread this started is thread failed 13.0 at stop application 11.0 stopping severe 7.0 htmlmanager : to pm 18.0
+
+txtadd.gettext new txtdisplay.settext string ( ) arraylist + random r names ; < = > names.add
+buttonindex button size.height centerpanel.validate labelx pos labely [ ] if buttonx buttony centerpanel.add & labelindex ( size.width ) + label - int 1.0 3.0 ; { centerpanel.remove buttonposy = buttonposx
+new ! & for ( i ) j + int input r 0.0 input.length [ ; { < ] = if return
+hashset num for integer array [ ] new set.size set ( ) i set.add + int input 0.0 input.length : ; { < = > return
+for continue [ ] if new ( i ) index j duplicate + - int input 0.0 r boolean 1.0 input.length true ; dups { < = return
+a b c d mylist change to then copy items >
+new ( clear ) hs.addall hs mylist.clear 0.0 mylist.addall mylist linkedhashset ; myclass.getitems = myclass.setitems
+lista linkedlist elem2 elem1 retlist.indexof elem1.equals for ( ) retlist retlist.remove t continue else : ; < = if > return
+elem2 elem1 elem1.equals retlist.iterator index2 retlist iter2.next while iter2.remove iterator if lista linkedlist ! iter1 & iter2 ( ) iter1.hasnext + iter2.hasnext int iter1.next 0.0 t index1 ; { < = > return
+lista new t linkedhashset ( ) ; < return >
+exception lcloudarray.get removeview e ivcloudview.getparent icloudcounter ( ) + 0.0 imageview viewgroup e.printstacktrace try { ; catch ivcloudview = }
+android textcolor tools button layout_above xmlns relativelayout textsize paddingbottom context id text layout_width layout_height orientation layout_alignparentbottom textview background gravity layout_marginbottom : paddingtop < = >
+readfile string ( ) arraylist file1.removeall file2 file1 ; < = > filename2 return filename1
+string scan while fileinputstream fis scanner temp.add scan.hasnext scan.hasnextline scan.close new temp ( ) input.usedelimiter arraylist input filename scan.nextline ; { scan.next < = > return md5
+newbiex.setdefaultrenderer newbiey.repaint playerviewer.revalidate newbiey.revalidate indexpoint newbiex.repaint modelx.size playerviewer.repaint jtable playerviewer.remove actionlistener playerviewerexhibition.remove newbiex.revalidate newbiex humanlistmodel new newbiex.getselectedrow modelx ( ) - playerviewer.setviewportview 1.0 newbiex.setfillsviewportheight human.class final humanrenderer true modelx.removeelementat ; newbiex.setvisible system.out.println = removeindividual.addactionlistener }
+string result.length for ( i ) + - result.substring int result str 0.0 3.0 4.0 equals ; { < = if return
+here next string xxxrawrrawrawr do our we remove are and now get should so ^ move or will xxxrawrawr want again check to position > ?
+string data for norawr [ ] ( ) + s : { ; system.out.println = }
+@ new test billy manager.getsize manager.removeuser james ( ) assertequals 1.0 manager.adduser 2.0 null 3.0 ; user = jane
+op integer.parseint double ( ) * + myspace 0.0 1.0 2.0 equals ; [ { system.out.println = if ]
+b string ( ) ; = return str.replaceall
+weakreference new ( for ) thread example queue.remove 0.0 ref null cleanup v referencequeue try ; [ { < = ] > queue
+new ( ) arraylist ; < = friendsdata >
+for elementdata fastremove else o.equals [ if ] ( false ) index + int o 0.0 null size true { ; < = } return
+string lst lst.add new ( ) arraylist list lst.remove ; < = >
+this.map.put null e ( ) ; present = return
+@ new linkedlist test string ( ) l.size list l l.remove assertequals 2.0 3.0 l.add [ ; { < ] = } >
+decimalpattern system.out.print test string pattern.matches ( test.replaceall match ) + boolean ; system.out.println = return
+( test.trim false ) double.parsedouble numberformatexception true ignore try { ; catch } return
+e ( false ) myvalue double.parsedouble numberformatexception true try { ; catch } return
+string list.size while stringutils.join random split template.split [ arrays.aslist ] new ( count ) list - list.sublist r 0.0 ; { < = > return
+calendar date calendar.gettime calendar.settime calendar.getinstance calendar.second calendar.minute ( ) 0.0 ; calendar.set = calendar.millisecond return calendar.hour
+exception ex.getmessage urlconnection.disconnect urlconnection.setdooutput while piurl array.getjsonobject jsonobject inputstream das catch log.e artistjson.length song new ! t.optstring t.optjsonarray t.optint ( ) urlconnection.setdoinput s.setalbum is + urlconnection rd ex null das.writebytes s.setartist true try artistjson : ; < = songlist response.append > das.close result.optjsonarray array.length s.setduration ? urlconnection.getinputstream string jo artist line for httpurlconnection urlconnection.setrequestmethod urlconnection.setusecaches bufferedreader result array songlist.add inputstreamreader is.close [ ] s.setname url.openconnection urlconnection.getoutputstream stringbuffer jsonarray err das.flush rd.close false i j arraylist url urlconnection.setrequestproperty int rd.readline jo.optjsonobject 0.0 dataoutputstream s t s.setsongid response artistjson.optstring { response.tostring } return
+@ begintransaction r.id.list_layout fragmenttransaction ft switch fragmenttransaction.transit_fragment_open r.id.actualizar item.getitemid override cha case log.d new ft.settransition ( ) ft.replace tabchannels 0.0 fragment : { ; = getsupportfragmentmanager ft.commit
+begintransaction fragmenttransaction ft r.id.fav_layout fragmenttransaction.transit_fragment_open fav new ft.settransition ( ) ft.replace 0.0 fragment getfragmentmanager tabfavorites ; = ft.commit
+string hashset stringreader while tokenstream.incrementtoken sb tokenstream if sb.tostring stopwords stopfilter new set ( ) chartermattribute sb.append standardtokenizer token tokenstream.getattribute 0.0 token.tostring version.lucene_43 stopwords.add chartermattribute.class sb.length ; { system.out.println < stringbuilder = > return
+@ marshaller.setproperty string document context.createmarshaller sw.tostring marshaller.jaxb_formatted_output xml context override stringwriter marshaller new sw ( clazz.getpackage ) jaxbcontext getname 0.0 marshaller.marshal jaxbcontext.newinstance ; boolean.true = return
+key_desc.replaceall key_title parser.getdomelement xml parser.getxmlfromurl key_start_time hashmap key_event element new key_desc ( ) + nl.item map.put parser xmlparser doc ; < parser.getvalue key_country_name = > nl super.oncreate string document for menuitems nl.getlength setcontentview key_stop_time nodelist map e key_url i arraylist replaceall key_venue_name url int 0.0 r.layout.main doc.getelementsbytagname { menuitems.add savedinstancestate
+simpleadapter key_desc.replaceall singlemenuitemactivity.class key_title r.id.description view in.putextra gettext r.layout.list_item hashmap element new static adapter in key_desc ( this ) + nl.item map.put final ; < parser.getvalue listadapter findviewbyid = > string for description title menuitems nl.getlength description1 [ map ] getapplicationcontext e i intent url int textview 0.0 startactivity { menuitems.add } tostring
+@ cursor ingredientrow.toggle getchild r.id.ingredientname ingredient ingredientrow ( childposition ) this.list.getexpandablelistadapter ingredientrow.ischecked 0.0 mcallback.oningredientdeselected checkedtextview groupposition override v.findviewbyid ; mcallback.oningredientselected = if return
+new string ( ) daysmap daysmap.put final 7.0 ; < map = hashmap >
+shiftleft for j-- arr.length end [ if ] arr new ( i ) j + k whitelist int 0.0 1.0 end-- ; { < = return
+hashset for it.next integer iterator arr.length len end [ ] arr new set.size set it.hasnext ( ) i set.add + whitelist it set.iterator int 0.0 final ; { < = > return
+@ arr new suppresswarnings ( ) 0.0 t toarray linkedhashset [ ; < arrays.aslist ] return >
+for current arr.length continue [ ] if arr new temp count ( i ) arr.lenght + whitelist - int 0.0 system.arraycopy 1.0 ; { < = > return
+set.length for arr.length [ ] if arr ret new set c ( false i ) + int 0.0 boolean true 1001.0 ; { < = totalitems return
+for 20.0 [ ] if new system.out.print count ( garbage i ) + int input 0.0 1.0 -1.0 2.0 3.0 input.length 4.0 10.0 5.0 x { ; < = }
+newlist.add for integer [ ] if new system.out.print & ( ) i arraylist + list int input 0.0 1.0 -1.0 2.0 3.0 input.length 4.0 10.0 5.0 newlist { ; 9.0 < = } >
+for 20.0 [ ] if system.out.print & ( i ) + int input 0.0 1.0 -1.0 2.0 3.0 input.length 4.0 10.0 5.0 { ; 9.0 < = } >
+borderlayout.north new cdpanel.removeall tf cdpanel.add ( ) ; message jtextfield = cdpanel.validate
+new typeface.italic text.length spannablestring ( ) str 0.0 stylespan style ; text = str.setspan return
+arg0.getmessage c.get string calendar.getinstance calendar.minute calendar filename.substring calendar.day_of_month c calendar.second ( calendar.hour_of_day ) i filename.indexof + replaceall int 0.0 filename ; calendar.month = calendar.year return
+@ scroll_pane color.green header.setbackground table.getcolumnmodel jtable setreorderingallowed table.gettableheader override table.addmouselistener getcolumn table info myheader new ( false ) jtable.auto_resize_all_columns setresizingallowed table.removecolumn jscrollpane 0.0 1.0 defaulttablemodel table.setautoresizemode header { ; jtablerowlistener = return
+for ( i ) j + int str str.length 0.0 1.0 char [ { ; system.out.println < ] = } if
+string firstoccurrence replace while sb public replace.length sb.tostring new ! static stringbuffer ( ) + replaceall int str 0.0 -1.0 sb.replace ; replacement = indexof return
+flag replace.charat string replace for public else replace.length str.charat if a static ( ) i j + replaceall int str str.length 0.0 1.0 t char ; < replacement = return
+static string ( replace for ) replaced i + replaceall int str 0.0 public replace.length [ ; < ] replacement = return
+for sb character.isletterordigit str.charat if sb.tostring new stringbuffer ch ( ) i + sb.append int str.length 0.0 character.isspacechar char ; { < | = return
+! for ( false i keystocheck ) int jop2.returnvalueforkey 0.0 boolean equals true jop1.returnvalueforkey returnstmt : ; { = if return
+@ super.oncreate package r.id.edtvertoon usbmanager manager com.example.commtest r.layout.activity_main ( ) getsystemservice usbserialprober.acquire context.usb_service usbserialdriver textview theoutput setcontentview driver ; override findviewbyid savedinstancestate = theoutput.settext
+assumenosideeffects public methods java.util.logging. * { ; < - class >
+0.0 getcurrentsession ( ) ; list return createquery
+; return
+uniquechars.add hashset for charsequence character inputstr.charat new set length ( inputstr ) i + uniquechars int inputstr.length uniquechars.size 0.0 3.0 userword ; { < = > return
+charset charset.add for sb character [ ] sb.tostring new set c ( ) sb.append userword.tochararray char linkedhashset : ; { < stringbuilder = chars > return
+string pattern.matcher nfdnormalizedstring ( pattern normalizer.normalize ) pattern.compile replaceall str 0.0 ; normalizer.form.nfd = return
+new throw unsupportedoperationexception ( ) ;
+new audiosystem. audioinputstream ( ) ais joptionpane.showmessagedialog getaudioinputstream url runnable null audiosystem.getclip clip.open ; swingutilities.invokelater { = clip.loop_continuously } clip clip.loop
+exception while iterator _firstlink iterator._previous else catch _lastlink if ! new iterator._next break count ( ) index + e1 dlink _size-- int e1.printstacktrace 0.0 throw try ; = >
+originalcoupleslistdto itfinal.next customerinvoicesentity itfinal mapper.map customerinvoicesdao.save integer while itemfinalcouple.getcustomer iterator customerinvoicesdao.remove customerinvoicesdto initialcoupledto.getcustomer if newcouplelistdto ! new idcustomerfinal idcustomerinitial & ( ) iteminitialcouple.getinvoice itemfinalcouple.getinvoice getid newcouplelistdto.iterator true couplefind : idinvoiceinitial ; finalcoupledto.getcustomer customerinvoicesentity.class < = > initialcoupledto.getinvoice finalcoupledto.getinvoice itinit.next for finalcoupledto itfinal.hasnext idinvoicefinal initialcoupledto iteminitialcouple false originalcoupleslistdto.iterator itemfinalcouple 0.0 iteminitialcouple.getcustomer boolean finalcoupleentity initialcoupledto.getid { itinit itinit.hasnext
+v adapter.getitem super.onlistitemclick ( adapter.notifydatasetchanged ) position id ; l adapter.remove
+exception at java.util.abstractlist.remove java.lang.unsupportedoperationexception abstractlist.java ( ) : main ; 638.0 fatal
+v super.onlistitemclick ( adapter.notifydatasetchanged ) position id ; l list.remove
+container parent.revalidate parent c chessboard.getcomponent parent.remove parent.repaint for ( i ) + jlabel int instanceof 0.0 component c.getparent 64.0 ; < = if
+c.removeall jpanel c c.repaint chessboard.getcomponent for ( i ) + int instanceof 0.0 64.0 ; < c.revalidate = if
+test div iterator s property : id < if = class value >
+enctype test h1 div iterator s form review name property action : theme id < = class value if >
+( ) ; addactionmessage return
+te.getmessage transformerexception transformer sw.tostring t.setoutputproperty streamresult newtransformer stringwriter catch tag log.e new t.transform sw ( domsource ) + node te 0.0 t transformerfactory.newinstance try outputkeys.indent ; { outputkeys.omit_xml_declaration = } return
+new static elemfield.setxmltype org.apache.axis.description.elementdesc ( request.class false ) javax.xml.namespace.qname elemfield elemfield.setfieldname typedesc.setxmltype 0.0 elemfield.setnillable elemfield.setxmlname elemfield.setminoccurs true ; { elemfield.setitemqname = org.apache.axis.description.typedesc
+@ setundecorated basictoolbarui e.getcomponent tbfile.addhierarchylistener hierarchyevent.parent_changed e.getchangeflags swingutilities.windowforcomponent bar toplevel jtoolbar override jdialog if isfloating new hierarchylistener ! & ( ) bar.getui tbfile instanceof 0.0 final true ; { window = } return
+@ setundecorated basictoolbarui e.getcomponent hierarchyevent.parent_changed tbfile.addhierarchylistener e.getchangeflags swingutilities.windowforcomponent bar toplevel jtoolbar override jdialog if isfloating toplevel.setvisible new hierarchylistener ! & ( ) bar.getui tbfile 0.0 null final true ; { window = return toplevel.dispose
+string for string.charat kb scanner string.length if new ! system.out.print in ( length ) i + - system. int kb.nextline 0.0 1.0 2.0 ; system.out.println { < = return
+flag string value2 value1 value2.charat for manikandan else value1.charat if count-1 count ( i ) j + int finalvalue 0.0 value1.length 1.0 char char1 ; { value2.length system.out.println < = } > char2
+set user.class ( for ) userset arg.getusers collectionutils.isnotempty null : ; < user = if > return
+next ! set user.class & ( ) userset arg.getusers userset.iterator 0.0 null userset.size ; { < user = if > return
+next set user.class ( ) userset arg.getusers userset.iterator 0.0 null : ; < user = > return userset.isempty ?
+false : { }
+cleanjsonnodes myjsonnode.remove objectnode myjsonnode for ( ) 0.0 currentnode.size else currentnode : { ; if = } jsonnode
+abook.setborrower null currentloans.remove ( ) ; abook
+string templist for templist.get place if new ! address address2 address.equalsignorecase & ( ) i j arraylist + int templist.size 0.0 getaddress templist.remove ; { < = > return masterlist
+new ! temp set hashset ( for ) masterlist.remove temp.add : place ; { < = if > return masterlist
+request.getsession ! session false httpsession ( ) invalidate 0.0 boolean null success true ; { = if return
+for j.addactionlistener racerdelete.remove joptionpane.yes_no_option actionlistener racer.getallracers reply if new r.getname joptionpane.showconfirmdialog ( ) j racerdelete.add + r.delete joptionpane.yes_option int r null racer final : { ; = } jmenuitem ?
+new r.getname joptionpane.showconfirmdialog ( ) j.addactionlistener j racerdelete.add + racerdelete.remove r.delete joptionpane.yes_option int joptionpane.yes_no_option null actionlistener final ; { reply = if } jmenuitem
+e.getsource for j.addactionlistener racerdelete.remove mi.gettext joptionpane.yes_no_option removeitem actionlistener racer.getallracers mi reply if new r.getname joptionpane.showconfirmdialog ( ) j + racerdelete.add r.delete joptionpane.yes_option int r null racer final : ; = jmenuitem
+temp stuff.next string % stuff.hasnext ( ) while temp.length iterator 0.0 2.0 temp.remove ; { < = if > thing.iterator stuff
+thing.add stuff.next string while iterator stuff.remove if thing.iterator temp % stuff.hasnext ( ) + temp.length 0.0 2.0 ; system.out.println { < = thing > stuff
+set string % ( ) - remove filter foreach 0.0 2.0 set.stream : ; string.length = >
+for long wi else 64.0 [ map ] if new ! % & one ( i ) + chbit int n str str.length 0.0 1.0 { ; < | = } >
+new ! temp temp.next.data smallest & prev ( ) while head node temp.data null temp.next smallest.data ; { < = if
+! temp temp.next.data smallest & prev ( ) while prev.next head smallest.next node null temp.next smallest.data ; { < = if
+! head.next temp temp.next.data smallest & prev ( ) while prev.next head smallest.next node null else temp.next smallest.data ; { < = if }
+@ onetomany cascade ( cascadetype.all ) ; = items lazycollectionoption.false return lazycollection
+@ javax.persistence.cascadetype.all onetomany cascade orphanremoval ( true ) { = } mappedby
+sub string for sub.substring while s.length sub.isempty s.substring character.tolowercase ! & ( i ) index + concat int sub.length 0.0 1.0 -1.0 s sub.tolowercase s.charat ; { < = indexof > return
+result 0.0 string ( ) ; system.out.println replaceall = out
+! ( start for ) start.data.equals ptr.next ptr.next.data.equals ptr node null else x count-- start.next ; { if = ptr.next.next return
+! currentnode.data.equals lastnode.next & ( start start.data.equals ) while node null else lastnode x count-- start.next currentnode { ; currentnode.next = if }
+( start start.data.equals ) else x count-- start.next { ; if =
+( start ) start.data.equals null else x ; { if = return
+mailfiling while iname list.iterator iterator obji.next if list.remove new obji objfile ( obji.hasnext ) mailinglist objfile.writetofile2 list o 0.0 contains obj ; { = } o.tostring object
+new m1 one ( m1.remove ) integer m1.put two 0.0 removeall 1.0 2.0 other_two m1.keyset ; system.out.println identityhashmap < arrays.aslist = > other_one object
+false for ( i ) c.contains k i.remove i.next iterator boolean i.hasnext true modified ; { < = if > return
+commonutility.getallcontacts getcommoncontacts db_contacts.removeall userservice.getuserserviceinstance common_contacts phone_contacts log.e common_contacts.size ctx ( false phone_contacts.removeall ) arraylist + db_contacts.size getnamenumberidismycontactisblockedfromcontatcstable db_contacts 0.0 ; phone_contacts.size < = contacts >
+c.gridy new wx wy c ( ) c.fill c.gridx gfill gx c.weightx gy c.weighty c.anchor gridbagconstraints ganchor ; = return
+string keys result.length values for result [ keys.length ] new separator.length stringbuffer values.length ( length ) i j k + l separator result.append - int 0.0 result.setlength ; { < = return result.tostring
+new head.next prev ( ) illegalstateexception head null throw else sizeoflist-- { ; if =
+@ new gesturelistener tblitems.removeview ( false ) tablerow v.gettag 0.0 tblitems.findviewwithtag log.i override ; row = view.onlongclicklistener tostring return
+col req.getcookies requestsession.equals res.addcookie httpsession while path iterator tempcookie ioexception if ! cookie ( servletexception ) + collection it throws res.sendredirect true : ; < col.iterator = > session.getid status req.getrequestedsessionid string session turbinesession.getactivesessions for it.next tempcookie.getvalue cookies requestsession found log.info [ ] it.hasnext break false req.getattribute tempcookie.setmaxage 0.0 boolean sessionsearch equals { return
+librarynumber ( false borrower ) borrower.getlibrarynumber borrowers.remove 0.0 null else equals true ; if = return
+otherborrower librarynumber ( false ) borrowers.remove 0.0 null else equals true otherborrower.getlibrarynumber ; if = return
+! ( ) currentnode.getnext while this.gethead node null currentnode ; = if return
+! currentnode.getprevious ( ) setnext currentnode.getnext while this.gethead node 0.0 null currentnode ; = if return
+prevnode ! ( ) currentnode.getnext while this.remove this.gethead node t null currentnode ; < = if > return
+prevnode anode.getnext nextnode ( anode ) prevnode.setnext node this.setnext this.getprevious null t else true ; { < if = return >
+string hashset for keywordset.removeall keywordset arrays.aslist new set stringbuffer set2 ( strbuf.tostring ) keyword.split + s strbuf strbuf.append set1 : ; < = > return
+midx string pattern for pattern.compile while m.group m.find ( ) + sourcestring matcher m int groupidx 0.0 m.groupcount re 1.0 ; { system.out.println < = re.matcher
+new ce ( for ) items.add pid arraylist items.size ce.getpid cartentry items.remove : ; system.out.println < items = if >
+ce for ( ) pid ce.getpid cartentry items.remove : ; items if = return
+entry.getpid it.hasnext it.remove ( ) it.next pid it while items.iterator entry iterator cartentry ; { < = if >
+string pattern pattern.compile while commentstr1 pattern.case_insensitive trim commentstr1.replaceall m.group urlpattern m.find ( ) i commentstr + matcher m int p p.matcher 0.0 ; { system.out.println = return
+here notes string for description screen can find share https errex meeting you the : =
+console new system.out.print string ( system.in ) console.next input.replaceall input scanner ; system.out.println =
+console new system.out.print string ( system.in ) input.replaceall input console.nextline scanner ; system.out.println =
+new ! ( ) while tmp.getnext head node null newitem else tmp tmp.setnext ; { if =
+@ disconnect string sqlexception deleterow sq1 else override catch if connect new storageexception finally ( ) + int 1.0 ex throw customerid stmt.executeupdate try { ; system.out.println = }
+textcolor sc.setfillviewport linearlayout backgroundcolor sc layoutparams setcontentview linearlayout.vertical menutext new layout.setorientation menutext.settextcolor ( this ) sc.addview 20001.0 layoutparams.wrap_content layout scrollview 36.0 menutext.settext sc.setlayoutparams layout.setbackgroundcolor layoutparams.match_parent true ; layout.addview = menutext.setid menutext.settextsize
+! ( lastnode.getpreviousnode ) firstnode isempty result lastnode.setnextnode null lastnode.getdata else lastnode ; { = if return object
+! util.isempty ( ) 0.0 s -1.0 s.length s.substring { ; if = return
+string lasttwo system.in in.nextline str.split words.length scanner [ ] new in firsttwo ( words ) j + - int str 0.0 1.0 2.0 ; system.out.println =
+board.getwidth ( false board.getheight ) 0.0 removeall gameframe.getcontentpane revalidate board.newboard gameframe.setvisible true movecount ; repaint = creategameui
+@ ! ( show false ) framework.addinputlistener consolekeytoggle framework.removeinputlistener stage else override { ; if = key return
+exception run com.badlogic.gdx.backends.lwjgl.lwjglinput.processevents can com.badlogic.gdx.inputmultiplexer.keyup array.java lwjglapplication.java 113.0 com.badlogic.gdx.utils.array.get 199.0 com.badlogic.gdx.backends.lwjgl.lwjglapplication.mainloop $ in lwjglinput.java ( index ) thread com.badlogic.gdx.backends.lwjgl.lwjglapplication 288.0 inputmultiplexer.java 127.0 at 1.0 76.0 : java.lang.indexoutofboundsexception
+@ onetomany ( ) list child.class children orphanremoval true ; < = > mappedby targetentity child
+joptionpane.showmessagedialog joptionpane.yes_no_option else if inflst.getmodel defaultlistmodel joptionpane.showconfirmdialog ( ) index removeelementat + joptionpane.yes_option int inflst.getselectedindex removestudent 0.0 -1.0 null { ; choice = } > return
+student.getaddress student.gettel studentstatement.setstring studentstatement studentstatement.executeupdate getconnected student.getname student.getidnumber preparedstatement ( ) + 0.0 1.0 2.0 3.0 4.0 preparestatement ; =
+temp_data.clear exception gifframe e.tostring data for show data.clear gf.p update_frames e.printstacktrace frames.notify catch toast.length_long tag_for_deleting temp_data gf toast.maketext e ( this ) data.remove 0.0 ll.removeallviews try : ; =
+android textcolor linearlayout button id text layout_width layout_height orientation scrollview layout_margin gravity : < = >
+1.0 2.0 null 3.0 4.0
+1234.0 134.0
+e ( for ) index i + int 1.0 elementdata null size-1 [ ; { < value = ] return
+e ( for ) index i + - int 1.0 elementdata null size size-1 [ ; { < value = ] return
+for n-1 [ ] if swap ( ) i j + list int n 0.0 1.0 2.0 3.0 5.0 6.0 7.0 8.0 : { ; system.out.println list.length < = }
+! dependency groupid org.apache.tiles tiles-template - version tiles-api tiles 0.1 tiles-core 3.0 artifactid tiles-servlet < tiles-jsp >
+a display go h2 menu home 1.0 2.0 href to page < = >
+aka... several main put-attribute base.definition body layouts displaypagecontent2 displaypagecontent1 want... xml has different definitions you ! in this specify tiles-definitions it encoding version - each entries. as extends name header returns page homecontroller.java < = > ? template footer title we specified layours can file public body. and of now definition override value didn a will change display match menu many doctype the with names
+handles package page. * com.stp.myapp ; @ for requests controller home the application
+property id bean name : < = > beans class value
+150.0 g.setcolor color.red e2.width bullet.width e6.y e4.y e6.x e2.y 20.0 e4.x e2.x bulletobject.y bulletobject.x if color.blue new 40.0 ( ) + e6.width 335.0 35.0 10.0 e3.width 7.0 75.0 rectangle ; = 18.0 e7.width 405.0 bulletobject.height bulletobject.intersects bulletobject bulletobject.width shot e4.width e5.height e4.height e6.height e7.x e7.y bullet.y e5.x e7.height bullet.x e3.height e5.y e3.x 270.0 e3.y e1.x e1.y e1.height e2.height e1.width y-7 85.0 g.clearrect e1 e2 e3 205.0 e4 e5 e6 e7 4.0 e5.width x y { bullet.height g.fillrect
+icon label1.sethorizontaltextposition jlabel primary.add frame.pack label1.setverticaltextposition frame.getcontentpane frame.setvisible dimension subpanel1 add new color.blue jpanel 450.0 imageicon swingconstants.left ( ) jframe.exit_on_close label1 swingconstants.center primary.setbackground frame.setdefaultcloseoperation subpanel1.setpreferredsize swingconstants.bottom 0.0 subpanel1.add jframe true 100.0 ; = frame primary
+thelist string while currclass else thelist.remove [ whereweare anobject.getclassname ] if currentsize getclassname ! & ( false ) + int wefoundit 0.0 boolean true ; paramclass currclass.equals = return
+@ tabbedpane.getselectedcomponent currenttabcount else log.info override if tabbedpane.gettabcount new ! tabbedpane.getselectedindex ( ) + l int lastselected lasttabcount component changelistener { ; < = } > tabbedpane.addchangelistener
+new set hashset s.size ( i1 ) i2 integer + s.add s.remove s 1.0 2.0 5.0 ; system.out.println < = >
+ii.getimage but for getresource shows this.getclass explode only make ii new image sure 200.0 imageicon ms want ( ) i * it 0.0 ; to =
+string last stringlist.remove ( ) - stringlist.size 0.0 stringlist.get -1.0 1.0 null else ; { if = } return
+date exception rs.getfloat con ps joptionpane.showmessagedialog while float ps.executequery else price catch keyadapter queryvalue if add new rs.getint 200.0 drivermanager.getconnection & ( ) + ps.setstring jtextfield 1.0 null 350.0 listflag true try ; = ke.getkeychar rs string mpunit classnotfoundexception 30.0 cname mid mlistpane.setvisible sqlexception tmsearch.gettext mname queryvalue.concat bmreset.doclick tmsearch.addkeylistener tmsearch.setbounds temp quantity mlistmodel.addelement e tmsearch length con.preparestatement 220.0 mlistmodel.removeallelements rs.getstring int 0.0 2.0 } rs.next
+planesone.getairports 0.0 aiportone planestwo.getairports ( ) aiporttwo ; remove
+plane entitymanager.remove ( ) ;
+( ) id ; anotherclass.methodtwo return
+val elements-- for ( ) j + list - int n 0.0 1.0 elements ; list.length { [ < = if ]
+val elements-- for ( ) j + list int n elements-1 n-- 0.0 1.0 elements ; { [ < = if ]
+woman.setenabled man.setselected centertainment.additemlistener itemlistener newfilter else e.getstatechange state if centertainment.gettext new itemevent.selected man.setenabled ( false ) child.setenabled int woman.setselected child.setselected true { ; = }
+string ( ) checkcriteria s ; revised doactionc = if doactiona return doactionb
+string ( doaction ) ; parameters
+val a st new string ( stringtokenizer ) st.nexttoken + ; system.out.println = key
+@ btnsave string e.getsource for dm joptionpane.showmessagedialog override if returnbook chked boolean.valueof retuntable.getvalueat colvaules.add ( ) i + int 0.0 datacol1 boolean 1.0 retuntable.getrowcount null defaulttablemodel 4.0 retuntable.getmodel { ; < = tostring
+shell.open decomposite swt.none griddata while swt.horizontal composite mycomposite.setlayoutdata decomposite.setlayout createdetailsde display.sleep shell.isdisposed gridlayout shell.pack if display.readanddispatch shell.settext new mycomposite.setlayout ! display ( false ) label shell.setlayout mycomposite 1.0 2.0 shell swt.fill display.dispose final true rowlayout ; =
+android.r.id.home break ( ) toggle int switch itemid true item.getitemid : ; { = case return
+e.getsource ( for this ) + int remove button 0.0 x [ { ; < if = ] 19.0
+containingjpanel.remove e.getsource ( ) ; abstractbutton
+e.getsource ( for ) + int remove button 0.0 x [ { ; < if = ] 19.0 getparent
+@ updatebynamedquery onetoone cascade jobqueries.remove_job_x_by_id_key ( ) result 0.0 boolean job.getid final cascadetype.remove ; { = if > jobqueries.remove_job_by_id_key return
+chararray for secondactivity.textview1.settext curletter currentletter tochararray [ ] strbuild1 if new ! chararray.length test sbletter.tostring strbuild1.append strbuild1.tostring false ( ) i + int 0.0 boolean -1.0 char true view.onclicklistener strbuild1.length ; prevletter { stringbuilder < strbuild1.deletecharat secondactivity.backspace.setonclicklistener = }
+new ( ) - backspace.setonclicklistener sbletter sbletter.length 1.0 sbletter.deletecharat view.onclicklistener { ; =
+console.writeline for inpstr [ if ] ! & ( ) i j + k - int 0.0 1.0 null 2.0 ; < = inpstr.length return
+for uniquestr.indexof somestr.charat if new ! ( ) i uniquestr + int string.valueof 0.0 -1.0 null somestr.length ; somestr { stringbuilder < uniquestr.append uniquestr.tostring = return
+workingbatch it.hasnext it.remove ( idd ) it.next getid it while long map.entry workingmap.entryset iterator 0.0 getvalue value.getserver ; { < = value if >
+( ) l_storieslist.removeall ;
+defaultlistmodel listmodel ( ) l_storieslist.getmodel ; = listmodel.removeallelements
+date linen.trim tempfiled.renameto filedate brdate.readline removebutton.addactionlistener brname.close filedetails while printwriter linec.trim actionlistener reminderdate.gettext details filedetails.getabsolutefile if filedetails.delete pwname.flush new ! filename.getabsolutefile brdetails brdetails.readline & ( ) + pwdetails.flush pwdetails reminderdetailsfield.gettext filename null name try tempfilec.renameto ; = tempfilen.renameto pwdate.println pwname.close string remindernamefield.gettext bufferedreader linec pwname brdate filereader file tempfilen lined pwdate.close pwdetails.close tempfiled linen pwdate.flush tempfilec filewriter brdetails.close pwdetails.println brname.readline lined.trim filedate.delete filedate.getabsolutefile filename.delete brname pwdate brdate.close 0.0 pwname.println equals { system.out.println
+mgooglemap.addcircle color.red 30.0 lon circleoptions color.argb 20.0 radius lat new mycircle 140.0 center ( ) mapsize strokecolor 0.0 fillcolor 2.0 ; circle = latlng strokewidth
+( ) + removeduplicate 0.0 s 1.0 null 2.0 s.length else equals s.substring ; < if = return
+str string original.replaceall ( ) ; = return
+original.replaceall ( ) ; return
+in.next string removeduplicates outfile system.in while printwriter lname file kb in.hasnext scanner kb.next new fname in outfilename display ( outfile.println ) arraylist + list names filename ; system.out.println { outfile.close < = > names.add
+string for ( i ) names.size j + int 0.0 1.0 s -1.0 s.equals names.get ; { < = if return
+listnode ( ) this.myhead.myrest result result.myrest this.myhead null else this.isempty ; { = if return
+string for categories.add categories [ if ] new data.stats.length ! isfound ( false ) i arraylist + int 0.0 boolean 1.0 data.stats equals true : ; { system.out.println < category = >
+@ eventhandler 400.0 popup.show override windowevent popup.getcontent add new image ( ) popup.setonshown popup 0.0 image.setfitheight stage image.setfitwidth final ; { < = } >
+@ eventhandler 400.0 popupimage image.getimage popup.show override windowevent popupimage.setfitwidth popup.getcontent add new ( ) popupimage.setfitheight popup.setonshown popup 0.0 stage imageview final ; { < = } >
+string for ( i-- i ) + int this.myarray.length 0.0 this.myarray allstr ; { [ < capacity-1 = ] > return
+string for ( i ) + int this.myarray.length ischanged 0.0 this.myarray true allstr ; { [ < = if ] return
+mylist.remove mylist.getselectedindex ( ) ;
+jlist @ for btndelete model.remove actionlistener model [ override ] if oo new model.addelement btndelete.addactionlistener ( ) jbutton list o 0.0 final : { ; = } > object list.getselectedindex
+word.charat & word.substring ( word.length ) + 0.0 1.0 removepunctuation 32.0 else { ; < 46.0 if = } > return
+new types tblpodaci.setmodel string ( ) javax.swing.table.defaulttablemodel null columnindex java.lang.double.class [ { ; ] } return object
+colm for rand.nextint rand random 67.0 [ 87.0 ] new ( ) i + int 0.0 1.0 colm.length 2.0 3.0 4.0 5.0 { ; system.out.println < = }
+colm for rand.nextint integer rand random ints 67.0 [ 87.0 arrays.aslist ] ints.remove new & ( ) i ints.size ints.get arraylist + list int 0.0 1.0 2.0 3.0 4.0 5.0 final randomindex { ; system.out.println < = } >
+colm for l.add 67.0 [ 87.0 l.get ] new ( ) i arraylist + list l int 0.0 1.0 2.0 3.0 4.0 5.0 : { ; collections.shuffle system.out.println < = }
+new head.next ! crt ( ) head.content while emptylistexception o head node crt.next.content null crt.next throw crt.next.next ; { if = return object
+date german df nowrap republic lieserl birth_date 1879.0 caption 1896.0 spouse children princeton empire –1903 1914.0 schmutzer.jpg residence stateless –1901 belgium 1910.0 image new nbsp in & switzerland ( infobox birth birth_place ) * death_date 1921.0 –1896 14.0 3.0 ulm name einstein death_place 1902.0 ; austria < = –1933 18.0 ? 1940.0 death mari� united –1919 1919.0 scientist –1918 germany w�rttemberg eduard states br 1955.0 albert and jersey by of [ ] 1911.0 –1965 italy statelessness f yes citizenship austria–hungary kingdom plainlist weimar 4.0 mileva 1903.0 { | 1901.0 –1912 } –1955 age
+string reader.readline reader line line.startswith bufferedreader while filereader lines if new ! ( false ) position.add reader.close + int 0.0 boolean has_it null equals true ; { =
+clientid stream.read while requestmethod.post baos.tobytearray buffer headers.setcontenttype ioexception new ! httpstatus.created method byte ( ) datainputstream + throws bytearrayoutputstream produces ; headers.setcontentlength < = mediatype.image_jpeg_value mediatype > @ string logger.debug baos requestmapping baos.write responseentity fileinputstream file stream bytesread pathvariable [ value ] headers httpheaders 18192.0 length int 0.0 -1.0 { } return
+@ string requestmethod.get stream.read while baos requestmapping baos.write fileinputstream file stream baos.tobytearray bytesread json image9j [ buffer value ] hashmap base64.enbase64string new ! imagemap method byte ( 18192.0 gson.tojson ) datainputstream + int bytearrayoutputstream 0.0 -1.0 bytes produces ; gson < imagemap.put = mediatype.image_jpeg_value } > return object
+str.replacefirst fd.getparentfile string fileoutputstream dos.writebytes dos sng.substring jfc.getselectedfile joptionpane.showmessagedialog fos substring file catch ioexception if getparent ex2 s2 par a new ex2.tostring ( isdirectory this ) filenotfoundexception + sng file.getabsolutefile int str 0.0 dataoutputstream ex 2.0 try sng.indexof ; { = fd.getparent dos.close fd return str.startswith fe
+cur mydict.containskey head.data while head else if cur.next.next new ! ( ) int cur.next.data cur.next node dictionary 1.0 null mydict ; < = > mydict.add
+add new gempanel scriptpanel ( ) ; repaint = pack remove validate
+number context.startactivity new 0.0 uri.parse intent.action_dial ( ) + ; = intent
+string for builder.tostring s.length else builder.append builder builder.deletecharat if str.charat new ! lastchar & ( ) i + - int str str.equals str.length 0.0 1.0 char s.charat ; { stringbuilder < = } return
+com.itextpdf.text.document reader fileoutputstream for file.createtempfile tmpnewfile.delete fos thepdffile pdfcopy pdfreader copy.getimportedpage file tmpnewfile copy.addpage copy copy.freereader if new ! d ( ) i reader.close + pageindexnotzerobased reader.getnumberofpages fos.close int fileutils.copyfile 1.0 d.open thepdffile.getabsolutepath ; { < = d.close
+gameboard col for ( ) + int 0.0 null 3.0 row ; { < = return
+gameboard col 0.0 later tictactoesquarevalue.empty : [ row ; ] = on
+testb for arrayindexoutofboundsexception getcurrentlocation testb.getgrid getx gety a1.get [ catch ] tower new e a1.size ( ) i arraylist + a1.add - int a1 0.0 1.0 a1.remove testtower location try ; { < = } > board return
+@ cell.getviewerrow getcontrol swt.none cell.getitem button cell.getelement editor.seteditor else composite override editor.grabvertical if editor.layout new editor tableitem item buttons.containskey ( ) editor.grabhorizontal button.settext buttons.get 0.0 cell.getcolumnindex true buttons.put item.getparent ; tableeditor =
+chararray stack string resultcounter for endchar stack-- result else [ ] if new chararray.length c startchar & ( ) i + int 0.0 1.0 char ; < = return wikitext.tochararray
+; borndate localdatetime int age
+new 14.0 13.0 12.0 name (
+treelistfreeapartments.removenodefromparent jtree2.getlastselectedpathcomponent selectednode ( ) root.add evt.getclickcount treelistselectedapartments.setroot treelistselectedapartments.getroot 2.0 root treelistfreeapartments.reload { ; defaultmutabletreenode if =
+len-count string for words.length len [ ] if new ! count ( words ) i + compareto int target 0.0 x ; < = return
+new original string ( index ) newarray + - newarray.length system.arraycopy 0.0 1.0 [ ; ] = return

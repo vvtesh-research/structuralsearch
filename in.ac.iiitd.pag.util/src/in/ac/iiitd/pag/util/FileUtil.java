@@ -8,6 +8,8 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -24,6 +26,23 @@ import java.util.Properties;
 import java.util.Set;
 
 public class FileUtil {
+
+
+	public static Properties loadProps(boolean loadInTomcat) {
+		if (!loadInTomcat) {
+			return loadProps();			
+		}
+		Properties mainProperties = new Properties();
+		
+		try {
+			mainProperties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("lenovo-THINK.properties"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return mainProperties;
+	}
 
 	public static Properties loadProps() {
 		try {
@@ -73,7 +92,7 @@ public class FileUtil {
 	public static List<String> readFromFileAsList(String filePath) {
 		ArrayList<String> tokens = new ArrayList<String>();
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(filePath));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(ConfigUtil.getInputStream(filePath)));
 			String line = null;
 			
 			while ((line = reader.readLine()) != null) {
@@ -90,6 +109,45 @@ public class FileUtil {
 
 		return tokens;
 	}	
+	
+	public static List<String> readFromFileAsList(InputStream inputStream) {
+		ArrayList<String> tokens = new ArrayList<String>();
+		try {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+			String line = null;
+			
+			while ((line = reader.readLine()) != null) {
+				line = line.replace("<pre>", "");
+				line = line.replace("<p>", "");
+				line = line.replace("</pre>", "");
+				line = line.replace("</p>", "");
+				tokens.add(line);
+			}
+			reader.close();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} 
+
+		return tokens;
+	}
+	
+	public static Set<Integer> readFromFileAsSet(InputStream inputStream) {
+		Set<Integer> ids = new HashSet<Integer>();
+		try {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+			String line = null;
+			
+			while ((line = reader.readLine()) != null) {
+				int id = Integer.parseInt(line);
+				ids.add(id);
+			}
+			reader.close();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} 
+
+		return ids;
+	}
 		
 	public static List<String> urlEncode(List<String> items) {
 		List<String> encoded = new ArrayList<String>();
@@ -125,6 +183,15 @@ public class FileUtil {
 		}		
 		bw.close();
 	}
+	
+	public static void writeIntSetToFile(Set<Integer> terms, String filePath) throws IOException {
+		FileWriter fw = new FileWriter(filePath);
+		BufferedWriter bw = new BufferedWriter(fw);
+		for(Integer term: terms) {	
+			bw.write(term + "\n");
+		}		
+		bw.close();
+	}
 
 	public static void writeMapToFile(Map<String,Integer> terms, String filePath, int threshold) throws IOException {
 		terms = sortByValues(terms);
@@ -134,6 +201,16 @@ public class FileUtil {
 			int val = terms.get(term);
 			if (val >= threshold)
 				bw.write(term.replace(",", "") + "," + terms.get(term) + "\n");
+		}		
+		bw.close();
+	}
+	
+	public static void writeStrMapToFile(Map<String,String> terms, String filePath) throws IOException {
+		
+		FileWriter fw = new FileWriter(filePath);
+		BufferedWriter bw = new BufferedWriter(fw);
+		for(String term: terms.keySet()) {	
+			bw.write(term.replace(",", "") + "," + terms.get(term) + "\n");
 		}		
 		bw.close();
 	}
@@ -216,6 +293,54 @@ public class FileUtil {
 		
 	}
 	
+	public static Map<String, Float> getFloatMapFromFile(String fileName) {
+		Map<String, Float> tokens = new HashMap<String, Float>();
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(fileName));
+			String line = null;
+			
+			while ((line = reader.readLine()) != null) {
+				String[] vals = line.split(",");
+				try {
+					Float count = Float.parseFloat(vals[1]);
+					String term = vals[0];
+					tokens.put(term, count);
+				} catch (Exception e) {}
+			}
+			reader.close();
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} 
+
+		return tokens;
+		
+	}
+	
+	public static Map<String, Float> getFloatMapFromFile(InputStream inputStream) {
+		Map<String, Float> tokens = new HashMap<String, Float>();
+		try {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+			String line = null;
+			
+			while ((line = reader.readLine()) != null) {
+				String[] vals = line.split(",");
+				try {
+					Float count = Float.parseFloat(vals[1]);
+					String term = vals[0];
+					tokens.put(term, count);
+				} catch (Exception e) {}
+			}
+			reader.close();
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} 
+
+		return tokens;
+		
+	}
+	
 	public static String getFormattedTokens(int id, String title, Set<String> tokens2, Map<String, Integer> fullTF) {
 		String result = "";
 		try {
@@ -255,6 +380,28 @@ public class FileUtil {
 	               int v1 =(Integer) ((Map.Entry) (o1)).getValue();
 	               int v2 = (Integer) ((Map.Entry) (o2)).getValue();
 	               return (v1 - v2);
+	            }
+	       });
+
+	       // Here I am copying the sorted list in HashMap
+	       // using LinkedHashMap to preserve the insertion order
+	       HashMap sortedHashMap = new LinkedHashMap();
+	       for (Iterator it = list.iterator(); it.hasNext();) {
+	              Map.Entry entry = (Map.Entry) it.next();
+	              sortedHashMap.put(entry.getKey(), entry.getValue());
+	       } 
+	       return sortedHashMap;
+	}
+	
+	public static Map<String, Float> sortByFloatValues(
+			Map<String, Float> map) {
+		List list = new LinkedList(map.entrySet());
+	       // Defined Custom Comparator here
+	       Collections.sort(list, new Comparator() {
+	            public int compare(Object o1, Object o2) {
+	               float v1 =(Float) ((Map.Entry) (o1)).getValue();
+	               float v2 = (Float) ((Map.Entry) (o2)).getValue();
+	               return (int) (v1 - v2);
 	            }
 	       });
 
@@ -335,7 +482,7 @@ public class FileUtil {
 	}
 
 	public static void writeMapToFileFloat(Map<String, Float> terms,
-			String filePath, int threshold) throws IOException {		
+			String filePath, float threshold) throws IOException {		
 		FileWriter fw = new FileWriter(filePath);
 		BufferedWriter bw = new BufferedWriter(fw);
 		for(String term: terms.keySet()) {	

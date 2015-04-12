@@ -59,6 +59,14 @@ public class StringUtil {
 		return output;
 	}
 	
+	public static String getAsStringFromList(List<String> tokens) {
+		String output = "";
+		for (String token: tokens) {
+			output = output +  token + " "; 
+		}
+		return output;
+	}
+	
 	public static Set<String> getTokens(String data) {
 		Set<String> set = new HashSet<String>();
 		String[] items = data.split(" ");
@@ -95,6 +103,7 @@ public class StringUtil {
 	
 	public static String cleanCode(String code) {
 		String codeFragment = code;
+		codeFragment = codeFragment.replace("code", "");
 		codeFragment = codeFragment.replace("&gt;", ">");
 		codeFragment = codeFragment.replace("&lt;", "<");
 		codeFragment = codeFragment.replace("&amp;", "&");
