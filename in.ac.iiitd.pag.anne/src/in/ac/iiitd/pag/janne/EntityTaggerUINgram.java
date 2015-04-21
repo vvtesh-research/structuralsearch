@@ -11,20 +11,21 @@ import java.util.Set;
 import in.ac.iiitd.pag.util.CodeFragmentInspector;
 import in.ac.iiitd.pag.util.ConfigUtil;
 import in.ac.iiitd.pag.util.FileUtil;
+import in.ac.iiitd.pag.util.NGramBuilder;
 import in.ac.iiitd.pag.util.StringUtil;
 
-public class EntityTaggerUI {
+public class EntityTaggerUINgram {
 	public static void main(String[] args) {
 		String code = FileUtil.readFromFile("snippet.java");
-		//System.out.println(code);
+
 		Map<String, Map<String, Float>> allWeights = new HashMap<String, Map<String, Float>>();
 		List<String> entityNames = FileUtil.readFromFileAsList(ConfigUtil.getInputStream("knownEntities.txt"));
 		
 		for(String entityName: entityNames) {
-			Map<String, Float> weights = FileUtil.getLastNFloatMapFromFile("weights-" + entityName + ".csv", 500);
+			Map<String, Float> weights = FileUtil.getLastNFloatMapFromFile(entityName + "-long-patterns-normalized.txt", 0);
 			allWeights.put(entityName, weights);
 		}		
-		float cutoffFactor = 0.5f;
+		
 		String taggedCode = "";
 		try {
 			//computePRPerEntity(code, allWeights, entityNames);
@@ -39,16 +40,11 @@ public class EntityTaggerUI {
 	private static void computeAveragePR(String code,
 			Map<String, Map<String, Float>> allWeights, List<String> entityNames)
 			throws IOException {
-		String taggedCode;
-						
-		for(int factor =0; factor < 11; factor++) {					
-			System.out.print(factor/10f + " ");
-			taggedCode = tag(code, allWeights, factor*1.0f/10);			
-			FileUtil.saveFile("systemAnnotations.txt", taggedCode);
-			List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
-			Oracle.computePR(systemAnnotations, entityNames);	
-		}
-		
+		String taggedCode = tag(code, allWeights);			
+		FileUtil.saveFile("systemAnnotations.txt", taggedCode);
+		System.out.println(taggedCode);
+		/*List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
+		Oracle.computePR(systemAnnotations, entityNames);*/	
 	}
 	
 	private static void computePRPerEntity(String code,
@@ -64,7 +60,7 @@ public class EntityTaggerUI {
 			System.out.println(entityName);
 			for(int factor =0; factor < 11; factor++) {					
 				System.out.print(factor/10f + " ");
-				taggedCode = tag(code, allWeights, factor*1.0f/10);			
+				taggedCode = tag(code, allWeights);			
 				FileUtil.saveFile("systemAnnotations.txt", taggedCode);
 				List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
 				Oracle.computePR(systemAnnotations, justOneEntity);	
@@ -82,7 +78,7 @@ public class EntityTaggerUI {
 		return (int) ((maxWt - minWt)/2 * cutoffFactor);
 	}
 
-	public static String tag(String code,Map<String, Map<String, Float>>  allWeights, float cutoffFactor) throws IOException {
+	public static String tag(String code,Map<String, Map<String, Float>>  allWeights) throws IOException {
 		String taggedCode = "";
 		String[] lines = code.split("\r\n|\r|\n");
 		String[] tagsForLines = new String[lines.length];
@@ -103,33 +99,13 @@ public class EntityTaggerUI {
 			   
 			   for(String entityName: allWeights.keySet()) {
 				   Map<String, Float> weights = allWeights.get(entityName);		
-				   int cutoffWeight = getCutOff(weights, cutoffFactor);
-				   List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
-				   
+				    
 				   String newLine = "";
 				   float lineWeight = 0;
 				   int docLen = 0;
-				   for(String token: tokens) {
-					   if (token.contains(".")) {
-						   String[] subTokens = token.split("\\.");
-						   for(String subToken: subTokens) {
-							   newLine = newLine + subToken + " ";
-							   if (weights.containsKey(subToken)) {
-								   docLen++;
-								   newLine = newLine   + " "; //+  +  "(" + weights.get(subToken) + ")"
-								   lineWeight = lineWeight + weights.get(subToken);							   
-							   }
-						   }
-					   } else {
-						   newLine = newLine + token + " ";
-						   if (weights.containsKey(token)) {
-							   newLine = newLine  + " "; //+ "(" + weights.get(token) + ")"
-							   lineWeight = lineWeight + weights.get(token);
-							   docLen++;
-						   }
-					   }
-				   }		       
-				   if (lineWeight/docLen > cutoffWeight) {					   
+				   boolean found = isEntityFound(lineItem, weights);
+				   
+				   if (found) {					   
 					   Set<String> entityNamesAssociated = null;
 					   if (tagAssociations.containsKey(preservedLine)) {
 						   entityNamesAssociated = tagAssociations.get(preservedLine);
@@ -143,8 +119,42 @@ public class EntityTaggerUI {
 		   }                	
 		
 		taggedCode = getCode(code, tagAssociations);
-		//if (tagAssociations.keySet().size() == 0) taggedCode = "";
 		return taggedCode;
+	}
+
+	private static boolean isEntityFound(String lineItem,
+			Map<String, Float> weights) throws IOException {
+		boolean entityFound = false;
+		String line = formatLine(lineItem);
+		Set<String> ngrams = new HashSet<String>();
+		for(int i=6; i>1; i--) {
+			Set<String> ngramsFound = NGramBuilder.getSequentialNgramsAnyN(lineItem, i);
+			for(String ngramFound: ngramsFound) {
+				for(String patternInCode: weights.keySet()) {
+					if (ngramsFound.contains(patternInCode)) {
+						entityFound = true;
+						break;
+					}
+				}
+			}
+		}
+		return entityFound;
+	}
+
+	private static String formatLine(String lineItem) throws IOException {
+		String newLine = "";
+		List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
+		for(String token: tokens) {
+			   if (token.contains(".")) {
+				   String[] subTokens = token.split("\\.");
+				   for(String subToken: subTokens) {
+					   newLine = newLine + subToken + " ";
+				   }
+			   }  else {
+				   newLine = newLine + token + " ";
+			   }
+		}
+		return newLine.trim();
 	}
 
 	private static String getCode(String code, Map<String, Set<String>> tagAssociations) {

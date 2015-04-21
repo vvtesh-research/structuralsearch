@@ -16,35 +16,75 @@ public class TFNormalizer {
 			Map<String, Float> collection = getMapFromFile("allCodeTF.csv");
 			Map<String, Float> removeWord = getMapFromFile("temp2.txt");
 			
-			Map<String, Float> weights = normalizeWeights(collection, removeWord);
+			Map<String, Float> weights = normalizeWeights(collection, removeWord, 250);
 			writeMap(weights, "normalizedTF.csv");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static Map<String, Float> normalizeWeights(Map<String, Float> collection,
-			Map<String, Float> removeWord) throws IOException {
-		float maxCTF = 0;
-		for(String word: collection.keySet()) {
-			if (collection.get(word) > maxCTF) 
-				maxCTF = collection.get(word);
+	public static Map<String, Float> normalizeWeights(Map<String, Float> collectionTerms,
+			Map<String, Float> entityTerms, int collectionMinFreqCutOff) throws IOException {
+		/*float maxCTFreq = 0;
+		for(String word: collectionTerms.keySet()) {
+			if (collectionTerms.get(word) > maxCTFreq) 
+				maxCTFreq = collectionTerms.get(word);
 		}
+		
+		float maxETFreq = 0;
+		for(String word: entityTerms.keySet()) {
+			if (entityTerms.get(word) > maxETFreq) 
+				maxETFreq = entityTerms.get(word);
+		}*/
 					
-		Map<String, Float> javaWords = new HashMap<String, Float>();
-		for(String word: removeWord.keySet()) {
-			if (collection.containsKey(word)) {				
-				if (collection.get(word) < 250) continue;
-				float prob = removeWord.get(word) * (maxCTF / collection.get(word));
+		Map<String, Float> normalizedTerms = new HashMap<String, Float>();
+		for(String word: entityTerms.keySet()) {
+			if (collectionTerms.containsKey(word)) {				
+				if (collectionTerms.get(word) < collectionMinFreqCutOff/100f) continue;
+				float prob = (float) ((float) (entityTerms.get(word)) / collectionTerms.get(word));
 				//System.out.println(word + "," + prob);
 				//javaWords.put(word + "(" + collection.get(word) + " : " + removeWord.get(word) + ")", prob);
-				javaWords.put(word, prob);
+				normalizedTerms.put(word, prob * 100);
 			} 
 		}
 		
-		javaWords = FileUtil.sortByFloatValues(javaWords);
+		//normalizedTerms = FileUtil.sortByFloatValues(normalizedTerms);
 		
-		return javaWords;
+		return normalizedTerms;
+	}
+	
+	
+	
+	public static Map<String, Integer> normalizeWeightsSimple(Map<String, Integer> collectionTerms,
+			Map<String, Float> entityTerms, int collectionMinFreqCutOff) throws IOException {
+				
+		float maxETFreq = 0;
+		for(String word: entityTerms.keySet()) {
+			if (entityTerms.get(word) > maxETFreq) 
+				maxETFreq = entityTerms.get(word);
+		}
+		
+		float maxCTFreq = 0;
+		for(String word: collectionTerms.keySet()) {
+			if (collectionTerms.get(word) > maxCTFreq) 
+				maxCTFreq = collectionTerms.get(word);
+		}
+					
+		Map<String, Integer> normalizedTerms = new HashMap<String, Integer>();
+		for(String word: collectionTerms.keySet()) {
+			if (collectionTerms.get(word) < collectionMinFreqCutOff/100f) continue;
+			if (entityTerms.containsKey(word)) {				
+				
+				int prob = (int) (collectionTerms.get(word) * maxCTFreq / maxETFreq);
+				//System.out.println(word + "," + prob);
+				//javaWords.put(word + "(" + collection.get(word) + " : " + removeWord.get(word) + ")", prob);
+				normalizedTerms.put(word, prob);
+			} 
+		}
+		
+		normalizedTerms = FileUtil.sortByValues(normalizedTerms);
+		
+		return normalizedTerms;
 	}
 
 	private static void writeMap(Map<String, Float> computerWords, String fileName)
@@ -85,5 +125,36 @@ public class TFNormalizer {
 
 		return tokens;
 		
+	}
+
+	public static Map<String, Float> normalizeFloatWeightsSimple(
+			Map<String, Float> collectionTerms, Map<String, Float> entityTerms, int collectionMinFreqCutOff) {
+		float maxETFreq = 0;
+		for(String word: entityTerms.keySet()) {
+			if (entityTerms.get(word) > maxETFreq) 
+				maxETFreq = entityTerms.get(word);
+		}
+		
+		float maxCTFreq = 0;
+		for(String word: collectionTerms.keySet()) {
+			if (collectionTerms.get(word) > maxCTFreq) 
+				maxCTFreq = collectionTerms.get(word);
+		}
+					
+		Map<String, Float> normalizedTerms = new HashMap<String, Float>();
+		for(String word: collectionTerms.keySet()) {
+			//if (collectionTerms.get(word) < collectionMinFreqCutOff/100f) continue;
+			if (entityTerms.containsKey(word)) {				
+				
+				float prob = (float) (collectionTerms.get(word) * maxCTFreq / maxETFreq);
+				//System.out.println(word + "," + prob);
+				//javaWords.put(word + "(" + collection.get(word) + " : " + removeWord.get(word) + ")", prob);
+				normalizedTerms.put(word, prob);
+			} 
+		}
+		
+		normalizedTerms = FileUtil.sortByFloatValues(normalizedTerms);
+		
+		return normalizedTerms;
 	}
 }

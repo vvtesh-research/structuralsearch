@@ -35,22 +35,22 @@ public class LineBasedCodeExtractor {
 			
 			String filePath = props.getProperty("FILE_PATH");
 			String entityName = "remove";
-			List<String> code = getUniqueTokensPerCodeFragment(filePath, entityName);
+			List<String> code = getUniqueTokensPerCodeFragment(filePath, entityName, 0);
 			FileUtil.writeListToFile(code, "code-remove.txt"); 
 		} catch (Exception e) {			
 			e.printStackTrace();
 		}
 	}
 
-	public static List<String> getUniqueTokensPerCodeFragment(String filePath, String entityName) throws FactoryConfigurationError, IOException {
+	public static List<String> getUniqueTokensPerCodeFragment(String filePath, String entityName, int speedUp) throws FactoryConfigurationError, IOException {
 		Set<Integer> ids = extract(filePath, entityName);
 		/*FileUtil.writeIntSetToFile(ids, "ids-remove.txt");	
 		Set<Integer> ids = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream("ids-remove.txt"));  */	
-		List<String> code = getAllCode(ids, filePath);
+		List<String> code = getAllCode(ids, filePath, speedUp);
 		return code;
 	}
 
-	public static List<String> getAllCode(Set<Integer> ids, String filePath) throws IOException, FactoryConfigurationError {
+	public static List<String> getAllCode(Set<Integer> ids, String filePath, int speedUp) throws IOException, FactoryConfigurationError {
 		List<String> code = new ArrayList<String>();
 		BufferedReader reader = new BufferedReader(new FileReader(filePath), 4 * 1024 * 1024);
 		String line = null;			
@@ -60,6 +60,7 @@ public class LineBasedCodeExtractor {
 			lineCount++;
 			if (lineCount % 2000 == 0) System.out.print(".");
 			if (lineCount % 100000 == 0) {System.out.println(lineCount);}
+			if ((speedUp > 0) && (lineCount % speedUp != 0)) continue;
 			try {
 				if (!line.trim().startsWith("<row")) continue;
 				

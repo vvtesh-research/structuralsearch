@@ -14,8 +14,16 @@ import java.util.Map;
 public class TFCalculator {
 	public static void main(String[] args) {
 		try {
-			Map<String, Integer> tf = construct("allcode.txt");
-			FileUtil.writeMapToFile(tf, "allcodeTF.csv", 150);
+			String inputFile = "allCode.txt"; 
+			String outputFile = "allcodeTF1.csv";
+			int cutoff = 150;
+			if (args.length == 3) {
+				inputFile = args[0];
+				outputFile = args[1];
+				cutoff = Integer.parseInt(args[2]);
+			}
+			Map<String, Integer> tf = construct(inputFile);
+			FileUtil.writeMapToFile(tf, outputFile, cutoff);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

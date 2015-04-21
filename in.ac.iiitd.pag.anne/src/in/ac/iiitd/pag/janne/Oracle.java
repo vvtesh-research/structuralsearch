@@ -14,18 +14,16 @@ import java.util.Set;
 public class Oracle {
 	
 	public static void main(String[] args){
-		List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
+		/*List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
 		List<String> entityNames = FileUtil.readFromFileAsList(ConfigUtil.getInputStream("knownEntities.txt"));
-		computePR(systemAnnotations, entityNames);
+		computePR(systemAnnotations, entityNames);*/
+		String manualAnnFile = "C:\\git\\IR_Project\\Oracle_Code_ManuallyAnnotated.txt";
+		List<String> manualAnnotations = FileUtil.readFromFileAsList(manualAnnFile);	
+		getAnnotatedTags(manualAnnotations);
 	}
 
 	
-	/**
-	 * Takes in path to Oracle file and Retrieval generated file as parameters
-	 * Computes average precision and recall values
-	 * @param entityNames 
-	 * @param args
-	 */
+	
 	public static void computePR(List<String> systemAnnotations, List<String> entityNames) {
 		
 		try {
@@ -57,7 +55,9 @@ public class Oracle {
 			}
 			averagePrecision = averagePrecision * 1.0f / annotatedLinesOfCode;
 			averageRecall = averageRecall * 1.0f / annotatedLinesOfCode;
-			float f1 = 2 * averagePrecision * averageRecall / (averagePrecision + averageRecall);
+			float f1 = 0;
+			if ((averagePrecision + averageRecall) > 0)
+				f1 = 2 * averagePrecision * averageRecall / (averagePrecision + averageRecall);
 			System.out.println(MessageFormat.format("P={0}, R={1} F1={2}", averagePrecision, averageRecall, f1));
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -69,8 +69,9 @@ public class Oracle {
 	private static float computeRecall(Set<String> manualTags, Set<String> systemTags) {
 		float recall = 0;
 		int relevantCount = 0;
+		
+		if ((manualTags != null) && (manualTags.size() == 0) && (systemTags.size() == 0)) return -1f;
 		if (manualTags == null) return 1f;
-		if ((manualTags.size() == 0) && (systemTags.size() == 0)) return -1f;
 		if ((manualTags.size() == 0)) return 1f;
 		
 		for(String tag: manualTags) {
@@ -136,6 +137,21 @@ public class Oracle {
 			}
 		}
 		return tagAssociations;				
+	}
+	
+	public static void getAnnotatedTags(List<String> code) {
+		Set<String> definedTags = new HashSet<String>();
+		for(String statement: code) {
+			String[] parts = statement.split(":=");
+			if (parts.length < 2) continue;
+			String[] tags = parts[1].split(" ");
+			for(String tag: tags) {
+				definedTags.add(tag.trim().toLowerCase());
+			}
+		}
+		for(String tag: definedTags) {
+			System.out.println(tag);
+		}
 	}
 
 }

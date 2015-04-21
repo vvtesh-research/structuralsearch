@@ -13,12 +13,40 @@ public class NGramBuilder {
 	
 	public static void main(String[] args) {
 		String test = "stage method flowpane flowpane method scene scene method method method method method method method method eventhandler actionevent actionevent + method method / method method / method method eventhandler actionevent";
-		Set<String> ngrams = getSequentialNgrams(test,6);
+		Set<String> ngrams = getSequentialNgramsAnyN(test,3); //getSequentialNgrams(test,2);
 		for(String ngram: ngrams) {
 			System.out.println(ngram);
 		}
 	}
 
+	public static Set<String> getSequentialNgramsAnyN(String input, int n) {
+		if (n < 1) {
+			System.out.println("n cannot be less than 1. Exiting.");
+			phrases.clear();
+			return phrases;
+		}
+		words = input.split(" ");
+		if (words.length > 30) {
+			String[] shortnenedWords = new String[30];
+			for(int i=0;i<30;i++) {
+				shortnenedWords[30-i-1] = words[words.length - i -1];
+			}
+			words = shortnenedWords;
+			/*System.out.println("method too big. skipping");
+			phrases.clear();
+			return phrases;*/
+		}
+		
+		phrases.clear();
+		addPhrases("", 0, n-1);	
+		/*if (phrases.size() > 500) {
+			System.out.println(input);
+			System.out.println(phrases.size());
+			System.out.println(n);
+		}*/
+		return phrases;
+	}
+	
 	public static Set<String> getSequentialNgrams(String input, int n) {
 		if (n < 3) {
 			System.out.println("n cannot be less than 3. Exiting.");

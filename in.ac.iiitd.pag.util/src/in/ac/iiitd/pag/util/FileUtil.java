@@ -166,6 +166,15 @@ public class FileUtil {
 		bw.close();
 	}
 	
+	public static void writeSetToFile(Set<Integer> terms, String filePath) throws IOException {
+		FileWriter fw = new FileWriter(filePath);
+		BufferedWriter bw = new BufferedWriter(fw);
+		for(int term: terms) {	
+			bw.write(term + "\n");
+		}		
+		bw.close();
+	}
+	
 	public static void writeListToFile(Set<String> terms, String filePath) throws IOException {
 		FileWriter fw = new FileWriter(filePath);
 		BufferedWriter bw = new BufferedWriter(fw);
@@ -241,8 +250,14 @@ public class FileUtil {
 		FileWriter fw = new FileWriter(filePath);
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write(value);
-		bw.close();
-		
+		bw.close();		
+	}
+	
+	public static void saveFile(String filePath, String value) throws IOException {		
+		FileWriter fw = new FileWriter(filePath);
+		BufferedWriter bw = new BufferedWriter(fw);
+		bw.write(value);
+		bw.close();		
 	}
 
 	public static Map<String, Integer> getMapFromFile(String fileName) {
@@ -317,6 +332,62 @@ public class FileUtil {
 		
 	}
 	
+	public static Map<String, Float> getLastNFloatMapFromFile(String fileName, int n) {
+		int lineCount = readFromFileAsList(fileName).size();
+		Map<String, Float> tokens = new HashMap<String, Float>();
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(fileName));
+			String line = null;
+			
+			int lineNo = 0;
+			while ((line = reader.readLine()) != null) {
+				lineNo++;
+				if ((n > 0) && (lineNo < (lineCount - n))) continue;
+				String[] vals = line.split(",");
+				try {
+					Float count = Float.parseFloat(vals[1]);
+					String term = vals[0];
+					tokens.put(term, count);
+				} catch (Exception e) {}
+			}
+			reader.close();
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} 
+
+		return tokens;
+		
+	}
+	
+	public static Map<String, Integer> getLastNIntMapFromFile(String fileName, int n) {
+		int lineCount = readFromFileAsList(fileName).size();
+		Map<String, Integer> tokens = new HashMap<String, Integer>();
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(fileName));
+			String line = null;
+			
+			int lineNo = 0;
+			while ((line = reader.readLine()) != null) {
+				lineNo++;
+				if ((n > 0) && (lineNo < (lineCount - n))) continue;
+				String[] vals = line.split(",");
+				try {
+					int count = Integer.parseInt(vals[1]);
+					String term = vals[0];
+					tokens.put(term, count);
+				} catch (Exception e) {}
+			}
+			reader.close();
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} 
+
+		return tokens;
+		
+	}
+	
 	public static Map<String, Float> getFloatMapFromFile(InputStream inputStream) {
 		Map<String, Float> tokens = new HashMap<String, Float>();
 		try {
@@ -373,6 +444,28 @@ public class FileUtil {
 
 	public static Map<String, Integer> sortByValues(
 			Map<String, Integer> map) {
+		List list = new LinkedList(map.entrySet());
+	       // Defined Custom Comparator here
+	       Collections.sort(list, new Comparator() {
+	            public int compare(Object o1, Object o2) {
+	               int v1 =(Integer) ((Map.Entry) (o1)).getValue();
+	               int v2 = (Integer) ((Map.Entry) (o2)).getValue();
+	               return (v1 - v2);
+	            }
+	       });
+
+	       // Here I am copying the sorted list in HashMap
+	       // using LinkedHashMap to preserve the insertion order
+	       HashMap sortedHashMap = new LinkedHashMap();
+	       for (Iterator it = list.iterator(); it.hasNext();) {
+	              Map.Entry entry = (Map.Entry) it.next();
+	              sortedHashMap.put(entry.getKey(), entry.getValue());
+	       } 
+	       return sortedHashMap;
+	}
+	
+	public static Map<Integer, Integer> sortIntsByValues(
+			Map<Integer, Integer> map) {
 		List list = new LinkedList(map.entrySet());
 	       // Defined Custom Comparator here
 	       Collections.sort(list, new Comparator() {

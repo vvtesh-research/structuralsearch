@@ -3,6 +3,7 @@ package in.ac.iiitd.pag.janne;
 import in.ac.iiitd.pag.util.CodeFragmentInspector;
 import in.ac.iiitd.pag.util.ConfigUtil;
 import in.ac.iiitd.pag.util.FileUtil;
+import in.ac.iiitd.pag.util.NGramBuilder;
 import in.ac.iiitd.pag.util.SOUtil;
 import in.ac.iiitd.pag.util.StringUtil;
 import in.ac.iiitd.pag.util.XMLUtil;
@@ -14,6 +15,7 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
@@ -119,7 +121,9 @@ public class CommonCodeExtractor {
 		return code;
 	}
 
-	private static Set<Integer> extract(String fileName) throws IOException {
+	
+
+	public static Set<Integer> extract(String fileName) throws IOException {
 		Set<Integer> ids = new HashSet<Integer>();
 		BufferedReader reader = new BufferedReader(new FileReader(fileName), 4 * 1024 * 1024);
 		String line = null;			
