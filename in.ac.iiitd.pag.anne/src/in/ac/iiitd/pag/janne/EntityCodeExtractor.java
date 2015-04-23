@@ -1,50 +1,45 @@
 package in.ac.iiitd.pag.janne;
 
-import in.ac.iiitd.pag.util.ASTUtil;
-import in.ac.iiitd.pag.util.CodeFragmentInspector;
 import in.ac.iiitd.pag.util.ConfigUtil;
 import in.ac.iiitd.pag.util.FileUtil;
-import in.ac.iiitd.pag.util.SOUtil;
-import in.ac.iiitd.pag.util.StringUtil;
-import in.ac.iiitd.pag.util.XMLUtil;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-
-import javax.xml.stream.FactoryConfigurationError;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.events.StartElement;
-import javax.xml.stream.events.XMLEvent;
 
 public class EntityCodeExtractor {
 	public static void main(String[] args) {		
 		try {
 			Properties props = FileUtil.loadProps();
 			if (props == null) return;
-			
+			int speedUp = 50;
 			String filePath = props.getProperty("FILE_PATH");
-			Set<Integer> ids = extract(filePath, "remove");
-			/*FileUtil.writeIntSetToFile(ids, "ids-what.txt");		
-			Set<Integer> ids = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream("ids-what.txt"));*/
-			List<String> code = getAllCode(ids, filePath);
-			FileUtil.writeListToFile(code, "code-remove.txt");
+			String entityName = "loop";
+			
+			if (args.length == 2) {
+				entityName = args[0];
+				speedUp = Integer.parseInt(args[1]);							
+			}
+			Map<String, Set<String>> skipEntities = EntityTagger.getSkipLists("skipList.txt");
+			Set<String> skipEntitySet = skipEntities.get(entityName);
+			Set<Integer> ids = null;
+			if (args.length == 3) {
+				String idsFile = args[2];	
+				ids = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream(idsFile));
+			} else {
+				ids = LineRanker.extract(filePath, entityName, skipEntitySet);
+				FileUtil.writeSetToFile(ids, entityName + "-relevant-post-ids.txt");
+			}		
+			
+			List<String> code = LineBasedCodeExtractor.getAllCode(ids, filePath, speedUp); //Collect unique tokens per codeset (not per line).
+			FileUtil.writeListToFile(code, entityName + "-UniqueTokensInCodeSet.txt"); 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-
+/*
 	private static List<String> getAllCode(Set<Integer> ids, String filePath) throws IOException, FactoryConfigurationError {
 		List<String> code = new ArrayList<String>();
 		BufferedReader reader = new BufferedReader(new FileReader(filePath), 4 * 1024 * 1024);
@@ -155,4 +150,5 @@ public class EntityCodeExtractor {
 		}
 		return ids;
 	}
+	*/
 }

@@ -29,7 +29,7 @@ public class EntityTaggerUINgram {
 		String taggedCode = "";
 		try {
 			//computePRPerEntity(code, allWeights, entityNames);
-			computeAveragePR(code, allWeights, entityNames);
+			computeAveragePR(code, allWeights, entityNames, "systemAnnotations.txt");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -38,13 +38,13 @@ public class EntityTaggerUINgram {
 	}
 
 	private static void computeAveragePR(String code,
-			Map<String, Map<String, Float>> allWeights, List<String> entityNames)
+			Map<String, Map<String, Float>> allWeights, List<String> entityNames, String annotatedFile)
 			throws IOException {
 		String taggedCode = tag(code, allWeights);			
-		FileUtil.saveFile("systemAnnotations.txt", taggedCode);
+		FileUtil.saveFile(annotatedFile, taggedCode);
 		System.out.println(taggedCode);
-		/*List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
-		Oracle.computePR(systemAnnotations, entityNames);*/	
+		List<String> systemAnnotations = FileUtil.readFromFileAsList(annotatedFile);
+		Oracle.computePR(systemAnnotations, entityNames, "snippet - annotated.java");	
 	}
 	
 	private static void computePRPerEntity(String code,
@@ -63,7 +63,7 @@ public class EntityTaggerUINgram {
 				taggedCode = tag(code, allWeights);			
 				FileUtil.saveFile("systemAnnotations.txt", taggedCode);
 				List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
-				Oracle.computePR(systemAnnotations, justOneEntity);	
+				Oracle.computePR(systemAnnotations, justOneEntity, "snippet - annotated.java");	
 			}
 		}
 	}

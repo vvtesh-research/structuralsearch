@@ -46,7 +46,7 @@ public class EntityTaggerUI {
 			taggedCode = tag(code, allWeights, factor*1.0f/10);			
 			FileUtil.saveFile("systemAnnotations.txt", taggedCode);
 			List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
-			Oracle.computePR(systemAnnotations, entityNames);	
+			Oracle.computePR(systemAnnotations, entityNames, "snippet - annotated.java");	
 		}
 		
 	}
@@ -67,7 +67,7 @@ public class EntityTaggerUI {
 				taggedCode = tag(code, allWeights, factor*1.0f/10);			
 				FileUtil.saveFile("systemAnnotations.txt", taggedCode);
 				List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
-				Oracle.computePR(systemAnnotations, justOneEntity);	
+				Oracle.computePR(systemAnnotations, justOneEntity, "snippet - annotated.java");	
 			}
 		}
 	}

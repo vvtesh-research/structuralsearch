@@ -33,27 +33,32 @@ public class LongestPatternMiner {
 		Properties props = FileUtil.loadProps();
 		if (props == null) return;			
 		String filePath = props.getProperty("FILE_PATH");
+		String entityName = "loop";
+		if (args.length == 1) {
+			entityName = args[0];
+		}
+		
 		try {
-			Map<String, Float> entityTF = FileUtil.getLastNFloatMapFromFile("ranked-loop.txt", 0);
-			Set<Integer> ids = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream("ids-temp.txt")); //allIds.txt
-			Map<String, Float> unigramEntityTF = FileUtil.getLastNFloatMapFromFile("entityTFNormalized.txt", 0);
+			Map<String, Float> weightedLines = FileUtil.getLastNFloatMapFromFile(entityName + "-WeightedLines.txt", 0);
+			Set<Integer> ids = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream(entityName + "-relevant-post-ids.txt")); //allIds.txt
+			Map<String, Float> unigramEntityTF = FileUtil.getLastNFloatMapFromFile(entityName + "-NormalizedTF.txt", 0);
 			
-			Map<String, Integer> patterns = findLongPatterns(filePath, ids, unigramEntityTF, entityTF, 20, 0);
-			FileUtil.writeMapToFile(patterns, "long-loop-patterns.txt", 0); //-in-all-code
+			Map<String, Integer> patterns = findLongPatterns(filePath, ids, unigramEntityTF, weightedLines, 20, 0);
+			FileUtil.writeMapToFile(patterns, entityName + "-Long-patterns.txt", 0); //-in-all-code
 			
 			Set<Integer> allIds = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream("allIds.txt")); //allIds.txt
-			Map<String, Integer> patternsAll = findLongPatterns(filePath, allIds, unigramEntityTF, entityTF, 50, 5);
-			FileUtil.writeMapToFile(patternsAll, "long-loop-patterns-in-all-code.txt", 0); //
+			Map<String, Integer> patternsAll = findLongPatterns(filePath, allIds, unigramEntityTF, weightedLines, 50, 5);
+			FileUtil.writeMapToFile(patternsAll, entityName + "-Long-patterns-in-all-code.txt", 0); //
 			
 			
-			Map<String, Float> patternsMap = FileUtil.getLastNFloatMapFromFile("long-loop-patterns-in-all-code.txt",100);			
-			Map<String, Float> entityPatternFreq = FileUtil.getLastNFloatMapFromFile("long-loop-patterns.txt", 0);
+			/*Map<String, Float> patternsMap = FileUtil.getLastNFloatMapFromFile(entityName + "-Long-patterns-in-all-code.txt",100);			
+			Map<String, Float> entityPatternFreq = FileUtil.getLastNFloatMapFromFile(entityName + "-Long-patterns.txt", 0);
 			
 			patternsMap = TFNormalizer.normalizeFloatWeightsSimple(patternsMap, entityPatternFreq, 0);
 			patternsMap = TFNormalizer.normalizeWeights(patternsMap, entityPatternFreq, 0);
 			Map<String, Integer> patternsInt = convertToInt(patternsMap);
 			patternsInt = FileUtil.sortByValues(patternsInt);
-			FileUtil.writeMapToFile(patternsInt, "long-loop-patterns-normalized.txt", 0);
+			FileUtil.writeMapToFile(patternsInt, "long-loop-patterns-normalized.txt", 0);*/
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

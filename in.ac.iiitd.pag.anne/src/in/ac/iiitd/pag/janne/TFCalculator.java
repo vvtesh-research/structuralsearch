@@ -9,13 +9,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class TFCalculator {
 	public static void main(String[] args) {
 		try {
-			String inputFile = "allCode.txt"; 
-			String outputFile = "allcodeTF1.csv";
+			String inputFile = "c:\\temp\\workdir\\allCode.txt"; 
+			String outputFile = "java.csv";
 			int cutoff = 150;
 			if (args.length == 3) {
 				inputFile = args[0];
@@ -33,30 +35,47 @@ public class TFCalculator {
 	public static Map<String, Integer> construct(String inputFile) throws IOException {
 		Map<String, Integer> counts = new HashMap<String,Integer>();
 		BufferedReader reader = new BufferedReader(new FileReader(inputFile), 4 * 1024 * 1024);
-		String line = null;			
+		String line = null;
+		Set<String> tempSet = new HashSet<String>();
 		int lineCount = 0;
 		System.out.println("Reading file...");
 		while ((line = reader.readLine()) != null) {
-			lineCount++;
-			if (lineCount % 100000 == 0) System.out.print(".");
-		    line = line.replace(".", " ");
-			String[] words = line.split(" ");
-			int docLen = words.length;
-			for(int i=0; i<docLen; i++) {
-				String word = words[i].replaceAll("\\r|\\n", "").toLowerCase().trim();
-				word = word.replace(",", "");
-				//word = word.replaceAll("[^a-zA-Z0-9]", "");
-				if (word.length() == 0) {
-					continue;
-				}			
-				if (word.matches("[a-zA-Z0-9]")) continue;
-				int newCount = 0;
-				if (counts.containsKey(word)) {
-					newCount = counts.get(word);
+			try {
+				lineCount++;
+				if (lineCount % 100000 == 0) System.out.print(".");
+			    line = line.replace(".", " ");
+			    line = line.toLowerCase();
+				String[] words = line.split(" ");
+				int docLen = words.length;
+				tempSet.clear();
+				for(int i=0; i<docLen; i++) {
+					try {
+						String word = words[i].trim();
+						word = word.replace(",", "");
+						//word = word.replaceAll("[^a-zA-Z0-9]", "");
+						if (word.length() == 0) {
+							continue;
+						}			
+						if (word.matches("[a-zA-Z0-9]")) continue;
+						tempSet.add(word);
+						
+					} catch (Exception e) {
+						System.out.println("Error in line " + e.getMessage());
+					}
 				}
-				newCount++;
-				
-				counts.put(word, newCount);
+				for(String word: tempSet) {
+					if (word.equalsIgnoreCase("java")) System.out.println(line);
+					int newCount = 0;
+					
+					if (counts.containsKey(word)) {
+						newCount = counts.get(word);
+					}
+					newCount++;
+					
+					counts.put(word, newCount);
+				}
+			} catch (Exception e) {
+				System.out.println("Error " + e.getMessage());
 			}
 		}
 		reader.close();

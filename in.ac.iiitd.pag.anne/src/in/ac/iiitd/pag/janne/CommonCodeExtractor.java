@@ -32,8 +32,12 @@ public class CommonCodeExtractor {
 			if (props == null) return;
 			
 			String filePath = props.getProperty("FILE_PATH");
-			Set<Integer> ids = extract(filePath);
-			FileUtil.writeIntSetToFile(ids, "allIds.txt");		
+			//String filePath = "c:\\temp\\workdir\\java.txt";
+			Set<Integer> ids = null;
+			if (args.length == 0) {
+				ids = extract(filePath);
+				FileUtil.writeIntSetToFile(ids, "allIds.txt");	
+			}
 			Set<Integer> ids1 = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream("allIds.txt"));
 			List<String> code = getAllCode(ids1, filePath);
 			FileUtil.writeListToFile(code, "allCode.txt");
@@ -85,6 +89,9 @@ public class CommonCodeExtractor {
 		                			   
 		                			   lineItem = lineItem.toLowerCase();
 		                			   lineItem = lineItem.trim();
+		                			   
+		                			   if (!CodeFragmentInspector.isJavaH(lineItem)) continue;
+		                			   
 		                			   lineItem = StringUtil.cleanCode(lineItem);
 		                			   
 		                			   if (lineItem.startsWith("//")) continue;
@@ -96,6 +103,7 @@ public class CommonCodeExtractor {
 		                			   if (lineItem.startsWith("class")) continue;
 		                			   
 		                			   List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
+		                			                			   
 		                			   
 		                			   for(String token: tokens) {
 		                				   if (token.matches("[a-zA-Z0-9]")) continue;
@@ -103,7 +111,9 @@ public class CommonCodeExtractor {
 		                			   }	                			   
 		                		   }
 		                		   String newLineItem = "";
+		                		  
 	                			   for(String token: tempSet) {
+	                				  
 	                				   newLineItem = newLineItem + token + " ";
 	                			   }
 	                			   

@@ -24,10 +24,10 @@ public class Oracle {
 
 	
 	
-	public static void computePR(List<String> systemAnnotations, List<String> entityNames) {
+	public static void computePR(List<String> systemAnnotations, List<String> entityNames, String manualAnnFile) {
 		
 		try {
-			String manualAnnFile = "C:\\git\\IR_Project\\Oracle_Code_ManuallyAnnotated.txt";
+			//String manualAnnFile = "C:\\git\\IR_Project\\Oracle_Code_ManuallyAnnotated.txt";
 			/* String manualFileContents = FileUtil.readFromFile(manualAnnFile);
 			System.out.println(manualFileContents);
 			String systemFileContents = FileUtil.readFromFile(systemAnnFile);

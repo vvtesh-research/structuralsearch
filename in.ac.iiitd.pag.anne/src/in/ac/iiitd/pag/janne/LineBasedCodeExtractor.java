@@ -56,6 +56,8 @@ public class LineBasedCodeExtractor {
 		String line = null;			
 		int lineCount = 0;
 		System.out.println("Reading file...");
+		int emptyPosts = 0;
+		int codeAdded = 0;
 		while ((line = reader.readLine()) != null) {
 			lineCount++;
 			if (lineCount % 2000 == 0) System.out.print(".");
@@ -85,7 +87,9 @@ public class LineBasedCodeExtractor {
 		                	   
 		                	   String body = XMLUtil.getStringElement(startElement, "Body");
 		                	   Set<String> codeSet = SOUtil.getCodeSet(body);
-		                	   
+		                	   if (codeSet.size() == 0) {
+		                		   emptyPosts++;
+		                	   }
 		                	   for(String codeFound: codeSet) {
 		                		   String[] lines = codeFound.split("\r\n|\r|\n");
 		                		   tempSet.clear();
@@ -93,6 +97,9 @@ public class LineBasedCodeExtractor {
 		                			   
 		                			   lineItem = lineItem.toLowerCase();
 		                			   lineItem = lineItem.trim();
+		                			   
+		                			   if (!CodeFragmentInspector.isJavaH(lineItem)) continue;
+		                			   
 		                			   lineItem = StringUtil.cleanCode(lineItem);
 		                			   
 		                			   if (lineItem.startsWith("//")) continue;
@@ -114,6 +121,7 @@ public class LineBasedCodeExtractor {
 	                			   }
 	                			   
 	                			   code.add(newLineItem.trim());	
+	                			   codeAdded++;
 		                	   }
 		                	   
 		            	   }
@@ -124,6 +132,8 @@ public class LineBasedCodeExtractor {
 				e.printStackTrace();
 			}
 		}
+		System.out.println(emptyPosts + " empty posts found.");
+		System.out.println(codeAdded + " snippets added.");
 		return code;
 	}
 

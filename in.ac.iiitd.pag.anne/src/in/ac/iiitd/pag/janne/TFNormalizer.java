@@ -13,15 +13,55 @@ import in.ac.iiitd.pag.util.FileUtil;
 public class TFNormalizer {
 	public static void main(String[] args) {
 		try {
-			Map<String, Float> collection = getMapFromFile("allCodeTF.csv");
-			Map<String, Float> removeWord = getMapFromFile("temp2.txt");
+			String inputFile1 = "allCodeTF.csv";
+			String inputFile2 = "temp2.txt";
+			String outputFile = "normalizedTF.csv";
+			if (args.length == 3) {
+				inputFile1 = args[0]; //bg
+				inputFile2 = args[1]; //entity
+				outputFile = args[2];
+			}
 			
-			Map<String, Float> weights = normalizeWeights(collection, removeWord, 250);
-			writeMap(weights, "normalizedTF.csv");
+			Map<String, Integer> bgCollection = FileUtil.getMapFromFile(inputFile1);
+			Map<String, Integer> entityCollection = FileUtil.getMapFromFile(inputFile2);
+			
+			Map<String, Integer> normalizedCollection = normalize(entityCollection, bgCollection);
+			
+			FileUtil.writeMapToFile(normalizedCollection, outputFile, 0);
+			//Map<String, Integer> weights = normalizeWeights(collection, removeWord, 250);
+			//writeMap(weights, outputFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+	
+	
+
+	private static Map<String, Integer> normalize(
+			Map<String, Integer> entityCollection,
+			Map<String, Integer> bgCollection) {
+		
+		Map<String, Integer> normalizedTerms = new HashMap<String, Integer>();
+		Map<String, Integer> temp = new HashMap<String, Integer>();
+		int max = 0;
+		for(String word: entityCollection.keySet()) {
+			if (bgCollection.containsKey(word)) {	
+				if (bgCollection.get(word) == 0) continue;
+				int norm = entityCollection.get(word) * 1000 / bgCollection.get(word);
+				temp.put(word, norm);
+				if (norm > max) max = norm;
+			} 
+		}
+		
+		for(String word: temp.keySet()) {
+			int norm = temp.get(word);
+			normalizedTerms.put(word, norm * 1000/max);
+		}
+		
+		return normalizedTerms;
+	}
+
+
 
 	public static Map<String, Float> normalizeWeights(Map<String, Float> collectionTerms,
 			Map<String, Float> entityTerms, int collectionMinFreqCutOff) throws IOException {
