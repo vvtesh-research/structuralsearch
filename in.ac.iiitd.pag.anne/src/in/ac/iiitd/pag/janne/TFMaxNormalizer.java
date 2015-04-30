@@ -13,7 +13,7 @@ import in.ac.iiitd.pag.util.FileUtil;
 public class TFMaxNormalizer {
 	public static void main(String[] args) {
 		try {
-			String fileName = "allCodeTF.csv";
+			String fileName = "loop-lines-weighted-ngram.txt";
 			String outputFile = "output.csv";
 			int cutoff = 0;
 			if (args.length  == 3) {

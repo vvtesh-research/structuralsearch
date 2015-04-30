@@ -16,20 +16,39 @@ import in.ac.iiitd.pag.util.StringUtil;
 
 public class EntityTaggerUINgram {
 	public static void main(String[] args) {
-		String code = FileUtil.readFromFile("snippet.java");
+		String fileName = "snippet.java";
+		String outputFileName = "systemAnnotations.txt";
+		int threshold = 500;
+		int k1 = 1;
+		int k2 = 1;
+		if (args.length == 5) {
+			fileName = args[0];
+			outputFileName = args[1];
+			threshold = Integer.parseInt(args[2]);	
+			k1 = Integer.parseInt(args[3]);
+			k2 = Integer.parseInt(args[4]);
+		}
+		String code = FileUtil.readFromFile(fileName);
 
-		Map<String, Map<String, Float>> allWeights = new HashMap<String, Map<String, Float>>();
-		List<String> entityNames = FileUtil.readFromFileAsList(ConfigUtil.getInputStream("knownEntities.txt"));
+		Map<String, Map<String, Integer>> allWeightsUnigram = new HashMap<String, Map<String, Integer>>();
+		Map<String, Map<String, Integer>> allWeightsngram = new HashMap<String, Map<String, Integer>>();
 		
+		List<String> entityNames = FileUtil.readFromFileAsList(ConfigUtil.getInputStream("knownEntities.txt"));
+
 		for(String entityName: entityNames) {
-			Map<String, Float> weights = FileUtil.getLastNFloatMapFromFile(entityName + "-long-patterns-normalized.txt", 0);
-			allWeights.put(entityName, weights);
+			String unigramPatternTFFile = entityName + "-NormalizedTF.txt";
+			String ngramPatternTFFile = entityName + "-Long-Normalized.txt";
+			Map<String,Integer> ngramEntityTF = FileUtil.getMapFromFile(ngramPatternTFFile);
+			Map<String,Integer> unigramEntityTF = FileUtil.getMapFromFile(unigramPatternTFFile);
+			
+			allWeightsUnigram.put(entityName, unigramEntityTF);
+			allWeightsngram.put(entityName, ngramEntityTF);
 		}		
 		
 		String taggedCode = "";
 		try {
 			//computePRPerEntity(code, allWeights, entityNames);
-			computeAveragePR(code, allWeights, entityNames, "systemAnnotations.txt");
+			computeAveragePR(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, threshold, k1, k2);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -38,29 +57,31 @@ public class EntityTaggerUINgram {
 	}
 
 	private static void computeAveragePR(String code,
-			Map<String, Map<String, Float>> allWeights, List<String> entityNames, String annotatedFile)
+			Map<String, Map<String, Integer>> allWeightsUnigram, Map<String, Map<String,Integer>> allWeightsngram, List<String> entityNames, String annotatedFile
+			, int confidenceCutOff, int k1, int k2)
 			throws IOException {
-		String taggedCode = tag(code, allWeights);			
+		String taggedCode = tag(code, allWeightsUnigram, allWeightsngram, confidenceCutOff, k1, k2);			
 		FileUtil.saveFile(annotatedFile, taggedCode);
 		System.out.println(taggedCode);
 		List<String> systemAnnotations = FileUtil.readFromFileAsList(annotatedFile);
 		Oracle.computePR(systemAnnotations, entityNames, "snippet - annotated.java");	
 	}
 	
+	
+
 	private static void computePRPerEntity(String code,
-			Map<String, Map<String, Float>> allWeights, List<String> entityNames)
+			Map<String, Map<String, Integer>> allWeightsUnigram,
+			Map<String, Map<String, Integer>> allWeightsngram, List<String> entityNames, int confidenceCutOff,
+			int k1, int k2)
 			throws IOException {
 		String taggedCode;
 		for(String entityName: entityNames) {
 			List<String> justOneEntity = new ArrayList<String>();
 			justOneEntity.add(entityName);
-			allWeights.clear();
-			Map<String, Float> weights = FileUtil.getLastNFloatMapFromFile("weights-" + entityName + ".csv", 400);
-			allWeights.put(entityName, weights);
 			System.out.println(entityName);
 			for(int factor =0; factor < 11; factor++) {					
 				System.out.print(factor/10f + " ");
-				taggedCode = tag(code, allWeights);			
+				taggedCode = tag(code, allWeightsUnigram,  allWeightsngram, confidenceCutOff, k1, k2);			
 				FileUtil.saveFile("systemAnnotations.txt", taggedCode);
 				List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
 				Oracle.computePR(systemAnnotations, justOneEntity, "snippet - annotated.java");	
@@ -78,7 +99,9 @@ public class EntityTaggerUINgram {
 		return (int) ((maxWt - minWt)/2 * cutoffFactor);
 	}
 
-	public static String tag(String code,Map<String, Map<String, Float>>  allWeights) throws IOException {
+	private static String tag(String code,
+			Map<String, Map<String, Integer>> allWeightsUnigram,
+			Map<String, Map<String, Integer>> allWeightsngram, int confidenceCutOff, int k1, int k2) throws IOException {
 		String taggedCode = "";
 		String[] lines = code.split("\r\n|\r|\n");
 		String[] tagsForLines = new String[lines.length];
@@ -97,15 +120,15 @@ public class EntityTaggerUINgram {
 				   continue;
 			   }
 			   
-			   for(String entityName: allWeights.keySet()) {
-				   Map<String, Float> weights = allWeights.get(entityName);		
-				    
+			   for(String entityName: allWeightsUnigram.keySet()) {
+				   Map<String, Integer> unigramEntityTF = allWeightsUnigram.get(entityName);		
+				   Map<String, Integer> ngramPatternsTF = allWeightsngram.get(entityName);		
 				   String newLine = "";
 				   float lineWeight = 0;
 				   int docLen = 0;
-				   boolean found = isEntityFound(lineItem, weights);
+				   int confidence = NGramLineRanker.score(lineItem, unigramEntityTF, ngramPatternsTF, k1, k2);
 				   
-				   if (found) {					   
+				   if (confidence > confidenceCutOff) {					   
 					   Set<String> entityNamesAssociated = null;
 					   if (tagAssociations.containsKey(preservedLine)) {
 						   entityNamesAssociated = tagAssociations.get(preservedLine);
@@ -122,12 +145,12 @@ public class EntityTaggerUINgram {
 		return taggedCode;
 	}
 
-	private static boolean isEntityFound(String lineItem,
-			Map<String, Float> weights) throws IOException {
+	/*private static int isEntityFound(String lineItem,
+			Map<String, Integer> weights) throws IOException {
 		boolean entityFound = false;
 		String line = formatLine(lineItem);
 		Set<String> ngrams = new HashSet<String>();
-		for(int i=6; i>1; i--) {
+		for(int i=6; i>0; i--) {
 			Set<String> ngramsFound = NGramBuilder.getSequentialNgramsAnyN(lineItem, i);
 			for(String ngramFound: ngramsFound) {
 				for(String patternInCode: weights.keySet()) {
@@ -140,7 +163,7 @@ public class EntityTaggerUINgram {
 		}
 		return entityFound;
 	}
-
+*/
 	private static String formatLine(String lineItem) throws IOException {
 		String newLine = "";
 		List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
