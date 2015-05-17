@@ -32,7 +32,7 @@ public class TFMaxNormalizer {
 	
 	
 
-	private static Map<String, Integer> normalizeMax(
+	public static Map<String, Integer> normalizeMax(
 			Map<String, Integer> collection) {
 		Map<String, Integer> normalizedTerms = new HashMap<String, Integer>();
 		int max = 0;

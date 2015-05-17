@@ -73,24 +73,40 @@ public class NGramLineRanker {
 	}
 
 	public static int score(String line, Map<String, Integer> unigramEntityTF, Map<String, Integer> ngramPatterns, int k1, int k2) throws IOException {
-		List<String> tokens = CodeFragmentInspector.tokenizeAsList(line);
+		//List<String> tokens = CodeFragmentInspector.tokenizeAsList(line);
 		int uniScore = 0;
 		int matchedTokens = 0;
 		int finalScore = 0;
+		
+		String lineItem = line.toLowerCase();
+	    lineItem = lineItem.trim();
+	    lineItem = StringUtil.cleanCode(lineItem);
+	   
+	    if (!CodeFragmentInspector.isTagWorthyCode(lineItem)) return 0;
+	   
+	   List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
+	   
+	   String newLineItem = "";
+	   
+	   
 		for(String token: tokens) {
 			if (unigramEntityTF.containsKey(token)) {
 				if (unigramEntityTF.get(token) > 0) {
+					 newLineItem = newLineItem + token + " ";
 					uniScore = uniScore + unigramEntityTF.get(token);
 					matchedTokens++;
 				}
 			}
 		}
+		newLineItem = newLineItem.trim();
 		
 		if (matchedTokens > 0) {
 			int score = 0;
 			int ngramMatchCount = 0;
+			
+		
 			for(int i=6; i>0; i--) {
-				Set<String> ngrams = NGramBuilder.getSequentialNgramsAnyN(line, i);
+				Set<String> ngrams = NGramBuilder.getSequentialNgramsAnyN(newLineItem, i);
 				for(String ngram: ngrams) {
 					if (ngramPatterns.containsKey(" " + ngram)) {
 						score = score + ngramPatterns.get(" " + ngram); ///(7-i)
@@ -103,11 +119,11 @@ public class NGramLineRanker {
 			
 			finalScore = (int) ( k1 * score) + k2 * uniScore/matchedTokens;
 			
-			//finalScore = (finalScore * 1000);
+			finalScore = (finalScore / (k1 + k2));
 			
 			if ((uniScore == 0)||(ngramMatchCount == 0)) finalScore = 0;
 		}
-		System.out.println(finalScore);
+		//System.out.println(finalScore);
 		return finalScore;
 	}
 

@@ -138,15 +138,10 @@ public class LongestPatternMiner {
 		                			   lineItem = lineItem.trim();
 		                			   lineItem = StringUtil.cleanCode(lineItem);
 		                			   
-		                			   if (lineItem.startsWith("//")) continue;
-		                			   if (lineItem.length() <=2 ) continue;
-		                			   if (lineItem.startsWith("import ")) continue;
-		                			   if (lineItem.startsWith("public")) continue;
-		                			   if (lineItem.startsWith("private")) continue;
-		                			   if (lineItem.startsWith("protected")) continue;
-		                			   if (lineItem.startsWith("class")) continue;
+		                			   if (!CodeFragmentInspector.isTagWorthyCode(lineItem)) continue;
 		                			   
 		                			   List<String> tokens = CodeFragmentInspector.tokenizeAsList(lineItem);
+		                			   
 		                			   String newLineItem = "";
 		                			   for(String token: tokens) {
 		                				   if (unigramEntityPatterns.contains(token)) {
@@ -186,6 +181,9 @@ public class LongestPatternMiner {
 				e.printStackTrace();
 			}
 		}
+		reader.close();
 		return code;
 	}
+	
+	
 }

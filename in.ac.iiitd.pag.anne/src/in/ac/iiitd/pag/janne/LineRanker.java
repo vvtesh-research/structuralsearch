@@ -132,6 +132,7 @@ public class LineRanker {
 				e.printStackTrace();
 			}
 		}
+		reader.close();
 		return code;
 	}
 	
@@ -269,6 +270,7 @@ public class LineRanker {
 				e.printStackTrace();
 			}
 		}
+		reader.close();
 		return ids;
 	}
 

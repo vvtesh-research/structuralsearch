@@ -63,8 +63,7 @@ public class TFCalculator {
 						System.out.println("Error in line " + e.getMessage());
 					}
 				}
-				for(String word: tempSet) {
-					if (word.equalsIgnoreCase("java")) System.out.println(line);
+				for(String word: tempSet) {					
 					int newCount = 0;
 					
 					if (counts.containsKey(word)) {

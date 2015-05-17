@@ -1,15 +1,19 @@
-int count = 0;
-    for (int i = 0; i<args.length -1; ++i)
-        count++;
-    System.out.println(count);
-
-     }
-
-int nums[] = new int[] { 23, 1, 5, 78, 22, 4};
-double result = 0; //average will have decimal point
-    {
-    for(int i=0; i < nums.length; i++){
-    result += nums[i];
-    }
-    System.out.println(result/count)
- }
+public static void main(String args[])
+   {
+      int n, c, fact = 1;
+ 
+      System.out.println("Enter an integer to calculate it's factorial");
+      Scanner in = new Scanner(System.in);
+ 
+      n = in.nextInt();
+ 
+      if ( n < 0 )
+         System.out.println("Number should be non-negative.");
+      else
+      {
+         for ( c = 1 ; c <= n ; c++ )
+            fact = fact*c;
+ 
+         System.out.println("Factorial of "+n+" is = "+fact);
+      }
+   }

@@ -16,18 +16,46 @@ import in.ac.iiitd.pag.util.StringUtil;
 
 public class EntityTaggerUINgram {
 	public static void main(String[] args) {
-		String fileName = "snippet.java";
-		String outputFileName = "systemAnnotations.txt";
-		int threshold = 500;
-		int k1 = 1;
-		int k2 = 1;
+		int threshold = 350;
+		int k1 = 4;
+		int k2 = 10;
+		int n1 = 0; //ngram
+		int n2 = 0; //unigram
+		
 		if (args.length == 5) {
-			fileName = args[0];
-			outputFileName = args[1];
-			threshold = Integer.parseInt(args[2]);	
-			k1 = Integer.parseInt(args[3]);
-			k2 = Integer.parseInt(args[4]);
+			threshold = Integer.parseInt(args[0]);	
+			k1 = Integer.parseInt(args[1]);
+			k2 = Integer.parseInt(args[2]);
+			n1 = Integer.parseInt(args[3]);
+			n2 = Integer.parseInt(args[4]);
 		}
+		
+		printPRForProject("Hadoop-Set1", threshold, k1, k2, n1, n2);
+		printPRForProject("Hadoop-Set2", threshold, k1, k2, n1, n2);
+		printPRForProject("Activiti-Set1", threshold, k1, k2, n1, n2);
+		printPRForProject("Activiti-Set2", threshold, k1, k2, n1, n2);
+		printPRForProject("Guava-Set1", threshold, k1, k2, n1, n2);
+		printPRForProject("Guava-Set2", threshold, k1, k2, n1, n2);				
+		
+	}
+	
+	
+
+	private static void printPRForProject(String projectName, int threshold, int k1, int k2, int n1, int n2) {
+		String baseFolder = "C:\\Users\\Venkatesh\\git\\in.ac.iiitd.pag.anne";
+		String unannotatedSrcfolder = "C:\\data\\svn\\iiitdsvn\\entity\\data\\experiment\\unannotated\\";
+		String outputFolder = baseFolder + "\\snippets\\project1\\";
+		String manuallyAnnotatedSrcFolder = "C:\\data\\svn\\iiitdsvn\\entity\\data\\experiment\\annotated\\";
+
+		printPR(unannotatedSrcfolder  + projectName + ".txt", outputFolder + projectName + "-anne.txt", manuallyAnnotatedSrcFolder + projectName+ "-annotated.txt", threshold, k1, k2, n1, n2);
+	}
+
+
+
+	private static void printPR(String fileName, String outputFileName, String manuallyAnnotatedFileName, int threshold, int k1, int k2, int n1, int n2) {
+		
+		
+		
 		String code = FileUtil.readFromFile(fileName);
 
 		Map<String, Map<String, Integer>> allWeightsUnigram = new HashMap<String, Map<String, Integer>>();
@@ -36,56 +64,53 @@ public class EntityTaggerUINgram {
 		List<String> entityNames = FileUtil.readFromFileAsList(ConfigUtil.getInputStream("knownEntities.txt"));
 
 		for(String entityName: entityNames) {
-			String unigramPatternTFFile = entityName + "-NormalizedTF.txt";
-			String ngramPatternTFFile = entityName + "-Long-Normalized.txt";
-			Map<String,Integer> ngramEntityTF = FileUtil.getMapFromFile(ngramPatternTFFile);
-			Map<String,Integer> unigramEntityTF = FileUtil.getMapFromFile(unigramPatternTFFile);
+			String unigramPatternTFFile = "c:\\temp\\workdir\\data\\" + entityName + "-NormalizedTF.txt";
+			String ngramPatternTFFile = "c:\\temp\\workdir\\data\\" + entityName + "-Long-Normalized.txt";
+			Map<String,Integer> ngramEntityTF = FileUtil.getLastNIntMapFromFile(ngramPatternTFFile, n1);
+			Map<String,Integer> unigramEntityTF = FileUtil.getLastNIntMapFromFile(unigramPatternTFFile, n2);
 			
 			allWeightsUnigram.put(entityName, unigramEntityTF);
 			allWeightsngram.put(entityName, ngramEntityTF);
-		}		
-		
-		String taggedCode = "";
-		try {
-			//computePRPerEntity(code, allWeights, entityNames);
-			computeAveragePR(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, threshold, k1, k2);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+		}	
+			
+		//for(threshold=100;threshold<690;threshold+=100) {
+			//System.out.print(threshold + " ");			
+			try {
+				computePRPerEntity(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, manuallyAnnotatedFileName, threshold, k1, k2);
+				//computeAveragePR(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, manuallyAnnotatedFileName, threshold, k1, k2);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		//}
 	}
 
 	private static void computeAveragePR(String code,
 			Map<String, Map<String, Integer>> allWeightsUnigram, Map<String, Map<String,Integer>> allWeightsngram, List<String> entityNames, String annotatedFile
-			, int confidenceCutOff, int k1, int k2)
+			, String manuallyAnnotatedFileName, int confidenceCutOff, int k1, int k2)
 			throws IOException {
-		String taggedCode = tag(code, allWeightsUnigram, allWeightsngram, confidenceCutOff, k1, k2);			
+		String taggedCode = tag(code, null, allWeightsUnigram, allWeightsngram, confidenceCutOff, k1, k2);			
 		FileUtil.saveFile(annotatedFile, taggedCode);
-		System.out.println(taggedCode);
+		//System.out.println(taggedCode);
 		List<String> systemAnnotations = FileUtil.readFromFileAsList(annotatedFile);
-		Oracle.computePR(systemAnnotations, entityNames, "snippet - annotated.java");	
+		Oracle.computePR(systemAnnotations, entityNames, manuallyAnnotatedFileName);	
 	}
 	
-	
-
 	private static void computePRPerEntity(String code,
-			Map<String, Map<String, Integer>> allWeightsUnigram,
-			Map<String, Map<String, Integer>> allWeightsngram, List<String> entityNames, int confidenceCutOff,
-			int k1, int k2)
+			Map<String, Map<String, Integer>> allWeightsUnigram, Map<String, Map<String,Integer>> allWeightsngram, List<String> entityNames, String annotatedFile
+			, String manuallyAnnotatedFileName, int confidenceCutOff, int k1, int k2)
 			throws IOException {
 		String taggedCode;
 		for(String entityName: entityNames) {
 			List<String> justOneEntity = new ArrayList<String>();
 			justOneEntity.add(entityName);
-			System.out.println(entityName);
-			for(int factor =0; factor < 11; factor++) {					
-				System.out.print(factor/10f + " ");
-				taggedCode = tag(code, allWeightsUnigram,  allWeightsngram, confidenceCutOff, k1, k2);			
-				FileUtil.saveFile("systemAnnotations.txt", taggedCode);
-				List<String> systemAnnotations = FileUtil.readFromFileAsList("systemAnnotations.txt");
-				Oracle.computePR(systemAnnotations, justOneEntity, "snippet - annotated.java");	
-			}
+			System.out.print(entityName + "\t\t\t");
+			
+			taggedCode = tag(code, justOneEntity, allWeightsUnigram, allWeightsngram, confidenceCutOff, k1, k2);					
+			FileUtil.saveFile(annotatedFile, taggedCode);
+			List<String> systemAnnotations = FileUtil.readFromFileAsList(annotatedFile);
+			Oracle.computePR(systemAnnotations, justOneEntity, manuallyAnnotatedFileName);	
+			
 		}
 	}
 
@@ -99,7 +124,7 @@ public class EntityTaggerUINgram {
 		return (int) ((maxWt - minWt)/2 * cutoffFactor);
 	}
 
-	private static String tag(String code,
+	private static String tag(String code, List<String> justOneEntity,
 			Map<String, Map<String, Integer>> allWeightsUnigram,
 			Map<String, Map<String, Integer>> allWeightsngram, int confidenceCutOff, int k1, int k2) throws IOException {
 		String taggedCode = "";
@@ -120,7 +145,15 @@ public class EntityTaggerUINgram {
 				   continue;
 			   }
 			   
-			   for(String entityName: allWeightsUnigram.keySet()) {
+			   List<String> iterationSet = null;
+			   if (justOneEntity == null) {
+				   iterationSet = new ArrayList<String>();
+				   iterationSet.addAll(allWeightsUnigram.keySet());
+			   } else {
+				   iterationSet = justOneEntity;
+			   }
+			   
+			   for(String entityName: iterationSet) {
 				   Map<String, Integer> unigramEntityTF = allWeightsUnigram.get(entityName);		
 				   Map<String, Integer> ngramPatternsTF = allWeightsngram.get(entityName);		
 				   String newLine = "";
@@ -186,8 +219,8 @@ public class EntityTaggerUINgram {
 		for (String line: lines) {			
 			String tags = "";
 			if ((line.trim().length() > 0)&&(tagAssociations.get(line) != null)&&(tagAssociations.get(line).size() > 0)) {
-				tags = StringUtil.getAsCSV(tagAssociations.get(line)).replace(",", " ");
-				taggedCode = taggedCode + line +  " \t:= " + tags + "\n"; //"(" + wt + ")" +
+				tags = StringUtil.getAsCSV(tagAssociations.get(line));
+				taggedCode = taggedCode + line +  " \t// " + tags + "\n"; //"(" + wt + ")" +
 			} else {
 				taggedCode = taggedCode + line + "\n";
 			}				

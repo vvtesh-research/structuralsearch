@@ -37,7 +37,7 @@ public class TFNormalizer {
 	
 	
 
-	private static Map<String, Integer> normalize(
+	public static Map<String, Integer> normalize(
 			Map<String, Integer> entityCollection,
 			Map<String, Integer> bgCollection) {
 		
