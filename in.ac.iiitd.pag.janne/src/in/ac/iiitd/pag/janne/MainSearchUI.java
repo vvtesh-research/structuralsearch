@@ -316,7 +316,8 @@ public class MainSearchUI {
 				Hashtable<String, Integer> fileCounts = new Hashtable<String, Integer>();
 				if (query.length() == 0) return;
 				
-				String[] words = query.split(" ");
+				String[] words = Stemmer.processQuery(query);
+				for(String word: words) System.out.println(word);
 				File file = new File(FilePath);
 				File[] contents = FileUtil.listSourceFiles(file); 
 				for(File content: contents) {
