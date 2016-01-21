@@ -6,19 +6,28 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 
+import javax.swing.AbstractAction;
+import javax.swing.Action;
 import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -27,6 +36,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JTree;
+import javax.swing.KeyStroke;
+import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.TreeSelectionEvent;
@@ -47,11 +59,14 @@ import javax.swing.tree.TreeSelectionModel;
 public class MainSearchUI {
 	
 	private static String FilePath = "c:/";
+	private static String currentOpenFile = "";
+	private static JTextField queryText = new JTextField(20);
 	private static JTextArea editorTextArea = null;
 	private static JTree globalSearchTree = null;
 	private static JFrame rootFrame = new JFrame("Code Search Tool");
 	private static JScrollPane scrollEditorArea = null;
 	private static JScrollPane scrollFilterArea = null;
+	private static JLabel statusLabel = new JLabel("status");
 	
 	/**
 	 * Prepare the main UI panel.
@@ -71,13 +86,44 @@ public class MainSearchUI {
 	      addTree(content, BorderLayout.WEST);
 	      addTextArea(content);
 	      addFilterTree(content);
+	      addStatusBar(content);	      
 	      
 	      rootFrame.setContentPane(content);
 	      rootFrame.pack();
 	      rootFrame.setSize(new Dimension(1200, 700));
 	      rootFrame.setVisible(true);
 	      rootFrame.setResizable(false);
+	      
+	      KeyStroke keyStrokeToFind
+		    = KeyStroke.getKeyStroke(KeyEvent.VK_F, KeyEvent.CTRL_DOWN_MASK);
+	        Action actionFind = new AbstractAction() {
+				
+				@Override
+				public void actionPerformed(ActionEvent arg0) {
+					queryText.grabFocus();
+					queryText.requestFocus();
+				}
+			};
+	        // configure the Action with the accelerator (aka: short cut)
+			actionFind.putValue(Action.ACCELERATOR_KEY, keyStrokeToFind);        
+			content.getActionMap().put("findAction", actionFind);
+			content.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(keyStrokeToFind, "findAction");
 
+	}
+
+	private static void addStatusBar(JPanel content) {
+		JPanel statusPanel = new JPanel();
+		statusPanel.setBorder(new BevelBorder(BevelBorder.LOWERED));
+		content.add(statusPanel, BorderLayout.SOUTH);
+		statusPanel.setPreferredSize(new Dimension(content.getWidth(), 16));
+		statusPanel.setLayout(new BoxLayout(statusPanel, BoxLayout.X_AXIS));
+		
+		statusLabel.setHorizontalAlignment(SwingConstants.LEFT);
+		statusPanel.add(statusLabel);
+	}
+	
+	private static void setStatusMessage(String message) {
+		statusLabel.setText(message);
 	}
 
 	/**
@@ -88,14 +134,47 @@ public class MainSearchUI {
 	private static void addSearchBar(JPanel content) {
 		JPanel searchPanel = new JPanel();
 		
+		JButton saveButton = new JButton();
+        saveButton.setText("Save");
+        
+        KeyStroke keyStrokeToOpen
+	    = KeyStroke.getKeyStroke(KeyEvent.VK_S, KeyEvent.CTRL_DOWN_MASK);
+        Action action = new AbstractAction() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				setStatusMessage("Saving");
+				saveToFile();
+			}
+		};
+        // configure the Action with the accelerator (aka: short cut)
+        action.putValue(Action.ACCELERATOR_KEY, keyStrokeToOpen);        
+        saveButton.getActionMap().put("saveAction", action);
+        saveButton.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(keyStrokeToOpen, "saveAction");
+        
+        
+        
+        saveButton.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				saveToFile();
+			}
+		});
+        saveButton.setDisplayedMnemonicIndex(0);
+        searchPanel.add(saveButton);
+        
 		JLabel searchLabel = new JLabel();
 		searchLabel.setText("Find in file: ");
 		searchLabel.setVisible(true);
-		JTextField queryText = new JTextField(20);
+		
 		searchPanel.add(searchLabel);
 		searchPanel.add(queryText);
 		
 		JButton button = new JButton("Find");
+		button.setDisplayedMnemonicIndex(0);
+		
+        
 		searchPanel.add(button);
 		button.addActionListener(new ActionListener() {
 			
@@ -110,6 +189,26 @@ public class MainSearchUI {
 		content.add(searchPanel, BorderLayout.NORTH);
 	}
 	
+	protected static void saveToFile() {
+		String text = editorTextArea.getText();
+		String filePath = currentOpenFile;
+		if (filePath.trim().length() == 0) return;
+		File file = new File(filePath);
+		if (!file.exists()) return;
+		
+		BufferedWriter  writer = null;
+
+		try {
+		    writer = new BufferedWriter(new FileWriter(file));
+		    writer.write(text);
+		    setStatusMessage("Saved.");
+		} catch (IOException ex) {
+		  // report
+		} finally {
+		   try {writer.close();} catch (Exception ex) {/*ignore*/}
+		}
+	}
+
 	/**
 	 * Clear all highlights from the text area.
 	 * 
@@ -133,8 +232,9 @@ public class MainSearchUI {
 	 */
 	private static void addTextArea(JPanel rootPanel) {
 		JPanel panel = new JPanel();
-		editorTextArea = new JTextArea(37,58);
-		editorTextArea.setEditable(false);		
+		editorTextArea = new JTextArea(36,58);
+		editorTextArea.setEditable(true);		
+		
 		scrollEditorArea = new JScrollPane(editorTextArea);
 		panel.add(scrollEditorArea);
 		TitledBorder title;
@@ -198,6 +298,8 @@ public class MainSearchUI {
 			public void valueChanged(TreeSelectionEvent e) {
 				if (!e.getPath().getLastPathComponent().toString().toLowerCase().endsWith(".java")) return;
 				String path = FilePath + File.separator + e.getPath().getLastPathComponent().toString();
+				currentOpenFile = path;
+				setStatusMessage("");
 				File file = new File(path);
 				String text = "";
 				try {
@@ -269,6 +371,8 @@ public class MainSearchUI {
 			public void valueChanged(TreeSelectionEvent e) {
 				if (!e.getPath().getLastPathComponent().toString().toLowerCase().endsWith(".java")) return;
 				String path = FilePath + File.separator + e.getPath().getLastPathComponent().toString();
+				currentOpenFile = path;
+				setStatusMessage("");
 				File file = new File(path);
 				String text = "";
 				try {
