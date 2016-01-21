@@ -7,7 +7,6 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedWriter;
@@ -15,7 +14,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -51,7 +49,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeSelectionModel;
 
 /**
- * Tool to search within code and comments.
+ * Tool to search within code and comments. 
+ * TAs may use this tool to stamp feedback on assignments.
+ * Reads all Java, C and Cpp files. Allows editing them and saving them.
+ * Performs a global search across files for keywords.
  * 
  * @author Venkatesh
  *
@@ -417,35 +418,17 @@ public class MainSearchUI {
 					return;
 				}
 				
-				Hashtable<String, Integer> fileCounts = new Hashtable<String, Integer>();
+				
 				if (query.length() == 0) return;
 				
-				String[] words = Stemmer.processQuery(query);
-				for(String word: words) System.out.println(word);
-				File file = new File(FilePath);
-				File[] contents = FileUtil.listSourceFiles(file); 
-				for(File content: contents) {
-					for(String word: words) {											
-						try {
-							Grep.compile(word);	
-							if (Grep.grep(content)) { 
-								if (fileCounts.containsKey(content.getName())) {
-									fileCounts.put(content.getName(), fileCounts.get(content.getName())+1);
-								} else {
-									fileCounts.put(content.getName(), 1);
-								}
-							}
-						} catch (IOException e) {
-							e.printStackTrace();
-						}
-					}
-				}
-				for (String fileName: fileCounts.keySet()) {
-					int count = fileCounts.get(fileName);
-					if (count == words.length) {
+				String[] words = Stemmer.processQuery(query); //Query terms.
+				//String[] filteredFileNames = SearchHandler.searchANDonFullFile(words, FilePath);
+				String[] filteredFileNames = SearchHandler.searchANDonLines(words, FilePath);
+				for (String fileName: filteredFileNames) {
+					
 						DefaultMutableTreeNode contentNode = new DefaultMutableTreeNode(fileName);
 						root.add(contentNode);
-					}
+					
 				}
 				globalSearchTree.updateUI();
 			}
