@@ -64,6 +64,7 @@ public class MainSearchUI {
 	private static JTextField queryText = new JTextField(20);
 	private static JTextArea editorTextArea = null;
 	private static JTree globalSearchTree = null;
+	private static JTree globalNegativeSearchTree = null;
 	private static JFrame rootFrame = new JFrame("Code Search Tool");
 	private static JScrollPane scrollEditorArea = null;
 	private static JScrollPane scrollFilterArea = null;
@@ -233,7 +234,7 @@ public class MainSearchUI {
 	 */
 	private static void addTextArea(JPanel rootPanel) {
 		JPanel panel = new JPanel();
-		editorTextArea = new JTextArea(36,58);
+		editorTextArea = new JTextArea(36,56);
 		editorTextArea.setEditable(true);		
 		
 		scrollEditorArea = new JScrollPane(editorTextArea);
@@ -276,6 +277,7 @@ public class MainSearchUI {
 			    	FilePath = chooser.getSelectedFile().toString();
 			    	TreeHandler.removeAllNodes(tree);
 			    	TreeHandler.removeAllNodes(globalSearchTree);
+			    	TreeHandler.removeAllNodes(globalNegativeSearchTree);
 			    	File file = new File(FilePath);
 			    	List<String> names = new ArrayList<String>();
 			    	File[] contents = FileUtil.listSourceFiles(file);
@@ -284,9 +286,12 @@ public class MainSearchUI {
 					}
 					TreeHandler.addNodes(tree, FilePath, names);
 					TreeHandler.addNodes(globalSearchTree, FilePath, names);
+					TreeHandler.addNodes(globalNegativeSearchTree, FilePath, new ArrayList<String>());
 			      }		
 			    tree.expandRow(0);
 			    globalSearchTree.expandRow(0);
+			    globalNegativeSearchTree.expandRow(0);
+			    
 			}
 		});
 		panel.setPreferredSize(new Dimension(240,540));
@@ -297,7 +302,8 @@ public class MainSearchUI {
 			
 			@Override
 			public void valueChanged(TreeSelectionEvent e) {
-				if (!e.getPath().getLastPathComponent().toString().toLowerCase().endsWith(".java")) return;
+				
+				if (!FileUtil.isValidFileToOpenInEditor(e.getPath().getLastPathComponent().toString())) return;
 				String path = FilePath + File.separator + e.getPath().getLastPathComponent().toString();
 				currentOpenFile = path;
 				setStatusMessage("");
@@ -317,6 +323,8 @@ public class MainSearchUI {
 				scrollEditorArea.getVerticalScrollBar().setValue(0);
 				
 			}
+
+			
 		});
         JScrollPane scrollTreeAllFiles = new JScrollPane(tree);
         scrollTreeAllFiles.setPreferredSize(new Dimension(220, 590));
@@ -346,23 +354,37 @@ public class MainSearchUI {
 		JPanel searchPanel = new JPanel();
 		JPanel centerPanel = new JPanel();
 		JPanel treePanel = new JPanel();
+		JPanel labelFoundInPanel = new JPanel();
+		JPanel labelNotFoundInPanel = new JPanel();
+		JPanel negativeTreePanel = new JPanel();
 		
 		filterPanel.setPreferredSize(new Dimension(300, 650));
 		
-		centerPanel.setPreferredSize(new Dimension(100, 40));
-		
+		centerPanel.setPreferredSize(new Dimension(250, 40));
+		//treePanel.setPreferredSize(new Dimension(100,40));
 		
 		JTextField queryText = new JTextField(25);
 		
 		searchPanel.add(queryText);
 		
 		JButton button = new JButton("Filter");
+		JLabel labelFoundIn = new JLabel("Found in: ");
+		labelFoundIn.setPreferredSize(new Dimension(250,20));
+		labelFoundInPanel.add(labelFoundIn);
+		
+		JLabel labelNotFoundIn = new JLabel("Not Found in: ");
+		labelNotFoundIn.setPreferredSize(new Dimension(250,20));
+		labelNotFoundInPanel.add(labelNotFoundIn);
 		
 		centerPanel.add(button);
-		filterPanel.add(searchPanel);
+		
+		filterPanel.add(searchPanel);		
 		filterPanel.add(centerPanel);
+		filterPanel.add(labelFoundInPanel);
 		DefaultMutableTreeNode root = loadTree();
-        
+		String rootNegativeText = StringUtil.processRootText(FilePath);
+		DefaultMutableTreeNode rootNegative = new DefaultMutableTreeNode(rootNegativeText);
+		
         globalSearchTree = new JTree(root);
         globalSearchTree.getSelectionModel().setSelectionMode
         (TreeSelectionModel.SINGLE_TREE_SELECTION);
@@ -370,7 +392,8 @@ public class MainSearchUI {
 			
 			@Override
 			public void valueChanged(TreeSelectionEvent e) {
-				if (!e.getPath().getLastPathComponent().toString().toLowerCase().endsWith(".java")) return;
+				if (!FileUtil.isValidFileToOpenInEditor(e.getPath().getLastPathComponent().toString())) return;
+				
 				String path = FilePath + File.separator + e.getPath().getLastPathComponent().toString();
 				currentOpenFile = path;
 				setStatusMessage("");
@@ -395,26 +418,72 @@ public class MainSearchUI {
 			}
 		});
         JScrollPane scrollTreeAllFiles = new JScrollPane(globalSearchTree);
-        treePanel.add(scrollTreeAllFiles);  
+        //treePanel.add(labelFoundIn);
+        treePanel.add(scrollTreeAllFiles); 
+        
+        //Negative search tree
+        globalNegativeSearchTree = new JTree(rootNegative);
+        globalNegativeSearchTree.getSelectionModel().setSelectionMode
+        (TreeSelectionModel.SINGLE_TREE_SELECTION);
+        globalNegativeSearchTree.addTreeSelectionListener(new TreeSelectionListener() {
+			
+			@Override
+			public void valueChanged(TreeSelectionEvent e) {
+				if (!FileUtil.isValidFileToOpenInEditor(e.getPath().getLastPathComponent().toString())) return;
+				
+				String path = FilePath + File.separator + e.getPath().getLastPathComponent().toString();
+				currentOpenFile = path;
+				setStatusMessage("");
+				File file = new File(path);
+				String text = "";
+				try {
+					text = new String(Files.readAllBytes(Paths.get(path)));
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				editorTextArea.setText(text);
+				editorTextArea.setCaretPosition(0);
+				scrollEditorArea.getVerticalScrollBar().setValue(0);
+				String[] words = queryText.getText().trim().split(" ");
+				for(String word: words) {
+					highlight(editorTextArea, word);
+				}				
+			}
+		});
+        JScrollPane scrollNegativeTreeAllFiles = new JScrollPane(globalNegativeSearchTree);
+        //treePanel.add(labelFoundIn);
+        negativeTreePanel.add(scrollNegativeTreeAllFiles); 
+        
+        
 		filterPanel.add(treePanel);
-		scrollTreeAllFiles.setPreferredSize(new Dimension(250, 535));
-		
+		filterPanel.add(labelNotFoundInPanel);
+		filterPanel.add(scrollNegativeTreeAllFiles);
+		scrollTreeAllFiles.setPreferredSize(new Dimension(250, 235));
+		scrollNegativeTreeAllFiles.setPreferredSize(new Dimension(250, 215));
 		button.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				
 				TreeHandler.removeAllNodes(globalSearchTree);
+				TreeHandler.removeAllNodes(globalNegativeSearchTree);
 				
 				String query = queryText.getText().trim();
+				List<String> names = new ArrayList<String>();
+				File file = new File(FilePath);
+		    	
+		    	File[] contents = FileUtil.listSourceFiles(file); 
+				for(File content: contents) {
+					names.add(content.getName());					
+				}	
 				if (query.length() == 0) {
-					File file = new File(FilePath);
-			    	List<String> names = new ArrayList<String>();
-			    	File[] contents = FileUtil.listSourceFiles(file); 
-					for(File content: contents) {
-						names.add(content.getName());					
-					}					
+									
 					TreeHandler.addNodes(globalSearchTree, FilePath, names);
+					TreeHandler.addNodes(globalNegativeSearchTree, FilePath, new ArrayList<String>());
 					return;
 				}
 				
@@ -431,6 +500,21 @@ public class MainSearchUI {
 					
 				}
 				globalSearchTree.updateUI();
+				for (String name: names) {
+					if (!found(name, filteredFileNames)) {
+						DefaultMutableTreeNode contentNode = new DefaultMutableTreeNode(name);
+						rootNegative.add(contentNode);
+					}
+				}
+				globalNegativeSearchTree.expandRow(0);
+				globalNegativeSearchTree.updateUI();
+			}
+
+			private boolean found(String name, String[] filteredFileNames) {
+				for(String filteredFileName: filteredFileNames) {
+					if (filteredFileName.equalsIgnoreCase(name)) return true;
+				}
+				return false;
 			}
 		});
 		

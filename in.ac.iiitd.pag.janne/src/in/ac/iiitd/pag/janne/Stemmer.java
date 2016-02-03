@@ -8,6 +8,12 @@ import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.util.Version;
 
 public class Stemmer {
+	
+	public static void main(String[] args) {
+		String[] tokens = processQuery("enum parameterized");
+		for(String token: tokens) System.out.println(token);
+	}
+	
 	public static String[] processQuery(String query) {
 		String[] processedQuery = null;
 		EnglishAnalyzer en_an = new EnglishAnalyzer(Version.LUCENE_34);

@@ -17,4 +17,11 @@ public class FileUtil {
 		});
 		return contents;
 	}	
+	public static boolean isValidFileToOpenInEditor(String name) {
+		if (name.toLowerCase().endsWith(".java") || 
+				name.toLowerCase().endsWith(".c") || 
+				name.toLowerCase().endsWith(".cpp")
+				) return true;
+		return false;
+	}
 }
