@@ -246,7 +246,7 @@ public class LineRanker {
 	                	   if ((tags == null)||(tags.trim().length()==0)) {
 	                		   return null;
 	                	   } 
-	                	   if (!SOUtil.hasJavaTag(tags)) continue; 
+	                	   //if (!SOUtil.hasJavaTag(tags)) continue; //Uncomment if you are not using Reduced Posts.xml where language filtering is already done.
 	                	   boolean toAdd = false;
 	                	   boolean hasToken = hasToken(word, title);
 	                	   if (hasToken) {	

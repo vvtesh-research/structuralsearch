@@ -77,7 +77,7 @@ public class NGramLineRanker {
 		int uniScore = 0;
 		int matchedTokens = 0;
 		int finalScore = 0;
-		
+		//System.out.println(line);
 		String lineItem = line.toLowerCase();
 	    lineItem = lineItem.trim();
 	    lineItem = StringUtil.cleanCode(lineItem);
@@ -99,7 +99,8 @@ public class NGramLineRanker {
 			}
 		}
 		newLineItem = newLineItem.trim();
-		
+		//System.out.println(newLineItem);
+		//System.out.println(ngramPatterns.keySet());
 		if (matchedTokens > 0) {
 			int score = 0;
 			int ngramMatchCount = 0;
@@ -108,12 +109,14 @@ public class NGramLineRanker {
 			for(int i=6; i>0; i--) {
 				Set<String> ngrams = NGramBuilder.getSequentialNgramsAnyN(newLineItem, i);
 				for(String ngram: ngrams) {
-					if (ngramPatterns.containsKey(" " + ngram)) {
-						score = score + ngramPatterns.get(" " + ngram); ///(7-i)
+					if (ngramPatterns.containsKey(ngram)) {
+						
+						score = score + ngramPatterns.get(ngram); ///(7-i)
 						ngramMatchCount++;
 					}
 				}				
 			}
+			//System.out.println(ngramMatchCount);
 			if (ngramMatchCount > 0)
 				score = score / ngramMatchCount;
 			
@@ -121,6 +124,7 @@ public class NGramLineRanker {
 			
 			finalScore = (finalScore / (k1 + k2));
 			
+			//System.out.println(uniScore + " " + ngramMatchCount + " " + finalScore);
 			if ((uniScore == 0)||(ngramMatchCount == 0)) finalScore = 0;
 		}
 		//System.out.println(finalScore);

@@ -76,8 +76,8 @@ public class EntityTaggerUINgram {
 		//for(threshold=100;threshold<690;threshold+=100) {
 			//System.out.print(threshold + " ");			
 			try {
-				computePRPerEntity(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, manuallyAnnotatedFileName, threshold, k1, k2);
-				//computeAveragePR(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, manuallyAnnotatedFileName, threshold, k1, k2);
+				//computePRPerEntity(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, manuallyAnnotatedFileName, threshold, k1, k2);
+				computeAveragePR(code, allWeightsUnigram, allWeightsngram, entityNames, outputFileName, manuallyAnnotatedFileName, threshold, k1, k2);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -92,8 +92,8 @@ public class EntityTaggerUINgram {
 		String taggedCode = tag(code, null, allWeightsUnigram, allWeightsngram, confidenceCutOff, k1, k2);			
 		FileUtil.saveFile(annotatedFile, taggedCode);
 		//System.out.println(taggedCode);
-		List<String> systemAnnotations = FileUtil.readFromFileAsList(annotatedFile);
-		Oracle.computePR(systemAnnotations, entityNames, manuallyAnnotatedFileName);	
+		//List<String> systemAnnotations = FileUtil.readFromFileAsList(annotatedFile);
+		//Oracle.computePR(systemAnnotations, entityNames, manuallyAnnotatedFileName);	
 	}
 	
 	private static void computePRPerEntity(String code,

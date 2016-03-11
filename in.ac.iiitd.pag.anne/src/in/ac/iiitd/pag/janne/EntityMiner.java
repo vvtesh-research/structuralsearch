@@ -12,17 +12,17 @@ import java.util.Set;
 public class EntityMiner {
 	public static void main(String[] args) {
 		int speedUp = 50;
-		int step = 0;
+		//int step = 0;
 		if (args.length > 0) {
 			try {
 				speedUp = Integer.parseInt(args[0]);
-				step = Integer.parseInt(args[1]);
+				//step = Integer.parseInt(args[1]);
 			} catch (Exception e) {}
 		}
-		mine(speedUp, step);
+		mine(speedUp);
 	}
 
-	private static void mine(int speedUp, int step) {
+	private static void mine(int speedUp) {
 		try {
 			long startTime = (new Date()).getTime();
 			
@@ -31,11 +31,11 @@ public class EntityMiner {
 						
 			String filePath = props.getProperty("FILE_PATH");
 			List<String> entities = FileUtil.readFromFileAsList("knownEntities.txt");
-			Map<String, Integer> collectionTF = FileUtil.getLastNIntMapFromFile("allCodeTFMaxNorm.txt", 100);
+			Map<String, Integer> collectionTF = FileUtil.getLastNIntMapFromFile("allCodeTFMaxNorm.txt", 100); //anne-exp3 has the data files.
 						
 			Map<String, Set<String>> skipEntities = EntityTagger.getSkipLists("skipList.txt");
 			for(String entityName: entities) {
-				/*
+				
 				//unigram processing
 				System.out.println("Processing " + entityName);
 				Set<String> skipEntitySet = skipEntities.get(entityName);
@@ -69,18 +69,21 @@ public class EntityMiner {
 				Set<Integer> allIds = FileUtil.readFromFileAsSet(ConfigUtil.getInputStream("allIds.txt")); //allIds.txt
 				Map<String, Integer> patternsAll = LongestPatternMiner.findLongPatterns(filePath, allIds, entityTF, weightedLines, speedUp, 5);
 				FileUtil.writeMapToFile(patternsAll, entityName + "-Long-patterns-in-all-code.txt", 0); //
-				*/
+				
 				
 				Map<String, Integer> patternsMap = FileUtil.getLastNIntMapFromFile(entityName + "-Long-patterns-in-all-code.txt",100);			
 				Map<String, Integer> entityPatternFreq = FileUtil.getLastNIntMapFromFile(entityName + "-Long-patterns.txt", 0);
 				
-				Map<String, Integer> patternsAll = TFMaxNormalizer.normalizeMax(patternsMap);
-				Map<String, Integer> patterns = TFMaxNormalizer.normalizeMax(entityPatternFreq);
-				FileUtil.writeMapToFile(patternsAll, entityName + "-Long-patterns-in-all-code-MaxNorm.txt", 0);
-				FileUtil.writeMapToFile(patterns, entityName + "-Long-patterns-MaxNorm.txt", 0);
+				//Map<String, Integer> patternsAll1 = TFMaxNormalizer.normalizeMax(patternsMap);
+				//Map<String, Integer> patterns1 = TFMaxNormalizer.normalizeMax(entityPatternFreq);
+				Map<String, Integer> patternsAll1 = patternsMap; //Let us not do max norm. Max norm prevents us from distinguishing between strong patterns from weak ones.
+				Map<String, Integer> patterns1 = entityPatternFreq;
 				
-				Map<String, Integer>  patternsNormalized = TFNormalizer.normalize(patterns, patternsAll);				
-				FileUtil.writeMapToFile(patternsNormalized, entityName + "-Long-Normalized.txt", 0);
+				//FileUtil.writeMapToFile(patternsAll1, entityName + "-Long-patterns-in-all-code-MaxNorm.txt", 0);
+				//FileUtil.writeMapToFile(patterns1, entityName + "-Long-patterns-MaxNorm.txt", 0);
+				
+				Map<String, Integer>  patternsNormalized = TFNormalizer.normalize(patterns1, patternsAll1);				
+				FileUtil.writeMapToFile(patternsNormalized, entityName + "-Long-Normalized-1.txt", 0);
 			}
 			long finishTime = (new Date()).getTime();
 			System.out.println("Took " + (finishTime - startTime)/60000 + " minutes.");

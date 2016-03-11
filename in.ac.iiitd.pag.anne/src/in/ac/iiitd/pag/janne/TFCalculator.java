@@ -16,9 +16,9 @@ import java.util.Set;
 public class TFCalculator {
 	public static void main(String[] args) {
 		try {
-			String inputFile = "c:\\temp\\workdir\\allCode.txt"; 
-			String outputFile = "java.csv";
-			int cutoff = 150;
+			String inputFile = "C:\\data\\svn\\iiitdsvn\\entity\\data\\ossprojects\\hadoop-line-tokens.txt"; 
+			String outputFile = "C:\\data\\svn\\iiitdsvn\\entity\\data\\ossprojects\\hadoop-line-tokens-tf.txt";
+			int cutoff = 200;
 			if (args.length == 3) {
 				inputFile = args[0];
 				outputFile = args[1];

@@ -26,6 +26,7 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
 public class CommonCodeExtractor {
+	private static final String[] TAGS_TO_FILTER = {"c++", "c", "java"};
 	public static void main(String[] args) {		
 		try {
 			Properties props = FileUtil.loadProps();
@@ -164,7 +165,7 @@ public class CommonCodeExtractor {
 	                	   if ((tags == null)||(tags.trim().length()==0)) {
 	                		   return null;
 	                	   } 
-	                	   if (!SOUtil.hasJavaTag(tags)) continue; 
+	                	   if (!SOUtil.hasTag(tags, TAGS_TO_FILTER)) continue; 
 	                	   
 	                	   ids.add(id);
 	                	   
