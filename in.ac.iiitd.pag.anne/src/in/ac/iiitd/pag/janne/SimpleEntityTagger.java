@@ -22,7 +22,7 @@ public class SimpleEntityTagger {
 	private static final String outputFolder = baseFolder + "\\tagged-output\\";
 	
 	public static void main(String[] args) {
-		int threshold = 800;
+		int threshold = 700;
 		int k1 = 10;
 		int k2 = 4;
 		int n1 = 4; //ngram - last n items to pick

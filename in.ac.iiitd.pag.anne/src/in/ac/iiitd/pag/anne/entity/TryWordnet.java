@@ -25,7 +25,7 @@ public class TryWordnet {
 			url = new URL("file", null , dictFIle) ;
 			dict = new Dictionary(url) ;
 			dict.open() ;
-			String item = "removed";
+			String item = "duplicate";
 			WordnetStemmer stemmer = new WordnetStemmer(dict);
 			
 			IIndexWord idxWord = dict.getIndexWord(item, POS.NOUN);

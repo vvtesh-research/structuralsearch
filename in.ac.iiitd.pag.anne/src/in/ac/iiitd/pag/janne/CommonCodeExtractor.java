@@ -26,14 +26,15 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
 public class CommonCodeExtractor {
-	private static final String[] TAGS_TO_FILTER = {"c++", "c", "java"};
+	private static final String[] TAGS_TO_FILTER = {"c"};
 	public static void main(String[] args) {		
 		try {
-			Properties props = FileUtil.loadProps();
-			if (props == null) return;
+			/*Properties props = FileUtil.loadProps();
+			if (props == null) return;*/
 			
-			String filePath = props.getProperty("FILE_PATH");
+			//String filePath = props.getProperty("FILE_PATH");
 			//String filePath = "c:\\temp\\workdir\\java.txt";
+			String filePath = "Posts.xml";
 			Set<Integer> ids = null;
 			if (args.length == 0) {
 				ids = extract(filePath);
